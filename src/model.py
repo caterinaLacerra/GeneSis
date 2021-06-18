@@ -247,7 +247,6 @@ class BartModel(pl.LightningModule):
         str_generation = []
         for i in range(0, len(generation), self.generation_parameters['num_return_sequences']):
             batch_generation = generation[i: i + self.generation_parameters['num_return_sequences']]
-            str_batch = self.split_seq_token.join(
-                self.tokenizer.batch_decode(batch_generation, skip_special_tokens=True))
+            str_batch = self.split_seq_token.join(self.tokenizer.batch_decode(batch_generation, skip_special_tokens=True))
             str_generation.append(str_batch)
         return str_generation
