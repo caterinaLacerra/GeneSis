@@ -16,3 +16,7 @@ def get_synset_from_str_offset(str_offset: str) -> nltk.corpus.reader.wordnet.Sy
     offset = int(offset[:-1])
     synset = wn.synset_from_pos_and_offset(pos, offset)
     return synset
+
+def convert_to_wn_pos(pos: str) -> str:
+    mapping = {'NOUN': 'n', 'VERB': 'v', 'ADJ': 'a', 'ADV': 'r'}
+    return mapping[pos]
