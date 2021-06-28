@@ -1,5 +1,5 @@
 import os
-from typing import List, Set
+from typing import List, Set, Dict
 
 import nltk
 import tqdm
@@ -86,6 +86,7 @@ def get_related_lemmas(lexeme: str) -> Set[str]:
             related.update(get_all_related_lemmas(hyper))
 
     return related
+
 
 def write_to_folders(lexemes_list: List[str], root_output_folder: str) -> None:
     if not os.path.exists(root_output_folder):
