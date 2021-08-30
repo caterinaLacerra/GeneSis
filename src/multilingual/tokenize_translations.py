@@ -25,7 +25,7 @@ if __name__ == '__main__':
     nlp_it = stanza.Pipeline(lang='it', processors='tokenize', tokenize_no_ssplit=True)
 
     input_file = 'data/translation/semcor_0.7_train.it.txt'
-    output_file = 'data/translation/semcor_0.7_train.it.tokenized.new.txt'
+    output_file = 'data/translation/semcor_0.7_train.it.tokenized.txt'
 
     with open(output_file, 'w') as out, tqdm.tqdm(total=file_len(input_file)) as pbar:
 
