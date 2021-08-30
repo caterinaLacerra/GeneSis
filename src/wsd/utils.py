@@ -1,6 +1,7 @@
 import json
 import string
-from typing import List, Set
+from typing import List, Set, Dict
+from wordfreq import zipf_frequency
 
 from src.utils import yield_batch, get_target_index_list
 
@@ -18,22 +19,33 @@ def ends_with_punct(word: str):
             return True
     return False
 
-def get_clean_generated_substitutes(generation: str, target_word: str, vocab: Set[str]):
+def get_clean_generated_substitutes(generation: str, target_word: str) -> Dict[str, int]:
     beams = generation.split('\n')
 
-    set_clean_words = set()
+    set_clean_words = {}
 
     for beam in beams:
         words = beam.split(', ')
 
-        # remove single char words
+        # remove single char words, target word and check if word ends with punctuation
         clean_words = set([w for w in words if len(w) > 1 and
                            w.lower() != target_word.lower() and
-                           not ends_with_punct(w) and all(y in vocab for y in w.split())])
+                           not ends_with_punct(w) and
+                           w.lower().replace(' ', '_') != target_word.lower() and
+                           target_word not in w])
 
-        set_clean_words.update(clean_words)
 
-    #todo: filter on bigrams frequency (clean out "study my watch" stuff)
+        for w in clean_words:
+
+            # check zipf frequency of the word
+            if zipf_frequency(w, 'en') > 0:
+                if w not in set_clean_words:
+
+                    set_clean_words[w] = 0
+
+                set_clean_words[w] += 1
+
+
     return set_clean_words
 
 def substitutes_to_json_file(substitutes_path: str):

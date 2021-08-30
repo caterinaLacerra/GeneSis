@@ -78,7 +78,11 @@ def read_from_input_file(input_path: str, encoding: str = 'utf-8') -> Iterable[L
         if len(line.strip().split('\t')) == 6:
             target, instance_id, target_idx, sentence, mask, gold = line.strip().split('\t')
             mask = list(set([x for x in mask.split(' ')]))
-            gold = {x.split('::')[0]: float(x.split('::')[1]) for x in gold.split(' ')}
+            try:
+                gold = {x.split('::')[0]: float(x.split('::')[1]) for x in gold.split(' ')}
+            except:
+                print(line.strip().split('\t'))
+                continue
 
         else:
             target, instance_id, target_idx, sentence = line.strip().split('\t')
@@ -342,3 +346,86 @@ def get_target_index_list(target_idx: str) -> List[int]:
 def universal_to_wn_pos(upos: str) -> List[str]:
     pos_map = {'NOUN': ['n'], 'VERB': ['v'], 'ADJ': ['a', 's'], 'ADV': ['r']}
     return pos_map[upos]
+
+
+def multipos_to_pos(pos_s: List[str]) -> str:
+
+    _pos2score = {
+        'ADJ': 1,
+        'ADP': 0,
+        'ADV': 1,
+        'CCONJ': 0,
+        'DET': 0,
+        'INTJ': 0,
+        'NOUN': 3,
+        'NUM': 0,
+        'PART': 0,
+        'PRON': 0,
+        'PUNCT': 0,
+        'SCONJ': 0,
+        'SYM': 0,
+        'VERB': 2,
+        'X': 1
+    }
+
+    transformations = {'AUX': 'VERB', 'PROPN': 'NOUN'}
+    pos_s = [transformations.get(pos, pos) for pos in pos_s]
+    if len(pos_s) == 1 or len(set(pos_s)) == 1:
+        return pos_s[0]
+    else:
+        if 'NOUN' in pos_s:
+            return 'NOUN'
+        elif 'VERB' in pos_s:
+            return 'VERB'
+        else:
+            return max(pos_s, key=lambda x: _pos2score[x])
+
+
+def map_to_wn_pos(upos: str) -> str:
+
+    mapping_pos = {'NOUN':'n', 'ADJ':'a', 'ADV': 'r', 'VERB':'v'}
+
+    if upos in mapping_pos:
+        return mapping_pos[upos]
+
+    return None
+
+def get_gold_dictionary(gold_path: str) -> Dict[str, str]:
+
+    dict_keys = {}
+
+    for line in open(gold_path):
+        lexeme_info, substitutes = line.strip().split('::')
+        target, instance_id = lexeme_info.strip().split()
+
+        substitute_list = []
+        for substitute_pair in substitutes.split(';'):
+            if substitute_pair != '':
+                *words, score = substitute_pair.split()
+                word = '_'.join(words)
+                substitute_list.append((word, score))
+
+        substitute_list = sorted(substitute_list, key=lambda x:x[1], reverse=True)
+        dict_keys[instance_id] = " ".join([f'{w}::{s}' for w, s in substitute_list])
+
+    return dict_keys
+
+def read_from_evalita_format(input_xml: str) -> Iterable[LexSubInstance]:
+
+    root = ET.parse(input_xml).getroot()
+    for element in root.iter(tag='corpus'):
+
+        for lexelt in element.iter(tag='lexelt'):
+            target_lexeme = lexelt.attrib['item']
+            lexeme = convert_to_universal_target(target_lexeme)
+
+            for instance in lexelt.iter(tag='instance'):
+                instance_id = instance.attrib['id']
+                l_context = " ".join([x.text for x in instance.iter(tag='context')]).strip()
+                start_index = len(l_context.split())
+                target = " ".join([x.text for x in instance.iter(tag='head')]).strip()
+                end_index = start_index + len(target.split())
+                range_idx = [x for x in range(start_index, end_index)]
+                r_context = " ".join([x.tail for x in instance.iter(tag='head')]).strip()
+                sentence = l_context + ' ' + target + ' ' + r_context
+                yield LexSubInstance(lexeme, instance_id, range_idx, sentence)

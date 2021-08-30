@@ -8,8 +8,7 @@ from torch.utils.data import DataLoader
 from src.dataset import BartDataset
 from src.model import BartModel
 from src.utils import define_generation_out_folder
-from src.wsd.utils import get_clean_generated_substitutes, substitutes_to_json_file
-import wordfreq
+from src.wsd.utils import get_clean_generated_substitutes
 
 
 def parse_args():
@@ -27,8 +26,6 @@ if __name__ == '__main__':
     args = parse_args()
     cuda_device = args.cuda_device
     configuration = yaml.load(open(args.config_path), Loader=yaml.FullLoader)
-
-    vocab = set([x for x in wordfreq.iter_wordlist('en', wordlist='best')])
 
     bart_name = configuration['model']['name']
     max_tokens_per_batch = configuration['model']['max_tokens_per_batch']
@@ -66,11 +63,10 @@ if __name__ == '__main__':
         os.makedirs(output_folder)
 
     output_path = os.path.join(output_folder, f'wsd_output_{dataset_name}.txt')
-    subst_predictions_path = os.path.join(output_folder, f'{dataset_name}.substitutes.txt')
 
     print(f'Saving output in {output_path}')
 
-    with open(output_path, 'w') as out, open(subst_predictions_path, 'w') as predictions:
+    with open(output_path, 'w') as out:
 
         for idx, element in enumerate(model.generated_batches):
             instance_batch, generated_batch = element
@@ -79,15 +75,12 @@ if __name__ == '__main__':
 
                 out.write(f'{instance.target} {instance.instance_id} {instance.target_idx}\n')
                 out.write(f'{instance.sentence}\n')
+
                 out.write(generation)
-                # todo: here vocab is defined from wordfreq --> try with standard vocab also
-                substitutes_set = get_clean_generated_substitutes(generation, '.'.join(instance.target.split('.')[:-1]), vocab)
+                substitutes_dict = get_clean_generated_substitutes(generation, '.'.join(instance.target.split('.')[:-1]))
 
-                # todo: substitutes should be sorted so to possibly include only a subset
-                subst_str = "\t".join(substitutes_set)
-                predictions.write(f'{instance.instance_id}\t{subst_str}\n')
-
-                out.write(f'\n# set candidates: {";".join(list(substitutes_set))}')
+                sorted_by_freq = sorted([(k, v) for k, v in substitutes_dict.items()],
+                                        key=lambda x: x[1], reverse=True)
+                str_sorted = ";".join([f"{k}: {v}" for (k, v) in sorted_by_freq])
+                out.write(f'\n# candidates: {str_sorted}')
                 out.write('\n#########\n')
-
-    substitutes_to_json_file(output_path)
