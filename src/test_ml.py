@@ -72,10 +72,10 @@ if __name__ == '__main__':
     map_location = 'cuda' if args.cuda_device == 0 else 'cpu'
 
     if args.test:
-        test_path = os.path.join(data_dir, dataset_name, f'{dataset_name}_test.tsv')
+        test_path = os.path.join(data_dir, f'{dataset_name}_test.tsv')
 
     else:
-        test_path = os.path.join(data_dir, dataset_name, f'{dataset_name}_dev.tsv')
+        test_path = os.path.join(data_dir, f'{dataset_name}_dev.tsv')
 
     test_dataset = MBartDataset(test_path, bart_name, configuration['model']['src_lang'],
                                 max_tokens_per_batch)
