@@ -152,7 +152,13 @@ if __name__ == '__main__':
     else:
         map_location = 'cpu'
 
-    best_path, oot_path = eval_generation(dataset_name, output_path, output_folder,
+    ds_name_for_eval = ''
+    if args.test:
+        ds_name_for_eval = dataset_name
+    else:
+        ds_name_for_eval = f'{dataset_name}_dev'
+
+    best_path, oot_path = eval_generation(ds_name_for_eval, output_path, output_folder,
                                           output_vocabulary=output_vocabulary,
                                           gold_dict_per_instance=gold_per_instance,
                                           model_name=args.embedder,
