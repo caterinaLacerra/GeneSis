@@ -131,7 +131,6 @@ def retrieve_sentence_alignment(id_idx: str, info_str: str, tokenized_str: str, 
             alignment_mapping[int(src)] = {}
         alignment_mapping[int(src)][int(tgt)] = score
 
-
     idx, info = info_str.strip().split('\t')
     info_dict = json.loads(info)
 

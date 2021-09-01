@@ -78,11 +78,8 @@ def read_from_input_file(input_path: str, encoding: str = 'utf-8') -> Iterable[L
         if len(line.strip().split('\t')) == 6:
             target, instance_id, target_idx, sentence, mask, gold = line.strip().split('\t')
             mask = list(set([x for x in mask.split(' ')]))
-            try:
-                gold = {x.split('::')[0]: float(x.split('::')[1]) for x in gold.split(' ')}
-            except:
-                print(line.strip().split('\t'))
-                continue
+            gold = {x.split('::')[0]: float(x.split('::')[1]) for x in gold.split(' ')}
+
 
         else:
             target, instance_id, target_idx, sentence = line.strip().split('\t')
