@@ -77,7 +77,7 @@ if __name__ == '__main__':
     else:
         test_path = os.path.join(data_dir, dataset_name, f'{dataset_name}_dev.tsv')
 
-    test_dataset = MBartDataset(data_dir, test_path, bart_name, configuration['model']['src_lang'],
+    test_dataset = MBartDataset(test_path, bart_name, configuration['model']['src_lang'],
                                 max_tokens_per_batch)
 
     model = MBartModel.load_from_checkpoint(args.ckpt, strict=False, map_location=map_location)
