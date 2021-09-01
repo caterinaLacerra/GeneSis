@@ -22,7 +22,7 @@ def sort_substitutes_cos_sim_batched(substitutes: List[List[str]],
                                      embedder: transformers.AutoModel.from_pretrained,
                                      tokenizer: transformers.AutoTokenizer.from_pretrained,
                                      hs: int, device: str, threshold: float,
-                                     batch_size: int) -> \
+                                     batch_size: int, num_hidden_layers: int = 24) -> \
         Tuple[List[Union[list, List[Tuple[str, Any]]]], List[List[Tuple[str, Any]]]]:
 
     stacked_input_sentences, stacked_subst_sentences, stacked_target_indexes, \
@@ -44,12 +44,14 @@ def sort_substitutes_cos_sim_batched(substitutes: List[List[str]],
         stacked_target_indexes.append(target_indexes)
 
     input_matrix_embed = torch.zeros((len(stacked_input_sentences), hs), device=device)
+    layer_indexes = [num_hidden_layers - 4, num_hidden_layers - 1]
 
     for i in tqdm.tqdm(range(0, len(stacked_input_sentences), batch_size), desc='Embedding input sentences'):
         batch = stacked_input_sentences[i: i + batch_size]
         batch_indexes = stacked_target_indexes[i: i + batch_size]
         vecs = embed_sentences(embedder, tokenizer, batch_indexes, batch, device, hidden_size=hs,
-                               layer_indexes=[20, 23])
+                                   layer_indexes=layer_indexes)
+
         input_matrix_embed[i: i + batch_size] = vecs
 
     subst_matrix_embed = torch.zeros((len(stacked_subst_sentences), hs), device=device)
@@ -59,7 +61,7 @@ def sort_substitutes_cos_sim_batched(substitutes: List[List[str]],
         batch_indexes_subst = stacked_substitutes_indexes[i: i + batch_size]
 
         vecs = embed_sentences(embedder, tokenizer, batch_indexes_subst, batch_subst, device, hidden_size=hs,
-                               layer_indexes=[20, 23])
+                               layer_indexes=layer_indexes)
 
         subst_matrix_embed[i: i + batch_size] = vecs
 
@@ -262,7 +264,7 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
 
     embedder = transformers.AutoModel.from_pretrained(model_name)
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
-    hidden_size = transformers.AutoConfig.from_pretrained(model_name).hidden_size
+    auto_config = transformers.AutoConfig.from_pretrained(model_name)
 
     if baseline:
         return compute_baseline(dataset_name, input_path, output_folder, gold_dict_per_instance, model_name, device,
@@ -311,14 +313,14 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
                 backoff_list.append(list(output_vocabulary[target]))
 
         similarities, _ = sort_substitutes_cos_sim_batched(all_gen_subst, input_infos,
-                                                                          embedder, tokenizer, hidden_size,
-                                                                          device, threshold, batch_size)
+                                                           embedder, tokenizer, auto_config.hidden_size,
+                                                           device, threshold, batch_size, auto_config.num_hidden_layers)
 
         if backoff:
             # sort by cos sim with the target all the possible substitutes in the output vocab
             backoff_sorted, _ = sort_substitutes_cos_sim_batched(backoff_list, input_infos,
-                                                                 embedder, tokenizer, hidden_size,
-                                                                 device, threshold, batch_size)
+                                                                 embedder, tokenizer, auto_config.hidden_size,
+                                                                 device, threshold, batch_size, auto_config.num_hidden_layers)
 
         for i, subst_list in tqdm.tqdm(enumerate(generated_substitutes), total=len(generated_substitutes)):
 
