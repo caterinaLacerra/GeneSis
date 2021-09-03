@@ -80,7 +80,6 @@ def read_from_input_file(input_path: str, encoding: str = 'utf-8') -> Iterable[L
             mask = list(set([x for x in mask.split(' ')]))
             gold = {x.split('::')[0]: float(x.split('::')[1]) for x in gold.split(' ')}
 
-
         else:
             target, instance_id, target_idx, sentence = line.strip().split('\t')
             mask = None

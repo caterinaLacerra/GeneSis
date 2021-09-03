@@ -4,9 +4,13 @@ from typing import Optional, List
 
 import nltk
 import numpy
+import stanza
+import tqdm
 import wordfreq
 
-from src.utils import read_from_input_file
+from src.multilingual.clean_multiwords import check_multiwords
+from src.utils import multipos_to_pos, LexSubInstance, get_target_index_list, file_len, read_from_input_file, \
+    convert_to_universal
 
 
 def parse_args() -> argparse.Namespace:
@@ -49,48 +53,111 @@ def valid_word(word: str) -> bool:
     return True
 
 
-def clean_dataset(input: str, output: str, lang: str):
-    # stopwords = nltk.corpus.stopwords.words('italian')
+def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline, bn_url: str, bn_key: str):
+    full_lang_mapping = {'it': 'italian', 'en': 'english'}
+    stopwords = nltk.corpus.stopwords.words(full_lang_mapping[lang])
+    punctuation = set([x for x in string.punctuation])
 
     with open(output, 'w') as out:
-        try:
-            for instance in read_from_input_file(input):
-                instance.target_idx = sorted(instance.target_idx)
-                instance.target = instance.target.lower()
-                if len(instance.target_idx) > 1:
+        for l, line in tqdm.tqdm(enumerate(open(input)), total=file_len(input)):
+
+            target, instance_id, target_idx, sentence, mask, substitutes = line.strip().split('\t')
+
+            if target.startswith("'"):
+                target = target.replace("'", "")
+
+            # *lemma, pos = target.split(".")
+            # lemma = ".".join(lemma)
+
+            # target_synset_ids = check_multiwords(service_url=bn_url, key=bn_key, lemma=lemma, pos=pos, lang=lang)
+            # if len(target_synset_ids) == 0:
+            #     continue
+
+            gold = {}
+            for sub in substitutes.split():
+                if ':::' in sub:
                     continue
+                word, score = sub.split('::')
+
+                if word not in punctuation and word not in stopwords:
+
+                    if "'" in word:
+                        word = "".join(word.split("'")[1:])
+                    # ids = check_multiwords(service_url, key, word, pos, lang)
+                    # if len(ids) > 0:
+                    gold[word] = float(score)
+
+            if len(gold) == 0:
+                continue
+
+            target_idx = get_target_index_list(target_idx)
+            instance = LexSubInstance(target, instance_id, target_idx, sentence, gold=gold, mask=mask)
+
+            instance.target_idx = sorted(instance.target_idx)
+            instance.target = instance.target.lower()
+            words = instance.sentence.split()
+            sentences = [instance.sentence]
+            sorted_substitutes = [instance.target.split('_')]
+
+            for substitute in instance.gold:
+                new_sentence = words[:instance.target_idx[0]] + substitute.split('_') + words[instance.target_idx[-1] + 1:]
+                sentences.append(" ".join(new_sentence))
+                sorted_substitutes.append(substitute.split('_'))
+
+            doc = pipeline("\n\n".join(sentences))
+            start_idx = instance.target_idx[0]
+
+            cleaned_substitutes = {}
+
+            target_pos_tag = convert_to_universal(instance.target.split('.')[-1])
+
+            for i, sent in enumerate(doc.sentences):
+
+                end_idx = start_idx + len(sorted_substitutes[i])
+                relevant_words = [word for j, word in enumerate(sent.words)
+                                  if j >= start_idx and j < end_idx]
+                if i == 0:
+                    target_lemma = "_".join([w.lemma for w in relevant_words if w.lemma]).lower()
+                    target_word = "_".join([w.text for w in relevant_words]).lower()
+
                 else:
-                    # if instance.target_idx[0] == instance.target_idx[-1]:
-                    #     instance.target_idx = [instance.target_idx[0]]
-                    # wrong alignments
-                    # if len([x for x in range(instance.target_idx[0], instance.target_idx[-1] + 1)]) != len(instance.target.split('_')):
-                    #     continue
-                    # else:
-                    #     *word, pos = instance.target.split('.')
-                    #     words = '.'.join(word).split('_')
-                    #     compute combined freq of non-stopwords
-                        # freqs = [wordfreq.zipf_frequency(w, lang, wordlist='best', minimum=0.0) for w in words if w not in stopwords]
-                        # combined_freq = numpy.prod(freqs)
-                        # not existing multiwords
-                        # if combined_freq == 0:
-                        #     continue
-                        #
-                        # else:
-                        #     if not valid_word(" ".join(words)):
-                        #         continue
-                        #
-                        #     else:
-                        #         if any(clean_substitute(s, lang, stopwords) for s in instance.gold):
-                        *target, pos = instance.target.split('.')
-                        target = '.'.join(target)
-                        reduced_substitutes = [s for s in instance.gold if s not in target]
-                        if len(reduced_substitutes) > 0:
-                            instance.gold = {k.lower(): v for k, v in instance.gold.items() if k in reduced_substitutes}
-                        out.write(str(instance) + '\n')
-        except:
-            pass
+                    pos_list = [w.upos for w in relevant_words if w.upos]
+                    if pos_list == []:
+                        continue
+
+                    postag = multipos_to_pos(pos_list)
+
+                    # remove substitutes with different POS than target
+                    if postag == target_pos_tag:
+                        lemmatized_substitute = "_".join([w.lemma for w in relevant_words if w.lemma]).lower()
+
+                        # remove single words that already are in the sentence (noise)
+                        words_set = set([x.lower() for x in words])
+                        if len(lemmatized_substitute.split('_')) == 1 and lemmatized_substitute in words_set:
+                            continue
+
+                        # remove target from substitutes
+                        if lemmatized_substitute != target_lemma and lemmatized_substitute != target_word:
+
+                            if lemmatized_substitute not in cleaned_substitutes:
+                                cleaned_substitutes[lemmatized_substitute] = []
+                            cleaned_substitutes[lemmatized_substitute].append(instance.gold["_".join(sorted_substitutes[i])])
+
+            if len(cleaned_substitutes) > 0:
+                instance.gold = {k: numpy.mean(v) for k, v in cleaned_substitutes.items() if len(v) > 0}
+                if len(instance.gold) > 0:
+                    out.write(str(instance) + '\n')
+
 
 
 if __name__ == '__main__':
     args = parse_args()
-    clean_dataset(args.input_path, args.output_path, args.lang)
+
+    nlp = stanza.Pipeline(lang=args.lang, processors='tokenize,mwt,pos,lemma', tokenize_pretokenized=True,
+                          tokenize_no_ssplit=True)
+
+
+    service_url = 'https://babelnet.io/v6/getSynsetIds'
+    key = "c6ffa010-fd3c-4671-a95a-a132ba8b7cac"
+
+    clean_dataset(args.input_path, args.output_path, args.lang, nlp, service_url, key)
