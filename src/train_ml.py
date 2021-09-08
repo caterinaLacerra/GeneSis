@@ -103,7 +103,7 @@ def main(args: argparse.Namespace):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--config_path', type=str, help='path to the yaml configuration file.')
+    parser.add_argument('--config_path', type=str,  help='path to the yaml configuration file.')
     parser.add_argument('--cuda_device', type=int, default=0)
     parser.add_argument('--seed', type=int, default=0, help='seed for reproducibility')
 

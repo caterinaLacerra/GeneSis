@@ -7,6 +7,7 @@ import torch
 import transformers
 import wandb
 import yaml
+from torch.optim import Adagrad
 
 from src.metrics import PrecisionAtOne
 from src.optimizers import RAdam
@@ -659,7 +660,8 @@ class MBartModel(pl.LightningModule):
             },
         ]
 
-        optimizer = RAdam(optimizer_grouped_parameters, self.optimiser_dict['learning_rate'])
+        optimizer = Adagrad(optimizer_grouped_parameters, self.optimiser_dict['learning_rate'])
+        #optimizer = RAdam(optimizer_grouped_parameters, self.optimiser_dict['learning_rate'])
 
         return optimizer, None
 

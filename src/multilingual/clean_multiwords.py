@@ -1,5 +1,6 @@
 import argparse
 import io
+import time
 import urllib
 import json
 import gzip
@@ -20,22 +21,24 @@ def check_multiwords(service_url: str, key: str, lemma: str, pos: str, lang: str
 
 
     url = service_url + '?' + urllib.parse.urlencode(params)
-
-
-    request = urllib.request.Request(url)
-    request.add_header('Accept-encoding', 'gzip')
-    response = urllib.request.urlopen(request)
+    try:
+        request = urllib.request.Request(url)
+        request.add_header('Accept-encoding', 'gzip')
+        response = urllib.request.urlopen(request)
+    except:
+        time.sleep(40)
+        request = urllib.request.Request(url)
+        request.add_header('Accept-encoding', 'gzip')
+        response = urllib.request.urlopen(request)
 
     ids = []
     if response.info().get('Content-Encoding') == 'gzip':
         buf = io.BytesIO(response.read())
         f = gzip.GzipFile(fileobj=buf)
         data = json.loads(f.read())
-        try:
-            for result in data:
-                ids.append(result['id'])
-        except:
-            print(data)
+        for result in data:
+            ids.append(result['id'])
+
     return ids
 
 def parse_args() -> argparse.Namespace:
@@ -55,31 +58,49 @@ if __name__ == '__main__':
     key = "c6ffa010-fd3c-4671-a95a-a132ba8b7cac"
 
     lang = args.lang
-    input_path = args.input_path
+    
     removed_words = args.removed
     output_path = args.output_path
+    input_path = args.input_path
 
-    with open(output_path, 'w') as out, open(removed_words, 'w') as rem_out:
+    set_multiwords = set()
+
+    for instance in tqdm.tqdm(read_from_input_file(input_path), total=file_len(input_path)):
+        target = instance.target
+        *lemma, pos = target.split('.')
+        pos = pos.upper()
+        lemma = ".".join(lemma)
+        set_multiwords.add(target)
+
+        for substitute, score in instance.gold.items():
+            set_multiwords.add(f'{substitute}.{pos}')
+
+    print(f"Vocab dim: {len(set_multiwords)}")
+
+    set_allowed_words = set()
+    for lexeme in tqdm.tqdm(set_multiwords):
+        *lemma, pos = lexeme.split('.')
+        lemma = '.'.join(lemma)
+        ids = check_multiwords(service_url, key, lemma, pos, lang)
+        if len(ids) > 0:
+            set_allowed_words.add(lexeme)
+
+    with open(output_path, 'w') as out, open(removed_words, 'w') as removed:
         for instance in tqdm.tqdm(read_from_input_file(input_path), total=file_len(input_path)):
             target = instance.target
-            *lemma, pos = target.split('.')
-            pos = pos.upper()
-            lemma = ".".join(lemma)
-            synset_ids = check_multiwords(service_url, key, lemma, pos, lang)
-            if synset_ids:
+            pos_tag = target.split('.')[-1]
+
+            if target in set_allowed_words:
                 new_gold = {}
-                gold = instance.gold
-
-                for substitute, score in gold.items():
-                    ids = check_multiwords(service_url, key, substitute, pos, lang)
-                    if ids:
-                        new_gold[substitute] = score
+                for subst, score in instance.gold.items():
+                    if f'{subst}.{pos_tag}' in set_allowed_words:
+                        new_gold[subst] = score
                     else:
-                        rem_out.write(target + '\t' + substitute + '\n')
+                        removed.write(subst + '\n')
 
-                if new_gold:
+                if len(new_gold) > 0:
                     instance.gold = new_gold
-
                     out.write(str(instance) + '\n')
+
             else:
-                rem_out.write(target + '\n')
+                removed.write(target + '\n')
