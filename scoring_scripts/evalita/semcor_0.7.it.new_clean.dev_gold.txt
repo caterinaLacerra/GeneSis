@@ -1,0 +1,1811 @@
+essere.v d288.s084.t000 :: rivelare 8;apparire 7
+anche.r d098.s043.t003 :: inoltre 9;poi 8;molto 8;ulteriormente 8;solo 7
+veramente.r d161.s028.t014 :: completamente 8;davvero 6;correttamente 4
+ora.r d139.s015.t003 :: attualmente 8;oggi 7
+fortunato.a d051.s040.t001 :: buono 7;casuale 6
+contraddizione.n d037.s096.t002 :: problema 7
+esigenza.n d033.s045.t008 :: desiderio 8;requisito 8;domanda 7
+scambiare.v d054.s054.t001 :: scoprire 6;licenziare 6;determinare 5
+teoria.n d165.s003.t001 :: ipotesi 9;idea 8;dottrina 8;congettura 8;tesi 8
+carburante.n d032.s124.t010 :: gas 8;energia 7
+herb_pennock.n d180.s068.t003 :: intrattenitore 7;comico 6
+ragazzo.n d065.s097.t006 :: persona 6;partito 6;truppa 6;amico 6;coorte 6;associato 5
+fretta.n d149.s089.t004 :: urgenza 8;solidità 7
+acquisire.v d349.s055.t001 :: ottenere 8;ricevere 8;cogliere 8;tenere 7
+rappresentazione_tridimensionale.n d156.s012.t005 :: immagine 8;quadro 8;illustrazione 8
+appoggiare_su.v d022.s063.t017 :: sedere 7;lasciare 6;atterrare 3
+piede.n d022.s101.t002 :: situare 8;posizione 7;seduta 7;localizzata 6;trovata 6
+diventare.v d255.s022.t002 :: fare 7;accettare 6
+produrre.v d015.s044.t003 :: risultare 8;effettuare 6
+autofluorescenza.n d172.s054.t009 :: emissione 7;trasformazione 6;elettricità 5
+colorazione_specifico.n d172.s054.t000 :: particolare 8;specificità 7
+suonare.v d279.s002.t004 :: sentire 7
+verbo.n d124.s135.t002 :: frase 7;termine 7;dichiarazione 6
+bambino.n d096.s061.t014 :: giovane 7;basso 6
+capire.v d285.s021.t000 :: vedere 8;sapere 8;accettare 8
+imparare.v d005.s006.t003 :: comprendere 8;studiare 8;acquisire 7;afferrare 7
+sapere.v d330.s033.t002 :: capire 9;vedere 8;percepire 8
+interesse.n d060.s040.t000 :: valutazione 7;spesa 6;tassa 6;costo 6
+concetto.n d167.s029.t001 :: nozione 9;pensiero 9;visione 9;ipotesi 8;atteggiamento 7
+mantenere.v d132.s033.t002 :: tenere 8;accettare 7;tollerare 7;possedere 7
+film.n d127.s036.t005 :: cinema 9;videocassetta 8;foto 7;mostra 6
+pro-occidentale.a d082.s062.t002 :: aggettivo 5;filoliberale 3
+neve.n d147.s058.t008 :: gelo 7
+marciapiede.n d109.s055.t011 :: strada 8;terreno 7;superficie 7
+emergere.v d086.s033.t008 :: arrivare 8;diffondere 7;verificare 7
+dichiarazione.n d159.s049.t002 :: rapporto 7;conto 6
+ultrasonico.a d081.s070.t006 :: recettico 7
+linea.n d017.s000.t015 :: figura 7
+swarthy.a d023.s104.t003 :: abbronzato 8;scuro 7;leggero 6;decente 5
+garth.n d001.s051.t002 :: partner 6;imputato 6;pretendente 5;giudice 5;confidente 5
+riferire.v d031.s028.t005 :: dirigere 8;rivolgere 7;nominare 7
+punto.n d178.s043.t000 :: stadio 8;periodo 8;esempio 8
+raddoppiato.v d188.s083.t002 :: allargare 7;vantare 6
+specificità.n d095.s028.t007 :: caratteristica 7;distinzione 6
+opporre.v d348.s046.t000 :: rifiutare 8;attaccare 8;criticare 8;condannare 7
+piccolo.a d118.s011.t020 :: minisculo 7
+generale.a d112.s040.t018 :: comune 7;basilare 7
+ottenere.v d057.s034.t007 :: dare 8;contattare 5
+blanche.n d025.s175.t003 :: donna 6;femminilità 6;lass 6;luce 5;capello_biondo 5
+perdita.n d039.s028.t008 :: diminuzione 9;declino 9;assenza 8;danno 8
+jonathan.n d140.s005.t004 :: contatto 6;anello 6
+dare.v d191.s014.t001 :: fornire 7;offrire 5
+non.r d016.s041.t016 :: piuttosto 7;sinceramente 7
+essere.v d196.s044.t000 :: significare 7;impegnare 7;comportare 7
+chiedere.v d329.s052.t004 :: sospettare 5
+fuoco.n d184.s042.t010 :: fiammata 9;fiamma 8;inferno 7
+superbamente.r d166.s037.t005 :: eccezionalmente 8;altamente 8;estremamente 8;notevolmente 8;abbastanza 8;molto 7
+volere.v d200.s010.t001 :: richiedere 5;vedere 5
+direzione.n d036.s026.t006 :: giro 7;corso 7;suggerimento 7;guida 7;istruzione 7;percorso 6
+imprenditore.n d007.s075.t002 :: esecutivo 8;rappresentante 7;lavoratore 7;affare 7;individuo 6;agente 6;testa 6
+sotterraneo.a d083.s061.t001 :: sub-superficiale 8
+dichiarare.v d059.s065.t006 :: proclamare 7
+lastra.n d038.s163.t009 :: pezzo 8
+scrivere.v d300.s052.t000 :: dichiarare 7;concludere 7;esprimere 7
+porre.v d242.s039.t000 :: tenere 8;cadere 7;spostare 7
+giovane.a d140.s110.t004 :: giovanile 7;immaturo 6;inferiore 6
+occupare.v d174.s076.t005 :: tenere 8
+essere.v d247.s032.t002 :: comprendere 6
+edizione_limitare.n d162.s105.t007 :: pubblicazione 8
+dire.v d098.s090.t009 :: istruire 8;dirigere 8;informare 8;mostrare 7
+comprendente.v d221.s003.t001 :: contenere 7
+dire.v d050.s050.t001 :: informare 7;convincere 7;promettere 7;comandare 7;consolare 7;esprimere 6;assicurare 6;dichiarare 5;fare 1
+dare.v d060.s049.t004 :: rilasciare 6;gratuito 3
+ingaggiare.v d348.s017.t002 :: partecipare 9;collaborare 8
+fondere.v d244.s069.t003 :: unire 8;collaborare 8;dividere 7
+presentare.v d312.s027.t003 :: mostrare 7
+residente.a d188.s048.t002 :: sederso 7
+cromo.n d094.s012.t012 :: metallo 7
+considerare.v d027.s064.t006 :: designare 6;denominare 6;accettare 6;adottare 6
+sostenere.v d112.s084.t020 :: incoraggiare 8;approvare 7
+misura.n d035.s038.t006 :: portata 7
+sciocchezza.n d030.s062.t008 :: spazzatura 8;bufala 7;insulto 7
+possibilità.n d065.s065.t002 :: suggerimento 8;opzione 7
+vecchio.a d126.s060.t007 :: giovane 8
+disponibile.a d053.s086.t009 :: ottenibile 9;accessibile 8;possibile 8;corrente 8
+denominare.v d169.s043.t003 :: considerare 8;chiamare 8
+libero.a d001.s014.t000 :: liberato 7;abbandono 5
+ricerca.n d081.s011.t025 :: studio 8;analisi 7;indagine 6
+tenere.v d119.s038.t000 :: mettere 7;sistemare 7;fare 7;muovere 7;posizionare 6;trovare 6
+riposare.v d333.s068.t000 :: asciugare 7;rompere 7;fermare 6
+utilità.n d020.s085.t004 :: valore 9;uso 9;servizio 8;aiuto 7
+piccolo.a d005.s014.t002 :: minore 7;uno_leggero 7;inferiore 7;insostanziale 6;uno_certo 5
+razza.n d023.s072.t001 :: surrogata 7;proboscide 7;prostituta 6;test 6;lettiera 6
+offrire.v d155.s062.t001 :: proporre 9;dare 9;presentare 9
+libertà.n d037.s013.t011 :: sconsideratezza 7
+affrontare.v d336.s060.t001 :: osservare 7;incontrare 7;vedere 6;guardare 6;notare 6
+piddington.n d136.s058.t013 :: teorema 6;teoria 5;periodo 4
+troppo.r d016.s008.t006 :: molto 7
+ordine_religioso.n d102.s059.t011 :: chiesa 7;ministero 7
+raggiungere.v d123.s040.t003 :: creare 8;produrre 8;supporre 8
+gettare.v d070.s095.t001 :: spostare 7;lanciare 6;colpire 6
+vicario.n d102.s048.t006 :: predicatore 8;predicazione 7
+uomo.n d113.s073.t009 :: persona 7;maschio 7;individuo 7
+mondo.n d114.s026.t013 :: universo 9;terra 8;ambiente 7
+colpire.v d280.s025.t000 :: influenzare 8; 7;rovinare 7;martellata 6;strozzare 6;picchiare 5
+condizione.n d138.s011.t006 :: situazione 7
+escludere.v d280.s109.t000 :: determinare 7;presupporre 7;concludere 6;indicare 6
+fare.v d065.s074.t000 :: catturare 8;scattare 7;avere 4
+foglio.n d094.s046.t021 :: superficie 6;pannello 4
+tesi.n d052.s000.t004 :: critica 7;proposta 7;pretesa 6
+guancia.n d161.s027.t007 :: nuca 7
+pierre.n d171.s125.t002 :: suo_uomo 6;fratello 6;erederia 6
+editoriale.n d013.s098.t009 :: opinione 6;critica 4
+inciampare.v d340.s045.t001 :: scivolare 7;toppliere 7;schivare 5
+misterioso_americano.a d037.s076.t014 :: occidentale 7;immacolato 7;nazione 6
+buttare.v d311.s065.t001 :: tagliare 9;rimuovere 7;prendere 7;lasciare 7;colpire 7
+esprimere.v d265.s069.t002 :: comunicare 8;mostrare 8;dimostrare 8
+scagliare.v d124.s083.t006 :: gettare 9;mandare 8;spargere 8;consegnare 6
+base.n d113.s063.t003 :: ragione 5;causa 5
+gioco.n d126.s053.t001 :: gara 7;concorso 6;evento 5
+avere.v d323.s083.t000 :: possedere 9;mantenere 8;tenere 8
+legge.n d086.s032.t005 :: statuto 8;regolamento 7;ordine 7
+storia.n d127.s039.t012 :: narrativa 7;racconto 7;cronologia 7
+ultimo.a d097.s094.t003 :: precedente 6;rimasto 5
+facile.a d061.s017.t005 :: semplice 8;indolore 7
+perfezione.n d132.s020.t007 :: realizzazione 7;eccellenza 6;grandezza 6
+chiedere.v d350.s040.t000 :: pensare 8;considerare 8;contemplare 7
+prevot.n d171.s060.t007 :: verbo 6;testa 6;leader 6
+avere.v d149.s071.t005 :: possedere 8;tenere 2
+guardia.n d171.s112.t002 :: sentinella 8;barriera 8;orologio 4
+calamità.n d149.s014.t002 :: evento 7;contrattempo 6;disastro 6;problema 6
+potenza.n d107.s078.t008 :: quantità 7;influenza 7;forza 7;energia 7
+mandare_fuori.v d209.s106.t000 :: trasmettere 7; 7;spediamo 7;rilasciare 7;disperdere 6;consegnare 6;emettere 5
+scrivere.v d160.s000.t013 :: chiamare 7;emettere 7;significare 5
+documentario.n d166.s001.t014 :: produzione 7;caratteristica 7
+ludie.n d122.s163.t000 :: yoyng 7;signore 7;lass 7;strega 6
+temperatura.n d145.s054.t012 :: grado 7
+marinaio.n d002.s060.t003 :: artigiano 8;nave 7;yacht 7
+visualizzazione.n d081.s077.t000 :: presentazione 8
+vendere.v d058.s016.t001 :: offrire 7;portare 6
+avere.v d174.s187.t001 :: sentire 7
+credibile.a d116.s120.t010 :: vero 8;sicuro 7
+dirigere.v d076.s107.t001 :: guidare 9
+naturale.a d138.s006.t008 :: naturalistico 8;organico 7;innato 7
+procedura.n d151.s074.t009 :: metodo 8;processo 8
+sawalisch.n d176.s016.t000 :: intrattenitore 6;performer 5;musicista 5;artista 5
+persona.n d014.s010.t009 :: uomo 7;individuo 7
+labbro.n d161.s027.t006 :: bacio 8;baciatore 7;coperchio 2
+amare.v d004.s025.t010 :: adorare 8
+linda_kay.n d164.s116.t000 :: lass 7
+solo.r d177.s108.t014 :: semplicemente 8
+segnare.v d251.s080.t003 :: etichettare 7;scrivere 7;raschiare 7;porre 6;scolpire 3
+arrivare.v d280.s081.t003 :: andare 8;avventurare 7;procedere 5
+ebreo.n d054.s017.t011 :: persona 6;cittadino 6
+rimanere.v d002.s008.t001 :: essere 7;mantenere 7;sopportare 6;resistere 6
+cominciare.v d121.s000.t002 :: mirare 6;tentare 6;procedere 4
+sociologico.a d014.s082.t010 :: sociale 9;filosofico 8;intellettuale 8;mondano_psicologico 5
+pollico.n d058.s033.t003 :: misurazione 7;bit 7;campo 7;misura 6
+familiarità.n d081.s067.t002 :: conoscenza 7
+chiaramente.r d133.s007.t004 :: infatti 7;solo 4
+guardare.v d121.s186.t003 :: osservare 8
+termica.a d136.s007.t018 :: caldo 4
+avere.v d039.s000.t001 :: sperimentare 8;vedere 8;sopportare 8;possedere 7
+candidato.n d155.s039.t003 :: speranza 8;concorrente 8
+parte.n d114.s038.t019 :: fatto 6
+cadere.v d060.s006.t012 :: fissare 7;si_verificare 4
+presentare.v d267.s114.t001 :: iniziare 8
+fine_prontamente.n d040.s066.t073 :: subito 8
+giudizio.n d165.s001.t003 :: valutazione 9;calcolo 8;riflesso 8;conclusione 8;ipotesi 7
+casa.n d058.s132.t006 :: dimora 8;abitazione 8;struttura 8;proprietà 8;appartamento 8
+alex.n d153.s036.t000 :: consiglio 7;spettacolo 7
+fare.v d158.s004.t009 :: creare 8;costruire 7;inventato 7
+atto.n d157.s002.t009 :: azione 8;movimento 7;sfruttamento_democratico 6
+differenza.n d160.s017.t010 :: variazione 8
+momento.n d044.s059.t002 :: periodo 9;epoca 9;fase 8
+installare.v d244.s053.t000 :: mettere 9;creare 8;disporre 8;effettuare 7;costruire 7;istituire 7
+dare.v d126.s004.t012 :: consentire 7;consegnare 6
+mucchio.n d111.s006.t005 :: gruppo 7
+legge_della_natura.n d059.s036.t005 :: ordine 7;decreto 6;regolamento 5
+alienare.v d347.s017.t002 :: bandire 8;sciogliere 5
+povero.a d140.s072.t013 :: triste 7
+grande.a d125.s092.t008 :: enorme 9;importante 9;notevole 9
+chiedere.v d310.s069.t000 :: pensare 8;preoccupare 8;sospettare 7;prendere 7;ipotizzare 7;musa 7;contemplare 6;anticipare 6
+essere.v d224.s119.t001 :: occupare 6;rimanere 6;enconcere 5
+essere.v d251.s121.t000 :: mettere 7;porre 7;rimanere 6;andare 6;sistemare 6
+sfruttamento.n d104.s001.t001 :: valorizzazione 9
+giardino.n d004.s046.t015 :: bosco 8;motivo 7;proprietà_piacere 4
+raggiungere.v d283.s005.t001 :: estendere 7;andare 6
+redento.n d184.s056.t006 :: rivincita 7;innalzamento 6;sovrano 6
+,_rhode.n d157.s021.t004 :: state 6
+giovane.n d027.s011.t014 :: bambino 8
+punto_morire.n d151.s013.t004 :: pausa 8
+migliorare.v d302.s031.t006 :: cambiare 8;diminuire 7
+aumentare.v d194.s026.t003 :: crescere 4;sollevere 3
+aumento.n d095.s045.t007 :: spinto 8;sollevamento 5
+antenna.n d136.s042.t018 :: scopo 6;orbita 5;razzo 5
+muro.n d103.s060.t005 :: barriera 8;superficie 7;lato 7;struttura 6;legno 2
+anche.r d135.s028.t017 :: tuttavia 6
+dirigere.v d224.s099.t000 :: andare 7; 7;lasciare 6
+massimo.n d081.s058.t008 :: top 6;potenziale 6
+programma.n d036.s089.t002 :: piano 8;strategia 8;metodo 7;standard 7;approccio 6
+più.r d014.s074.t004 :: altamente 7;troppo 7
+successore.n d100.s044.t008 :: discendente 8;patrimonio 7
+diventare.v d322.s053.t001 :: vedere 6
+commissario.n d120.s117.t002 :: amministratore 8;testa 8;esecutivo 8;ufficiale 7;leader 7
+camminare.v d140.s106.t002 :: vagare 9;vedere 8;attraversare 7;esplorare 7
+appartenere_allo.v d095.s030.t006 :: unire 6;comprendere 6;raccogliere 5
+padre.n d016.s013.t000 :: genitore 8;pop 6
+posare.v d183.s058.t001 :: sedere 7;rilassare 6
+dimostrare.v d308.s042.t003 :: mostrare 8;dichiarare 7;comunicare 5
+vendere.v d321.s007.t000 :: offrire 8;acquistare 7;fornire 7;dare 7;presentare 7
+bacio.n d161.s028.t016 :: peck 8;apertura 7
+interior_designer.n d148.s000.t005 :: interno 6
+rimosso.v d308.s012.t001 :: prendere 7;togliere 7;scartare 5
+essere.v d042.s010.t001 :: rappresentare 8;assomigliare 8;apparire 6
+mistificazione.n d090.s057.t010 :: cambiamento 6;dissoluzione 5
+volere.v d258.s077.t000 :: auspicare 7;aspettare 6;invitare 5;raccomandare 5
+gee.n d124.s109.t003 :: grip 6
+accompagnare.v d156.s045.t012 :: associare 6;aiutare 6;sostenere 5
+ottenere.v d260.s022.t000 :: controllare 7;acquisire 6
+lavorare.v d294.s116.t001 :: produrre 7;creare 7;modellare 7;fissare 7; 7;portare 6
+dire.v d121.s052.t001 :: rivolgere 7;comunicare 7;esprimere 7
+flusso.n d138.s048.t002 :: corrente 8;movimento 8
+cassocked.a d084.s026.t006 :: corona 5
+fuoco_teschio.n d077.s088.t020 :: corona 6;organo 5
+chiudere.v d250.s004.t002 :: fermare 8;bandire 6
+crescita.n d129.s012.t003 :: sviluppo 8;progresso 8;avanzamento 8
+persona.n d018.s112.t017 :: gruppo 7
+pressione.n d014.s078.t000 :: influenza 8;richiesta 8;mandato 8
+fratello.n d005.s011.t000 :: rapporto 7;sangue 6
+uno_particolare.a d072.s000.t006 :: notevole 8;grande 8;importante 8;significativo 8;uno_unico 6
+hieronymus.n d173.s070.t000 :: rana 5;narratore 5
+a_fortiore.a d114.s026.t008 :: immorale 4
+luna_miele.n d032.s048.t009 :: vacanza 8;viaggio 7
+caso.n d153.s047.t004 :: scatola 8;contenitore 8
+ombra_pacciame.n d147.s082.t003 :: arbusto 7;pianta 6;verde 6;vegetazione 5;lattuga 5
+ritenere.v d326.s044.t000 :: credere 8;considerare 8
+giovane.a d177.s040.t001 :: tenero 7;nuovo 7;immaturo 6
+godere.v d101.s080.t009 :: amare 8;desiderare 8;adorare 7
+essere.v d003.s049.t011 :: sentire 7
+costume_bagno.n d008.s053.t003 :: tuta 8;cuffia 6
+tenere.v d186.s085.t001 :: costringere 8
+astrattiamo.v d035.s055.t012 :: ritirare 8;omettere 8;disteniamo 7;perdere 6
+guidare.v d205.s036.t003 :: dirigere 6;mostrare 6;istruire 6
+cadere.v d349.s007.t004 :: diminuire 7;crollare 6
+prontamente.r d111.s042.t005 :: subito 9;immediatamente 9;rapidamente 8
+falegname.n d002.s048.t002 :: costruttore 8;carver 7;fissatore 7
+inno.n d102.s049.t000 :: melodia 8;ritornello 7
+attività.n d086.s055.t007 :: movimento 8;partecipazione 8;concorso 8
+sparare.v d134.s041.t001 :: bombardare 8
+riempire.v d021.s075.t016 :: prendere 7;cadere 7
+generale.a d059.s049.t013 :: comune 8;ampio 8;ordinario 6
+volare.v d122.s138.t001 :: saltare 8;legare 8;correre 7;sbattere 7;scorrere 7;andare 7
+guardare.v d127.s061.t012 :: partecipare 7;ostacolare 5
+organizzazione.n d036.s033.t009 :: preoccupazione 4;sindacato 3
+generazione.n d112.s005.t006 :: età 8;periodo 7;fase 7;giorno 6;epoca 5
+villaggio.n d007.s108.t000 :: città 8;comunità 8;township 7;quartiere 7;zona 7;parrocchia 7
+albero.n d122.s084.t006 :: arbusto 7;verde 7
+l'istituzione_di.n d137.s016.t009 :: istituzione 8;organizzazione 6
+unire.v d187.s074.t001 :: partecipare 8
+atteggiamento.n d035.s003.t004 :: carattere 8;comportamento 5
+pterygia.n d168.s044.t011 :: organo 6;malattia 3;malattia_bilaterale 2
+ottocentesco.a d003.s029.t005 :: tardo 7;moderno 6
+polvere.n d172.s068.t007 :: comporre 7;miscela 4
+destro.a d168.s045.t005 :: opposto 6;differente 6
+interpretare.v d156.s005.t003 :: prendere 8;vedere 8;capire 7
+dev'essere.v d333.s075.t000 :: presumere 6;assomigliare_a 6
+forma.n d064.s001.t020 :: struttura 8;modo 5
+essere.v d216.s093.t001 :: rimanere 7;continuare 6
+mack.n d031.s061.t000 :: jeff 6;mackenzie 6
+allora.r d133.s035.t000 :: quindi 8;qui 8
+dire.v d008.s136.t001 :: proclare 7;concludere 7
+sentire.v d008.s162.t000 :: sapere 9;scoprire 8;trovare 8;leggere 8;osservare 7;vedere 6;ricevere 5
+essere.v d308.s035.t002 :: venire 6;apparire 4
+completare.v d322.s081.t000 :: concludere 7;passare 7;terminare 7;finire 6
+studio.n d046.s010.t001 :: ricerca 9;analisi 9;esame 6;indagine 5
+frenare.v d280.s096.t002 :: ridurre 6;fermare 6
+operare.v d154.s091.t001 :: controllare 8;condurre 8;guidare 8;dirigere 8;gestire 7
+felice.a d166.s031.t004 :: allegro 9;rilassarso 7
+inadatto.a d047.s067.t012 :: indesiderabile 8;inferiore 8
+settore.n d047.s056.t014 :: argomento 7;sfera 7
+j._l..n d063.s030.t008 :: j 6
+vivere.v d285.s089.t000 :: rimanere 7;occupare 6;sostenere 6;continuare 6;camminare 6;essere 6;proseguire 5
+sconcertante.a d075.s038.t004 :: vertiginoso 6;delicato 6
+ascoltare.v d305.s046.t008 :: vedere 9;incontrare 8;sperimentare 7
+dire.v d097.s110.t002 :: commentare 7;dichiarare 7;proferire 7;osservare 6
+documento.n d020.s017.t001 :: articolo 8;rapporto 8;trattato 8;saggio 7;account 7
+glicerolo.n d181.s031.t011 :: chimico 7;doc 7
+vientiane.n d007.s007.t003 :: litico 6
+esteso.a d168.s075.t006 :: massiccio 8;enorme 8;grande 8;prolungato 8
+circostante.a d032.s096.t012 :: adiacente 5
+presto.r d182.s026.t001 :: rapidamente 8;immediatamente 8;attualmente 7
+passato.n d151.s086.t003 :: precedenza 7;passare 6
+realtà.n d184.s062.t000 :: verità 8;fatto 8;autenticità 7;lucidità 6
+dovere.v d255.s009.t000 :: dare 7;contrarre 7;fornire 7;attendere 7;repossere 6
+partecipare.v d329.s039.t003 :: assistere 8
+mostrare.v d144.s000.t008 :: esporre 8;rivelare 8;presentare 8;offrire 7;rilasciare 7;avere 6
+insolubile.a d181.s038.t002 :: docile 8;liquido 6
+essere.v d120.s012.t002 :: rappresentare 7;mostrare 6;ritrarre 6;apparire 5
+passato.n d067.s067.t002 :: precedenza 6
+produzione.n d159.s062.t017 :: operazione 8;lavoro 7
+mercer.n d078.s072.t005 :: musicista 6;personaggio 5;artista 5;cantante 5
+andare.v d312.s061.t002 :: correre 7;lasciare 6
+confine.n d158.s045.t002 :: frontiera 9;confine_terra 8;bordo 7;punto 7;fine 6
+castro.n d071.s052.t006 :: dittatore 6;ribelle 6;ex_leader 6;terrorista 6;leader 5
+modello.n d031.s000.t001 :: ciclo 8;disposizione 7;serie 7;catena 7;ordine 7
+nero.a d081.s084.t011 :: scuro 8
+aiutare.v d119.s072.t000 :: attenuare 6;contribuire 6
+davvero.r d034.s003.t000 :: assolutamente 7;completamente 7
+abito.n d040.s111.t022 :: outfit 9;cima 7;formale 7
+dire.v d091.s012.t006 :: immaginare_che 6
+l'inclinazione.n d175.s062.t008 :: pendio 7
+chiedere.v d110.s111.t001 :: richiedere 8
+individuo.n d101.s085.t007 :: caratteristica 8;persona 7
+anche.r d118.s005.t000 :: ancora 7;forse 7;effettivamente 6;probabilmente 5
+troppo.r d001.s054.t008 :: molto 6;in_più 4
+contenuto.n d107.s087.t003 :: quantità 8;massa 8;volume 8
+importante.a d102.s062.t004 :: significativo 9;notevole 9
+hudson.n d002.s025.t005 :: commento 6;trota 6;esploratore 6
+combattere.v d257.s068.t006 :: contendere 7;controllare 6;provare 4
+gallina.n d153.s048.t011 :: mostro 6;persona 6;entità 4;ragazzo 4
+ape_alcale.n d118.s078.t005 :: albino 7;alpaca 7;bestia 7;acquatica 6
+codice.n d176.s097.t012 :: ordinanza 8;dottrina 8;ordine 8
+borsa.n d098.s040.t014 :: il_frizione 5
+suo_esigenza.n d048.s046.t046 :: assunzione 7;domanda 6;requisito 2
+nave.n d002.s050.t006 :: barca 8;flotta 7;vela_barca 7;vaso 2
+mancanza.n d027.s062.t003 :: carenza 9;scarsità 8
+l'età.n d067.s100.t007 :: mortalità 7
+dispositivo.a d163.s090.t005 :: apparato 9
+pressione_osmotico.n d169.s042.t001 :: forza 8;tensione 8;stress 7;corrente 7;compressione 7;movimento 7;compressa 6;spinto 6
+pinnacolo.n d051.s004.t014 :: top 6
+essere.v d183.s136.t001 :: rimanere 6;conservare 6
+indossare.v d277.s087.t003 :: usare 9;prendere 8
+inventare.v d111.s006.t032 :: creare 5;fare 5
+paio.n d019.s055.t002 :: set 9;gruppo 7;selezione 7;varietà 7;assortimento 5
+ambiente.n d046.s060.t010 :: ambiente_scolastico 6
+servire.v d318.s038.t001 :: soddisfare 9;fornire 9;svolgere 9;realizzare 8
+dire.v d008.s033.t000 :: immaginare 7;credere 6;capire 6;concludere 5
+posizione.n d061.s066.t004 :: posta 9;stazione 7;area 7;posto 7
+continental.n d120.s036.t007 :: continentale 8;internazionale 8;intercontinentale 7;paese_bassi 6
+ragazzo.n d158.s086.t018 :: donna 8;signore 7;gal 6
+liberale.a d043.s035.t003 :: moderato 8;tollerante 7
+costruire.v d118.s026.t001 :: modellare 7;produrre 7;inventare 6
+individualismo.n d043.s026.t010 :: individualità 9;egoismo 8;individuo 8
+parte.n d075.s023.t001 :: opinione 5;fatto 5;proprietà 4
+uomo.n d037.s014.t014 :: persona 8;individuo 8
+evento.n d055.s027.t012 :: incidente 8;possibilità 7
+cinestetico.a d156.s053.t008 :: intuitivo 7;tatto 5
+partito.n d086.s062.t008 :: gruppo 7
+de-iodinante.a d115.s028.t000 :: elimine 6
+essere.v d150.s024.t001 :: rendere 6;dimostrare 6
+vacuolizzazione.n d168.s095.t015 :: gocciolina 7;movimento 7
+dolcemente.r d183.s148.t002 :: gentilmente 8;leggermente 7;sottilmente 7
+sorgente.n d121.s180.t010 :: pozzo 7;bagno 6;torrente 6
+entrare.v d270.s103.t000 :: andare 9;procedere 8;viaggiare 6;arrivare 5
+lunedì.n d125.s035.t006 :: martede 6;venerdì 4
+correre.v d260.s147.t004 :: volare 8;tornare 7
+mcfeeley.n d142.s062.t002 :: collega 6;allenatore 5;amico 5;sospetto 5;rappresentante 5
+somministrazione.n d095.s032.t012 :: trattamento 8;controllo 7;presenza 7
+finanziare.v d202.s049.t003 :: garantire 7;sostenere 7;fare 6;usare 6;finire 6
+essere.v d083.s079.t003 :: includere 7;rappresentare 6
+apparire.v d144.s009.t004 :: venire 8
+rimanere.v d336.s009.t004 :: continuare 8;persistere 7;sopportare 6
+essere.v d007.s044.t005 :: rappresentare 8;presentare 8;ritrarre 7;giocare 6
+essere.v d328.s081.t000 :: consigliare 6;significare 6;supporre 6
+schramm.n d172.s071.t000 :: studio 5;tesi 5;ricerca 5;dottrina 4
+paese.n d152.s045.t000 :: nazione 8;stato 7;terra 6
+isaac.n d134.s051.t010 :: compagno 5;ragazzo 5
+vestito.n d063.s004.t002 :: abbigliamento 9;outfit 8
+scuola.n d046.s083.t008 :: istituzione 7;accademia 4
+coordinare.a d012.s057.t015 :: sincrono 6
+dire.v d065.s072.t002 :: pronunciare 9;menzionare 8
+fondo.n d033.s079.t002 :: sussidio 8;capitale 7;indennità 7;assegnazione 7
+ora.r d143.s116.t000 :: attualmente 9;oggi 8
+pagare.v d053.s115.t000 :: spendere 6
+consumato.v d076.s003.t008 :: ingoiare 8;ottenere 6;vantare 4
+famiglia.n d058.s139.t013 :: privato 7
+essere_uscire.v d190.s077.t000 :: andare 8;cadere 8;finire 8;situare 8;procedere 7;completo 7;terminare 7;traspare 7
+c'erare.v d130.s140.t000 :: essere 6;rappresentare 6
+tuttle.n d126.s031.t004 :: lumaca 6
+così.r d091.s063.t024 :: molto 7
+sodio_ioduro.n d123.s041.t008 :: sostanza 7;chimica 7
+sprecare.v d287.s198.t000 :: perdere 7;mancare 7
+dire.v d216.s140.t000 :: rispondere 7;pronunciare 7
+campanile.n d051.s004.t009 :: struttura 7;pilastro 6;buccia 6
+uno_semplice.a d156.s037.t026 :: implicabile 7
+urlandociare.v d028.s129.t009 :: gridare 8;urlare 7;piangere 7
+baia.n d117.s070.t000 :: laguna 8;riva 8;acqua 7;chiatta 6
+soprattutto.r d172.s033.t009 :: comunemente 7
+conflitto.n d176.s030.t004 :: disaccordo 9;problema 8;discrepanza 7;incompatibilità 6
+sostituire.v d213.s015.t007 :: spostare 5
+chiedere.v d070.s189.t001 :: implorare 7;richiedere 7;adescare 6
+proiettare.v d058.s082.t002 :: estendere 9;alzare 8;trovare 8;sorgere 8;puntare 5;aggettivare 5
+contare.v d051.s021.t012 :: significare 7;fare 5
+murray.n d043.s080.t002 :: scrittore 5;autore 5
+applicare.v d035.s002.t006 :: utilizzare 8;pratico 7
+fine.n d162.s044.t000 :: dandy 7
+giustificare.v d014.s021.t007 :: scusare 8;convincere 7;garantire 7
+l'immaginazione.n d004.s023.t012 :: sogno 7;intelletto 6
+governo_in.n d087.s116.t009 :: amministrazione 6;autorita 6;stato 2
+versare.v d337.s063.t000 :: dichiarare 7;donare 7;emettere 5
+sostituire.v d003.s063.t006 :: altero 7;cambiare 7;rimuovere 6;spostare 3
+diabolico.a d013.s051.t003 :: malevolo 8;cattivo 7
+fiume.n d032.s031.t005 :: affluente 8;torrente 8;rivulo 7
+correre_il_rischio.n d144.s043.t007 :: possibilità 7;prospettiva 7
+tipo.n d113.s012.t008 :: categoria 8;gruppo 6;variet 5
+comune.a d037.s056.t002 :: quotidiano 6;regolare 6;naturale 6;ordinario 5
+ruolo.n d066.s033.t006 :: parte 9;personaggio 9;performance 8;incarico 7;presentazione 7;funzione 7
+tentativo.n d034.s148.t006 :: sforzo 8
+terreno.n d024.s014.t012 :: terra 8;superficie 5
+aggravare.v d087.s008.t000 :: scoraggiare 7;sconvolgere 7;ostacolare 6;affliggere 6;punire 6;esaurire 6;limitare 6;stressare 5;fratturare 5
+destinare.v d348.s057.t003 :: mirare 7
+lettera.n d161.s008.t009 :: biglietto 9;messaggio 8
+pubblico.n d157.s064.t002 :: auditorium 8;persona 7;folla 7;partito 7;gruppo 7;montaggio 6
+troppo.r d074.s031.t007 :: inoltre 7
+dire.v d079.s084.t002 :: dichiarare 7;pronunciare 7;proferire 6
+l'insieme.n d006.s089.t006 :: gruppo 8;collezione 7;numero 7
+indossare.v d263.s043.t000 :: portare 8;tenere 8;accettare 8;avere 7
+preparare.v d115.s024.t006 :: assemblare 7;effettuare 7;creare 7;programmare 7;offrire 7;fornire 7;riparare 6
+sequenza.n d088.s056.t016 :: serie 9;insieme 7;loop 7
+mercer.n d078.s066.t005 :: j 6;gruppo 5;theresa 4
+dare.v d191.s028.t000 :: fornire 8;conferire 6
+malato.n d163.s090.t011 :: povero 7;afflizione 6
+considerare.v d000.s124.t000 :: vedere 8;contemplare 6;pesare 6
+significativo.a d136.s031.t001 :: importante 9;notevole 9;grande 8
+salutare.v d122.s053.t002 :: salvare 6;mostrarre 6;concedere 6;riconoscere 5;onorare 3;lodare 1
+vacanza.n d014.s006.t002 :: stagione 7;periodo 7;natale 5
+mostrare.v d202.s097.t000 :: illustrare 8;indicare 8;vedere 7;osservare 7;dire 6
+levare.v d117.s087.t008 :: sedere 7;rilassare 6
+indietro.r d103.s027.t009 :: dietro 6;intorno 6
+dire.v d254.s001.t002 :: dichiarare 7;essere 7
+chiedere.v d097.s231.t000 :: richiedere 7;esigere 6;gridare 6
+sud.n d052.s051.t006 :: nord 8
+parente.n d137.s087.t006 :: persona 6
+doccia.n d008.s149.t004 :: vasca 8;soffione_doccia 6;rubinetto 6
+caffè.n d000.s101.t000 :: java 8;caffeina 8;birra 7
+sistema_ventilazione.n d104.s106.t000 :: ventilatore 9;raffreddamento 7;pesca 7;vento 7;freddo 6;condizionatore_vento 4
+mettere.v d207.s061.t001 :: prendere 7;sedere 6
+sporgenza.n d077.s067.t006 :: piattaforma 8;scala 8;lastra 8
+lusingare.v d305.s002.t003 :: rompere 7
+molto.r d129.s082.t015 :: estremamente 9;piuttosto 8
+città.n d049.s062.t001 :: townlet 9;comune 8;area 7
+scivolare.v d207.s019.t003 :: correre 8;guidare 7
+imbarazzo.n d102.s055.t016 :: dolore 8;stupidità 7
+dimenticare.v d034.s021.t000 :: trascurare 6;perdere 6;andare 6;riuscire 6;lasciare 5
+necessità.n d033.s065.t001 :: richiesta 9;urgenza 8
+smontare.v d130.s091.t007 :: sedere 4
+strada.n d007.s104.t001 :: passaggio 8;sentiero 8;viale 7;modo 7
+essere.v d110.s043.t002 :: occupare 7;contenere 7;tenere 7
+esigenza.n d152.s009.t006 :: desiderio 8;domanda 5
+rimanere.v d101.s064.t009 :: vedere 6
+spiccare.v d195.s024.t001 :: distinguere 7
+essere.v d104.s006.t001 :: ritrarre 7;rappresentare 7;sembrare 7;apparire 5
+essere.v d201.s024.t000 :: mostrare 7;rivelare 7;rappresentare 7;esprimere 7;trasmettere 7
+essere.v d303.s089.t001 :: rivendicare 7;considerare 6
+leone.n d109.s056.t017 :: randagio 5
+ritenere.v d024.s021.t025 :: scegliere 7
+guardare.v d103.s047.t001 :: intravedere 8;gaware 7;sbirciare 7
+sembrare.v d180.s060.t001 :: sentire 7;indovinare 7;percepire 7;pensare 6;immaginare 6;credere 6;considerare 6
+sentire.v d065.s122.t001 :: ascoltare 7;rilevare 7;notare 6
+messa.n d164.s046.t003 :: metterla 7
+l'organizzazione.n d012.s054.t004 :: struttura 8;gruppo 8;associazione 7
+mantenerlo.n d229.s033.t001 :: lasciarlo 8;averlo 8
+essere.v d269.s047.t005 :: avere 8;supporre 7;tenere 6
+commissione_affare_stato.n d137.s045.t003 :: panel 7
+forma.n d059.s044.t004 :: modo 8;tipo 8;stato 6
+inevitabilmente.r d184.s038.t002 :: inconsciamente 7;insoddisfattamente 7
+riuscire.v d071.s005.t008 :: trascurare 8;fare 6
+vento.n d138.s011.t009 :: brezza 8;aria 7;atmosfera 7
+esprimere.v d043.s070.t001 :: mostrare 7;offrire 6;inviare 6;dichiarare 6
+rappresentare.v d095.s075.t017 :: fare 7;fornire 6;dichiarare 6
+raggiungere.v d271.s022.t001 :: colpire 9;emergere 6
+peccatore.n d184.s036.t002 :: disonore 7
+essere.v d272.s044.t001 :: sentire 8
+rimanere.v d183.s033.t003 :: continuare 8;occupare 8;aspettare 8
+senso_del_tatto.n d156.s014.t002 :: percezione 8;sentimento 8;vista 8
+nuovo.a d051.s053.t006 :: di_nuovo 7
+preparazione.n d104.s109.t001 :: creazione 8;produzione 8;fabbricazione 7;sviluppo 7;allestimento_trasformazione 5
+numero_9_,.n d009.s033.t003 :: area 6;distretto 6
+piuttosto.r d000.s124.t003 :: oltre 6
+standard.n d015.s067.t002 :: standardizzazione 8
+altrove.r d014.s092.t010 :: ovunque 8;qui 7
+costo.n d053.s069.t008 :: spesa 9;quantità 7;tassa 5
+verificare.v d026.s065.t021 :: trovare 6;controllare 6
+brahms.n d089.s064.t002 :: symphony 7;music 7
+essere.v d326.s067.t004 :: diventare 8;rimanere 8
+indagine.n d083.s011.t010 :: studio 9;analisi 8;controllo 8;esame 7
+villaggio.n d052.s059.t014 :: città 9;comunità 9;zona 7
+agguato.n d013.s007.t005 :: bastone 6
+sistema_mai.n d012.s015.t009 :: struttura 7;metodo 7;processo 7;setup 7;piano 7;accordo 5
+lasciare.v d040.s046.t004 :: desertare 8;ritirare 7;scappare 6;abbandonare 6;fuggire_dalla 4
+attrazione_magnetico.n d005.s056.t002 :: repulsione 8;disorientamento 7;antipatia 6
+limitare.v d035.s053.t005 :: ridurre 8;fermare 6
+filosofico.a d028.s045.t012 :: intellettuale 8
+caldo.a d085.s118.t008 :: freddo 7;frigide 4
+procuratore_generale.n d044.s030.t002 :: giudice 7;rappresentante 6;funzionario 6
+apprendista.n d027.s002.t004 :: subordinare 7
+suscitare_polverizzare.v d054.s052.t017 :: generare 7;motivare 7;causare 5
+porre.v d199.s053.t005 :: localizzare 8;alloggiare 7;sedere 5
+dire.v d297.s017.t001 :: raccontare 7;trasmettere 7;rivelare 7;esprimere 7;comunicare 6
+textura.n d088.s007.t021 :: qualità 7;aspetto 7;sensazione 7
+formazione.n d036.s081.t012 :: istruzione 9;scuola 9;insegnamento 8;tutore 8;orientamento 3
+apparentemente.r d156.s002.t009 :: presumibilmente 9;attualmente 6
+accarezzare.v d098.s123.t003 :: tenere 6
+sudista.n d090.s040.t002 :: verso_sud 4
+nevrosi.n d095.s050.t003 :: organo 6;struttura 6
+vedere.v d110.s060.t002 :: notare 7;rilevare 6;osservare 6;affacciare 1
+indicare.v d295.s065.t002 :: citare 7;dire 6;dichiarare 5
+dimenticare.v d318.s003.t000 :: trascurare 8;mancare 8;perdere 6
+tornare.v d116.s021.t008 :: arrivare 8;trasferire 7
+frazionare.v d181.s006.t004 :: separare 8;suddividere 7;raggruppare 4
+opinione.n d048.s037.t004 :: valutazione 8;analisi 8;parere 5
+distruggere.v d229.s009.t004 :: stallo 7;bypassare 7
+tono.n d040.s075.t006 :: carattere 7;intensità 7
+allora.r d096.s077.t002 :: dopo 6;quindi 6;tardi 5
+guardaroba_lodegod.n d173.s058.t012 :: cima 6;modificatore 5
+fare.v d309.s047.t001 :: girare 8;eseguire 8;creare 8
+uccidere.v d038.s010.t002 :: giustiziare 7;scomparire 6;rovinare 6;eliminare 6;devastare 6;distruggere 6
+ritratto.n d103.s057.t009 :: immagine 8;impressione 8;quadro 8;illustrazione 6
+realtà.n d167.s030.t011 :: verità 6
+dare.v d176.s032.t000 :: sottomettere 7;fornire 7;cedere 7;offrire 7;rovesciare 7;rinunciare 6;avere 6;contribuire 6
+confrontare.v d229.s024.t000 :: considerare 7;pesare 6
+perdere.v d005.s061.t004 :: rinunciare 7;abbassare 7;fallire 5
+mollie_il_pugno.n d146.s070.t001 :: schnooker 8;muffa 7;vitello 7;mucca 6;vitello_femmina 4
+fare.v d232.s014.t000 :: prendere 9;stabilire 8;ottenere 8;determinare 8;fissare 7
+essere.v d340.s055.t001 :: emettere 7;rappresentare 6;trasmettere 6
+dimmi.v d141.s138.t000 :: mostrare 8;informi 8;consigliare 8;trasmettere 7;consegnare 7;consegni 6
+riferire.v d144.s005.t008 :: sostenere 8;raccontare 7;proferire 4
+portare.v d299.s114.t001 :: trasportare 8;spostare 8;fare_uscire 5
+azione.n d083.s001.t002 :: stock 8
+vita.n d173.s005.t017 :: corpo 7;spirito 6
+morte.n d132.s073.t006 :: decesso 7
+poliziotto.n d076.s147.t004 :: ufficiale 9;agente 9;autorità 6
+proprio.r d091.s094.t005 :: esattamente 9;distinto 8;specificamente 8;bene 7;solo 6;chiaramente 6
+avere.v d086.s057.t003 :: comportare 7
+giardiniere.n d147.s002.t001 :: coltivatore 8;orticulturista 8
+settimana.n d111.s027.t022 :: giorno 9;periodo 7;zweek 6
+dizionario.n d055.s047.t012 :: alfabetico 7
+l'anima.n d132.s022.t005 :: dottrina 6
+dr._baum.n d081.s077.t001 :: medico 7
+nome.n d118.s086.t000 :: moniker 9;termine 8;etichetta 7
+cameriere.n d014.s084.t016 :: barroom 7;barkeep 7;bar 6
+produrre.v d118.s037.t007 :: creare 7;dare 6;partorire 4
+vergognare.v d141.s092.t008 :: agire 7
+stimolare.v d031.s055.t007 :: fornire 6;fare 4
+più.r d101.s011.t000 :: oltre 6
+austin.n d003.s055.t010 :: capitale 6;stato 5
+debole.a d096.s078.t002 :: forte 8;inferiore 8;piccolo 7;traballante 7;inconsistente 6
+teoria.n d003.s033.t004 :: idea 7;tesi 7;ipotesi 7
+samuel_groom.n d101.s031.t004 :: attore 6;maschio 5
+autunno.n d109.s077.t005 :: stagione 8
+pagina.n d013.s013.t013 :: libro 8;superficie 7;foglio 7
+l'anodo.n d145.s017.t010 :: bruciatore 7;fonte 6;determinazione 6;sorgente 6;fine 6
+prendere.v d308.s001.t002 :: tenere 8
+continuare.v d033.s057.t002 :: prevalere 6;avanzare 6;tenere 6;procedere 6
+kate.n d183.s060.t002 :: amare 6;katherine 6;kateri 6
+lasciare.v d215.s038.t002 :: permettere 9;tollerare 8;perdonare 7
+l'uso.n d058.s111.t008 :: utilizzo 9;impiego 8;occupazione 7;implementazione 7
+prendere.v d011.s011.t001 :: intraprendere 7;avvicinare 7;dirigere 6;sparare 6;incontrare 6;raggiungere 6;inclinare 5;accedere_a 3;scegliere 3
+apertamente.r d140.s074.t005 :: completamente 8;chiaramente 7;sbalorditivamente 6
+westminster.n d091.s063.t008 :: struttura 6;solitudine 6;città 6
+aspettare.v d107.s049.t001 :: supporre 8;credere 8;immaginare 8;anticipare 8;presumere 8;pensare 8
+settore.n d039.s050.t001 :: questione 7;materia 7;preoccupazione 7;ambito 6
+calliosamente.r d163.s059.t003 :: scioccamente 8
+abisso.n d054.s052.t031 :: struttura 6;internamento 6;sonno 5
+essere.v d015.s050.t001 :: rappresentare 7;assomigliare 6
+essere.v d156.s032.t002 :: avere 7;fare 7
+avere.v d145.s081.t002 :: possedere 8;contenere 7
+colpire.v d220.s027.t001 :: camminare 4
+pensare.v d294.s061.t000 :: sentire 8;vedere 8;considerare 8;percepare 8;concepire 7; 7
+investigatore.n d145.s039.t012 :: ricercatore 8;inquaintent 6
+rubare.v d141.s083.t004 :: colpire 8;sparare 6
+madden.n d001.s041.t001 :: compagno 6;suggerimento_indovinare 6
+risultato.n d113.s069.t006 :: conclusione 8;valutazione 7
+intelligibile.a d100.s021.t009 :: lucido 7;chiaro 7;udibile 6
+venire_via.v d116.s004.t008 :: partire 7;fuggire 6;volare 4
+rinviare.v d082.s012.t018 :: perdonare 6;determinare 6;ritardare 6
+fenomeno.n d184.s055.t016 :: processo 8;stato 7;carattere 7
+vecchio.a d182.s063.t010 :: antico 9
+prendere.v d274.s056.t000 :: ottenere 7;scegliere 6
+maggiore.a d035.s048.t006 :: grande 9
+minuto.n d065.s038.t008 :: attimo 8;secondo 7;istante 6
+essere.v d230.s019.t000 :: sapere 6;sospettare 5;capire 5;immaginare_che 3;pensare 3
+eleggere.v d221.s039.t001 :: scegliere 8;selezionare 8;nominare 7
+tenente.n d040.s004.t001 :: capo 7
+generalmente.r d031.s012.t007 :: comunemente 9
+fornire.v d053.s058.t008 :: dare 7;acquistare 7
+ammettere.v d047.s016.t009 :: riconoscere 9;accettare 9
+accettabile.a d148.s010.t019 :: adeguato 5
+fare.v d266.s037.t003 :: creare 8
+sarah.n d034.s124.t001 :: signore 7;sorella 7
+cattolico.a d102.s019.t007 :: ortodosso 7;rigoroso 5
+impedire.v d105.s036.t006 :: fermare 8;styyiere 8;evitare 7;bloccare 6
+connettere.v d000.s062.t004 :: collegare 7
+collo.n d111.s012.t009 :: gola 8;testa 7;corpo 7
+registro.n d058.s108.t000 :: fila 8;documento 8;cronaca 8;relazione 7
+andare.v d231.s020.t002 :: raggiungere 8;continuare 8;avanzare 8;viaggiare 7;procedere 7
+critica.n d155.s019.t013 :: disapprovazione 8;reclamo 7
+utilizzare.v d020.s055.t009 :: impiegare 8;applicare 7;implementare 7;operare 7
+aiuto.n d056.s031.t000 :: assistenza 9;supporto 7;rimedio 7
+entrare.v d230.s138.t001 :: apparire 7;spuntare 7;procedere 6;camminare 6;muovere 6;uscire 6;saltare 6
+scrivere.v d049.s026.t004 :: comporre 6
+tirerestare.v d076.s019.t000 :: prendere 8;strappere 8;incastrerere 7;appiccichere 7;forzare 7;appuntare 6;accarezzestare 4
+soluzione.n d071.s002.t000 :: rimedio 9;correzione 8;spiegazione 7
+essere.v d057.s017.t001 :: supporre 7
+aggrovigliare.v d051.s052.t014 :: appendere 5
+incantesimo.n d184.s039.t003 :: trancia 7;potere 7;delirio 6;daza 5
+sezione.n d168.s076.t000 :: segmento 8;zona 8;parte 8
+ignorare.v d299.s050.t000 :: trascurare 7;evitare 7;respingere 7
+molto.r d107.s088.t001 :: altamente 9
+rhode_islanders.n d157.s011.t000 :: cittadino 6;residente 6;locale 6;provincia 6
+paramagnetico.a d015.s026.t004 :: magnetico 7;forte 6
+intero.a d171.s055.t004 :: completo 8;grande 7
+l'ambizione.n d154.s008.t005 :: desiderio 8;determinazione 8
+abbattere.v d302.s074.t004 :: colpire 8;stendere 8;spingere 7
+prepararse.n d153.s019.t008 :: organizzarsi 8;ripararso 8;farso 8;sistemarso 7
+avere.v d298.s032.t001 :: possedere 8;mostrare 8;contenere 8
+amare.v d252.s020.t000 :: mantenere 7;preservare 5
+maestro.n d062.s052.t012 :: autorità 7;esperto 7;istruttore 7
+cedola.n d160.s015.t002 :: premio_metallo 7;promozione 7;sconto 6;offerta 6
+arrabbiare.v d121.s098.t008 :: amareggiare 7
+volgare.a d127.s071.t015 :: cattivo 5
+adatto.a d128.s005.t019 :: aggettivo 6
+essere_ancora_a.v d243.s027.t002 :: tornare 5;andare 5;trasferire 5
+dire.v d146.s037.t002 :: dichiarare 8;proferire 6
+significativo.a d112.s033.t024 :: importante 9
+prima.r d039.s018.t000 :: inizialmente 8
+eccessivo.a d066.s044.t011 :: elevato 8;ampio 8;estremo 8
+margherita.n d101.s004.t007 :: vegetale 7;seme 6;congedo 5
+grande.a d128.s063.t007 :: vasto 8;enorme 8
+appassionare.v d112.s025.t002 :: persuadere 7;sostenere 6
+probabilmente.r d108.s108.t002 :: apparentemente 7;concretamente 6
+divorziare.v d111.s030.t016 :: dividere 7
+articolo.n d093.s063.t019 :: rapporto 8;volume 7
+capello.n d040.s009.t003 :: testa 7;serratura 7;taglio 6
+monastico.a d100.s044.t010 :: ecclesiastico 7;religioso 5
+piacere.n d005.s017.t002 :: gioia 9;soddisfazione 8;piacevolezza 7;liberazione 5
+accompagnare.v d177.s098.t015 :: assistere 8;visitare 8;aiutare 8
+dubbio.a d090.s045.t005 :: improbabile 8;certo 8
+spirito.n d185.s061.t003 :: carattere 8;disposizione 7;atteggiamento 7
+umile.a d096.s095.t001 :: piccolo 8;delicato 7;profondo 5
+difendere.v d348.s062.t001 :: sostenere 8;mantenere 7;dichiarare 7
+essere.v d031.s081.t009 :: fare 5
+fede.n d043.s000.t014 :: credenza 8;spiritualità 8;devozione 7
+riso.n d062.s078.t001 :: guffaw 7
+ragazzo.n d140.s115.t004 :: donna 8;bambino 8;persona 7;individuo 7;damigella 6
+chiamare.v d342.s023.t004 :: designare 5
+fulmine.n d079.s124.t005 :: schiaritura 8
+dire.v d218.s018.t000 :: dichiarare 7
+fare.v d018.s106.t005 :: completare 8;realizzare 8
+dare.v d055.s019.t009 :: fornire 9;creare 9;trasmettere 9;mostrare 9
+dramma.n d026.s049.t023 :: spettacolo 7;atto 7;palco 5
+fratello.n d179.s130.t000 :: amico 7
+milligramma.n d056.s029.t000 :: niblet 7;unità 7
+produrre.v d328.s113.t002 :: creare 9;dare 8;emettere 8
+pensare.v d336.s084.t001 :: credere 8;immaginare 8;sentire 8;percepire 8;considerare 8;supporre 7;supporre_che 5;sospettare 4
+meglio.n d037.s015.t003 :: bene 7;eccellente 7;ottimale 7;multa 6;scelta 6;uguale 6;liscio 5
+entrare.v d320.s005.t002 :: venire 8;andare 7;cadere 6
+visione.n d139.s013.t013 :: prospettiva 9;occhio 8
+sentire.v d330.s001.t002 :: incontrare 7;notare 7;osservare 7;rilevare 6
+ospitare.v d118.s043.t003 :: contenere 8;cubicolare 7
+specializzazione.n d178.s053.t006 :: expertise 8
+testa.n d108.s009.t005 :: torso 7;spina_dorsale 6
+azione.n d057.s034.t010 :: riparazione 6;correzione 5;riparatore_rimedio 5
+carriera.n d071.s036.t002 :: lavoro 7;vocazione 6
+carne.n d171.s071.t009 :: pelle 8;corpo 8
+regola.n d020.s060.t012 :: guida 7;istruzione 7;pratica 6
+recupero.n d321.s080.t000 :: riparazione 8;ricarica 7
+permettere.v d268.s041.t000 :: autorizzare 8
+autore.n d052.s025.t018 :: giornalista 7;lirico_letterario 7
+passare.v d333.s048.t004 :: andare 8;lasciare 7
+bill.n d031.s009.t001 :: ragazzo 6
+porta.n d146.s049.t002 :: ingresso 8;soglia 8
+riunire.v d144.s030.t016 :: incontrare 7
+essere.v d328.s107.t001 :: rappresentare 8;significare 8
+lenire.v d175.s108.t002 :: toccare 6
+che_allontanare.v d084.s070.t007 :: desistere 6
+chiaramente_facilmente.r d143.s115.t004 :: rapidamente 8;immediatamente_chiaramente 8;immediatamente 8;efficientemente 8;bene 7
+dire.v d011.s028.t002 :: proferire 7;chiamare 6;dichiarare 6;urlare 6;esclamare 6
+postmaster_generale.n d013.s002.t000 :: esecutivo 7;capo 6
+chiamata.n d078.s013.t005 :: telefono 8;telefonata 8;contatto 7;corrispondenza 7;messaggio 7;anello 6;rene 6
+fede_constable.n d017.s090.t000 :: tutore 7;protege 7;pretendente 7;discepolo 6;confidente 6
+essere.v d322.s058.t001 :: sembrare 5
+agrimensore.n d154.s093.t002 :: amministratore 7;ufficiale 7;valutatore 6;persona 5
+pensare.v d096.s098.t003 :: considerare 8;trovare 7;supporre 7;credere 7;percepivare 7;immaginare 7;sentire 6;presumere 6;sapere 6
+normale.a d039.s076.t012 :: regolare 6
+proposito_,.n d185.s089.t001 :: preoccupazione 7;soggetto 7;numero 7
+censura.n d013.s118.t002 :: restrizione 8;soppressione 8;sorveglianza 7;segretezza 7
+proprio.r d154.s029.t017 :: quasi 8
+chiedere.v d146.s121.t001 :: richiedere 7;informare 6;sollecitare 6;implorare 6
+riassunto.n d035.s012.t004 :: sinosso 8;ricapitolazione 7
+immergerle.n d318.s091.t001 :: metterlo 8;sostituirle 7;sommergerlo 7
+stazione.n d040.s087.t001 :: base 8;struttura 8;posto 6
+basare.v d271.s038.t002 :: stabilire 7
+domanda.n d054.s029.t001 :: problema 8;argomento 7;prompt 6
+elaborare.v d238.s041.t001 :: redigere 8;organizzare 7
+tratto_superiore.n d001.s030.t008 :: tratto_inferiore 6;ecosistema_tratto 5
+meteorita.n d107.s077.t013 :: sterlina 6;struttura 6;ghiaia 6
+parte.n d183.s062.t023 :: pezzo 8;fatto 7
+cadere.v d209.s088.t001 :: rilasciare 6;gettare 6;colpire 3
+ammiratore.n d026.s067.t003 :: amato 8;patsy 8;mirror 7
+scegliere.v d053.s075.t000 :: individuare 8;determinare 8;selezionare 6
+l'umiliazione.n d140.s053.t009 :: immoralizzazione 7;malattia 7;dissonanza 6
+reputare.v d255.s079.t000 :: affermare 7;accettare 6;trovare 6;validare 6
+ora.r d133.s071.t000 :: qui 8;quindi 8;attualmente 7;oggi 7
+macchia.n d160.s049.t002 :: assortito 7;casuale 6;esterno 5;sconosciuto 3
+libbra.n d024.s050.t016 :: unità 7;metallo 7
+teoria.n d132.s059.t004 :: ipotesi 9;concetto 9;idea 9;tesi 8
+trasporto.n d053.s037.t009 :: passaggio 7;auto 7
+scoppiare.v d216.s106.t000 :: crogiolare 6;intrufolare 6;vomitare 6;buttare 5
+aspettare.v d121.s188.t004 :: immaginare 7;immagine 7;anticipare 6
+grande.a d130.s036.t005 :: enorme 9
+teatro.n d026.s023.t014 :: ambiente 7
+luogo.n d062.s009.t008 :: caso 7;posizione 7;situazione 7
+bill_brown.n d061.s049.t003 :: ragazzo 5
+diafisico_epifiseale.a d093.s055.t013 :: schiuma 5
+fruttuoso.a d123.s006.t012 :: vantaggioso 8;buono 8
+ottenere.v d123.s003.t001 :: acquisire 9;trovare 8
+fare.v d037.s006.t013 :: realizzare 8;eseguire 8
+possedere.v d106.s016.t002 :: avere 8;acquisire 8;ricevere 8;dare 8;contenere 8
+sherry.n d119.s141.t003 :: libazione 8;bevanda 8;coca 7;mancia 7;liquore 7;tequila 7
+vittoria.n d180.s030.t004 :: trionfo 8;successo 7;risultato 6
+causa.n d135.s056.t000 :: ragione 8;origine 8
+funzione.n d106.s088.t002 :: ruolo 6;compito 6;scopo 6;attività 5
+preoccupare.v d317.s083.t000 :: spaventare 7;stressare 6
+particella.n d107.s001.t004 :: materia 8;entità 7;corpo 7;articolo 7
+brunastro.a d087.s085.t007 :: oscuro 6
+cercare.v d120.s007.t008 :: tentare 8;ottenere 8;provare 8;lasciare 7
+offrire.v d241.s062.t000 :: dare 7;mostrare 7;presentare 6;conferire 6
+giocare.v d323.s111.t001 :: provare 7;azionare 6;impiegare 6;tentare 5
+cercare.v d237.s009.t000 :: chiedere 7;porre 5
+vita.n d019.s010.t003 :: ambiente 8
+essere.v d052.s055.t028 :: includere 8;contenere 8
+avere.v d268.s075.t000 :: possedere 9;acquisire 8
+idiome.n d026.s078.t005 :: concetto 7
+chiedere.v d032.s024.t004 :: proporre 7;proferire 7;richiedere 6;implorare 6;dichiarare 6;proiettare 6
+segnare.v d204.s061.t001 :: marcare 8;raschiare 7;fasciare 6
+bambino.a d141.s000.t012 :: infantile 8
+bob_burnes.n d185.s063.t000 :: giornalista 6;reporter 6
+guardare.v d108.s162.t014 :: cercare 8;provare 7;localizzare 7
+valore.n d089.s067.t013 :: qualità 8;aspetto 8;proprietà 8;carattere 8;obiettivo 8;marchio 7
+ridurre.v d307.s056.t001 :: diminuire 9;abbassare 8;omettere 7;fermare 7;sgonfiare 5
+il_animale.n d053.s002.t000 :: animale 7
+majdanek.n d087.s078.t001 :: citta 6;posto 6;deposito 6;prigione 5;prigionia 4;citt_à 3
+ufficio.n d092.s055.t002 :: facility 8;base 8
+anche.r d178.s079.t000 :: inoltre 9;quindi 8
+conforto.n d025.s113.t003 :: rifugio 8;consolazione 8;tenerezza 7;supporto 7;facilità 7
+squadra.n d063.s020.t001 :: gruppo 7
+prendere_in.v d238.s069.t002 :: ottenere 6
+vedere.v d346.s087.t004 :: visitare 9;trovare 8;incontrare 8
+difesa.n d125.s097.t003 :: copertura 7;roccaforte 6
+formulare.v d003.s042.t019 :: fare 7;comporre 7;produrre 7
+costo.n d024.s007.t017 :: spesa 9;prezzo 8;risultato 7
+convenzione.n d075.s025.t010 :: standard 7;pratica 7
+certamente.r d034.s044.t000 :: sicuramente 9;assolutamente 8;chiaramente 7
+raramente.r d012.s067.t011 :: spesso 8
+settore.n d020.s032.t005 :: sezione 8;area 8;sfera 8;parte 8;campo 7
+comportamento.n d128.s065.t009 :: condotta 9;pratica 8;atteggiamento 8;tradizione 7;modo 7;prestazione 7
+troppo.r d109.s085.t022 :: molto 6
+avere.v d013.s070.t002 :: sentire 7
+imparare.v d242.s057.t001 :: trarre 9;scoprire 9;conoscere 9;acquisire 9;ricevere 8;vedere 8
+passeggiare.v d116.s098.t000 ::  5
+dispari.a d106.s077.t005 :: irregolare 8;strano 7;insolito 7;diverso 6
+imparare.v d234.s155.t001 :: migliorare 8;praticare 8;conoscere 8;sapere 8
+warren.n d171.s057.t000 :: ragazzo 5
+vestito.n d141.s113.t002 :: abito 8
+importante.a d086.s057.t004 :: notevole 7
+musicista.n d166.s018.t010 :: strumentista 9;artista 8;performer 8
+conoscere.v d192.s044.t001 :: capire 8;ricordare 8;riconoscere 8;percepire 7;conto 6
+fissare.v d287.s029.t000 :: guardare 8;studiare 7;sbirciare 7;abbagliare 7
+aiutare.v d250.s083.t007 :: sopportare 7;evitare 6
+nuovo.a d166.s058.t011 :: moderno 8;recente 7;attuale 7
+blocco.n d058.s000.t011 :: barriera 7;superficie 4
+moglie.n d006.s018.t005 :: coniuge 8;partner 7
+possibilità.n d123.s006.t013 :: prospettiva 8;opportunità 8
+cominciare.v d139.s046.t011 :: procedere 4
+lasciare.v d103.s113.t010 :: abbandonare 8;permettere 7;tollerare 7;trascurare 6;partire 3;scartare 2
+attimo.n d111.s020.t007 :: esempio 8
+lontano.a d045.s034.t003 :: vicino 8;assente 7
+urlo.a d146.s107.t007 :: forte 4
+dipingere.v d062.s080.t001 :: creare 7;scolpire 5
+dire.v d207.s004.t005 :: dichiarare 7;essere 7;citare 6
+un'atmosfera.n d136.s003.t005 :: ambiente 7
+diverso.a d152.s012.t028 :: distinto 7
+anche.r d060.s036.t004 :: inoltre 8
+film.n d127.s001.t006 :: cinema 9;spettacolo 7;quadro 6
+estero.a d035.s034.t012 :: internazionale 8;globale 8;incontrollato 6
+essere.v d006.s013.t000 :: sembrare 5
+essere.v d191.s016.t003 :: venire 6;cadere 6;giocare 5
+essere.v d217.s028.t000 :: rappresentare 7
+mike.n d162.s045.t000 :: fratello 7;ragazzo 6;figlio 6;amico 6
+conformare_allo.v d263.s110.t001 :: adottare 8;accettare 7;seguire 7;cedere 7;abbinare 6
+pareggio.n d011.s160.t005 :: bordo 7;barriera 7;schermo 7;ostruzione 6;spinto 5;sosta 4
+carro.n d032.s076.t002 :: carrozza 8;veicolo 7;trasporto 7;cavalla 6;palco 5
+fare.v d162.s003.t020 :: tenere 6;iniziare 3
+d_'_altro_canto.n d104.s098.t000 :: a_contrario 8;prospettiva 7;parte 6
+mare.n d002.s096.t001 :: oceano 9;mare_superficie 8;corrente 8;costa 7
+l'entusiasmo.n d027.s029.t006 :: desiderio 8;aspirazione 8;aggettivo 7
+caso.n d027.s031.t001 :: volta 7
+vedere.v d333.s016.t001 :: percepire 9;realizzare 8;osservare 8;considerare 8;scoprire 8;avere 7;ottenere 7;discernere 7;contemplare 6;capire 6
+causare.v d054.s008.t004 :: portare 8;emergere 7
+labbro.n d119.s059.t008 :: rossetto 7
+aggie.n d122.s138.t000 :: cucciolo 7;gatto 5
+umano.a d095.s066.t005 :: naturale 7;personale 7;generale 6;singolo 6;sociale 6
+lodare.v d166.s027.t007 :: consigliare 7
+parlare.v d179.s055.t002 :: pronunciare 7;mormorare 7;comunicare 6;rivolgere 2
+lungo.a d093.s018.t011 :: piccolo 6;delicato 5
+ripristinare.v d044.s020.t003 :: aggiornare 8;modificare 8;ripercorrere 8
+andare.v d012.s044.t001 :: venire 9;procedere 9;arrivare 9;estendere 9;viaggiare 8;trasmettere 8
+radunare.v d128.s040.t010 :: sostenere 7;avanzare 6;spostare 6
+catena.n d168.s102.t010 :: stringa 8;legame 7;serie 7
+tagliare.v d286.s031.t001 :: ridurre 8
+compiere.v d144.s047.t016 :: finire 7
+essere.v d127.s077.t002 :: risultato 7;succedere 7;verificare 5
+carne.n d142.s091.t013 :: figura 7
+piede.n d069.s044.t002 :: misura 7
+fare.v d285.s093.t001 :: battere 8;colpire 8;roteare 7;frustare 7;schiaffeggiare 7;puntare 7;picchiare 6;rovesciare 6
+antares.n d162.s049.t000 :: stella_marina 6;astronave 6;alieno 6;marauder 6;navicella 5;nave 5
+avere.v d277.s057.t000 :: possedere 7;percepire 7;capire 7;pensare 7
+guardare.v d050.s024.t004 :: fissarlare 8;sbirciare 7;abbagliare 7
+credito.n d092.s062.t000 :: prestito 8;sicurezza 7
+superare.v d153.s070.t012 :: battere 8;prendere 8;provare 6
+manzo.n d144.s000.t002 :: bestiama 7;bestia 7
+gamba_lungo.n d182.s006.t003 :: lanky 7;tarsale 7;tagliatella 6
+variare.v d289.s035.t003 :: andare 8;raggiungere 7
+solito.a d160.s071.t000 :: regolare 8
+spazio_nullo.n d133.s009.t002 :: vuoto 8
+fiume.n d032.s099.t002 :: torrente 8;ruscello 8;affluente 8
+piuttosto.r d149.s090.t010 :: effettivamente 6
+inghiottire.v d179.s085.t006 :: parlare 7;picchiata 7;prendere 2
+margine.n d100.s011.t006 :: limite 8;periferia 6;discesa 6;estremità 5
+fare.v d310.s110.t001 :: creare 7;causare 6;costruire 4
+disturbo.n d182.s040.t015 :: condizione 8
+marsh_a.n d079.s141.t001 :: compagno 6;amico 6
+chiatta.n d103.s031.t004 :: vascello 8;nave 7;barca_vela 6
+supplemento.n d047.s050.t018 :: ausiliare 8;effetto 7;fatto 6
+cercare.v d226.s059.t000 :: tentare 7
+coinvolgimento.n d057.s003.t003 :: partecipazione 9;associazione 9;connessione 5
+petrolio.n d069.s091.t001 :: greggio 8;estratto 6
+ancora.r d031.s040.t012 :: abbastanza 5;altrettanto 4
+essere.v d333.s114.t001 :: sembrare 6;apparire 6;ritrarre 6;rappresentare 6
+averlo.n d212.s078.t002 :: farlo 9;metterlo 9
+credere.v d337.s062.t002 :: pensare 7;assumere 6
+essere.v d103.s184.t000 :: credere 7;assumere 7;immaginare 7;supporre 7;sapere 6;fidare 6;sentire 6;presumere 5
+negro.n d091.s051.t000 :: tipo 7;persona 6
+sparare.v d017.s071.t002 :: colpire 8
+informare.v d074.s055.t001 :: consigliare 7;avvisare 7
+compatibile.a d128.s046.t012 :: piacevole 8
+raddrizzare.v d019.s040.t000 :: erigere 7;piede 6;sollevare 5
+louis_thor.n d008.s091.t007 :: agitazione 6;domanda 5
+stelo.n d042.s022.t003 :: finitura 6
+chiamare.v d192.s130.t000 :: urlare 6;proferire 5;dire 5
+george.n d034.s114.t005 :: patsy 7
+dire.v d019.s005.t008 :: dichiarare 6
+anticipare_scotty.n d183.s030.t014 :: aspettarsi 6
+reazione.n d016.s028.t020 :: atteggiamento 8;risposta 6
+aspettare.v d038.s002.t001 :: restare 8;fermare 2
+trave_tetto.n d058.s006.t003 :: scandola 6
+essere.v d041.s076.t000 :: procedere 6
+bambino.n d119.s121.t000 :: progenie 8;prole 8;giovane 8
+svegliare.v d130.s081.t001 ::  6;venire 6;ottenere 6;nascere 6;mescolare 4
+ricordare.v d025.s086.t004 :: sapere 6
+esperimento.n d123.s047.t000 :: sperimentazione 8;trial 7;lavoro 7;indagine 3
+mescolare.v d322.s087.t002 :: riflettere 7
+recentemente.r d129.s041.t001 :: attualmente 8;appena 7
+inibire.v d295.s052.t000 :: bloccare 7;fermare 6;impedire 5
+angosciante.a d049.s042.t001 :: terribile 8;orribile 8;atroce 7
+miglioramento.n d073.s006.t022 :: cambiamento 8
+rendere.v d348.s064.t003 :: dichiarare 8
+ausiliario.a d086.s046.t011 :: followup 6;secondario 2
+sforzo.n d033.s047.t016 :: tentativo 8;obiettivo 7;impresa 6
+malfestato.a d078.s052.t001 :: criminale_innocente 5
+curiosità.n d050.s087.t006 :: interesse 8;preoccupazione 7;intimidazione 6
+tempo.n d158.s004.t000 :: periodo 8
+insistere.v d317.s085.t003 :: chiedere 7
+si_sedere.v d091.s000.t001 :: sorseggiare 7;rilassare 7
+mondo_frantumante.n d028.s030.t005 :: delizioso 7
+acqua.n d069.s017.t001 :: superficie 7;profondità 7;mare 4
+serbatoio.n d112.s080.t015 :: extra 7;emergenza 6;fornitura 5
+soldo_mazzo.n d018.s073.t005 :: assi 7;cancelleria 6;biglietto 6;posto 6;stazione 6;marco 5
+coinvolgimento.n d029.s029.t005 :: partecipazione 9;associazione 8
+leadership.n d039.s058.t004 :: management 8;controllo 8;autorità 7;direzione 7;comando 7
+pensione.n d000.s108.t004 :: assistenza 6
+generalmente.r d078.s029.t000 :: praticamente 8;regolarmente 7;probabilmente 7
+utopia.n d100.s051.t014 :: mondo 7;idea 5
+essere.v d033.s016.t003 :: rappresentare 8
+popolo.n d071.s041.t000 :: cittadino 8
+tormentoso.a d128.s031.t006 :: fastidioso 7;torturo 6
+tracciare.v d047.s053.t001 :: collegare 8;descrivere 8;mostrare 8
+elemento.n d133.s012.t008 :: parte 7;pezzo 5;entità 5
+inverso.a d156.s015.t001 :: diverso 6;altro 6
+imposta.n d060.s039.t005 :: valutazione 6;servizio 6;prelievo 4
+volere.v d297.s063.t000 :: richiedere 6
+palafitta.n d011.s015.t006 :: piede 7;supporto 7;base 6;ascensore 5
+imposizione.n d059.s081.t003 :: situazione 7;disposizione 7;stato 7;difetto 7;concepire_situazione 6
+di_estero.a d152.s050.t031 :: esterno 8
+osso.n d117.s024.t008 :: struttura 7;femora 5
+programma.n d024.s044.t007 :: piano 9;sistema 8;procedura 5
+tedesco.a d004.s005.t003 :: straniero 7;orientale 6
+sezionarlo.n d276.s069.t000 :: rimedio 7;esaminarlo 7;trovarlo 5;impararlo 4
+argenteo.a d117.s025.t009 :: azzurro 7;splendente 7
+proporre.v d228.s007.t000 :: contemplare 7;presentare 6;offrire 6;suggerire 5
+concedere.v d060.s025.t004 :: consentire 9;fornire 8;profferre 7
+articolo.n d102.s015.t005 :: pezzo 9;saggio 8;rapporto 8;conto 7
+usare.v d174.s002.t008 :: prendere 7;impiegare 7
+testa.n d149.s090.t013 :: volto 8;espressione 7;cranio 6
+prospettiva.n d146.s089.t002 :: possibilità 8;suggerimento 8
+premetare.v d034.s149.t007 :: stringere 7;spingere 6;cadere 6;sottolineare 5
+pianificazione.n d058.s142.t000 :: progettazione 8;concezione 8;schema 8;schematazione 8;disposizione 7;metodo 7;sforzo 7
+ammettere.v d023.s169.t003 :: sostenere 6;rivelare 6;dichiarare 6;confermare 6;dire 6;giustificare_bastare 5;rilasciare 4
+più.r d005.s059.t003 :: molto 8;inoltre 7
+l'alto.n d057.s019.t004 :: cresta 7;punta_alto 7;punta 7
+sosta.n d220.s067.t000 :: pausa 6;resto 6;stazione 6;break 6;deposito 6
+ricevere.v d118.s036.t004 :: ottenere 9;acquisire 8
+il_signore_lincoln.n d130.s151.t000 :: yoyng 6
+rapporto.n d017.s060.t000 :: documento 8;storia 7;conto 7;dettaglio 3
+pensare.v d343.s065.t001 :: credere 8;concludere 6;percepire 6;presumere 5
+edificio.n d079.s181.t006 :: struttura 9;luogo 7;piatto-pack 7;proprietà 7;appartamento_buio 4
+trattare.v d297.s044.t002 :: governare 5;gestire 5;agire 4
+intricato.a d052.s055.t022 :: intrigante 8
+indicare.v d136.s059.t006 :: doppiare 6
+doloroso.a d150.s080.t017 :: orribile 8;intenso 8
+rendere.v d128.s028.t009 :: fornire 8
+professione.n d148.s049.t015 :: settore 8;carriera 8;lavoro 7
+dare.v d308.s064.t002 :: mostrare 9;permettere 9;fornire 9;rilasciare 8;estendere 8
+facile.a d112.s042.t011 :: semplice 8;veloce 7
+vecchio.a d101.s046.t007 :: antico 9;debole 5
+convinzione.n d157.s066.t009 :: valutazione 7;conclusione 7;sentenza 6
+forte.a d035.s059.t002 :: aggressivo 8;entusiasmante 8
+momento.n d041.s026.t000 :: periodo 8;giorno 8;fase 7;arrangiamento 2
+uomo.n d103.s093.t001 :: gruppo 8;persona 8;individuo 7;truppa 7;personaggio 7
+figura.n d104.s039.t000 :: illustrazione 8;rappresentazione 7;sketch 7;visivo 7;grafico 6;tabella 5
+controllo.n d072.s047.t003 :: regolamento 8;comando 7;guida 7;gestione 6;orientamento 6;manico 6
+intatto.a d156.s002.t013 :: costante 7;funzionale 5
+interscambio.n d159.s003.t001 :: interconnessione 7
+studio.n d014.s078.t013 :: formazione 8;ricerca 7
+vedere.v d297.s022.t001 ::  7;rendere 7;comprendere 7
+sconcertante.v d020.s062.t012 :: agitare 6
+taglio.n d169.s046.t012 :: trascinamento 7;brezza 7;dextration 7
+accompagnare.v d128.s031.t001 :: associare 6;contribuire 5
+avere.v d148.s049.t012 :: tenere 8
+qualità_spirituale.n d029.s004.t007 :: attributo 8;aspetto 8;carattere 8
+avere.v d144.s077.t006 :: richiedere 7
+superiore.a d012.s055.t005 :: supremo 8;grande 7;principale 2
+sera.n d155.s041.t008 :: mezzanotte 7;crepuscolo 7;tramonto 7
+sonno.n d082.s039.t002 :: sonnolenza 8;riposo 7
+in_effetto.n d048.s020.t000 :: realtà 7
+guardare.v d008.s042.t001 :: studiare 7;esaminare 7;osservare 6
+infuriante.v d150.s090.t000 :: aggravante 8;lacrimonare 6
+gravemente.r d118.s046.t003 :: ampiamente 8
+spirito.n d075.s006.t008 :: aspetto 6;considerazione 5;sensazione 5
+moderno.a d100.s068.t008 :: attuale 7
+onorato.v d321.s090.t000 :: riconoscere 6
+affermare.v d076.s077.t000 :: sostenere 7;riferire 7;dichiarare 7;mantenere 6;dichiarare_che 4
+mondo.n d142.s100.t008 :: terra 7;comunità 7;ambiente 6;gruppo 6
+greca.a d139.s050.t019 :: strutturale 6
+adatto.a d123.s008.t005 :: buono 8;giusto 7;corretto 6
+essere.v d076.s128.t006 :: fare 7
+dipartimento_sanità_stato.n d137.s029.t007 :: amministrazione 7
+testa.n d108.s142.t002 :: capelluto 6;capello 6;calvizia 6;cranio 5
+rapidamente.r d061.s095.t002 :: velocemente 8;presto 8;diretto 7
+dotare.v d123.s016.t003 :: aderire 6;racchiudere 6
+avere.v d148.s003.t004 :: offrire 9;includere 9;dare 9;fornire 9
+permeare.v d318.s076.t001 :: includere 8;confezionare 6;coprire 6;impacchettare 3
+articolo.n d044.s042.t017 :: materiale 8;competitivo_fornitura 8
+sempre.r d162.s075.t002 :: perennemente 8;ricorrentemente 6;instancabilmente 6;incessantemente 6;sempre_solo 4
+enorme.a d167.s045.t015 :: grande 9
+indagine_competenza.n d033.s054.t008 :: valutazione 8;ispezione 8;esame 7
+principio.n d010.s030.t026 :: criterio 7;standard 7;regola 4
+l'uso.n d138.s099.t008 :: accessibilità 8;scopo 7;divertimento_manutenzione 7
+marrone.a d161.s052.t003 :: brunastro 8;scuro 8
+relegare.v d176.s097.t009 :: bandire 6;sciogliere 4
+iniziare.v d290.s010.t002 :: originare 7;lancio 7
+partire.v d281.s044.t006 :: procedere 7;scendere 6
+esperto.n d067.s018.t001 :: professionista 7;studioso 7;intenditore 7;veterano 7;leader 6;autorità 6;maven 5
+saloon.n d061.s006.t004 :: pub 8
+altro.a d045.s036.t013 :: diverso 7
+presto.r d147.s011.t008 :: rapidamente 8;immediatamente 8
+rapido.a d152.s018.t000 :: in_rapido 6
+wieland_wagner.n d176.s015.t005 :: musicista 6;teorema 6
+cane.n d022.s006.t000 :: segugio 7;felino 7;branco 7;famiglia 7;cucciolo 7;canino 6
+tardi.r d005.s015.t008 :: poi 9
+importanza.n d019.s152.t003 :: significato 9;importazione 8;rilevanza 8;valore 7;peso 7
+polmonario.a d081.s037.t003 :: muso 7
+seguire.v d029.s027.t000 :: continuare 8
+sorprendere.v d194.s028.t003 :: allarmiare 8;scioccare 5
+competizione.n d170.s026.t003 :: gara 8;battaglia 7;via 7
+nuovo.a d013.s114.t005 :: moderno 8;fresco 6
+combattimento.n d091.s047.t013 :: affare 5
+sapere.v d070.s168.t001 :: pensare 7;percepire 7;capire 7;considerare 6
+spostare.v d180.s064.t005 :: raggiungere 7
+serrato.a d178.s045.t011 :: gomito 5
+entrare.v d034.s122.t002 :: andare 8;procedere 8;camminare 7;muovere 7
+finalmente.r d121.s128.t000 :: completamente 8;appena 7;momentaneamente 7;recentemente 7;poi 7;abbastanza 7
+disciplina.n d173.s025.t005 :: controllo 7
+leggere.v d099.s009.t003 :: studiare 7;vedere 7;persuadere 7;esaminare 6;meditare 6;ispezionare 6;contemplare 6
+imparare.v d027.s038.t011 :: studiare 7;scoprire 6
+lavoro.n d033.s076.t010 :: occupazione 9;carriera 9
+prednisone.n d168.s018.t000 :: farmaco 7;pillola 6
+molto.r d089.s024.t003 :: estremamente 9;abbastanza 9;altamente 9;davvero 8;intensamente 8
+proiettare.v d039.s053.t000 :: costruire 8;creare 8;raggiungere 8;scrivere 7;formulare 7;determinare 7;fare 7;mirare 7;disegnare 7;pianificare 6
+finanziario.a d073.s059.t009 :: fiscale 9;monetario 8;patrimoniale 7
+attraversare.v d197.s014.t000 :: si_mescolare 7;incontrare 6
+colpo.n d130.s051.t001 :: contrattempo 7;incidente 7;evento 7;sciopero 6
+sollevare.v d054.s007.t010 :: fare 8;presentare 7;rivendicare 7;richiedere 7
+disegnare.v d010.s015.t014 :: implicare 7;vedere 7
+gradualmente.r d011.s161.t000 :: incrementalemente 8;lentamente 7;metodicamente 7;sottilmente 7
+generale_della.n d158.s088.t008 :: leader 7
+artistico.a d029.s019.t000 :: creativo 8
+considerazione.n d103.s196.t004 :: vista 7;interesse 7;nota 7;osservazione 6
+schiena.n d170.s098.t004 :: posteriore 8;retro 7;fine 7;rovescio 6
+significare.v d124.s136.t004 :: aspettare 6;descrivere 6
+usare.v d012.s038.t001 :: impiegare 7;scegliere 6
+protestante.n d059.s037.t006 :: discepolo 6;illuminazione 6
+essere.v d190.s053.t002 :: apparire 6;trovare 6
+utilizzare.v d073.s016.t006 :: utile 7;utilizzare_essere 7;impiegare 7;applicare 5
+mettere.v d287.s040.t000 :: spingere 8;buttare 8;gettare 8;colpire 8;sbattere 7
+stato.n d293.s031.t004 :: amministrazione 7;autorità 7;provincia 7;legislatore 7
+miele.n d008.s004.t002 :: mandarino 7;dolce 7;vellutato 7;lussureggiante_caldo 6;inebriato 5;susina_bollente 4;amare 3
+giorno.n d078.s049.t009 :: periodo 8;età. 7;epoca 6
+sviluppare.v d105.s096.t003 :: formare 8;sorgere 8;iniziare 7;riprodurre 7
+medico.n d163.s062.t007 :: guaritore 8;dispositivo_medico 7;dispositivo 2
+indicare.v d060.s051.t001 :: mostrare 8;dichiarare 8;registrare 5
+venire.v d052.s035.t005 :: arrivare 9;verificare 7;accadere 5;sviluppare 5
+millimetro.n d136.s047.t005 :: penny 7;plastica 7
+scivoloso.a d051.s024.t028 :: scivolare 7
+tomas.n d079.s059.t002 :: mate 6;compagno 6;buddy 6;marcel 6;tom 6;tommy 6;amico 6
+illustrare.v d131.s038.t003 :: mostrare 9;ritrarre 8;presentare 8;dichiarare 7;nominare 5
+sprecare.v d045.s065.t020 :: perdere 8;fare 7;utilizzare 7
+avere.v d214.s007.t001 :: vedere 8;acquisire 7
+essere.v d079.s108.t008 :: rimanere 7
+essere.v d263.s118.t000 :: rappresentare 7;raffigurare 7;ritrarre 7;mostrare 7
+aspettare.v d053.s022.t004 :: ritardare 8;fermare 8;tenere 7;sedere 7;riposare 6
+milizia.n d117.s115.t002 :: esercito 8;compagnia 7
+dichiarare.v d240.s073.t000 :: considerare 9;vedere 9;pensare 9;determinare 9;mostrare 7;credere 6
+battere.v d087.s012.t007 :: frustare 7
+diminuire.v d107.s083.t009 :: ridurre 7
+migliorare.v d315.s070.t001 :: fissare 7
+transaminasi_ossaloacetico.n d168.s029.t007 :: quantità 6
+numero.n d112.s068.t009 :: quantità 8;moltitudine 8;varietà 8;sacco 7
+possibilità.n d110.s133.t012 :: opportunità 8;probabilità 8;occasione 7
+confessarso.n d175.s010.t007 :: comunione 8
+suscitare.v d215.s118.t002 :: iniziare 6;sorgere 6
+chiedere.v d050.s101.t000 :: gridare 3
+rientranza_rosso.n d122.s116.t007 :: rientranza 8;graffio 7;segno 7
+resistere.v d016.s005.t005 :: rifiutare 8;evitare 8;negare 7;fallire 7;passare 6;declinare 4
+dalla_secondo_guerra.n d035.s002.t019 :: presenza 4
+ora.r d017.s091.t001 :: oggi 8;qui 7;immediatamente 7;diretto 6
+vivere.v d205.s071.t001 :: esistere 7;prevalere 5
+razziate.v d077.s048.t002 :: derubare 8;prendere 7;afferrare 7;scorrere 6
+osservare.v d338.s108.t000 :: vedere 8
+vivere.v d074.s091.t005 ::  7;sopportare 7;soffrire 7
+lago.n d105.s004.t009 :: serbatoio 8;raccolta 7;recipiente 6;pozzo 3
+l'ultimo.a d011.s014.t007 :: vicino 6
+esercito_salvezza.n d096.s009.t009 :: carità 7
+dire.v d297.s024.t000 :: dichiarare 7
+river_road.n d140.s046.t015 :: fiume_via 8;strada 8;affluente 7
+lista.n d055.s012.t012 :: catalogo 8;tabella 7
+avere.v d252.s078.t000 :: possedere 9;mantenere 8
+thomas_griffith.n d090.s025.t002 :: uomo 6;giornalista 6
+preservare.v d242.s013.t005 :: mantenere 9;salvaguardare 8
+corna.n d051.s036.t004 :: becco 6;appendice 6;punta 6
+formazione.n d128.s066.t003 :: scolarizzazione 8;insegnamento 7
+indicare.v d193.s040.t002 :: mostrare 7;implicare 7
+oro.n d138.s068.t015 :: metallo 7;sterling 7
+pregare.v d215.s111.t000 :: chiedere 7;supplicare 7
+oersted.n d005.s045.t001 :: straniero 6;dente 5
+fresco.a d068.s013.t027 :: caldo 4
+pulizia.n d058.s113.t000 :: mantenimento 5;addomesticato 3
+compagno.n d175.s048.t006 :: accompagnamento 8;amico 8;compagnia 7
+riscaldare.v d296.s011.t003 :: cuocere 7;scegliere 5
+trasformazione.n d072.s036.t003 :: alterazione 9;cambiamento 8;metamorfosi 8
+analisi.n d066.s054.t004 :: valutazione 8;studio 8;esame 8;ispezione 8;controllo 6;indagine 5
+fare.v d008.s147.t002 :: finire 7;compiere 7;soddisfare 6;sistemare 5
+dislocazione.n d073.s060.t015 :: dissenso 7;divergenza 7
+essere.v d097.s032.t006 :: sembrare 2
+dimostrare.v d130.s043.t009 :: verificare 8;stabilire 8;mostrare 7
+negro.a d149.s052.t017 :: nero 7;razziale 6;marrone 6
+impatto.n d107.s049.t006 :: influenza 7;compromissione 7
+fa.r d116.s119.t004 :: prima 9;dopo 7
+spegnere.v d269.s127.t001 :: chiudere 8;disconnettere 7;districare 6;smontare 6
+bastone.n d099.s086.t002 :: palo 6;frutto 6;gadget 6;sottaceto 6;piccone 5
+livello.n d148.s029.t016 :: posizione 7;grado 7
+breve.a d183.s043.t002 :: piccolo 8;minore 7;squallido 5
+adattare.v d026.s073.t003 :: trasformare 8;cambiare 8
+j._w._buchanan.n d137.s058.t006 :: uomo 6;padre 5
+legale.a d109.s006.t009 :: legalistico 9;legislativo 8
+freddo.a d008.s151.t002 :: coccolo 6
+dovere.n d050.s154.t009 :: compito 8;servizio 8;responsabilità 8;incarico 8
+dato.n d029.s052.t001 :: informazione 8;statistica 8;testo 7;quantità 7;ammontare 6
+tecnica.n d036.s003.t010 :: metodo 8;modo 8;moda 8;approccio 8
+livello.n d129.s039.t001 :: fase 8;grado 7;aereo 7;categoria 7
+situazione.n d071.s023.t010 :: condizione 9;occorrenza 8;stato 7
+tornare.v d192.s086.t002 :: raggiungere 9;arrivare 8;andare 8
+fare.v d133.s001.t000 :: realizzare 9;ottenere 9
+uncorcere.v d125.s031.t021 :: rilasciare 6;lanciare 6
+eichmann.n d054.s059.t001 :: nazista 6;mann 5
+essere.v d013.s053.t001 :: dimostrare 6;rivelare 6
+prendere.v d149.s033.t007 :: passare 7;offrire 7;ricevere 5
+sepoltura.n d099.s038.t011 :: entomb 8;internamento 7
+piano.n d076.s158.t014 :: livello 8;terra 6
+denominazione.n d010.s004.t005 :: chiesa 8;organizzazione 7;gruppo 7;sinagoga 7;organismo 6
+madre.n d119.s059.t006 :: mamma 9;genitore 6
+costruire.v d278.s060.t001 :: realizzare 9;modellare 9;inventare 7
+selvaggiamente.r d023.s051.t004 :: bruscamente 7
+epitomizzare.v d255.s054.t001 :: incarnare 6;emblema 6;rappresentare 5;dimostrare 3
+parco_parco.n d138.s042.t005 :: natura 7;naturale 7;terra 7;gioco 5;giardiniere_gioco 3
+riconoscere.v d167.s025.t002 :: realizzare 9;percepare 9;distinguere 8; 8
+evitare.v d291.s063.t001 :: respintare 7
+altro_canto.n d184.s053.t002 :: vista 6;aspetto 5;parte 5;contrario 5;prospettiva 3
+credere.v d129.s046.t015 :: assumere 7;accettare 7;pensare 6
+alto_fedele_à.n d089.s051.t001 :: unmar 7;livello 7;capacità 7;aggettivo 6;levatura 6;proprietà 6
+decisione.n d140.s121.t001 :: scelta 9;selezione 7;giudizio 7;conclusione 7;risoluzione 5
+dichiarare.v d020.s064.t003 :: spiegare 8;esprimere 7;fornire 7;elaborare 7;illustrare 6;menzionare 6;dire 6;comunicare 6
+condizione.n d023.s148.t004 :: stato 8;forma 8
+figura.n d145.s040.t000 :: illustrazione 7;grafico 7;il_schizzio 4;il_tabella 3
+rendere.v d256.s044.t003 :: portare 7
+parte.n d184.s025.t005 :: pezzo 8;sezione 7;segmento 7
+disegno_legge.n d137.s007.t000 :: atto 8;dichiarazione 6
+uso.n d168.s000.t013 :: implementazione 8;lavoro 8;pratica 7;funzionamento 7;somministrazione_clinico 4
+essere.v d160.s081.t000 :: supporre 6;concludere 6;immaginare 5;determinare 5;presumere 5;sembrare 5
+tritare.v d318.s108.t000 :: scolpire 7;separare 7;dividere 7;rimuovere 7
+sognare.v d167.s026.t000 :: pensare 7;vedere 6
+vittoria.n d185.s042.t011 :: successo 8;realizzazione 7;risultato 4
+garstung.n d136.s001.t019 :: agitazione 6;poppa 6
+chiuso.a d085.s017.t006 :: sciolto 7
+marginalmente.r d152.s067.t003 :: malapena 6;quasi 6
+sentire.v d243.s127.t001 :: percepire 8;sperimentare 8;notare 8;rilevare 6
+grande.a d062.s086.t001 :: fantastico 8;distinto 8;eccezionale 8;eccellente 7;formidabile 7
+studiare.v d137.s074.t001 :: acquisire 7;educare 7;prendere 7;imparare 6
+rapidamente.r d119.s124.t009 :: vivace 7
+altro.a d040.s101.t001 :: nuovo 8;diverso 7
+livello.n d056.s008.t010 :: grado 8;stadio 2
+accettare.v d344.s092.t005 :: prendere 9;dare 8
+preoccupazione.n d038.s119.t007 :: ansia 9
+consegnare.v d225.s064.t002 :: comunicare 7;dare 6;dichiarare 5
+luce.n d107.s073.t008 :: luminescenza 7;luminosità 7;radianza 7;lucentezza 7
+preparare.v d310.s010.t002 :: mettere 7
+barocettore.n d095.s026.t004 :: ottico 8;recettore 4
+membro.n d006.s047.t008 :: parte 8;rappresentante 8;individuo 7;persona 7
+predicare.v d102.s076.t021 :: parlare 7;liberare 6
+pericolo.n d049.s051.t005 :: rischio 8
+lancaster_arms.n d019.s001.t004 :: pub 7;lodge 7;bistrot 6;azienda 6;posto 6
+sventolare.v d226.s131.t000 :: dare 6;segnalare 5;estendere 4
+cosa.n d020.s033.t005 :: materia 8;particella 8;segno 7;numero 6;dettaglio 6;mazzo 5;poco 3
+scetticismo.n d065.s025.t004 :: cinismo 8;incredulità 7;dubbio 7
+parco.n d138.s035.t003 :: conservare 8;terreno 7;parco_gioco 7
+ricavo.n d071.s014.t005 :: reddito 8;contante 8;fondo 7;capitale 7;valuta 7;risorsa 6
+principale.a d010.s019.t008 :: importante 8;grande 8;enorme 8;influente 6;primario 5
+europeo.n d170.s019.t001 :: straniero 7;persona 7;nazionale 7;società 7;cittadino 7
+gente.n d014.s043.t000 :: pubblico 8
+interferire.v d308.s056.t000 :: ostacolare 7;intrecciare 6;influenzare 5;superare 5;attraversare 4
+matrimonio.n d067.s049.t005 :: rapporto 8
+sobborgo.n d030.s076.t014 :: comunità 7;ghetto 7;esterno 6
+vecchio.a d127.s045.t012 :: primitivo 8
+scoppiare.v d219.s003.t001 :: esplodere 9;iniziare 8;bollire 7;insabbiare 6
+fornire.v d187.s084.t000 :: creare 7;conferire 7;dare 7;scrivere 7;distribuire 6
+texas_orientale.n d164.s014.t003 :: est 6;nordest 6
+svolgere.v d086.s044.t007 :: organizzare 8;condurre 8;fare 7
+visivo.a d156.s007.t006 :: immagine 8;visibile 7
+essere.v d287.s056.t000 :: rappresentare 6
+piccolo.a d051.s022.t014 :: grande 8
+coroner.n d008.s181.t000 :: medico 6
+molto.r d102.s019.t014 :: estremamente 9;poco 8;totalmente 8
+riguardante.v d161.s009.t024 :: parlare 6;considerare 6;includere 5
+dire.v d143.s060.t001 :: chiamare 7;gridare 6;pronunciare 6
+essere.v d011.s107.t004 :: uscirare 7;girare 7;agirare 7;apparire 6;venire 6
+mercato.n d182.s090.t011 :: capitale 6
+essere.v d147.s074.t000 :: supporre 6;mandare 6
+dare.v d171.s059.t006 :: permettere 9;fornire 8;rilasciare 7
+mostrare.v d025.s092.t002 ::  7;mantenere 7;esprimere 7;conservare 6
+schiena.n d175.s117.t011 :: coda 7;fianco 7;pelliccia 4
+madre.n d028.s121.t004 :: genitore 7
+diventare.v d022.s014.t010 :: sviluppare 8;essere 8
+rivedere.v d115.s070.t002 :: leggere 7;criticare 7;valutare 6;scrivere 6;ispezionare 6
+colpo.n d120.s071.t007 :: gioco 8;prova 8;tentativo 8;occasione 8;sforzo 7
+nuovo.a d086.s015.t016 :: entrante 8
+accusare.v d343.s057.t000 :: chiamare 6
+lanciare.v d208.s080.t001 :: mettere 8;proporre 7;provare 4
+dire.v d165.s068.t007 :: dichiarare 8;affermare 8
+giorno.n d025.s024.t004 :: periodo 7
+naso.n d124.s115.t006 :: muso 8;occhio 7;visage 6
+intervistato.n d046.s020.t000 :: interrogatore 9;indagine 7;inqualinte 7
+stupore.n d077.s085.t005 :: soggezione 9;meraviglia 9;sorpresa 8;shock 8
+fine.n d127.s022.t014 :: finale 8;conclusione 8
+suono.n d041.s063.t003 :: rumore 8;eco 8;vibrazione 7;passo 7;riverbero 7;sintonia 6
+colore.n d135.s066.t002 :: ombra 8;tinta 8;tonalità 8;spettro 5
+lavorare.v d013.s117.t006 :: lottare 7;tentare 7;avventurare 7;provare 6
+probabilità.n d131.s009.t005 :: prospettiva 8
+schizzo.n d173.s065.t000 :: artistico 6
+un'attività.n d020.s075.t009 :: impresa 8;sforzo 7
+imposta.n d060.s049.t003 :: valutazione 6
+limitare.v d225.s053.t000 :: ridurre 9;dividere 7;fermare 7
+mettere.v d079.s099.t001 :: lasciare 8;situare 8;determinare 7;imporre 7
+non_discriminazione.n d090.s002.t001 :: non_giudizio 8;esclusione 7;disparità 7
+pulcino.n d153.s014.t005 :: incubatoio 8;pollama 8;razza 7
+avere.v d074.s076.t003 :: ricevere 6; 6
+buio.n d017.s076.t004 :: cieco 7;foschia 7;tinta 6;ombra 6;isolamento 5
+jessica.n d161.s044.t002 :: signore 7;ragazzo 7
+carriera.n d078.s034.t003 :: impiego 8;lavoro 7;vocazione 6
+essere.v d119.s085.t008 :: apparire 4;procedere 4;uscire 3
+sottolineare.v d333.s064.t004 :: esprimere 8;evidenziare 8;rivelare 7;mostrare 7;focalizzare 6
+anno.n d148.s000.t003 :: periodo 8;termine 7;intervallo 6
+denuncia.n d168.s017.t009 :: problema 8
+allentare.v d199.s068.t005 :: rilasciare 7;perdere 7
+tono.n d037.s076.t001 :: atmosfera 8;aspetto 8;aria 8
+aspettare.v d290.s062.t007 :: credere 7
+cambiamento.n d064.s035.t002 :: alterazione 9;modifica 9;trasformazione 8;interruttore 8
+calore_di_condensazione.n d145.s013.t000 :: condensa 8;potenza 7;forza 7;fonte 7;energia 7
+materiale.n d136.s018.t021 :: materia 8;sostanza 8
+l'aria.n d032.s010.t000 :: atmosfera 9;vento 8;ardente_brezza 8;draft 8;gas 7;esplosione 4
+sapere.v d263.s026.t000 :: percepire 6;pensare 6;vedere 6;capire 5
+livello.n d012.s062.t012 :: grado 8;rango 7;posizione 7
+essere.v d000.s000.t001 :: durare 7
+covare.v d143.s068.t002 :: pensare 6;deprimere 5;riflettere 4
+e'significativo.a d014.s036.t001 :: notevole 9;importante 8;enorme 7;grande 7
+proprio.r d144.s027.t006 :: solo 8
+iniziare.v d132.s043.t006 ::  7;lanciare 7
+r._mole_e_f..n d129.s055.t001 :: set 5;droga 5;tipo 5
+positivo.a d013.s113.t007 :: incoraggiante 8;speranzoso 8;grande 7;meraviglioso 7
+odioso.a d021.s058.t008 :: cattivo 5
+sfruttare.v d160.s000.t023 :: prendere 6;vedere 5
+fermare.v d103.s010.t000 :: smettere 8;finire 7;interrompere 7
+effetto.n d004.s064.t001 :: risultato 8;esito 8;conclusione 7;fine 7;progetto 6;fattore 1
+scrivere.v d066.s067.t003 :: scarabocchiare 7;marchiare 6;determinare 6
+rendere.v d050.s129.t002 :: portare 8;concludere 7;mandare 7;gettare 6
+cambiare.v d274.s008.t000 :: modificare 8;trasformare 7
+dimenticare.v d008.s025.t000 :: trascurare 7;fallire 6;lasciare 6;respingere 6
+lungo.a d087.s020.t007 :: terribile 6;lontano 6
+stesso.a d082.s001.t003 :: simile 8;equivalente 7
+riversare.v d050.s093.t000 :: correre 7;muovere 6;sgorgere 5
+considerare.v d238.s043.t001 :: accettare 6
+rimbalzo_giovanile.n d101.s088.t002 :: adolescenziale 9;infantile 8;immaturo 6
+pollico.n d129.s055.t005 :: misura 7;nautico 7
+riconciliare.v d028.s007.t007 :: affrontare 8;risolvere 7;riparare 7
+posta.n d052.s012.t017 :: distacco 6;posto 5;incarico_ufficio 4
+indicare.v d048.s038.t002 :: esprimere 8;mostrare 8;dare 8;dichiarare 8;menzionare 7
+conversazione.n d028.s011.t001 :: intervista 8;discorso 7
+rendere.v d282.s073.t001 :: apparire 6;essere 6
+california.n d118.s068.t002 :: stato 6;lunare 5;lk 5
+recuperare.v d349.s019.t004 :: ricostruire 9;ricaricare 8;rilassare 7
+venire.v d119.s112.t002 :: arrivare 7;apparire 7;unire 6;fermare 6
+primo.a d127.s016.t006 :: iniziale 8
+camminare.v d270.s044.t001 :: procedere 6;amble 6;scendere 4
+acqua.n d024.s004.t015 :: idratazione 7;h2o 6
+patrone.n d007.s028.t003 :: cliente 8;persona 7
+supposizione.n d037.s032.t001 :: ipotesi 8;percezione 8;convinzione 8;vista 7
+mensa.n d000.s029.t001 :: cafa 9
+tenere_d'occhio.v d079.s016.t001 :: guardare 7;osservare 7;custodire 5
+interesse.n d005.s050.t001 :: preoccupazione 9;passione 9;focus 8;ricerca 8;intento 8;attrazione 8
+attraversare.v d126.s064.t012 :: spostare 7;dividere 7;aprire 7
+investimento.n d039.s048.t008 :: capitale 8;responsabilità 6;attività 4
+poirot.n d037.s061.t000 :: detectiva 6
+racconto.n d176.s091.t006 :: storia 9;narrazione 8
+coronato.a d182.s040.t006 :: dente 7;cadente 3
+raccomandare.v d213.s080.t000 :: opinare 7;concludere 7;assumere 7;assistere 7
+attirare.v d258.s001.t001 :: influenzare 8;indurre 8;convincere 8;riportare 8;spingere 7;costringere 5
+descrivere.v d173.s008.t009 :: raffigurare 6;chiamare 5
+spendere.v d001.s093.t001 :: fare 7;guadagnare 7;diminuire 5
+azione.n d057.s080.t013 :: condotta 8;attività 8;movimento 7;impegno 7
+seduta.n d085.s073.t001 :: passeggiata 6;situazione 6
+particolare.a d125.s042.t002 :: specifico 9;notevole 9;speciale 9;grande 8;netto 8;alto 7
+notare.v d019.s035.t009 :: vedere 8;capire 7
+condurre.v d184.s072.t002 :: guidare 9;portare 9;mostrare 8;indirizzare 8
+considerare.v d271.s019.t000 :: pensare 8;assumere 7;credere 5
+industriale.a d033.s042.t004 :: industrializzato 8
+porta.n d130.s079.t002 :: entrata 7;cancello 6;soglia_scala 6;ingresso 5
+colorare.v d043.s047.t002 :: illustrare 6
+suggestivo.a d068.s000.t007 :: piacevole 8;delicato 8;pacifico 7;bello 5;idilliaco 5
+utilizzare.v d046.s058.t017 :: impiegare 8;accettare 6
+che_istituire.v d148.s077.t005 :: stabilire 8;iniziare 8;creare 7
+pensare.v d213.s014.t001 :: credere 8;sentire 7;immaginare 4
+conclusione.n d132.s074.t002 :: fine 7;risultato 7;finale 7;punto 7;insediamento 6
+tensione.n d145.s025.t002 :: forza 6
+dimostrare.v d227.s072.t001 :: mostrare 9;illustrare 9;stabilire 8;affermare 8
+si_dimettere.v d246.s086.t001 :: licenziare 7;ritirare 6
+uscire.v d021.s063.t002 :: ottenere 9;fuggire 8;spostare 8;rimuovere 7;tirare 7;strappare 7;sollevare 7;prendere 7;spengere 5
+possibilità.n d003.s021.t007 :: prospettiva 9
+privare.v d284.s102.t000 :: permettere 6
+francese.a d111.s004.t018 :: fermentato 4
+brillante.a d004.s021.t001 :: notevole 8;impressionante 8;grande 8;eccezionale 7;formidabile 6
+affrontare.v d122.s141.t002 :: incontrare 7;osservare 7;guardare 6;vedere 6
+dire.v d091.s131.t008 :: ordinare 6
+vedere.v d062.s042.t009 :: notare 8;osservare 8
+alimentare.v d006.s089.t011 :: vivo 6
+molto.r d011.s000.t009 :: altamente 7;ulteriormente 7
+non.r d166.s048.t004 :: assolutamente 8;male 6
+ebreo.a d014.s036.t009 :: judo 6
+notare.v d306.s088.t000 :: osservare 8;vedere 7
+separare.v d094.s015.t003 :: dividere 9;compartimentare 8;rendere 7
+sponsorizzare.v d014.s027.t007 :: organizzare 7;dare 7
+dire.v d097.s037.t001 :: esprimere 7;dichiarare 6;proferire 6;pronunciare 6;proclamare 6
+analista.n d112.s060.t003 :: valutatore 7;giudice 5
+l'ebreo.n d013.s043.t000 :: ebreo 7;uomo 7;signore 6;giudeo 6;tizio 6;ebraico_discendenza 5
+interferire.v d248.s041.t001 :: disgregare 6;contraddire 6
+separare.v d041.s043.t005 :: dividere 7;secedere 7
+guaina.n d145.s014.t011 :: copertura 7;film 7;barriera 7;strato 6;schermo 4
+sperare.v d216.s133.t001 :: pregare 8;aspettare 6;anticipare_che 4
+cruciale.a d010.s021.t000 :: importante 9;significativo 9;centrale 9;urgente 8;alto 7
+raccogliere.v d293.s063.t003 :: crescere 7;sollevare 5
+ottone.n d141.s087.t000 :: metallo 9;cenere 5
+osservare.v d087.s174.t004 :: vedere 9;notare 8;percepire 8;rilevare 7
+adottare.v d286.s047.t005 :: prendere 8;accettare 5
+segretamente.r d178.s000.t005 :: ovviamente 8
+percorrere.v d270.s096.t000 :: arrivare 8;andare 8;continuare 8;procedere 7;avanzare 7;camminare 7
+clinica.n d095.s039.t014 :: stato 6;funzionamento 6
+ampio.a d178.s037.t004 :: grande 8;aperto 7;generoso 7;espansivo 7
+alimentare.v d056.s020.t003 :: fornire 7;dare 7;nutrire 7;prendere 7;mangiare 7
+essere_conforme_allo.v d207.s004.t004 :: accettare 6;eseguire 5;detenere 2
+fango.n d085.s029.t023 :: muffa 5;miscela 1
+fase.n d123.s046.t002 :: stato 8;stadio 7;ciclo 7
+rigidamente.r d051.s054.t013 :: liberamente 7
+tecnologia.n d039.s004.t005 :: automazione 8;processo 7;automa 7
+cambiamento.n d001.s068.t010 :: trasformazione 8;alterazione 8;modifica 8
+raggiungere.v d286.s048.t001 :: finire 7
+tempo.n d124.s000.t001 :: intervallo 7;estensione 7;durata 7;termine 7;tratto 7;periodo 7;stadio 6
+fumare.v d279.s082.t000 :: sbuffare 7;inalare 6;combinare 5
+crimine.n d054.s052.t035 :: violazione 8;atto 8;comportamento 8
+avere.v d268.s024.t003 :: prendere 8;controllare 7
+tempo.n d118.s069.t004 :: clima 9;ambiente 7
+acqua.n d069.s027.t003 :: liquido 8;primavera 7;marea 7;h2o 6
+clima.n d041.s019.t000 :: atmosfera 8;impostazione 7;termine 6
+indirizzo.n d085.s063.t000 :: nome 7;etichetta 7;memo 7;promemoria 7;posta 7;cartoleria 7;postazione 6;biglietto 5
+dare.v d147.s080.t007 :: fornire 7;elargire 7;ammettere 6;permettere 6;concedere 5
+birdire.v d349.s056.t000 :: colpire 8;segnare 5
+amare.v d027.s031.t006 :: preferire 8;tardare 7;scegliere 2
+anche.r d060.s017.t007 :: ugualmente 8;inoltre 8
+comprendere.v d321.s070.t000 :: contenere 8;si_comporre 6
+cesare.v d132.s044.t002 :: incontrare 8;fare 7;concludere 7;colpire 7;segnare 7;chiudere 7;fine 7;terminare 6;finire 6
+pensare.v d070.s114.t000 :: credere 8;capire 8;sospettare 7
+considerare.v d131.s063.t000 :: chiedere 7;osservare 7;suggerire 6;contemplare 6;pesare 5;proporre 5
+cassetta_lettera.n d076.s132.t001 :: lettera 7;bando 7;timbro_postale 6;palo 5;messaggio 4
+essere.v d228.s002.t002 :: apparire 6
+coinvolgente.a d028.s030.t002 :: accattivante 7;intrigante 7;emozionante 7;piacevole 6;divertente 6
+dillire.v d023.s009.t000 :: informare 9;informi 8;consigliare 8;dirigere 8;chiamalare 8;chiedire 8
+stand_recensione.n d166.s057.t009 :: valutazione 7;esame 7;analisi 7;sondaggio 7;ispezione 6
+periodo.n d043.s009.t002 :: intervallo 8;fase 7
+fare.v d312.s049.t000 :: eseguire 7;realizzare 7;succedere 7
+scorrere.v d223.s066.t001 :: funzionare 7;mescolare 7;circolare 6
+servo.n d037.s011.t004 :: subordinare 7;custode 7;distributore 7;gestione 6
+piccolo.a d002.s117.t004 :: inferiore 7;confinato 7
+psicologo.n d030.s010.t002 :: psichiatra 9;terapeuta 8;psicoterapeuta 7
+informazione.n d129.s024.t001 :: fatto 8;dettaglio 7
+improvvisamente.r d067.s082.t014 :: bruscamente 8
+prescrivere.v d080.s019.t007 :: determinare 7;stabilire 6;fornire 6;autorizzare 5;dare 5;nominare 4
+iniziare.v d109.s000.t001 :: procedere 8;lanciare 8
+essere.v d196.s010.t000 :: rappresentare 8;apparire 7;ostacolare 7;trasmettere 6
+mangiare.v d254.s066.t001 :: consumare 9
+lavoratore.n d000.s078.t006 :: operaio 9;dipendente 6
+raggruppamento.n d128.s053.t006 :: gruppo 8;associazione 8;comunità 8;persona 7;società 7
+essere.v d104.s022.t003 :: dimostrare 7;rivelare 7;produrre 6
+splendido.a d006.s022.t001 :: decente 7;bello 5
+scrivere.v d102.s021.t002 :: pennare 9;comporre 9;dare 8;esprimere 8
+avere.v d273.s089.t000 :: sperimentare 6
+inoltre.r d000.s098.t000 :: corrispondentemente 9;solo 7
+convocare.v d306.s033.t000 :: dirigere 7;mostrare 7; 7;mandare 6;ordinare 5
+anche.r d054.s038.t005 :: ancora 7
+rendere.v d316.s040.t001 :: portare 9;causare 8;creare 8
+penetrare.v d047.s044.t003 :: arrivare 8;accedere 8;andare 8;spaziare 5
+letterario.a d112.s028.t010 :: librario 4
+meraviglioso.a d124.s107.t000 :: eccellente 9;fantastico 9;stupefacente 9;bello 9;notevole 8
+minimo.a d073.s047.t016 :: minore 6;basso 6
+essere.v d314.s025.t001 :: contenere 7;tenere 6
+dedicare.v d054.s049.t000 :: dare 9;concentrare 9
+cominciare.v d008.s117.t000 :: alere 6;venire 6;sviluppare 5;succedere 4
+trovare.v d233.s003.t000 :: supposto 7;determinare 6;sospettare 6;ipotizzare 2
+inghilterra.n d037.s063.t005 :: terra 6;sovranità 6
+avere.v d031.s057.t008 ::  6;richiedere 5
+servizio.n d128.s033.t010 :: aiuto 8;sostegno 8;lavoro 7;dovere_benessere 3
+cosa.n d124.s081.t001 :: evento 8;questione 7;occasione 7;affare 2
+limitato.a d050.s076.t001 :: piccolo 8;minore 8;insignificante 6
+capanna.n d146.s020.t004 :: struttura 8
+fermare.v d308.s039.t000 ::  7;permettere 7
+anno.n d083.s051.t002 :: periodo 8;stagione 7;termine 7;intervallo 6
+accusare.v d155.s027.t001 :: proporre 7;implicare 7;mantenere 7;trovare 7;stabilire 7
+c'erare.v d323.s092.t001 :: essere 7
+avere.v d129.s061.t001 :: ottenere 6;possedere 5
+secolo.n d014.s018.t006 :: età 8;periodo 8;epoca 6
+glicerina.n d172.s016.t010 :: chimico 5
+spesso.r d053.s021.t000 :: generalmente 9;regolarmente 5
+personalizzato.v d204.s045.t000 :: marcare 6;scrivere 6
+minore.a d109.s020.t001 :: piccolo 9;inferiore 7
+essere.v d134.s014.t012 :: diventare 6
+avere.v d008.s071.t018 :: pensare_che 4
+tirare.v d161.s062.t001 :: sostenere 7;aiutare 7;incoraggiare 5
+ragionevole.a d065.s084.t005 :: rispettoso 7;simpatico 7;amichevole 7;indulgente 7;buono 7;congeniale 7
+tenere.v d335.s002.t001 :: impartire 7
+dire.v d098.s021.t005 :: proferire 6;dichiarare 6
+immediatamente.r d055.s082.t013 :: istantaneamente 6
+abbracciare.v d285.s031.t001 :: aggrappare 7;tenere 6;stringere 5;baciare 5
+tirare.v d122.s049.t002 :: afferrare 7;lanciare 6;girare 6
+fortunato.a d170.s021.t003 :: meraviglioso 7;buono 7
+problema.n d085.s020.t005 :: materia 8;preoccupazione 8;ostacolo 7
+intendere.v d230.s044.t001 :: implicare 7;dire 7;proporre 6;esprimo 6;fare_notare 5;suggerire 4
+applicare.v d139.s040.t003 :: mettere 8;assegnare 7
+sullo_strada.n d045.s026.t001 :: viaggio 6;auto 6
+episodio.n d004.s098.t001 :: incidente 8;evento 7;avvenimento 7
+adeguatamente.r d151.s073.t018 :: sufficientemente 9
+supplicare.v d119.s153.t002 :: chiedere 6;perdonare 6;consigliare 6;sottomettere 6;permettere 6;arrendere 6
+successivo.a d061.s012.t000 :: seguente 8
+così.r d133.s043.t000 :: quindi 9;infatti 8;singolarmente 7
+facilmente.r d094.s096.t007 :: difficilmente 7
+larghezza.n d007.s115.t001 :: distanza 7
+essere.v d195.s074.t000 :: sembrare 5
+meritare.v d072.s045.t003 :: richiedere 8;desiderare 7;prestare 7
+arma.n d151.s051.t000 :: armamento 9;strumento 5
+perdita.n d176.s048.t007 :: diminuzione 8;contrattempo 7;crisi 7;costo 7
+goulpere.v d122.s171.t006 :: ingoiare 7;prendere 7;inalare 6;spengere 6
+l'arresto.n d074.s009.t003 :: custodia 8;prigione 8;evocazione 6
+ostacolare.v d048.s059.t043 :: fermare 6
+sforzo.n d099.s054.t000 :: tentativo 8;lavoro 8;avventura 7
+stimolo.n d095.s045.t019 :: emozione 7;effetto 6
+liquore.n d174.s037.t008 :: alcol 9;birra 8
+aspettare.v d243.s103.t000 :: pausa 6;rimanere 6;sedere 6;piede 6;fermare 4
+philadelphia.n d016.s028.t019 :: città 6
+costruire_come.v d159.s071.t015 :: generare 5
+aiutare.v d255.s069.t001 :: sostenere 7;rafforzare 7
+bagno.n d110.s045.t002 :: ensuite 7
+sovietico.a d082.s045.t001 :: comunista 8
+vita.n d176.s085.t009 :: esistenza 8;esperienza 7;giorno 7;permanenza 6
+memorizzare.v d250.s060.t001 :: decifrare 7;ricordare 7;imparare 7
+premio.n d080.s018.t018 :: numero 6
+più.r d102.s038.t021 :: inoltre 7
+ribellare.v d231.s010.t005 :: negare 7;credere 6;opporre 5
+mettere.v d067.s043.t001 :: proporre 8;lasciare 8;situare 7;fare 7;stabilire 7;organizzare 7
+ragazzo.n d184.s033.t014 :: signore 7;donna 7
+a_filo.n d058.s002.t005 :: in_prossimità 4
+madre.n d059.s021.t005 :: donna 7;genitore 4
+tacciare.v d175.s094.t010 :: contraddire 6;fingere 6;comprendere 5
+iniziare.v d054.s061.t005 :: originare 7
+dire.v d283.s133.t001 :: credere 8;considerare 8;supporre 8;descrivere 8;pensare 7;immaginare 7;nome 6
+ballerino.n d170.s045.t000 :: performer 7;artista 7;eseguire 7;skater 6;coreografo 6;il_gara 4
+romanticismo.n d112.s049.t003 :: sentimento 7;attrazione 6
+organizzare.v d324.s003.t002 :: raggruppare 8;pianificare 7
+convinzione.n d014.s014.t020 :: ipotesi 6
+avere.v d317.s057.t004 :: mantenere 6;ritrarre 6
+nuovo.a d142.s014.t013 :: attuale 5
+stanza.n d141.s036.t000 :: spazio 9;posto 8;zona 7;distesa 7;campo 7;portata 7
+riflesso.v d003.s033.t001 :: mostrare 8
+osservare.v d115.s018.t002 :: citare 8
+rivolta.n d043.s045.t007 :: ascensione 7;ribellione 5
+iniziare.v d338.s027.t005 :: lanciare 7
+soddisfare.v d240.s020.t004 :: desiderare 7;portare 7
+sinfonia.n d089.s080.t005 :: musica 8;melodia 7;musica_sinfonia 5
+consegnare.v d198.s037.t000 :: passare 7;trasmettere 7;dare 7;offrire 7;rilasciare 7;estendere 7
+considerevole.a d127.s067.t017 :: grande 8;sostanziale 7
+firmatario.n d009.s086.t000 :: richiedente 8;pubblico_ministero 7;promotore 6;rappresentante 6;progettista 4
+frankie.n d070.s202.t001 :: collega 6;nipote 5
+numero.n d106.s066.t002 :: quantità 8
+scoraggiare.v d013.s117.t001 :: ostacolare 8;negare 8;rescindere 8;interrompere 7;resdentare 6
+radar.n d081.s080.t006 :: spot 6
+grinfia.n d008.s088.t002 :: presa 8;stiva 7;tuck 7;frizione 7;broncio 7;riposo 6;chiusura 1
+l'opposizione.n d157.s053.t000 :: ostilità 8;disaccordo 8;contraddizione 7
+figurina.n d139.s038.t000 :: figura 8;statua 7
+herman.n d045.s064.t003 :: ragazzo 6
+ultimo.a d083.s012.t000 :: finale 9;successivo 8
+troppo.r d067.s080.t006 :: estremamente 7;molto 7;altamente 7;inoltre 7;davvero 6
+del_medical.n d081.s059.t006 :: capo 5
+selezione.n d036.s085.t002 :: scelta 7;raccolta 3
+corrispondere.v d246.s050.t000 ::  6;rappresentare 6;trasmettere 6;rivelare 6;riecheggiare 5
+piccolo.a d106.s044.t005 :: comprimere 6;inconsistente 4
+governare.v d337.s040.t002 :: guidare 6;dirigere 6;gestire 6;maneggiare 6
+considerare.v d012.s023.t000 :: assumere 9;vedere 6
+avere_luogo.n d151.s067.t004 :: origine_avere 6
+densità.n d094.s097.t009 :: massa 8;quantità 8;rapporto 7
+comunicazione.n d077.s014.t004 :: messaggio 8;allarme 8;posto 8;missiva 8;cartoleria 8;stazione 7
+entrare.v d195.s035.t000 :: arrivare 7
+anno.n d148.s010.t014 :: periodo 8;semestro 8
+il_monroe.n d071.s060.t004 :: sovrano 7;sovranit 6;aggettivo 6
+pauling.n d001.s045.t000 :: figura 6;nota 6;ipotesi 6;sospetto 2
+riferire.v d307.s015.t000 :: immaginare 6;suggerire 6;nome 5;presumere 5;sospettare 4;proporre 3;pensare 3
+soffrire.v d064.s028.t005 :: riprodurre 7
+petto.n d108.s090.t006 :: seno 7;corpo 7;cuore 7
+uomo.n d077.s002.t004 :: individuo 7;persona 7;personaggio 7;maschio 6
+giardino.n d140.s059.t004 :: cespuglio 8;flora 8;tespico 5
+figura.n d107.s070.t005 :: quantità 8;numero 8;totale 7;calcolo 6
+cuore.n d143.s041.t013 :: disposizione 7;personaggio 7
+volere.v d287.s128.t000 :: aspettare 6;servire 6;apprezzare 6;esigere 6
+avere.v d255.s066.t001 :: possedere 6
+mostrare.v d058.s069.t005 :: illustrare 8;vedere 7
+l'orecchio.n d089.s049.t003 :: vista 7;senso 7;cervello 6;intelletto 6
+lasciare.v d192.s083.t000 :: tenere 8;fare 8;mettere 7;tollerare 7;permettere 6
+di_fronte.n d210.s065.t000 :: incontro 8
+rilasciare.v d204.s020.t004 :: permettere 8;consentire 7;consegnare 7;posizionare 7
+essere.v d263.s052.t001 :: ottenere 7;diventare 6;ricevere 6;guadagnare 5
+spostare.v d018.s059.t007 :: andare 6;passare 6
+tasso.n d093.s063.t014 :: ritmo 8;quantità 7;grado 7
+causa.n d082.s019.t003 :: ragione 9;spiegazione 7
+acido.n d147.s106.t004 :: sostanza 7
+primo.a d126.s027.t003 :: iniziale 8
+girare.v d117.s078.t002 :: cambiare 8;andare 8;si_trasformare 6
+valore.n d129.s032.t003 :: importanza 8;rilevanza 8
+fuggire.v d297.s042.t000 :: passare 7;lasciare 7
+mancanza.n d131.s080.t007 :: assenza 9;carenza 8;omissione 7
+problema.n d158.s056.t004 :: preoccupazione 8;ostacolo 8;complicazione 8;casino 8;dilemma 7
+saltare.v d192.s120.t000 :: scappare 6
+controllo.n d101.s033.t009 :: comando 9;gestione 9;guida 7;maniglia 7;diretto 7
+volta.n d068.s118.t000 :: caso 8;momento 8;occasione 7;istante 7;periodo 6;intervallo 6;fase 6
+cadere.v d185.s040.t005 :: scendere 9;andare 8;diminuire 8
+più.r d128.s087.t005 :: molto 8
+comprare.v d176.s081.t002 :: acquistare 8;acquisire 8;ottenere 7
+fratello.n d103.s195.t006 :: relazione 7;parente 7
+tempo.n d153.s076.t004 :: esempio 8;momento 8;istante 6
+suscitare.v d213.s030.t000 :: risvegliare 7;sconvolgere 7;colpire 7;causare 6;stimolare 6;spingere 6;toccare 6
+sparare.v d182.s096.t001 :: colpire 8;puntare 7;lumacare 5
+espressamente.r d160.s006.t012 :: diretto 7;completamente 6;specificamente 5
+incontrare.v d167.s050.t017 :: vedere 8;trovare 8
+immaginare.v d164.s006.t011 :: pensare 6;fare 6
+campione.n d180.s041.t019 :: numerone 6
+metà.n d044.s071.t005 :: inizio 7
+solo.r d053.s062.t003 :: esclusivamente 8
+acreage.n d053.s054.t002 :: terreno 9;proprietà 8;lotto 8
+scotty.n d183.s086.t000 :: amico 7;mate 6;coorte 6
+essere.v d087.s058.t002 :: rappresentare 7;assomigliare 7;apparire 5
+notte.n d030.s084.t003 :: mezzanotte 8;crepuscolare 8
+fatto.n d095.s031.t006 :: verità 9
+fiancheggiare.v d061.s067.t001 :: attraversare 7;toccare 7;circondare 6;colpire 6
+lavoro_implicare.n d284.s017.t006 :: compito 7;operazione 7;impresa 3
+lavorare_sulla.v d307.s090.t000 :: studiare 7;usare 7;guarire 7;riparare 6;iniziare 6;domare 6;operare 6;costruire 5
+essere.v d130.s015.t000 :: restare 3;rappresentare 1
+mente.n d052.s017.t005 :: coscienza 8;intelletto 7;intelligenza 7
+fare.v d328.s005.t000 :: eseguire 9;completare 9;realizzare 8;affrontare 8
+essere.v d280.s105.t000 :: affermare 6;significare 6;assumere 5;dire 5;esprimere 5;trasmettere 5
+pubblico.n d127.s049.t008 :: spettatore 8;popolo 7;gruppo 6
+essere.v d059.s044.t006 :: rappresentare 7;tenere 6;sostenere 5
+scultura.n d109.s038.t002 :: intaglio 9;figura 8;pezzo 8
+l'applicazione.n d327.s002.t001 :: uso 8;esprimerso 7;tradurla 7;attuazione 6
+fare.v d305.s043.t004 :: farlare 8
+servizio.n d000.s010.t005 :: supporto 8;aiuto 8;lavoro 7;commercio 7;assistenza 7;uso 3
+animale.n d095.s064.t006 :: bestiama 8;creatura 7
+avere.v d064.s000.t007 :: tenere 8;portare 6
+jack_fisher.n d126.s002.t003 :: pitch 7;starter 6;rotazione 6
+riferire.v d163.s054.t002 :: informare 7;dichiarare 5
+considerare.v d329.s094.t002 :: tenere 6;vedere 6
+diventare.v d173.s047.t009 :: formare 7;crescere 7
+tribunale_essere.n d151.s014.t016 :: assemblea 6;comitato 6
+si_lamentare.v d030.s056.t005 :: urlare 7;dire 7;dichiarare 6
+diventare.v d239.s074.t000 :: essere 8;avanzare 5
+frequentare.v d275.s030.t000 :: studiare 7
+ricordare.v d264.s016.t002 :: pensare 5
+offerta.n d092.s028.t006 :: piazzola 6
+proprietà_fisico.n d104.s010.t001 :: caratteristica 7;qualità 7
+tasso.n d066.s040.t001 :: scala 8;volume 7;quantità 7;grado 7;numero 7;entità 7;totale 7
+enzimio.n d056.s063.t003 :: chimica 7;enantiomer 7;sostanza 4
+scena.n d127.s051.t000 :: parte 8;atto 7;ambientazione 7
+straccio.n d004.s014.t005 :: abbigliamento 7;camicia 6;vestito 6
+chiedere.v d272.s049.t000 :: proporre 7;richiedere 7;raccomandare 7
+essere.v d351.s039.t001 :: fare 6
+dire.v d258.s100.t001 :: dichiarare 9;tornare 7
+studente.n d112.s038.t005 :: allievo 8;subordinato 6;sostituto 6
+forse.r d023.s180.t000 :: probabilmente 6
+utilità.n d020.s083.t007 :: efficacia 9;utilizzo 8;funzione 8
+fare.v d243.s115.t003 :: prendere 8;avviare 8;condurre 8;avere 8
+fare.v d323.s066.t001 :: generare 8;causare 8;produrre 8;portare 7
+possibilità.n d127.s075.t006 :: prospettiva 8;opportunità 7
+e_andare.v d160.s075.t006 :: cadere 8;procedere 7;scivolare 7;viaggiare 5
+prendere.v d019.s099.t003 :: ottenere 8;accettare 8;ricevere 8;acquisire 8
+seguire.v d299.s110.t000 :: prendere 8;portare 8;eseguire 7;accettare 7;ascoltare 7;guidare 6
+hotel.n d017.s027.t009 :: motel 9;locanda 7
+fermandonare.v d011.s043.t000 :: desistere 6;crollare 5;lasciare 5
+gomito.n d011.s159.t003 :: fine 7;svolta 7
+pensare.v d209.s030.t001 :: considerare 8;contemplare 8;appesantire 7;pesare 6
+usare.v d179.s024.t008 :: impiegare 9;prendere 9
+proiezione.n d152.s066.t011 :: presentazione 8;esposizione 7;liberazione 7;mostra 7;trasmissione 5
+casa.n d064.s009.t003 :: residenza 9;dimora 9;posto 7;terra 7
+groenlandia.n d002.s068.t005 :: terra 6;landmass 6;paese 6;nazione 6
+sembrare.v d043.s016.t005 :: tentare 6;fare 5;rendere 3
+avanzato.a d049.s036.t019 :: grande 7;veloce 6;migliorare 5
+essere.v d099.s139.t002 :: pensare 7;percepire 7;realizzare 7;vedere 7;sentire 6;apparire 6;osservare 2
+logica.n d142.s012.t001 :: ragionamento 9;ragione 8
+vincere.v d240.s043.t000 :: notare 7;realizzare 7;ottenere 7;segnare 7;assicurare 6
+ragazzo.n d027.s012.t003 :: maschio 7
+nuovo.a d122.s080.t010 :: recente 8;moderno 7;fresco 2
+discutere.v d178.s057.t001 :: coprire 8;citare 8;prendere 8;elaborare 7
+pagare.v d080.s001.t036 :: dare 6;terminare 6
+uovo.n d110.s099.t013 :: prodotto 6;brodo 6;formaggio_pollame 4
+mancanza.n d083.s075.t003 :: carenza 9;assenza 9;scarsità 8
+coniglio.n d165.s025.t001 :: animale 8;randagio 7;creatura 5
+appena.r d103.s050.t006 :: leggermente 7
+troppo.r d173.s067.t001 :: inoltre 9
+sessione.n d066.s075.t005 :: studio 7;formazione 7
+anatomia.n d085.s028.t008 :: struttura 8;design 7;articolazione 7
+terminare.v d257.s050.t001 :: concludere 9;fermare 8
+lavoro_dipendente.n d027.s042.t006 :: lavoratore 8;subordinare 7;allievo 6
+minacciare.v d341.s064.t001 :: criticare 6
+fornire.v d152.s006.t003 :: dare 9;creare 9;mostrare 8
+significato.n d086.s066.t006 :: importazione 8;peso 8;considerazione 8
+moderno.a d012.s035.t003 :: attuale 8;recente 7
+capo.n d096.s017.t006 :: titolo_titolare 7
+fulmine.n d122.s158.t003 :: illuminazione 7;sole 7;tempesta 6;scintilla 6;luccichio 6;lucentezza 6
+galena_e.n d049.s057.t008 :: western 7;nebraska 6
+palla.n d120.s072.t000 :: sfera 6;pellet 6
+soddisfare_il.v d318.s108.t004 :: abbinare 7;determinare 7;regolare 6
+sorprendente.a d153.s024.t005 :: notevole 8;grande 8
+mostruoso.a d165.s072.t009 :: orribile_innaturale 5
+radiazione.n d136.s034.t012 :: forza 6;potenza 6
+lavoro.n d033.s067.t022 :: impiego 9;carriera 8
+doppio.a d058.s034.t001 :: triplo 8
+scolpire.v d274.s042.t001 :: realizzare 6;intagliare 2
+orecchio.n d050.s016.t010 :: testa 6;sensazione 5;tatto 4
+uguale.a d107.s077.t009 :: simile 7
+spettatore.n d028.s069.t006 :: intervistatore 7;aggressore 7
+ritenere.v d194.s002.t001 :: percepare_che 8;concludere 7
+lat.n d178.s043.t005 :: torace_spalla 2
+tipo.n d067.s080.t002 :: varietà 8;categoria 6
+molestare.v d194.s081.t006 :: stuprare 7
+feed_back.n d145.s029.t000 :: ritorno 7;consistenza 6;riproduzione 5
+professional_golfers.n d120.s056.t004 :: golfista 8;atleta 6
+succedere.v d226.s075.t001 :: svolgere 7
+ricevere.v d063.s040.t000 :: ottenere 7;guadagnare 6
+giocare.v d185.s062.t011 :: eseguire 8;sfidare 8;partecipare 8
+avere.v d010.s006.t011 :: mancare 8;possedere 8
+germantown.n d122.s081.t003 :: città 6
+indicare.v d067.s073.t007 :: illustrare 7;mostrare 6;essere 6;corroborare 6
+fissare.v d251.s048.t001 :: attaccare 7;legare 7
+autorità.n d013.s023.t003 :: istituzione 8;funzionario 8;potere 7;amministrazione 7;direzione 7
+scuola.n d027.s008.t003 :: istruzione 8;apprendimento 6;formazione 6;scuola_a 5
+prendere_via.v d191.s057.t002 :: bandire 6;saltare 6;prendere 5
+salivare.a d095.s062.t006 :: orale 8;dentale 7;esofilo 6
+brakke.n d172.s076.t011 :: medico 6
+soffrivare.v d144.s002.t001 :: intraprendere 7;prendere 6
+condurre.v d041.s056.t002 :: portare 8;mostrare 7;dirigere 7
+immaginare.v d111.s014.t015 :: pensare 8;concepire 8;ragionare 7
+bambino.n d119.s084.t000 :: prole 8;ragazzo 7;covata 7
+gioco.n d063.s009.t008 :: competizione 6;concorso 6;attività 6
+motto.n d006.s091.t027 :: slogan 8;emblema 7;posizione 5
+incontrare.v d007.s065.t014 :: vedere 7;trovare 5
+rotolarla.n d179.s039.t004 :: metterla 8;sbatterla 7
+dedurre.v d139.s004.t004 :: determinare 8;vedere 7;pensare 7;trovare 7
+raccogliere.v d000.s112.t001 :: ottenere 8;prendere 8;guadagnare 8;fare 8;ricevere 7
+spartiacqua.n d138.s051.t002 :: bacino 8;riserva 7;ambiente 6
+essere.v d314.s039.t001 :: cadere 6;arrivare 6; 6;discendere 6
+arrivare.v d077.s054.t007 :: calare 6
+cercare.v d002.s110.t008 :: sforzare 7
+dire.v d173.s066.t018 :: affermare 7
+lentiggine.n d146.s033.t020 :: striscio 6;finale 5;fusione 4
+richiamare.v d116.s099.t002 :: riprendere 7
+nazione.n d027.s019.t002 :: paese 9;stato 8;terra 7;area 7
+comprare.v d037.s072.t006 :: acquistare 8;acquisire 8;ottenere 7;prendere 7;dare 7;procurare 4
+aumentare.v d294.s004.t001 :: migliorare 7
+annunciare.v d013.s071.t004 :: proclamare 7;dichiarare 7;introdurre 7;mostrare 7
+western_union.n d083.s037.t002 :: comunicazione 6;posta 6;es. 5
+legno.n d156.s022.t022 :: legname 7;struttura 5
+credere.v d014.s036.t006 :: pensare 8;sentire 8
+grande_numero.n d112.s078.t002 :: quantità 8;sacco 5
+unire.v d204.s121.t001 :: incontrare 9;attaccare 9;fissare 9;legare 8
+primo.a d088.s008.t004 :: introduttivo 7
+riempire.v d205.s045.t005 :: agire 7
+swadesh.n d042.s009.t000 :: toilette 6;struttura 6
+campagna.n d059.s058.t002 :: impulso 8;movimento 8;spinto 8;corsa 7;crociata 7;offensiva 6
+secolo.n d112.s054.t006 :: epoca 9;periodo 9
+contrappunto.n d026.s049.t015 :: melodia 7;nota 7;tono 7
+valore.n d106.s087.t003 :: equivalente 7;valutazione 7;qualità 6;grado 6;importo 5
+imporre.v d160.s081.t003 :: porre 8;forza 8;richiedere 6
+lasciare.v d268.s100.t000 :: permettere 9;avere 8;tollerare 8
+mondo.n d029.s061.t010 :: ambiente 8
+duramente.r d023.s121.t004 :: intensamente 8;fermamente 8
+chiaramente.r d075.s013.t000 :: decisamente 8;assolutamente 8
+equipaggio.n d074.s055.t003 :: team 7;gruppo 7;truppa 6
+scala.n d046.s030.t011 :: misura 9;registro 7;diagramma 6
+marciapiede.n d149.s049.t008 :: sentiero 7;terrazza 7;piede 7;terra 7
+l'abitare.v d084.s080.t009 :: vestire 8
+abbastanza.r d081.s070.t009 :: piuttosto 9;moderatamente 9
+periodo.n d058.s077.t006 :: intervallo 8;momento 8;minuto 7;occasione 7;palcoscenico 6
+presentare.v d160.s071.t015 :: mostrare 7
+jessica.n d161.s006.t018 :: signore 6;toilette 6
+conflitto.n d010.s038.t010 :: problema 8;disparità 7;contraddizione 7
+posto.n d053.s073.t017 :: situazione 8
+pancia.n d097.s175.t002 :: spalla 7;bacino 7;bacino_madre 5
+simile.a d157.s076.t014 :: equivalente 9;pari 7
+dr._linden.n d067.s094.t001 :: medico 7;bevitore 7;chirurgo 7
+autoscaricante.a d056.s106.t003 :: autoscarico 8;autocaricante 4
+fare.v d199.s091.t002 :: compiere 9;fornire 8;ottenere 7;dare 7;mostrare 3
+appena.r d118.s044.t008 :: già 8;immediatamente 8;qui 8;attualmente 8;momentaneamente 7
+periodo.n d180.s070.t009 :: intervallo 7;termine 7;ciclo 6;giorno 6;tappa 5
+pressione.n d169.s076.t008 :: forza 7;stress 6;tensione 6;barometro 6;compressione 6
+gioia.n d067.s001.t010 :: felicità 9;estasi 8;appagamento 7;facilità 7;rilascio 6
+pulsante.n d032.s003.t009 :: movimento 5
+cadere_indietro.v d061.s076.t001 :: fuggire 7;bandire 6;ritirare 5
+compagna.n d065.s016.t001 :: compagno 7;amico 7;omologo 7;aiutante 7
+più.r d139.s062.t011 :: sempre 8
+mollie_il_montone.n d146.s076.t000 :: creatura 6;bestiama 6;animale 6
+lavorare_sull.v d078.s087.t003 :: produrre 8;pianificare 7;costruire 7;avviare 7
+rifiutare.v d240.s087.t000 :: colpire 6;disapprovare 6;rinnegare 6;congedare 6;barattare 6;declinare 5
+consigliare.v d218.s041.t000 :: incaricare 8;dire 8
+paese.n d052.s057.t009 :: terra 9;regione 8;zona 8;ambiente 8;campagna 7
+psichiatro.n d167.s005.t001 :: medico 7
+cesare.v d339.s033.t000 :: persistere 5;vedere 4
+labbro.n d103.s050.t005 :: lipcap 7;bocca 7;orifizio 6;baciatore 6;labium 6;organo 6
+troppo.r d150.s057.t009 :: estremamente 7;molto 6
+interesse.n d092.s054.t009 :: rata 6
+cast.n d101.s082.t000 :: performer 8;spettacolo 7;ensemble 7;palcoscenico 7;accordo 7;società 7;gruppo 6;numero 6;teatrale 5
+fare.v d054.s046.t002 :: tentare 6
+essere.v d006.s078.t003 :: assomigliare 6;apparire 6
+mg.n d172.s039.t005 :: equivalente 7;misura 7
+costringere.v d337.s035.t003 :: privilegiato 7;permettere 7;fare 6;ordinare 6
+schedula.n d093.s064.t019 :: piano 8
+mano.n d168.s022.t010 :: unghia 7;piede 6
+visitare.v d306.s102.t000 :: venire 7;vedere 6;fermare 5
+essere.v d033.s062.t009 :: diventare 8;venire 7
+supporto.n d113.s050.t011 :: sostanza 8;fabbricazione 7
+punteggio.n d046.s053.t005 :: valore 8;segno 8;totale 7;medio 7;punto 7;ammontare_medio 4
+bestiama.n d077.s100.t009 :: vitello 8;animale 8
+implicazione.n d114.s053.t001 :: significato 7;spiegazione 7;guida 6;fatto 6;quadro 6
+giorno.n d118.s031.t007 :: istante 7;periodo 7
+studio.n d020.s045.t009 :: indagine 9;esame 8;ispezione 8
+incorporare.v d056.s046.t002 :: porre 7;includere 7;mettere 7;dare 7;fornire 6
+fare.v d216.s058.t001 :: creare 8;offrire 8;lanciare 7;proporre 7;dichiarare 7;pronunciare 7
+riassumere.v d334.s045.t001 :: raffigurare 7;ricapitolare 7
+assaporare.v d040.s044.t002 :: rilassare 6;prendere 5;godere 4;riprendere 4
+dire.v d288.s062.t002 :: dichiarare 7;proclamare 7
+essere_essere.v d243.s048.t000 :: attendere 6
+tubo_capillare.n d123.s031.t008 :: gas 7;liquido 7
+essere.v d260.s082.t000 :: assomigliare 7;rappresentare 7;ritrarre 6
+sergente.n d040.s080.t005 :: agente 8;soldato 8;truppa 7
+riprodurre.v d303.s058.t000 :: fissare 7;risolvere 6;raggiungere 6;creare 6;fare 6
+casa.n d183.s034.t006 :: ritorno 7
+dimenticare.v d078.s048.t011 :: perdere 7;abbandonare 6;licenziare 5;lasciare 1
+colono.n d077.s047.t004 :: persona 7;allevatore 7;locale 7
+visitare.v d220.s005.t000 :: ispezionare 8;vedere 8;chiamare 7;frequentare 2
+conviviale.a d019.s007.t003 :: easygoing 7;piacevole 7;delizioso 7;entusiasta 7
+cattivo.a d109.s007.t004 :: fallo 7
+nuovo.a d052.s032.t006 :: fresco 7;comune 7
+condizione.n d105.s017.t004 :: ambiente 9;situazione 8;stato 8
+essere.v d337.s001.t000 :: rappresentare 6
+vittima.n d101.s094.t008 :: opportunità 5
+parabrezza.n d068.s011.t007 :: top 6
+risparmio.n d138.s083.t004 :: riduzione 8;diminuzione 8;aiuto 7;risorsa 5
+essere.v d312.s069.t002 :: ricordare 6
+malattia.n d104.s099.t002 :: infezione 9;virus 8;germe 7;bug 7
+finire.v d101.s048.t005 :: completare 7;concludere 7;compiere 6;fermare 6;fare 5
+ebraico.a d132.s047.t020 :: religioso 7;orientale 7
+rendere.v d244.s032.t000 :: omaggiare 6;commemorare 6
+supportare.v d313.s072.t001 :: sostenere 8;puntellare 6
+dovere.v d188.s015.t000 :: rimanere 8
+dire.v d121.s110.t003 :: dichiarare 7;proferire 7;concludere 6;essere 6;esprimere 6
+più.r d027.s013.t007 :: altamente 7;ulteriormente 7;bene 6
+discrezione.n d080.s013.t001 :: scelta 7;selezione 6;opzione 6
+vivendo.v d242.s060.t002 :: vedere 7;passare 6;attraversare 6
+produrre.v d181.s041.t004 :: realizzare 8;creare 8
+trasferimento.n d105.s083.t005 :: trasporto 9;movimento 8;passaggio 8;scambio 6;spostamento 4
+ammettere.v d157.s014.t005 :: accettare 8;consentire 7;vedere 7;concedere 7
+usare.v d265.s076.t001 :: impiegare 9;adottare 8
+primo.a d124.s121.t004 :: buono 6
+rango_inferiore.n d012.s044.t006 :: inferiore_grado_vicino 5
+sociale.a d005.s049.t007 :: aristocratico 8;borghese 7
+naturalmente.r d118.s091.t002 :: assolutamente 7;certamente 6
+homer.n d180.s061.t017 :: basehit 7
+così.r d144.s022.t002 :: molto 7;estremamente 7
+mano.n d116.s038.t021 :: palmo 8;maniglia 5
+solido.a d178.s016.t011 :: fermo 6;sostanziale 3
+sfruttare.v d261.s084.t004 :: abusare 8;trarre 7;provare 6
+mondiale.a d082.s033.t012 :: internazionale 7;globale 7
+slough.n d102.s076.t060 :: struttura 6;arresto 3
+entusiasmo.n d165.s058.t005 :: energia 8;gioia 8;felicità 8;giubilo 7
+improvvisamente.r d088.s054.t005 :: bruscamente 9;istantaneamente 8;rapidamente 7
+rilevare.v d081.s063.t002 :: notare 7;vedere 7
+corteccia.n d002.s000.t006 :: lastra 6;lamina 5
+guance.n d045.s058.t008 :: caratteristica 7;testa 6;bocca 5
+riunire.v d345.s004.t000 :: incontrare 8;unire 5
+ottenere.v d321.s004.t001 :: ricevere 9;acquisire 8;guadagnare 8
+society_,_philadelphia_water.n d064.s074.t004 :: organizzazione 6
+appartenere.v d144.s036.t005 :: tenere 5
+saltare.v d243.s033.t000 :: colpire 8;scivolare 7
+capire.v d154.s057.t010 :: afferrare 7;pensare 7;sapere 6
+tornare.v d214.s067.t000 :: arrivare 7;andare 7
+raggiungere.v d011.s032.t003 :: colpire 9;acquisire 7;passare 7;toccare 6
+pesce.n d063.s045.t008 :: broadbill 8;gabbiano_pesciolino 4
+personalmente.r d178.s005.t004 :: ufficialmente 8;effettivamente 7;appena 7;veramente 7
+sempre.r d021.s077.t003 :: eppure 6
+notizia.n d098.s062.t001 :: notiziario 8;testo 5
+appartenenza.n d054.s033.t007 :: partecipazione 9;associazione 8;partnership 8
+impianto.n d092.s018.t011 :: produzione 8;impresa 3
+il_american.n d185.s083.t010 :: leagua 6
+religione.n d128.s041.t011 :: fede 7;convinzione 6
+prezioso.a d179.s030.t000 :: adorabile 6;dolce 6;meraviglioso 6;buono 5
+impossibile.a d149.s079.t001 :: improbabile 8;incredibile 8;inconcepibile 7;assurdo 7;insondabile 7
+essere.v d330.s010.t001 :: sentire 8;sembrare 7;supporre 7;assumere 7;apparire 6;immaginare 5
+calore.n d145.s010.t001 :: energia 7;forza 7;calidità 6
+completare.v d341.s058.t000 :: stabilire 7;soddisfare 6;fare 6
+riconoscere.v d103.s053.t000 :: accettare 7;approvare 7;raccomandare 6;venerare 6;elogiare 6
+vedere.v d234.s100.t002 :: determinare 8;capire 7;indovinare 7
+trovare.v d040.s000.t002 :: mostrare 6;porre 6;sedere 6
+sanificazione.n d058.s116.t000 :: pulizia 8;il_sostentamento 7;il_freschezza 6
+elemento.n d173.s000.t008 :: aspetto 8;caratteristica 7
+sconfitta.n d185.s072.t006 :: arresto 7;tiro 6;battuta 6;cadavere 5
+muovere.v d010.s040.t005 :: cambiare 8;trasferire 8;trasformare 7
+crudeltà.n d155.s027.t003 :: brutalità 9;tortura 8;abuso 8;empietà 7;impudenza 7
+colpire.v d109.s044.t001 :: consegnare 6;portare 6
+generale.a d012.s060.t001 :: supremo 7;grande 7;primario 7;ufficiale 6;alto 6;aggettivo 6
+avere_uno.v d178.s001.t003 :: possedere 7;portare 6;mantenere 6;tenere 6
+bagliore.n d091.s012.t003 :: lucentezza 8;radiosità 8;luccichio 8
+fioritura.n d147.s065.t013 :: bollitura 8;inizio 7
+dire.v d254.s036.t000 :: spiegare 7;dare 6;dichiarare 6; 6;trasmettere 6
+ospite.n d176.s073.t010 :: persona 8;invitato 8;compagnia 7;cliente 7;chiamante 7;segreto 2
+focus.n d033.s076.t006 :: intento 8;obiettivo 8;pensiero 7;considerazione 7
+primo.a d106.s058.t000 :: primario 7;iniziale 7;originario 7
+riconoscere.v d146.s004.t000 :: distinguere 7;vedere 6;percepire 6;capire 6;testimoniare 6;notare 6
+pubblico.a d037.s017.t015 :: individuale 7;generoso 7
+violento.a d039.s015.t008 :: intimidatorio 8;duro 8;deragonistico 7;deragonizzato 7
+ascoltamare.v d076.s053.t000 :: concentrare 7;occupare 7;studiare 6
+avventurare.v d337.s020.t001 :: entrare 8;procedere 8;esplodere 7;viaggiare 6;partire 6;trasferire 5
+vedere.v d322.s056.t001 :: percepare 9;capare 9;sapere 8
+dr._linden.n d067.s033.t010 :: medico 5
+costringere.v d307.s081.t000 :: fare 7;convincere 7
+essere.v d031.s084.t002 :: apparire 8;tenere 7;rivelare 7
+solo.r d003.s074.t014 :: appena 7
+metafora.n d072.s068.t020 :: frase 7;parola 7;termine 7
+avere_raggiungere.v d008.s084.t000 :: sorpassare 7;battere 7;recuperare 6;incontrare 6
+variazione.n d169.s035.t001 :: modificatore 7;modifica 6
+istruzione.n d148.s010.t010 :: formazione 7;scuola 5
