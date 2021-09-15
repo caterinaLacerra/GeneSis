@@ -49,6 +49,8 @@ def parse_args():
     parser.add_argument('--test', default=False, action="store_true",
                         help='flag. If set, will evaluate on the test dataset instead of the dev one.')
 
+    parser.add_argument('--language_code', default="en",
+                        help="two-letter code for the language of the dataset.")
     return parser.parse_args()
 
 
@@ -162,7 +164,8 @@ if __name__ == '__main__':
                                           suffix=args.suffix,
                                           baseline=args.baseline,
                                           cut_vocab=args.cut_vocab,
-                                          root_vocab_path=args.cvp)
+                                          root_vocab_path=args.cvp,
+                                          language_code=args.language_code)
 
     if args.test:
         dataset_name = dataset_name

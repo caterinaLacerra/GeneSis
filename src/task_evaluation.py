@@ -100,7 +100,8 @@ def sort_substitutes_cos_sim_batched(substitutes: List[List[str]],
 
 def get_clean_substitutes_from_batch(batch: List[str], target: str,
                                      output_vocabulary: Optional[Dict[str, Set[str]]] = None,
-                                     root_vocab_path: Optional[str] = None) -> Tuple[
+                                     root_vocab_path: Optional[str] = None,
+                                     language_code: Optional[str] = "en") -> Tuple[
     List[str], List[str]]:
 
     substitutes = [[y.strip(',').lower() for y in x.strip().split(', ')] for x in batch]
@@ -121,10 +122,13 @@ def get_clean_substitutes_from_batch(batch: List[str], target: str,
                 if output_vocabulary:
                     if target in output_vocabulary:
                         if word.lower() not in output_vocabulary[target]:
+                            print(f"{word.lower()} not in vocabulary")
                             continue
+                    # todo: modify for multilingual
                     else:
-                        substitutes = get_related_lemmas(target)
-
+                        substitutes = get_related_lemmas(target, language_code)
+                        if substitutes == set() and language_code != "en":
+                            print(f"Missing target word {target} from vocabulary, update it manually with java scripts")
                         output_vocabulary[target] = substitutes
                         with open(os.path.join(root_vocab_path, target), 'w') as out:
                             for substitute in substitutes:
@@ -183,13 +187,15 @@ def compute_baseline(dataset_name: str, input_path: str, output_folder: str,
                     gold_dict_per_instance: Dict,
                     model_name: str, device: str, threshold: float,
                     top_k: int = 10, batch_size: int = 100,
-                    output_vocabulary: Optional[Union[Set[str], Dict[str, Set[str]]]]=None):
+                    output_vocabulary: Optional[Union[Set[str], Dict[str, Set[str]]]]=None,
+                     language_code: Optional[str] = "en"):
 
     oot_output_path = os.path.join(output_folder, f'{dataset_name}_baseline_oot.txt')
     best_output_path = os.path.join(output_folder, f'{dataset_name}_baseline_best.txt')
     output_path = os.path.join(output_folder, f'{dataset_name}_baseline_hr_output.txt')
 
-    instances_infos, input_infos, generated_substitutes, all_gen_subst = get_generated_substitutes(input_path)
+    instances_infos, input_infos, generated_substitutes, all_gen_subst = get_generated_substitutes(input_path,
+                                                                                                   language_code=language_code)
 
     embedder = transformers.AutoModel.from_pretrained(model_name)
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
@@ -260,7 +266,8 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
                     root_vocab_path: str,
                     top_k: int = 10, batch_size: int = 100, baseline: bool = False,
                     cut_vocab: bool = False,
-                    output_vocabulary: Optional[Union[Set[str], Dict[str, Set[str]]]]=None) -> Tuple[str, str]:
+                    output_vocabulary: Optional[Union[Set[str], Dict[str, Set[str]]]]=None,
+                    language_code: Optional[str] = "en") -> Tuple[str, str]:
 
     embedder = transformers.AutoModel.from_pretrained(model_name)
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
@@ -300,7 +307,10 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
 
         if cut_vocab:
             instances_infos, input_infos, \
-            generated_substitutes, all_gen_subst = get_generated_substitutes(input_path, output_vocabulary, root_vocab_path)
+            generated_substitutes, all_gen_subst = get_generated_substitutes(input_path,
+                                                                             output_vocabulary,
+                                                                             root_vocab_path,
+                                                                             language_code)
 
         else:
             instances_infos, input_infos, generated_substitutes, all_gen_subst = get_generated_substitutes(input_path)
@@ -384,7 +394,8 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
 
 def get_generated_substitutes(input_path: str,
                               output_vocabulary: Optional[Union[Set[str], Dict[str, Set[str]]]]=None,
-                              root_vocab_path: Optional[str] = None):
+                              root_vocab_path: Optional[str] = None,
+                              language_code: Optional[str] = "en"):
 
 
     instances_infos, input_infos, generated_substitutes, all_generated_substitutes = [], [], [], []
@@ -403,7 +414,8 @@ def get_generated_substitutes(input_path: str,
 
             clean_substitutes, all_substitutes = get_clean_substitutes_from_batch(sentences[4:], instance,
                                                                                   output_vocabulary=output_vocabulary,
-                                                                                  root_vocab_path=root_vocab_path)
+                                                                                  root_vocab_path=root_vocab_path,
+                                                                                  language_code=language_code)
 
         else:
             clean_substitutes, all_substitutes = get_clean_substitutes_from_batch(sentences[4:], instance)
@@ -447,6 +459,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--backoff', default=False, action="store_true", help='flag. If set, will use the fallback strategy')
     parser.add_argument('--cut_vocab', default=False, action="store_true", help='flag. If set, will cut over the output vocabulary specified with --cvp')
     parser.add_argument('--test', default=False, action="store_true", help='flag. If set, will evaluate on the test dataset instead of the dev one.')
+    parser.add_argument('--language_code', default="en", help='Language of the dataset. Defaults to English.')
 
     parser.add_argument('--seed', default=0, type=int, help='seed for reproducibility')
     parser.add_argument('--beams', type=int, default=15, help='beam size for beam search during evaluation.')
@@ -516,7 +529,8 @@ def main(args: argparse.Namespace):
                                           baseline=args.baseline,
                                           backoff=args.backoff,
                                           cut_vocab=args.cut_vocab,
-                                          threshold=args.threshold)
+                                          threshold=args.threshold,
+                                          language_code=args.language_code)
 
     eval_on_task(config, best_path, oot_path, dataset_name)
 

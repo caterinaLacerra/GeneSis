@@ -7,8 +7,8 @@ from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping
 from pytorch_lightning.loggers import WandbLogger
 from torch.utils.data import DataLoader
 
-from src.dataset import BartDataset, MBartDataset
-from src.model import BartModel, MBartModel
+from src.dataset import MBartDataset
+from src.model import MBartModel
 from src.utils import define_exp_name, define_generation_out_folder
 
 

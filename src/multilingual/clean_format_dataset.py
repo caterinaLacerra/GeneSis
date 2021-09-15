@@ -8,9 +8,7 @@ import stanza
 import tqdm
 import wordfreq
 
-from src.multilingual.clean_multiwords import check_multiwords
-from src.utils import multipos_to_pos, LexSubInstance, get_target_index_list, file_len, read_from_input_file, \
-    convert_to_universal
+from src.utils import multipos_to_pos, LexSubInstance, get_target_index_list, file_len
 
 
 def parse_args() -> argparse.Namespace:
@@ -53,28 +51,17 @@ def valid_word(word: str) -> bool:
     return True
 
 
-def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline, bn_url: str, bn_key: str):
+def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline):
     full_lang_mapping = {'it': 'italian', 'en': 'english'}
     stopwords = nltk.corpus.stopwords.words(full_lang_mapping[lang])
     punctuation = set([x for x in string.punctuation])
 
     with open(output, 'w') as out:
         for l, line in tqdm.tqdm(enumerate(open(input)), total=file_len(input)):
-
-            target, instance_id, target_idx, sentence, mask, substitutes = line.strip().split('\t')
-
-            if target.startswith("'"):
-                target = target.replace("'", "")
-
-            # *lemma, pos = target.split(".")
-            # lemma = ".".join(lemma)
-
-            # target_synset_ids = check_multiwords(service_url=bn_url, key=bn_key, lemma=lemma, pos=pos, lang=lang)
-            # if len(target_synset_ids) == 0:
-            #     continue
+            substitutes = line.strip().split('\t')[-1].split()
 
             gold = {}
-            for sub in substitutes.split():
+            for sub in substitutes:
                 if ':::' in sub:
                     continue
                 word, score = sub.split('::')
@@ -83,15 +70,14 @@ def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline,
 
                     if "'" in word:
                         word = "".join(word.split("'")[1:])
-                    # ids = check_multiwords(service_url, key, word, pos, lang)
-                    # if len(ids) > 0:
-                    gold[word] = float(score)
 
+                    gold[word] = float(score)
             if len(gold) == 0:
                 continue
 
+            target, instance_id, target_idx, sentence, mask, _ = line.strip().split('\t')
             target_idx = get_target_index_list(target_idx)
-            instance = LexSubInstance(target, instance_id, target_idx, sentence, gold=gold, mask=mask)
+            instance = LexSubInstance(target, instance_id, target_idx, sentence, gold=gold)
 
             instance.target_idx = sorted(instance.target_idx)
             instance.target = instance.target.lower()
@@ -109,7 +95,7 @@ def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline,
 
             cleaned_substitutes = {}
 
-            target_pos_tag = convert_to_universal(instance.target.split('.')[-1])
+            target_pos_tag = instance.target.split('.')[-1].upper()
 
             for i, sent in enumerate(doc.sentences):
 
@@ -129,11 +115,10 @@ def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline,
 
                     # remove substitutes with different POS than target
                     if postag == target_pos_tag:
-                        lemmatized_substitute = "_".join([w.lemma for w in relevant_words if w.lemma]).lower()
+                        lemmatized_substitute = "_".join([w.lemma for w in relevant_words]).lower()
 
                         # remove single words that already are in the sentence (noise)
-                        words_set = set([x.lower() for x in words])
-                        if len(lemmatized_substitute.split('_')) == 1 and lemmatized_substitute in words_set:
+                        if len(lemmatized_substitute.split('_')) == 1 and lemmatized_substitute in words:
                             continue
 
                         # remove target from substitutes
@@ -143,21 +128,16 @@ def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline,
                                 cleaned_substitutes[lemmatized_substitute] = []
                             cleaned_substitutes[lemmatized_substitute].append(instance.gold["_".join(sorted_substitutes[i])])
 
+
             if len(cleaned_substitutes) > 0:
-                instance.gold = {k: numpy.mean(v) for k, v in cleaned_substitutes.items() if len(v) > 0}
-                if len(instance.gold) > 0:
-                    out.write(str(instance) + '\n')
+                instance.gold = {k: numpy.mean(v) for k, v in cleaned_substitutes}
+                out.write(str(instance) + '\n')
 
 
 
 if __name__ == '__main__':
     args = parse_args()
 
-    nlp = stanza.Pipeline(lang=args.lang, processors='tokenize,mwt,pos,lemma', tokenize_pretokenized=True,
-                          tokenize_no_ssplit=True)
+    nlp = stanza.Pipeline(lang=args.lang, processors='tokenize,mwt,pos,lemma', tokenize_pretokenized=True, tokenize_no_ssplit=True)
 
-
-    service_url = 'https://babelnet.io/v6/getSynsetIds'
-    key = "c6ffa010-fd3c-4671-a95a-a132ba8b7cac"
-
-    clean_dataset(args.input_path, args.output_path, args.lang, nlp, service_url, key)
+    clean_dataset(args.input_path, args.output_path, args.lang, nlp)

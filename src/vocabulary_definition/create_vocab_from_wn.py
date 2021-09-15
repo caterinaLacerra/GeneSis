@@ -1,5 +1,5 @@
 import os
-from typing import List, Set, Dict
+from typing import List, Set, Dict, Optional
 
 import nltk
 import tqdm
@@ -63,27 +63,30 @@ def get_all_related_lemmas(synset: nltk.corpus.reader.wordnet) -> Set[str]:
     return related
 
 
-def get_related_lemmas(lexeme: str) -> Set[str]:
-    *lemma, pos = lexeme.split('.')
-    lemma = '.'.join(lemma)
+def get_related_lemmas(lexeme: str, language_code: Optional[str] = "en") -> Set[str]:
+
     related = set()
-    synsets = wn.synsets(lemma, universal_to_wn_pos(pos))
 
-    for synset in synsets:
-        # include all neighbours (distance 1)
-        related.update(get_all_related_lemmas(synset))
+    if language_code == "en":
+        *lemma, pos = lexeme.split('.')
+        lemma = '.'.join(lemma)
+        synsets = wn.synsets(lemma, universal_to_wn_pos(pos))
 
-        for also_see in synset.also_sees():
-            related.update(get_all_related_lemmas(also_see))
+        for synset in synsets:
+            # include all neighbours (distance 1)
+            related.update(get_all_related_lemmas(synset))
 
-        for similar in synset.similar_tos():
-            related.update(get_all_related_lemmas(similar))
+            for also_see in synset.also_sees():
+                related.update(get_all_related_lemmas(also_see))
 
-        for hypo in synset.hyponyms():
-            related.update(get_all_related_lemmas(hypo))
+            for similar in synset.similar_tos():
+                related.update(get_all_related_lemmas(similar))
 
-        for hyper in synset.hypernyms():
-            related.update(get_all_related_lemmas(hyper))
+            for hypo in synset.hyponyms():
+                related.update(get_all_related_lemmas(hypo))
+
+            for hyper in synset.hypernyms():
+                related.update(get_all_related_lemmas(hyper))
 
     return related
 
