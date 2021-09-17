@@ -122,7 +122,7 @@ def get_clean_substitutes_from_batch(batch: List[str], target: str,
                 if output_vocabulary:
                     if target in output_vocabulary:
                         if word.lower() not in output_vocabulary[target]:
-                            print(f"{word.lower()} not in vocabulary")
+                            # print(f"{word.lower()} not in vocabulary")
                             continue
                     # todo: modify for multilingual
                     else:

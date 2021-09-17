@@ -1,3 +1,4 @@
+import argparse
 from typing import List
 
 import stanza
@@ -19,19 +20,33 @@ def tokenize_batch(sentences: List[str]) -> List[str]:
     return to_write
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--src_lang', type=str, default="en", help="Source language")
+    parser.add_argument('--tgt_lang', type=str, required=True, help="Target language")
+    parser.add_argument('--input_path', type=str, required=True, help="Input .txt file, "
+                                                                      "as produced by the nlp-utils "
+                                                                      "translation script")
+    parser.add_argument('--output_path', type=str, required=True, help="Output .txt file path")
+
+    parser.add_argument('--input_sep', type=str, default=" ||| ")
+    parser.add_argument('--output_sep', type=str, default=" ||| ")
+    return parser.parse_args()
+
+
 if __name__ == '__main__':
 
-    nlp = stanza.Pipeline(lang='en', processors='tokenize', tokenize_no_ssplit=True)
-    nlp_it = stanza.Pipeline(lang='it', processors='tokenize', tokenize_no_ssplit=True)
+    args = parse_args()
 
-    input_file = 'data/translation/semcor_0.7_train.it.txt'
-    output_file = 'data/translation/semcor_0.7_train.it.tokenized.txt'
+    nlp = stanza.Pipeline(lang=args.scr_lang, processors='tokenize', tokenize_no_ssplit=True)
+    nlp_it = stanza.Pipeline(lang=args.tgt_lang, processors='tokenize', tokenize_no_ssplit=True)
 
-    with open(output_file, 'w') as out, tqdm.tqdm(total=file_len(input_file)) as pbar:
+
+    with open(args.output_path, 'w') as out, tqdm.tqdm(total=file_len(args.input_path)) as pbar:
 
         joint_sentences = []
 
-        for i, sentence in enumerate(open(input_file)):
+        for i, sentence in enumerate(open(args.input_path)):
 
             joint_sentences.append(sentence.strip())
 
@@ -40,15 +55,15 @@ if __name__ == '__main__':
                 # process
                 en_sentences, it_sentences = [], []
                 for s in joint_sentences:
-                    en_sentences.append(s.split('\t')[0])
-                    it_sentences.append(s.split('\t')[1])
+                    en_sentences.append(s.split(args.input_sep)[0])
+                    it_sentences.append(s.split(args.input_sep)[1])
 
                 to_write_en = tokenize_batch(en_sentences)
                 to_write_it = tokenize_batch(it_sentences)
 
                 # write
                 for en_sent, it_sent in zip(to_write_en, to_write_it):
-                    out.write(f'{en_sent} ||| {it_sent}\n')
+                    out.write(f'{en_sent}{args.output_sep}{it_sent}\n')
                     pbar.update()
 
                 # update batch
@@ -59,14 +74,14 @@ if __name__ == '__main__':
             en_sentences, it_sentences = [], []
 
             for s in joint_sentences:
-                en_sentences.append(s.split('\t')[0])
-                it_sentences.append(s.split('\t')[1])
+                en_sentences.append(s.split(args.input_sep)[0])
+                it_sentences.append(s.split(args.input_sep)[1])
 
             to_write_en = tokenize_batch(en_sentences)
             to_write_it = tokenize_batch(it_sentences)
 
             # write
             for en_sent, it_sent in zip(to_write_en, to_write_it):
-                out.write(f'{en_sent} ||| {it_sent}\n')
+                out.write(f'{en_sent}{args.output_sep}{it_sent}\n')
                 pbar.update()
 

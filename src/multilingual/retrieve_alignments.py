@@ -2,21 +2,12 @@ import argparse
 import json
 import numpy as np
 import os
-from typing import List, Dict, Tuple, Any, Union, Optional
+from typing import List, Dict, Any, Union, Optional
 
 import stanza as stanza
 import tqdm
 
 from src.utils import multipos_to_pos, map_to_wn_pos, file_len
-
-
-def parse_args() -> argparse.Namespace :
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--translation_folder', required=False, default='/home/caterina/PycharmProjects/genesis/'
-                                                                        'data/translation')
-    parser.add_argument('--language', required=True)
-    parser.add_argument('--dataset', required=True)
-    return parser.parse_args()
 
 
 def get_target_index_from_tokenized(tokenized_sentence: str, word: str, original_idx: List[int]) -> Optional[
@@ -163,6 +154,14 @@ def retrieve_sentence_alignment(id_idx: str, info_str: str, tokenized_str: str, 
                 break
 
 
+def parse_args() -> argparse.Namespace :
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--translation_folder', required=False, default='data/translation')
+    parser.add_argument('--language', required=True)
+    parser.add_argument('--dataset', required=True)
+    return parser.parse_args()
+
+
 if __name__ == '__main__':
 
     args = parse_args()
@@ -172,14 +171,17 @@ if __name__ == '__main__':
     alignment_indexes = os.path.join(args.translation_folder, f'{args.dataset}.{args.language}.aligned.new.txt')
     alignment_probs = os.path.join(args.translation_folder, f'{args.dataset}.{args.language}.align_prob.new.txt')
 
-    output_file = os.path.join(args.translation_folder, f'{args.dataset}.{args.language}.formatted.txt')
-    sentences_it = os.path.join(args.translation_folder, f'{args.dataset}.laser.{args.language}.txt')
-    sentences_en = os.path.join(args.translation_folder, f'{args.dataset}.laser.en.txt')
+    embeddings_folder = os.path.join(args.translation_folder, "laser_embeddings")
+    if not os.path.exists(embeddings_folder):
+        os.makedirs(embeddings_folder)
 
     translation_dict = {}
 
-    for idx, (info, tokenize, indexes, probs) in tqdm.tqdm(enumerate(zip(open(english_info_path), open(tokenized_parallel),
-                                                     open(alignment_indexes), open(alignment_probs))), total=file_len(tokenized_parallel)):
+    for idx, (info, tokenize, indexes, probs) in tqdm.tqdm(enumerate(zip(open(english_info_path),
+                                                                         open(tokenized_parallel),
+                                                                         open(alignment_indexes),
+                                                                         open(alignment_probs))),
+                                                           total=file_len(tokenized_parallel)):
 
         id_idx, infol = info.strip().split('\t')
         info_dict = json.loads(infol)
@@ -187,57 +189,90 @@ if __name__ == '__main__':
 
         retrieve_sentence_alignment(id_idx, info, tokenize, indexes, probs, translation_dict)
 
-    nlp = stanza.Pipeline(lang='it', processors='tokenize,mwt,pos,lemma', tokenize_no_ssplit=True,
+    nlp = stanza.Pipeline(lang=args.language, processors='tokenize,mwt,pos,lemma', tokenize_no_ssplit=True,
                           tokenize_pretokenized=True)
 
     print(f'Translated and aligned sentences: {len(translation_dict)}')
 
     counter_no_target = 0
-    with open(output_file, 'w') as out, open(sentences_en, 'w') as out_en, open(sentences_it, 'w') as out_it:
-        for instance_idx, idx in tqdm.tqdm(enumerate(translation_dict)):
+    chunks_count = 0
 
-            sentence = translation_dict[idx]['sentence']
-            # extract lemma and pos for the target word
-            words = [w for w in nlp(sentence).sentences[0].words]
+    to_write_en, to_write_lang, to_write_tot = [], [], []
 
-            try:
-                index = translation_dict[idx]['idx']
+    for instance_idx, idx in tqdm.tqdm(enumerate(translation_dict)):
 
-            except KeyError:
-                counter_no_target += 1
-                continue
+        sentence = translation_dict[idx]['sentence']
+        # extract lemma and pos for the target word
+        words = [w for w in nlp(sentence).sentences[0].words]
 
-            if any(x.lemma is None for i, x in enumerate(words) if i in index):
-                continue
+        try:
+            index = translation_dict[idx]['idx']
 
-            lemma = "_".join([w.lemma for i, w in enumerate(words) if i in index])
-            pos_list = [word.upos for i, word in enumerate(words) if i in index]
+        except KeyError:
+            counter_no_target += 1
+            continue
 
-            if len(pos_list) == 0:
-                continue
+        if any(x.lemma is None for i, x in enumerate(words) if i in index):
+            continue
 
-            pos_tag = multipos_to_pos(pos_list)
-            pos = map_to_wn_pos(pos_tag)
+        lemma = "_".join([w.lemma for i, w in enumerate(words) if i in index])
+        pos_list = [word.upos for i, word in enumerate(words) if i in index]
 
-            if pos is None:
-                continue
+        if len(pos_list) == 0:
+            continue
 
-            lexeme = f'{lemma}.{pos}'
+        pos_tag = multipos_to_pos(pos_list)
+        pos = map_to_wn_pos(pos_tag)
 
-            clean_substitutes = {substitute: score
-                                  for substitute, score in translation_dict[idx]['substitutes'].items()
-                                  if substitute != lemma and substitute != translation_dict[idx]['target']}
+        if pos is None:
+            continue
 
-            sorted_substitutes = sorted([(sub.replace(' ', '_'), score) for sub, score in clean_substitutes.items()],
-                                        key=lambda x:x[1], reverse=True)
+        lexeme = f'{lemma}.{pos}'
 
-            if len(sorted_substitutes) > 0:
-                subst_str = " ".join([f'{sub}::{score}' for sub, score in sorted_substitutes])
-                out.write(f'{lexeme}\t{translation_dict[idx]["instance_id"]}\t'
-                          f'{translation_dict[idx]["idx"]}\t{sentence}\t---\t{subst_str}\n')
+        clean_substitutes = {substitute: score
+                              for substitute, score in translation_dict[idx]['substitutes'].items()
+                              if substitute != lemma and substitute != translation_dict[idx]['target']}
 
-                out_it.write(f'{sentence}\n')
-                out_en.write(f'{translation_dict[idx]["en_sentence"]}\n')
+        sorted_substitutes = sorted([(sub.replace(' ', '_'), score) for sub, score in clean_substitutes.items()],
+                                    key=lambda x:x[1], reverse=True)
+
+        if len(sorted_substitutes) > 0:
+            subst_str = " ".join([f'{sub}::{score}' for sub, score in sorted_substitutes])
+
+            to_write_tot.append(f'{lexeme}\t{translation_dict[idx]["instance_id"]}\t'
+                                f'{translation_dict[idx]["idx"]}\t{sentence}\t---\t{subst_str}')
+
+            to_write_lang.append(sentence)
+            to_write_en.append(translation_dict[idx]["en_sentence"])
+
+        if idx % 100_000 == 0 and idx > 0:
+            sentences_en = os.path.join(embeddings_folder, f'{args.dataset}.laser.en.{chunks_count}.txt')
+            sentences_lang = os.path.join(embeddings_folder,
+                                          f'{args.dataset}.laser.{args.language}.{chunks_count}.txt')
+
+            output_file = os.path.join(args.translation_folder,
+                                       f'{args.dataset}.formatted.{chunks_count}.txt')
+
+            with open(sentences_en, 'w') as out_en, open(sentences_lang, 'w') as out_lang, open(output_file, 'w') as out:
+                out_en.write("\n".join(to_write_en))
+                out_lang.write("\n".join(to_write_lang))
+                out.write("\n".join(to_write_tot))
+
+            to_write_lang, to_write_tot, to_write_en = [], [], []
+            chunks_count += 1
+
+    if to_write_en != []:
+        sentences_en = os.path.join(embeddings_folder, f'{args.dataset}.laser.en.{chunks_count}.txt')
+        sentences_lang = os.path.join(embeddings_folder,
+                                      f'{args.dataset}.laser.{args.language}.{chunks_count}.txt')
+
+        output_file = os.path.join(args.embeddings_folder,
+                                   f'{args.dataset}.formatted.{chunks_count}.txt')
+
+        with open(sentences_en, 'w') as out_en, open(sentences_lang, 'w') as out_lang, open(output_file, 'w') as out:
+            out_en.write("\n".join(to_write_en))
+            out_lang.write("\n".join(to_write_lang))
+            out.write("\n".join(to_write_tot))
 
 
     print(f'No idx found: {counter_no_target}')

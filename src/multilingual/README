@@ -1,0 +1,88 @@
+##How to produce the training corpora for other languages
+
+1. Convert the input English dataset in the needed format by running
+   
+```
+PYTHONPATH=$(pwd) python src/multilingual/format_for_translation.py 
+--input_path {input_path} 
+--output_path {output_path}
+```
+
+where:
+-   ```{input_path}``` is the original English dataset (lexsub format), e.g. ```data/semcor_0.7_train.tsv```
+- ```{output_path}``` is the path to the formatted file (it will be again in English), e.g ```data/translation/semcor_0.7_train.translation.txt```.
+
+2. Translate the formatted file in ```{output_path}``` by running the ```nlp-utils``` script for translation
+
+```
+PYTHONPATH=$(pwd) python nlp_utils/mt/hf.py Helsinki-NLP/opus-mt-en-de 
+-f {input_path}
+-o {output_path} 
+--l1 {src_lang} 
+--l2 {tgt_lang} 
+-n 1 
+--gen-params num_beams=5
+--token-batch-size 800 
+--cuda-device 0 
+--separator " ||| "
+```
+
+where:
+- ```input_path``` is the path to the formatted file (output of step 1, i.e. ```data/translation/semcor_0.7_train.translation.txt```)
+- ```output_path``` is the output path, e.g. ```data/translation/semcor_0.7_train.de.txt```
+- ``src_lang`` is the input source language (two digits code, i.e. ```en```)
+- ``tgt_lang`` is the language towards which we want to translate (two digits code, i.e. ```de```)
+
+3. Tokenize the translated file by running 
+
+```
+PYTHONPATH=$(pwd) python src/multilingual/tokenize_translation 
+--tgt_lang {target_lang} 
+--input_path {input_path} 
+--output_path {output_path}
+```
+
+where:
+   
+- ``tgt_lang`` is the language towards which we want to translate (two digits code, i.e. ```de```
+- ```input_path``` is the path to the translated txt file (output of step 2, i.e. ```data/translation/semcor_0.7_train.de.txt```)
+- ``output_path`` path of the output file, e.g ```data/translation/semcor_0.7_train.de.tokenized.txt```
+        
+4. Align words with the ```awesome-align``` [library](https://github.com/neulab/awesome-align), by running
+```
+PYTHONPATH=$(pwd) python awesome_align/run_align.py 
+--data_file {input_path}
+--model_name_or_path bert-base-multilingual-cased 
+--output_file {output_path}
+--extraction 'softmax'  
+--batch_size 64 
+--output_prob_file {prob_output_file}
+```
+
+where:
+- ``input_path`` is the path with the translated sentences, tokenized (output of step 3, i.e. ```data/translation/semcor_0.7_train.de.tokenized.txt```)
+- ``output_path`` is the path to the output file, e.g. ``data/translation/semcor_0.7_train.it.aligned.txt``
+- ``prob_output_file`` is the path to the output file with probabilities, e.g. ``data/translation/semcor_0.7_train.it.align_prob.txt``
+
+5. Retrieve alignments and prepare the sentences for LASER embeddings (from ``src/multilingual``):
+
+``
+PYTHONPATH=$(pwd) python retrieve_alignments.py --language {tgt_language} --dataset {ds_name}
+``
+
+where:
+- ``tgt_language`` is the target language (``de`` in the example)
+- ``ds_name`` is the name of the dataset (the output path of step 4, before the ```.{tgt_language}.*``` suffix, e.g. ``semcor_0.7_train``)
+
+The script will produce several files in the folder ``data/translation/laser_embeddings/``
+
+6. Embed with [LASER](https://github.com/facebookresearch/LASER) the sentences, i.e.:
+
+``
+PYTHONPATH=$(pwd) python laser_embed.py --laser_folder data/translation/laser_embeddings/ --embeddings_folder $embeddings_folder
+``
+
+where ``$embeddings_folder`` is the folder where the embeddings matrices will be saved, 
+e.g. ``data/translation/embeddings``.
+
+7. Clean sentences through semantic similarity (``select_sentences_laser.py``)

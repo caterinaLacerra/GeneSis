@@ -71,6 +71,8 @@ if __name__ == '__main__':
         print(f'Testing on dev')
         dataset_name = configuration['datasets']['dev']
 
+    print(f'Testing on {args.language_code}')
+
     map_location = 'cuda' if args.cuda_device == 0 else 'cpu'
 
     if args.test:
