@@ -234,7 +234,9 @@ class MBartDataset(IterableDataset):
 
         for instance in read_from_input_file(self.input_path):
             sentence_words = instance.sentence.split(" ")
-
+            if len(sentence_words) > 500:
+                print(f'Skipping {sentence_words}')
+                continue
             pre = " ".join(sentence_words[:instance.target_idx[0]]) + " " + self.target_token_start
             mid = " ".join(sentence_words[instance.target_idx[0]: instance.target_idx[-1] + 1])
             post = self.target_token_end + " " + " ".join(sentence_words[instance.target_idx[-1] + 1:])
