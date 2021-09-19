@@ -234,9 +234,7 @@ class MBartDataset(IterableDataset):
 
         for instance in read_from_input_file(self.input_path):
             sentence_words = instance.sentence.split(" ")
-            if len(sentence_words) > 500:
-                print(f'Skipping {sentence_words}')
-                continue
+
             pre = " ".join(sentence_words[:instance.target_idx[0]]) + " " + self.target_token_start
             mid = " ".join(sentence_words[instance.target_idx[0]: instance.target_idx[-1] + 1])
             post = self.target_token_end + " " + " ".join(sentence_words[instance.target_idx[-1] + 1:])
@@ -433,10 +431,18 @@ class MBartDataset(IterableDataset):
 
                 encoded_input, encoded_labels = self.encode(str_input, str_label)
 
+                if len(encoded_input) > 1024:
+                    print(f'skipping {sentence_words}')
+                    continue
+
                 self.dataset_store.append((encoded_input, encoded_labels, instance))
 
             else:
                 encoded_input = self.encode(str_input)
+                if len(encoded_input) > 1024:
+                    print(f'skipping {sentence_words}')
+                    continue
+
                 self.dataset_store.append((encoded_input, instance))
 
         if is_training:
