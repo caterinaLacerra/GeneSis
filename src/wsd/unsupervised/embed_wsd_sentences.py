@@ -324,8 +324,8 @@ def main(args: argparse.Namespace) -> None:
         substitutes_dict = {}
         for path in substitutes_paths:
             for line in open(path):
-                if len(line.split('\t')) > 0:
-                    key, *substitutes = line.strip().split('\t')
+                if len(line.split()) > 0:
+                    key, *substitutes = line.strip().split()
                     if key not in substitutes_dict:
                         substitutes_dict[key] = []
                     substitutes_dict[key].extend(substitutes)
