@@ -324,7 +324,7 @@ def main(args: argparse.Namespace) -> None:
 
         input_path = os.path.join(args.input_folder, f'{dataset_name}_test.tsv')
         substitutes_path = os.path.join(args.eval_framework_folder,
-                                        f'{dataset_name}_substitutes/{dataset_name}.substitutes_1st.gold.key.txt.txt')
+                                        f'{dataset_name}_substitutes/{dataset_name}.substitutes_1st.gold.key.txt')
 
         gold_path = os.path.join(args.eval_framework_folder, dataset_name, f'{dataset_name}.gold.key.txt')
 
