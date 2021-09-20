@@ -92,20 +92,14 @@ def get_input_substitutes_ranked_by_frequency(input_path: str, top_k: int,
 
     return sentence_to_substitutes
 
-def produce_modified_sentences(input_path: str, input_substitues: str) -> Dict[Any, list]:
+def produce_modified_sentences(input_path: str, substitutes_dict: Dict[str, List[str]]) -> Dict[Any, list]:
 
-    subst_dict = {}
-    for line in open(input_substitues):
-
-        if len(line.strip().split('\t')) > 0:
-            key, *substitutes = line.strip().split('\t')
-            subst_dict[key] = list(substitutes)
 
     input_dict = {}
     for instance in read_from_input_file(input_path):
         input_dict[instance.instance_id] = {}
-        if instance.instance_id in subst_dict:
-            substitutes = subst_dict[instance.instance_id]
+        if instance.instance_id in substitutes_dict:
+            substitutes = substitutes_dict[instance.instance_id]
             target_idx = instance.target_idx
             start_idx = target_idx[0]
             end_idx = target_idx[-1]
@@ -181,12 +175,11 @@ def load_ares(input_path: str) -> Tuple[Dict[Any, int], Optional[np.ndarray]]:
 
     return mapping, matrix
 
-
 def is_in_wordnet(word: str) -> bool:
     synsets = wn.synsets(word.replace(' ', '_'))
     return len(synsets) > 0
 
-def save_substitute_vectors(output_folder: str, substitutes_path: str, input_path: str, model_name: str, device: str,
+def save_substitute_vectors(output_folder: str, substitutes_dict: Dict[str, List[str]], input_path: str, model_name: str, device: str,
                             dataset_name: str, gold_path: str):
 
     if not os.path.exists(output_folder):
@@ -194,7 +187,8 @@ def save_substitute_vectors(output_folder: str, substitutes_path: str, input_pat
 
     gold_dict = {line.strip().split()[0]: line.strip().split()[1:] for line in open(gold_path)}
 
-    sentence_to_data = produce_modified_sentences(input_path, substitutes_path)
+    sentence_to_data = produce_modified_sentences(input_path, substitutes_dict)
+    print(sentence_to_data)
     exit()
     with open(os.path.join(output_folder, f'{dataset_name}.json'), 'w', encoding="utf-8") as out:
         json.dump(sentence_to_data, out, indent=2, ensure_ascii=False)
@@ -323,12 +317,22 @@ def main(args: argparse.Namespace) -> None:
         print(f'Dataset: {dataset_name}')
 
         input_path = os.path.join(args.input_folder, f'{dataset_name}_test.tsv')
-        substitutes_path = os.path.join(args.eval_framework_folder,
-                                        f'{dataset_name}_substitutes/{dataset_name}.substitutes_1st.gold.key.txt')
+
+        substitutes_paths = [os.path.join(args.eval_framework_folder,
+                                        f'{dataset_name}_substitutes/{dataset_name}.substitutes_{x}.gold.key.txt')
+                             for x in ["1st", "2nd"]]
+        substitutes_dict = {}
+        for path in substitutes_paths:
+            for line in open(path):
+                if len(line.split('\t')) > 0:
+                    key, *substitutes = line.strip().split('\t')
+                    if key not in substitutes_dict:
+                        substitutes_dict[key] = []
+                    substitutes_dict[key].extend(substitutes)
 
         gold_path = os.path.join(args.eval_framework_folder, dataset_name, f'{dataset_name}.gold.key.txt')
 
-        save_substitute_vectors(args.output_folder, substitutes_path, input_path, args.model_name, device,
+        save_substitute_vectors(args.output_folder, substitutes_dict, input_path, args.model_name, device,
                                  dataset_name, gold_path)
 
         output_dir = os.path.join(args.output_folder, 'disambiguated_ares_centroid')
