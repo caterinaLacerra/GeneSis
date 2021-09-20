@@ -447,6 +447,7 @@ class MBartDataset(IterableDataset):
 
         if is_training:
             self.dataset_store = sorted(self.dataset_store, key=lambda x: len(x[0]) + len(x[1]) + random.randint(0, 10))
+
         else:
             self.dataset_store = sorted(self.dataset_store, key=lambda x: len(x[0]) + random.randint(0, 10))
 

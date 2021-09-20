@@ -40,26 +40,33 @@ if __name__ == '__main__':
         pos_num = gold_senses[0].split('%')[1].split(':')[0]
         key_to_postag[key] = map_posnum_to_upos(pos_num)
 
-    key_to_lemma = {}
+    key_to_gold, key_to_lemma = {}, {}
     for line in open(input_keys):
         key, *gold_senses = line.strip().split()
         lemma = gold_senses[0].split('%')[0]
         key_to_lemma[key] = lemma
+        key_to_gold[key] = [x for x in gold_senses]
 
+    no_subst = 0
     key_to_substitutes = {}
     for line in open(input_substitutes):
+        if len(line.strip().split()) == 0:
+            no_subst += 1
+            continue
+        #print(len(line.strip().split()))
         key, *substitutes = line.strip().split()
         key_to_substitutes[key] = substitutes
 
     key_to_prediction = {}
 
     orig_monosemous, incremental_monosemy = 0, 0
-
+    original_monosemous = set()
     for key in key_to_lemma:
         postag = key_to_postag[key]
         synsets = wn.synsets(key_to_lemma[key], pos=postag)
         if len(synsets) == 1:
             orig_monosemous += 1
+            original_monosemous.add(key)
 
         substitutes = key_to_substitutes[key]
         substitutes_synsets = set()
@@ -69,12 +76,25 @@ if __name__ == '__main__':
             substitutes_synsets.update([s for s in sub_synsets if s in synsets])
 
         if len(substitutes_synsets) == 1 and len(synsets) > 1:
-            incremental_monosemy += 1
-            #key_to_prediction[key] =
+            incremental_monosemy += 1 
             all_lemmas = list(substitutes_synsets)[0].lemmas()
             corresponding_sensekeys = [x.key() for x in all_lemmas if x.name() == key_to_lemma[key]]
             key_to_prediction[key] = corresponding_sensekeys
+        
+    tot, correct, original_correct = 0, 0, 0
+    for key in key_to_prediction:
+        # print(key, key_to_prediction[key], key_to_gold[key])
+        if any(x in key_to_gold[key] for x in key_to_prediction[key]):
+            correct += 1
+        
+            # print(original_monosemous)
+            if key in original_monosemous:
+                original_correct += 1
+
+        tot += 1
 
     print(f"instances originally monosemous: {orig_monosemous}")
     print(f"incremental monosemous instances: {incremental_monosemy}")
-    print(f"total instances: {len(key_to_lemma)}")
+    print(f"total instances: {len(key_to_lemma)}, no substitutes for {no_subst} of them")
+    print(f"Accuracy with incremental monosemous: {correct/tot}")
+    print(f"Accuracy with original monosemous: {original_correct/tot}")

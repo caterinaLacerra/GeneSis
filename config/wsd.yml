@@ -12,11 +12,11 @@ exp_name:
   bart # name of the experiment, will be used as prefix for the checkpoint folder. If it contains 'debug', logs won't be saved.
 
 datasets:
-  wsd_dataset: adv-only # dev set name.
+  wsd_dataset: SemCor # dev set name.
   
 model:
   name: facebook/bart-large # name for HuggingFace method .from_pretrained()
-  max_tokens_per_batch: 1600
+  max_tokens_per_batch: 500
   dropout: 0.1
   decoder_layerdropout: 0.2
   encoder_layerdropout: 0.6
