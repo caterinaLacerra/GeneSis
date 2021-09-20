@@ -129,6 +129,7 @@ def embed(input_dict: Dict[Any, list], embedder: transformers.AutoModel.from_pre
 
     idx = 0
     for sentence in input_dict:
+        print(sentence)
         for instance_dict in input_dict[sentence]:
             print(instance_dict)
             indexes_mapping[instance_dict["instance_id"]] = {'original': -1, 'substitutes': [],
