@@ -7,7 +7,6 @@ from typing import Dict, List, Optional, Any, Tuple
 
 import lemminflect
 import numpy as np
-import sklearn.metrics
 import stanza
 import torch
 import tqdm
@@ -16,9 +15,9 @@ from nltk.corpus import wordnet as wn
 from sklearn.metrics.pairwise import cosine_similarity
 
 from src.task_evaluation import get_generated_substitutes
-from src.utils.commons import yield_batch, convert_target_index, embed_sentences, flatten, get_output_dictionary
-from src.utils.wsd_utils import synset_from_sensekey
+from src.utils import yield_batch, flatten, embed_sentences, get_target_index_list, read_from_input_file
 from src.vocabulary_definition.create_vocab_from_wn import get_related_lemmas
+from src.wordnet_utils import synset_from_sensekey
 
 
 def map_xpos(target_xpos: str, available_xpos: List[str]) -> Optional[str]:
@@ -38,63 +37,6 @@ def map_xpos(target_xpos: str, available_xpos: List[str]) -> Optional[str]:
             return None
 
 
-def get_input_substitutes(input_path: str, top_k: int, pipeline: stanza.Pipeline) -> Dict[Any, list]:
-    sentence_to_substitutes = {}
-
-    for batch in yield_batch(input_path, separator='\n'):
-        lexeme, instance_id, *target_index = batch[0].strip().split()
-        target_index = ' '.join(target_index)
-        gloss = batch[1].strip()
-        clean_subst = [x.split(': ')[0] for x in batch[4].strip().split('#clean: ')[-1].split('; ')][:top_k]
-        input_sentence = batch[2].strip().split('#input: ')[-1]
-        target_index = convert_target_index(target_index)
-
-        # *lemma, pos = lexeme.split('.')
-        # lemma = ''.join(lemma)
-        # upos = convert_to_universal(pos)
-        associated_span = " ".join(input_sentence.split()[target_index[0]:target_index[-1] + 1])
-        # lemmas = set(x.lower() for x in lemminflect.getLemma(associated_span, upos))
-
-        postagged = [(w.text.lower(), w.xpos, w.upos) for s in pipeline(input_sentence).sentences for w in s.words]
-
-        inflected_substitutes = []
-        if len(target_index) == 1:
-            word, xpos, upos = postagged[target_index[0]]
-
-            if word != input_sentence.lower().split()[target_index[0]]:
-                remap_indexes = [i for i, (w, x, u) in enumerate(postagged) if w == word]
-                closest_idx = remap_indexes[np.argmin(abs(i - target_index[0]) for i in remap_indexes)]
-                word, xpos, upos = postagged[closest_idx]
-
-            for substitute in clean_subst:
-                inflect_dict = lemminflect.getAllInflections(substitute, upos)
-                mapped_xpos = map_xpos(xpos, available_xpos=list(inflect_dict.keys()))
-                if mapped_xpos:
-                    inflected_substitutes.append(inflect_dict[mapped_xpos][0])
-
-                else:
-                    inflected_substitutes.append(substitute)
-
-        else:
-            for substitute in clean_subst:
-                inflected_substitutes.append(substitute)
-
-        # if lemma not in lemmas:
-        #     print(instance_id, target_index, lexeme, lemmas, input_sentence)
-
-        if input_sentence not in sentence_to_substitutes:
-            sentence_to_substitutes[input_sentence] = []
-
-        sentence_to_substitutes[input_sentence].append({'gloss': gloss,
-                                                        'instance_id': instance_id,
-                                                        'target_index': target_index,
-                                                        'substitutes': inflected_substitutes,
-                                                        'target_span': associated_span,
-                                                        'lexeme': lexeme})
-
-    return sentence_to_substitutes
-
-
 def get_input_substitutes_ranked_by_frequency(input_path: str, top_k: int,
                                               pipeline: stanza.Pipeline, gold_dict: Dict[str, List[str]]) -> Dict[Any, list]:
 
@@ -108,7 +50,7 @@ def get_input_substitutes_ranked_by_frequency(input_path: str, top_k: int,
         input_sentence = batch[1].strip()
         substitutes = flatten([line.strip().split(', ') for line in batch[2:]])
         clean_subst = [word for word, count in collections.Counter(substitutes).most_common(top_k)]
-        target_index = convert_target_index(target_index)
+        target_index = get_target_index_list(target_index)
 
         sensekey = gold_dict[instance_id][0]
         gloss = synset_from_sensekey(sensekey).definition()
@@ -150,27 +92,36 @@ def get_input_substitutes_ranked_by_frequency(input_path: str, top_k: int,
 
     return sentence_to_substitutes
 
-def produce_modified_sentences(input_dict: Dict[Any, list]) -> Dict[Any, list]:
+def produce_modified_sentences(input_path: str, input_substitues: str) -> Dict[Any, list]:
 
-    for input_sentence in input_dict:
+    subst_dict = {}
+    for line in open(input_substitues):
 
-        for instance_dict in input_dict[input_sentence]:
-            target_idx = instance_dict["target_index"]
+        if len(line.strip().split('\t')) > 0:
+            key, *substitutes = line.strip().split('\t')
+            subst_dict[key] = list(substitutes)
+
+    input_dict = {}
+    for instance in read_from_input_file(input_path):
+        input_dict[instance.instance_id] = {}
+        if instance.instance_id in subst_dict:
+            substitutes = subst_dict[instance.instance_id]
+            target_idx = instance.target_idx
             start_idx = target_idx[0]
             end_idx = target_idx[-1]
 
             modified_sentences, modified_indexes = [], []
-            input_words = input_sentence.split()
-            modified_sentences.append(input_sentence)
+            input_words = instance.sentence.split()
+            modified_sentences.append(instance.sentence)
             modified_indexes.append(target_idx)
 
-            for substitute in instance_dict["substitutes"]:
+            for substitute in substitutes:
                 modified_sentences.append(" ".join(input_words[:start_idx] + substitute.split() +
                                                    input_words[end_idx + 1:]))
                 modified_indexes.append([x for x in range(start_idx, start_idx + len(substitute.split()))])
 
-            instance_dict["new_sentences"] = modified_sentences
-            instance_dict["new_indexes"] = modified_indexes
+            input_dict[instance.instance_id]["new_sentences"] = modified_sentences
+            input_dict[instance.instance_id]["new_indexes"] = modified_indexes
 
     return input_dict
 
@@ -235,37 +186,7 @@ def is_in_wordnet(word: str) -> bool:
     synsets = wn.synsets(word.replace(' ', '_'))
     return len(synsets) > 0
 
-
-def get_generated_substitutes_wsd(input_path: str, gold_dict: Dict[str, Any]):
-
-    sentence_to_data = {}
-
-    for sentences in yield_batch(input_path, separator='#########\n'):
-        lexeme, instance_id, *target_index = sentences[0].strip().split(' ')
-        target_index = convert_target_index(' '.join(target_index))
-
-        input_sentence = sentences[1].strip()
-        if input_sentence not in sentence_to_data:
-            sentence_to_data[input_sentence] = []
-        substitutes = set(flatten([line.strip().split(', ') for line in sentences[2:]]))
-        related_substitutes = get_related_lemmas(lexeme)
-        #clean_substitutes = [x for x in substitutes if is_in_wordnet(x)]
-        clean_substitutes = [x for x in substitutes if x in related_substitutes]
-        sensekey = gold_dict[instance_id][0]
-        gloss = synset_from_sensekey(sensekey).definition()
-        associated_span = " ".join(input_sentence.split()[target_index[0]:target_index[-1] + 1])
-
-        sentence_to_data[input_sentence].append({'gloss': gloss,
-                                                 'instance_id': instance_id,
-                                                 'target_index': target_index,
-                                                 'substitutes': clean_substitutes,
-                                                 'target_span': associated_span,
-                                                 'lexeme': lexeme})
-
-    return sentence_to_data
-
-
-def save_substitute_vectors(output_folder: str, input_path: str, model_name: str, device: str,
+def save_substitute_vectors(output_folder: str, substitutes_path: str, input_path: str, model_name: str, device: str,
                             dataset_name: str, gold_path: str):
 
     if not os.path.exists(output_folder):
@@ -273,8 +194,7 @@ def save_substitute_vectors(output_folder: str, input_path: str, model_name: str
 
     gold_dict = {line.strip().split()[0]: line.strip().split()[1:] for line in open(gold_path)}
 
-    sentence_to_data = get_generated_substitutes_wsd(input_path, gold_dict)
-    sentence_to_data = produce_modified_sentences(sentence_to_data)
+    sentence_to_data = produce_modified_sentences(input_path, substitutes_path)
 
     with open(os.path.join(output_folder, f'{dataset_name}.json'), 'w', encoding="utf-8") as out:
         json.dump(sentence_to_data, out, indent=2, ensure_ascii=False)
@@ -395,19 +315,23 @@ def evaluate(dataset: str, scorer_folder: str, input_folder: str, gold_folder: s
     print(result.stdout)
 
 def main(args: argparse.Namespace) -> None:
+
     ares_mapping, ares_vecs = load_ares(args.ares_path)
     device = 'cpu'
 
     for dataset_name in ['senseval2', 'senseval3', 'semeval2007', 'semeval2013', 'semeval2015']:
         print(f'Dataset: {dataset_name}')
 
-        input_path = os.path.join(args.input_folder, f'output_{dataset_name}.txt')
-        gold_path = os.path.join(args.gold_root_folder, dataset_name, f'{dataset_name}.gold.key.txt')
+        input_path = os.path.join(args.input_folder, f'{dataset_name}_test.tsv')
+        substitutes_path = os.path.join(args.eval_framework_folder,
+                                        f'{dataset_name}_substitutes/{dataset_name}.substitutes.txt')
 
-        #save_substitute_vectors(args.output_folder, input_path, args.model_name, device,
-        #                         dataset_name, gold_path)
+        gold_path = os.path.join(args.eval_framework_folder, dataset_name, f'{dataset_name}.gold.key.txt')
 
-        output_dir = os.path.join(args.output_folder, 'disambiguated_ares_avg_subst')
+        save_substitute_vectors(args.output_folder, substitutes_path, input_path, args.model_name, device,
+                                 dataset_name, gold_path)
+
+        output_dir = os.path.join(args.output_folder, 'disambiguated_ares_centroid')
 
         gold_dict = {line.strip().split()[0]: line.strip().split()[1:] for line in open(gold_path)}
 
@@ -418,13 +342,14 @@ def main(args: argparse.Namespace) -> None:
 
 def parse_args() -> argparse.Namespace:
     args = argparse.ArgumentParser()
-    args.add_argument('--input_folder', required=True, help="folder with generated substitutes")
+    args.add_argument('--eval_framework_folder', default="WSD_Evaluation_Framework/Evaluation_Datasets/")
     args.add_argument('--output_folder', required=True)
-    args.add_argument('--gold_root_folder', default='data/wsd_data')
+    args.add_argument('--input_folder', default="data/wsd")
+
     args.add_argument('--scorer_folder', default='experiments/wsd')
 
     args.add_argument('--model_name', default='bert-large-cased')
-    args.add_argument('--ares_path', default='experiments/wsd/ares_embedding/ares_bert_large.txt')
+    args.add_argument('--ares_path', default='ares_embedding/ares_bert_large.txt')
     args.add_argument('--top_k', type=int, default=3)
     return args.parse_args()
 
