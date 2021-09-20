@@ -94,7 +94,6 @@ def get_input_substitutes_ranked_by_frequency(input_path: str, top_k: int,
 
 def produce_modified_sentences(input_path: str, substitutes_dict: Dict[str, List[str]]) -> Dict[Any, list]:
 
-
     input_dict = {}
     for instance in read_from_input_file(input_path):
         input_dict[instance.sentence] = {}
@@ -116,6 +115,7 @@ def produce_modified_sentences(input_path: str, substitutes_dict: Dict[str, List
 
             input_dict[instance.sentence]["new_sentences"] = modified_sentences
             input_dict[instance.sentence]["new_indexes"] = modified_indexes
+            input_dict[instance.sentence]["lexeme"] = instance.target
 
     return input_dict
 
@@ -131,7 +131,8 @@ def embed(input_dict: Dict[Any, list], embedder: transformers.AutoModel.from_pre
     for sentence in input_dict:
         for instance_dict in input_dict[sentence]:
             indexes_mapping[instance_dict["instance_id"]] = {'original': -1, 'substitutes': [],
-                                                             'sentence': sentence, 'lexeme': instance_dict['lexeme']}
+                                                             'sentence': sentence,
+                                                             'lexeme': instance_dict['lexeme']}
             for j, sent in enumerate(instance_dict["new_sentences"]):
                 if j == 0:
                     indexes_mapping[instance_dict["instance_id"]]["original"] = idx
