@@ -99,7 +99,7 @@ def produce_modified_sentences(input_path: str, substitutes_dict: Dict[str, List
     for instance in read_from_input_file(input_path):
         input_dict[instance.instance_id] = {}
         if instance.instance_id in substitutes_dict:
-            substitutes = substitutes_dict[instance.instance_id]
+            substitutes = substitutes_dict[instance.sentence]
             target_idx = instance.target_idx
             start_idx = target_idx[0]
             end_idx = target_idx[-1]
