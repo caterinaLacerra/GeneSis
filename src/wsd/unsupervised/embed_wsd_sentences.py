@@ -114,8 +114,8 @@ def produce_modified_sentences(input_path: str, substitutes_dict: Dict[str, List
                                                    input_words[end_idx + 1:]))
                 modified_indexes.append([x for x in range(start_idx, start_idx + len(substitute.split()))])
 
-            input_dict[instance.instance_id]["new_sentences"] = modified_sentences
-            input_dict[instance.instance_id]["new_indexes"] = modified_indexes
+            input_dict[instance.sentence]["new_sentences"] = modified_sentences
+            input_dict[instance.sentence]["new_indexes"] = modified_indexes
 
     return input_dict
 
@@ -180,16 +180,13 @@ def is_in_wordnet(word: str) -> bool:
     return len(synsets) > 0
 
 def save_substitute_vectors(output_folder: str, substitutes_dict: Dict[str, List[str]], input_path: str, model_name: str, device: str,
-                            dataset_name: str, gold_path: str):
+                            dataset_name: str):
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
-    gold_dict = {line.strip().split()[0]: line.strip().split()[1:] for line in open(gold_path)}
-
     sentence_to_data = produce_modified_sentences(input_path, substitutes_dict)
-    print(sentence_to_data)
-    exit()
+
     with open(os.path.join(output_folder, f'{dataset_name}.json'), 'w', encoding="utf-8") as out:
         json.dump(sentence_to_data, out, indent=2, ensure_ascii=False)
 
@@ -333,7 +330,7 @@ def main(args: argparse.Namespace) -> None:
         gold_path = os.path.join(args.eval_framework_folder, dataset_name, f'{dataset_name}.gold.key.txt')
 
         save_substitute_vectors(args.output_folder, substitutes_dict, input_path, args.model_name, device,
-                                 dataset_name, gold_path)
+                                 dataset_name)
 
         output_dir = os.path.join(args.output_folder, 'disambiguated_ares_centroid')
 
