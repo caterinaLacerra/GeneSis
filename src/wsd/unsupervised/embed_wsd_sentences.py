@@ -195,7 +195,7 @@ def save_substitute_vectors(output_folder: str, substitutes_path: str, input_pat
     gold_dict = {line.strip().split()[0]: line.strip().split()[1:] for line in open(gold_path)}
 
     sentence_to_data = produce_modified_sentences(input_path, substitutes_path)
-
+    exit()
     with open(os.path.join(output_folder, f'{dataset_name}.json'), 'w', encoding="utf-8") as out:
         json.dump(sentence_to_data, out, indent=2, ensure_ascii=False)
 
@@ -316,7 +316,7 @@ def evaluate(dataset: str, scorer_folder: str, input_folder: str, gold_folder: s
 
 def main(args: argparse.Namespace) -> None:
 
-    ares_mapping, ares_vecs = load_ares(args.ares_path)
+    #ares_mapping, ares_vecs = load_ares(args.ares_path)
     device = 'cpu'
 
     for dataset_name in ['senseval2', 'senseval3', 'semeval2007', 'semeval2013', 'semeval2015']:
