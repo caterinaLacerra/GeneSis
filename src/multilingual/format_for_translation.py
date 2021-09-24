@@ -9,6 +9,10 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument('--input_path', required=True)
     parser.add_argument('--output_path', required=True)
+    parser.add_argument('--only_target', action="store_true", default=False, help="If true, it formats only the original "
+                                                                                  "sentence where the target appears, "
+                                                                                  "without repeating it for each "
+                                                                                  "substitute (used for baselines)")
     return parser.parse_args()
 
 
@@ -36,11 +40,13 @@ def format_sentence(input_line: str) -> Dict:
 if __name__ == '__main__':
 
     args = parse_args()
-    assert args.output_path.endswith('.txt'), print('output path should end with .txt')
+
+    extension = args.output_path.split('.')[-1]
+    print(extension)
 
     id_num = 0
-    print(f"id output: {args.output_path.replace('.txt', '.id.txt')}")
-    with open(args.output_path, 'w') as out, open(args.output_path.replace('.txt', '.id.txt'), 'w') as id_out:
+    print(f"id output: {args.output_path.replace(extension, f'id.{extension}')}")
+    with open(args.output_path, 'w') as out, open(args.output_path.replace(extension, f'id.{extension}'), 'w') as id_out:
         for line in open(args.input_path):
 
             input_dict = format_sentence(line)
@@ -54,18 +60,19 @@ if __name__ == '__main__':
             js_dict = json.dumps(input_dict)
             id_out.write(f'id:{id_num}\t{js_dict}\n')
 
-            for sub in input_dict["substitutes"]:
+            if not args.only_target:
+                for sub in input_dict["substitutes"]:
 
-                # build sentence with substitute
-                sentence = input_dict["sentence"]
-                replaced_sentence = " ".join(sentence.split()[:input_dict["idx"][0]] + [sub] + sentence.split()[input_dict["idx"][-1] + 1:])
-                subst_sentence = f'{replaced_sentence}'
+                    # build sentence with substitute
+                    sentence = input_dict["sentence"]
+                    replaced_sentence = " ".join(sentence.split()[:input_dict["idx"][0]] + [sub] + sentence.split()[input_dict["idx"][-1] + 1:])
+                    subst_sentence = f'{replaced_sentence}'
 
-                # write to output files
-                out.write(f'{subst_sentence}\n')
-                input_dict["replaced_sentence"] = subst_sentence
-                js_dict = json.dumps(input_dict)
+                    # write to output files
+                    out.write(f'{subst_sentence}\n')
+                    input_dict["replaced_sentence"] = subst_sentence
+                    js_dict = json.dumps(input_dict)
 
-                id_out.write(f'id:{id_num}\t{js_dict}\n')
+                    id_out.write(f'id:{id_num}\t{js_dict}\n')
 
             id_num += 1

@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
     args = parse_args()
 
-    nlp = stanza.Pipeline(lang=args.scr_lang, processors='tokenize', tokenize_no_ssplit=True)
+    nlp = stanza.Pipeline(lang=args.src_lang, processors='tokenize', tokenize_no_ssplit=True)
     nlp_it = stanza.Pipeline(lang=args.tgt_lang, processors='tokenize', tokenize_no_ssplit=True)
 
 

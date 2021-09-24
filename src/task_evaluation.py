@@ -321,6 +321,9 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
             target = convert_to_universal_target(instances_infos[s_idx][0])
             if backoff:
                 backoff_list.append(list(output_vocabulary[target]))
+                print(list(output_vocabulary[target]))
+                print(target)
+                exit()
 
         similarities, _ = sort_substitutes_cos_sim_batched(all_gen_subst, input_infos,
                                                            embedder, tokenizer, auto_config.hidden_size,

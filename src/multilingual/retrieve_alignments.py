@@ -167,9 +167,9 @@ if __name__ == '__main__':
     args = parse_args()
 
     english_info_path = os.path.join(args.translation_folder, f'{args.dataset}.id.txt')
-    tokenized_parallel = os.path.join(args.translation_folder, f'{args.dataset}.{args.language}.tokenized.new.txt')
-    alignment_indexes = os.path.join(args.translation_folder, f'{args.dataset}.{args.language}.aligned.new.txt')
-    alignment_probs = os.path.join(args.translation_folder, f'{args.dataset}.{args.language}.align_prob.new.txt')
+    tokenized_parallel = os.path.join(args.translation_folder, f'{args.dataset}.{args.language}.tokenized.txt')
+    alignment_indexes = os.path.join(args.translation_folder, f'{args.dataset}.{args.language}.aligned.txt')
+    alignment_probs = os.path.join(args.translation_folder, f'{args.dataset}.{args.language}.align_prob.txt')
 
     embeddings_folder = os.path.join(args.translation_folder, "laser_embeddings")
     if not os.path.exists(embeddings_folder):
@@ -245,7 +245,8 @@ if __name__ == '__main__':
             to_write_lang.append(sentence)
             to_write_en.append(translation_dict[idx]["en_sentence"])
 
-        if idx % 100_000 == 0 and idx > 0:
+        if instance_idx % 100000 == 0 and instance_idx > 0:
+
             sentences_en = os.path.join(embeddings_folder, f'{args.dataset}.laser.en.{chunks_count}.txt')
             sentences_lang = os.path.join(embeddings_folder,
                                           f'{args.dataset}.laser.{args.language}.{chunks_count}.txt')
@@ -266,7 +267,7 @@ if __name__ == '__main__':
         sentences_lang = os.path.join(embeddings_folder,
                                       f'{args.dataset}.laser.{args.language}.{chunks_count}.txt')
 
-        output_file = os.path.join(args.embeddings_folder,
+        output_file = os.path.join(embeddings_folder,
                                    f'{args.dataset}.formatted.{chunks_count}.txt')
 
         with open(sentences_en, 'w') as out_en, open(sentences_lang, 'w') as out_lang, open(output_file, 'w') as out:

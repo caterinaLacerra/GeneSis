@@ -6,8 +6,8 @@ import torch
 import yaml
 from torch.utils.data import DataLoader
 
-from src.dataset import BartDataset, MBartDataset
-from src.model import BartModel, MBartModel
+from src.dataset import MBartDataset
+from src.model import MBartModel
 from src.task_evaluation import eval_generation, eval_on_task
 from src.utils import define_generation_out_folder, get_output_dictionary
 
