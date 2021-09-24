@@ -43,15 +43,15 @@ if __name__ == '__main__':
 
             k_counters = {}
 
-            en_txt = open(os.path.join(args.laser_folder, en_path.replace(".embs", ".txt"))).readlines()
-            lang_txt = open(os.path.join(args.laser_folder, path.replace(".embs", ".txt"))).readlines()
+            en_txt = open(os.path.join(args.laser_folder, en_path.replace("train", "train.laser").replace(".embs", ".txt"))).readlines()
+            lang_txt = open(os.path.join(args.laser_folder, path.replace("train", "train.laser").replace(".embs", ".txt"))).readlines()
 
             for sent in lang_txt:
                 if sent.strip() not in k_counters:
                     k_counters[sent.strip()] = 0
                 k_counters[sent.strip()] += 1
 
-            initial_input_file = os.path.join(args.laser_folder, path.replace('laser.en', "formatted"))
+            initial_input_file = os.path.join(args.laser_folder, en_path.replace('en', "formatted").replace("embs", "txt"))
 
             en_matrix = load_laser_embs(en_emb)
             it_matrix = load_laser_embs(lang_emb)

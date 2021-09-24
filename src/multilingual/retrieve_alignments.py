@@ -157,6 +157,7 @@ def retrieve_sentence_alignment(id_idx: str, info_str: str, tokenized_str: str, 
 def parse_args() -> argparse.Namespace :
     parser = argparse.ArgumentParser()
     parser.add_argument('--translation_folder', required=False, default='data/translation')
+    parser.add_argument('--laser_folder', required=False, default='data/translation/laser_embeddings')
     parser.add_argument('--language', required=True)
     parser.add_argument('--dataset', required=True)
     return parser.parse_args()
@@ -171,7 +172,7 @@ if __name__ == '__main__':
     alignment_indexes = os.path.join(args.translation_folder, f'{args.dataset}.{args.language}.aligned.txt')
     alignment_probs = os.path.join(args.translation_folder, f'{args.dataset}.{args.language}.align_prob.txt')
 
-    embeddings_folder = os.path.join(args.translation_folder, "laser_embeddings")
+    embeddings_folder = args.laser_folder
     if not os.path.exists(embeddings_folder):
         os.makedirs(embeddings_folder)
 
@@ -251,7 +252,7 @@ if __name__ == '__main__':
             sentences_lang = os.path.join(embeddings_folder,
                                           f'{args.dataset}.laser.{args.language}.{chunks_count}.txt')
 
-            output_file = os.path.join(args.translation_folder,
+            output_file = os.path.join(embeddings_folder,
                                        f'{args.dataset}.formatted.{chunks_count}.txt')
 
             with open(sentences_en, 'w') as out_en, open(sentences_lang, 'w') as out_lang, open(output_file, 'w') as out:

@@ -284,7 +284,7 @@ def weighted_majority_voting(original_vector: np.array, substitutes_vectors: Lis
             # keep most common indexes --> (idx, count)
             most_common = collections.Counter([x[0] for x in closest_senses]).most_common(min(top_k, len(closest_senses)))
 
-            # sort senses by their avg score
+            # sort senses by their avg similarity
             top_senses = sorted([(index_to_sensekey[possible_senses_indexes[idx]],
                                   np.mean(idx_to_scores[idx])) for idx, count in most_common],
                                 key=lambda x:x[1], reverse=True)

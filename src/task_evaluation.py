@@ -32,13 +32,14 @@ def sort_substitutes_cos_sim_batched(substitutes: List[List[str]],
         input_words = input_sentence.split()
 
         for substitute in substitutes[i]:
-            substitute_words = input_words[:target_indexes[0]] + [substitute] + input_words[target_indexes[-1] + 1:]
+            substitute_words = input_words[:target_indexes[0]] + substitute.split('_') + input_words[target_indexes[-1] + 1:]
             stacked_subst_sentences.append(" ".join(substitute_words))
-            if len(substitute.split()) == 1:
+
+            if len(substitute.split('_')) == 1:
                 stacked_substitutes_indexes.append([target_indexes[0]])
             else:
                 stacked_substitutes_indexes.append([target_indexes[0],
-                                                   target_indexes[0] + len(substitute.split()) - 1])
+                                                   target_indexes[0] + len(substitute.split('_')) - 1])
 
         stacked_input_sentences.append(input_sentence)
         stacked_target_indexes.append(target_indexes)
@@ -321,9 +322,6 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
             target = convert_to_universal_target(instances_infos[s_idx][0])
             if backoff:
                 backoff_list.append(list(output_vocabulary[target]))
-                print(list(output_vocabulary[target]))
-                print(target)
-                exit()
 
         similarities, _ = sort_substitutes_cos_sim_batched(all_gen_subst, input_infos,
                                                            embedder, tokenizer, auto_config.hidden_size,

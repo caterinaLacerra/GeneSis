@@ -52,7 +52,7 @@ def valid_word(word: str) -> bool:
 
 
 def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline):
-    full_lang_mapping = {'it': 'italian', 'en': 'english'}
+    full_lang_mapping = {'it': 'italian', 'en': 'english', 'de': 'german'}
     stopwords = nltk.corpus.stopwords.words(full_lang_mapping[lang])
     punctuation = set([x for x in string.punctuation])
 
@@ -67,11 +67,10 @@ def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline)
                 word, score = sub.split('::')
 
                 if word not in punctuation and word not in stopwords:
-
                     if "'" in word:
                         word = "".join(word.split("'")[1:])
-
                     gold[word] = float(score)
+
             if len(gold) == 0:
                 continue
 
@@ -138,6 +137,7 @@ def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline)
 if __name__ == '__main__':
     args = parse_args()
 
-    nlp = stanza.Pipeline(lang=args.lang, processors='tokenize,mwt,pos,lemma', tokenize_pretokenized=True, tokenize_no_ssplit=True)
+    nlp = stanza.Pipeline(lang=args.lang, processors='tokenize,mwt,pos,lemma', tokenize_pretokenized=True,
+                          tokenize_no_ssplit=True)
 
     clean_dataset(args.input_path, args.output_path, args.lang, nlp)

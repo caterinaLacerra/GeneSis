@@ -26,11 +26,12 @@ if __name__ == '__main__':
         else:
             dataset_name = file.split('laser')[0]
             short_name = file.split('laser')[1].split('.txt')[0]
-            language, chunk_id = short_name.split('.')
-            output_path = os.path.join(args.embeddings_folder, f'{dataset_name}.{language}.{chunk_id}.embs')
+
+            _, language, chunk_id = short_name.split('.')
+            output_path = os.path.join(args.embeddings_folder, f'{dataset_name}{language}.{chunk_id}.embs')
             command = ['zsh', os.path.abspath("/home/caterina/LASER/tasks/embed/embed.sh"),
                        os.path.abspath(os.path.join(args.laser_folder, file)),
+                       language,
                        os.path.abspath(output_path)]
 
-            result = subprocess.run(command, check=True, capture_output=True, text=True)
-            print(result.stdout)
+            result = subprocess.run(command, check=True)
