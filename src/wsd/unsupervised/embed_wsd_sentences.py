@@ -274,7 +274,7 @@ def weighted_majority_voting(original_vector: np.array, substitutes_vectors: Lis
             closest_senses = []
 
             for i, subst_row in enumerate(cos_sim):
-                sorted_idx = cos_sim[i].argsort()[-1:][::-1]
+                sorted_idx = cos_sim[i].argsort()[-top_k:][::-1]
                 # for each substitute (and original word) keep track of closest sense --> (idx, score)
                 closest_senses.append((sorted_idx[0], cos_sim[i][sorted_idx[0]]))
                 if sorted_idx[0] not in idx_to_scores:
@@ -294,7 +294,6 @@ def weighted_majority_voting(original_vector: np.array, substitutes_vectors: Lis
             top_senses = [(index_to_sensekey[i], 1) for i in possible_senses_indexes]
 
     return top_senses
-
 
 
 def majority_voting(original_vector: np.array, substitutes_vectors: List[np.array], sense_vectors: np.matrix, top_k: int,
@@ -324,7 +323,7 @@ def majority_voting(original_vector: np.array, substitutes_vectors: List[np.arra
             closest_senses = []
 
             for i, subst_row in enumerate(cos_sim):
-                sorted_idx = cos_sim[i].argsort()[-1:][::-1]
+                sorted_idx = cos_sim[i].argsort()[-top_k:][::-1]
                 # for each substitute (and original word) keep track of closest sense --> (idx, score)
                 closest_senses.append((sorted_idx[0], cos_sim[i][sorted_idx[0]]))
                 if sorted_idx[0] not in idx_to_scores:

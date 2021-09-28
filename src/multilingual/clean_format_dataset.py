@@ -8,7 +8,7 @@ import stanza
 import tqdm
 import wordfreq
 
-from src.utils import multipos_to_pos, LexSubInstance, get_target_index_list, file_len
+from src.utils import multipos_to_pos, LexSubInstance, get_target_index_list, file_len, convert_to_universal
 
 
 def parse_args() -> argparse.Namespace:
@@ -74,7 +74,11 @@ def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline)
             if len(gold) == 0:
                 continue
 
-            target, instance_id, target_idx, sentence, mask, _ = line.strip().split('\t')
+            try:
+                target, instance_id, target_idx, sentence, mask, _ = line.strip().split('\t')
+            except:
+                print(line)
+                continue
             target_idx = get_target_index_list(target_idx)
             instance = LexSubInstance(target, instance_id, target_idx, sentence, gold=gold)
 
@@ -94,10 +98,10 @@ def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline)
 
             cleaned_substitutes = {}
 
-            target_pos_tag = instance.target.split('.')[-1].upper()
+            target_pos_tag = convert_to_universal(instance.target.split('.')[-1].upper())
+
 
             for i, sent in enumerate(doc.sentences):
-
                 end_idx = start_idx + len(sorted_substitutes[i])
                 relevant_words = [word for j, word in enumerate(sent.words)
                                   if j >= start_idx and j < end_idx]
@@ -111,6 +115,8 @@ def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline)
                         continue
 
                     postag = multipos_to_pos(pos_list)
+                    if postag not in ['NOUN', 'VERB', 'ADJ', 'ADV']:
+                        continue
 
                     # remove substitutes with different POS than target
                     if postag == target_pos_tag:
@@ -129,7 +135,8 @@ def clean_dataset(input: str, output: str, lang: str, pipeline: stanza.Pipeline)
 
 
             if len(cleaned_substitutes) > 0:
-                instance.gold = {k: numpy.mean(v) for k, v in cleaned_substitutes}
+                instance.gold = {k: numpy.mean(v) for k, v in cleaned_substitutes.items()}
+                instance.mask = ['---']
                 out.write(str(instance) + '\n')
 
 
