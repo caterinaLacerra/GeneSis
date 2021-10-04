@@ -1,7 +1,7 @@
 import argparse
 import os
 
-from src.utils import yield_batch
+from src.wsd.utils.utils import yield_batch
 
 
 def parse_args() -> argparse.Namespace:

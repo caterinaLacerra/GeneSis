@@ -1,12 +1,11 @@
 import argparse
 import random
-from typing import List, Set
 
 import tqdm
 from transformers import AutoModel, AutoTokenizer, AutoConfig
 
 from src.task_evaluation import get_generated_substitutes, sort_substitutes_cos_sim_batched, is_clean_substitute
-from src.utils import LexSubInstance, get_output_dictionary
+from src.wsd.utils.utils import LexSubInstance, get_output_dictionary
 
 
 def parse_args() -> argparse.Namespace:

@@ -4,7 +4,7 @@ from typing import List
 import stanza
 import tqdm
 
-from src.utils import file_len
+from src.wsd.utils.utils import file_len
 
 
 def tokenize_batch(sentences: List[str]) -> List[str]:

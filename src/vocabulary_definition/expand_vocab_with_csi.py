@@ -4,9 +4,9 @@ from typing import List, Dict
 import tqdm
 from nltk.corpus import wordnet as wn
 
-from src.utils import read_from_input_file, universal_to_wn_pos
+from src.wsd.utils.utils import read_from_input_file
 from src.vocabulary_definition.create_vocab_from_wn import get_related_lemmas
-from src.wordnet_utils import get_csi_keys, get_synset_from_str_offset
+from src.wsd.utils.wordnet_utils import get_csi_keys, get_synset_from_str_offset, universal_to_wn_pos
 
 
 def load_csi(csi_path: str):

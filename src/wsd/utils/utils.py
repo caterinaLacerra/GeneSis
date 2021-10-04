@@ -10,7 +10,6 @@ import torch
 import tqdm
 import transformers
 
-from src.wsd.utils.utils import LexSubInstance
 
 _universal_to_lst = {
     'NOUN': 'n',
@@ -18,6 +17,38 @@ _universal_to_lst = {
     'ADV': 'r',
     'VERB': 'v'
 }
+
+
+class LexSubInstance:
+
+    def __init__(self, target: str, instance_id: str, target_idx: List[int], sentence: str,
+                 mask: Optional[List[str]] = None, gold: Optional[Dict[str, int]] = None):
+        self.target = target
+        self.instance_id = instance_id
+        self.target_idx = target_idx
+        self.sentence = sentence
+        self.mask = mask
+        self.gold = gold
+
+    def __repr__(self):
+        if self.gold:
+            sorted_gold = sorted([(a, b) for a, b in self.gold.items()], key=lambda x: x[1], reverse=True)
+            f_gold = " ".join([f'{x.replace(" ", "_")}::{y}' for x, y in sorted_gold])
+
+            if self.mask is None:
+                self.mask = '---'
+
+            else:
+                self.mask = " ".join(self.mask)
+
+            clean_line = '\t'.join([self.target, self.instance_id, str(self.target_idx),
+                                    self.sentence, self.mask, f_gold])
+        else:
+            clean_line = '\t'.join([self.target, self.instance_id, str(self.target_idx),
+                                    self.sentence])
+
+        return clean_line
+
 
 def convert_to_universal(pos: str):
     pos = pos.upper()
@@ -314,11 +345,6 @@ def get_target_index_list(target_idx: str) -> List[int]:
     return target_index
 
 
-def universal_to_wn_pos(upos: str) -> List[str]:
-    pos_map = {'NOUN': ['n'], 'VERB': ['v'], 'ADJ': ['a', 's'], 'ADV': ['r']}
-    return pos_map[upos]
-
-
 def multipos_to_pos(pos_s: List[str]) -> str:
 
     _pos2score = {
@@ -352,15 +378,6 @@ def multipos_to_pos(pos_s: List[str]) -> str:
             return max(pos_s, key=lambda x: _pos2score[x])
 
 
-def map_to_wn_pos(upos: str) -> str:
-
-    mapping_pos = {'NOUN':'n', 'ADJ':'a', 'ADV': 'r', 'VERB':'v'}
-
-    if upos in mapping_pos:
-        return mapping_pos[upos]
-
-    return None
-
 def get_gold_dictionary(gold_path: str) -> Dict[str, str]:
 
     dict_keys = {}
@@ -381,3 +398,22 @@ def get_gold_dictionary(gold_path: str) -> Dict[str, str]:
 
     return dict_keys
 
+def read_from_evalita_format(input_xml: str) -> Iterable[LexSubInstance]:
+
+    root = ET.parse(input_xml).getroot()
+    for element in root.iter(tag='corpus'):
+
+        for lexelt in element.iter(tag='lexelt'):
+            target_lexeme = lexelt.attrib['item']
+            lexeme = convert_to_universal_target(target_lexeme)
+
+            for instance in lexelt.iter(tag='instance'):
+                instance_id = instance.attrib['id']
+                l_context = " ".join([x.text for x in instance.iter(tag='context')]).strip()
+                start_index = len(l_context.split())
+                target = " ".join([x.text for x in instance.iter(tag='head')]).strip()
+                end_index = start_index + len(target.split())
+                range_idx = [x for x in range(start_index, end_index)]
+                r_context = " ".join([x.tail for x in instance.iter(tag='head')]).strip()
+                sentence = l_context + ' ' + target + ' ' + r_context
+                yield LexSubInstance(lexeme, instance_id, range_idx, sentence)

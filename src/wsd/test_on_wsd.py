@@ -7,8 +7,8 @@ from torch.utils.data import DataLoader
 
 from src.dataset import BartDataset
 from src.model import BartModel
-from src.utils import define_generation_out_folder
-from src.wsd.utils import get_clean_generated_substitutes
+from src.wsd.utils.utils import define_generation_out_folder
+#from src.wsd.utils import get_clean_generated_substitutes
 
 
 def parse_args():

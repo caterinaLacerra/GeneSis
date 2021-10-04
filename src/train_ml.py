@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader
 
 from src.dataset import MBartDataset
 from src.model import MBartModel
-from src.utils import define_exp_name, define_generation_out_folder
+from src.wsd.utils.utils import define_exp_name, define_generation_out_folder
 
 
 def main(args: argparse.Namespace):

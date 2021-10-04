@@ -7,7 +7,7 @@ import gzip
 
 import tqdm
 
-from src.utils import read_from_input_file, file_len
+from src.wsd.utils.utils import read_from_input_file, file_len
 
 
 def check_multiwords(service_url: str, key: str, lemma: str, pos: str, lang: str):

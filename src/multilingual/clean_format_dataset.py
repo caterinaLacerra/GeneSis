@@ -8,7 +8,7 @@ import stanza
 import tqdm
 import wordfreq
 
-from src.utils import multipos_to_pos, LexSubInstance, get_target_index_list, file_len, convert_to_universal
+from src.wsd.utils.utils import multipos_to_pos, LexSubInstance, get_target_index_list, file_len, convert_to_universal
 
 
 def parse_args() -> argparse.Namespace:

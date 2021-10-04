@@ -2,7 +2,7 @@ import argparse
 import json
 from typing import Dict
 
-from src.utils import get_target_index_list
+from src.wsd.utils.utils import get_target_index_list
 
 
 def parse_args() -> argparse.Namespace:

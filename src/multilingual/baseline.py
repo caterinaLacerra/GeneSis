@@ -1,6 +1,6 @@
 import argparse
 
-from src.utils import read_from_input_file
+from src.wsd.utils.utils import read_from_input_file
 
 
 def parse_args() -> argparse.Namespace:

@@ -7,7 +7,8 @@ from typing import List, Dict, Any, Union, Optional
 import stanza as stanza
 import tqdm
 
-from src.utils import multipos_to_pos, map_to_wn_pos, file_len
+from src.wsd.utils.utils import multipos_to_pos, file_len
+from src.wsd.utils.wordnet_utils import map_to_wn_pos
 
 
 def get_target_index_from_tokenized(tokenized_sentence: str, word: str, original_idx: List[int]) -> Optional[

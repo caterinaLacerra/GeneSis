@@ -1,12 +1,12 @@
 import random
-from typing import Tuple, List, Dict, Iterator
+from typing import List, Dict, Iterator
 
 import torch
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import IterableDataset
 from transformers import AutoTokenizer
 
-from src.utils import chunks, flatten
+from src.wsd.utils.utils import chunks, flatten
 from src.wsd.utils import read_from_json_format
 
 

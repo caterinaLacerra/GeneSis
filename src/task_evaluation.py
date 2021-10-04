@@ -11,7 +11,7 @@ import transformers
 import yaml
 
 from src.metrics import precision_at_k, recall_at_k
-from src.utils import convert_to_lst_target, embed_sentences, yield_batch, \
+from src.wsd.utils.utils import convert_to_lst_target, embed_sentences, yield_batch, \
     define_generation_out_folder, define_exp_name, contains_punctuation, \
     get_output_dictionary, convert_to_universal_target, get_target_index_list
 from src.vocabulary_definition.create_vocab_from_wn import get_related_lemmas

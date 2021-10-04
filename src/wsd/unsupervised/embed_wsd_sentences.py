@@ -3,7 +3,6 @@ import collections
 import json
 import os
 import random
-import subprocess
 from typing import Dict, List, Optional, Any, Tuple
 
 import lemminflect
@@ -15,10 +14,8 @@ import transformers
 from nltk.corpus import wordnet as wn
 from sklearn.metrics.pairwise import cosine_similarity
 
-from src.task_evaluation import get_generated_substitutes
-from src.utils import yield_batch, flatten, embed_sentences, get_target_index_list, read_from_input_file
-from src.vocabulary_definition.create_vocab_from_wn import get_related_lemmas
-from src.wordnet_utils import synset_from_sensekey
+from src.wsd.utils.utils import yield_batch, flatten, embed_sentences, get_target_index_list, read_from_input_file
+from src.wsd.utils.wordnet_utils import synset_from_sensekey
 
 
 def map_xpos(target_xpos: str, available_xpos: List[str]) -> Optional[str]:

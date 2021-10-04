@@ -1,4 +1,4 @@
-from src.utils import yield_batch
+from src.wsd.utils.utils import yield_batch
 
 
 def get_instances(path):

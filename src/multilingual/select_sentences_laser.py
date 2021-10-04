@@ -5,7 +5,7 @@ import os
 from sklearn import metrics
 import tqdm
 
-from src.utils import file_len
+from src.wsd.utils.utils import file_len
 
 
 def load_laser_embs(embs_path: str) -> np.array:

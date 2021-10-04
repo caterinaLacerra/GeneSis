@@ -1,4 +1,4 @@
-from src.utils import read_from_input_file
+from src.wsd.utils.utils import read_from_input_file
 
 if __name__ == '__main__':
 

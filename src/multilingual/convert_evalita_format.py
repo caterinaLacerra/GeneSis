@@ -1,4 +1,4 @@
-from src.utils import get_gold_dictionary, read_from_evalita_format
+from src.wsd.utils.utils import get_gold_dictionary, read_from_evalita_format
 
 if __name__ == '__main__':
 
