@@ -247,7 +247,12 @@ def embed_sentences(embedder: transformers.AutoModel.from_pretrained,
             stacking_vecs = []
 
             for tix in target_indexes:
-                bpes_idx = recover_bpes(bpes[j], words[j], tix, tokenizer)
+                try:
+                    bpes_idx = recover_bpes(bpes[j], words[j], tix, tokenizer)
+
+                except IndexError:
+                    print(j, bpes[j], words[j], tix, bpes[j][tix])
+                    continue
 
                 if bpes_idx is None:
                     continue
@@ -263,7 +268,6 @@ def embed_sentences(embedder: transformers.AutoModel.from_pretrained,
                 stacking_vecs.append(vecs)
 
             if stacking_vecs == []:
-                print(target_indexes, words[j], 'no targets retrieved')
                 continue
 
             matrix[j] = torch.mean(torch.stack(stacking_vecs), dim=0)

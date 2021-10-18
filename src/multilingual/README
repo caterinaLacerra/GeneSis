@@ -62,12 +62,12 @@ PYTHONPATH=$(pwd) python awesome_align/run_align.py
 where:
 - ``$input_path`` is the path with the translated sentences, tokenized (output of step 3, i.e. ```data/translation/semcor_0.7_train.de.tokenized.txt```)
 - ``$output_path`` is the path to the output file, e.g. ``data/translation/semcor_0.7_train.de.aligned.txt``
-- ``$prob_output_file`` is the path to the output file with probabilities, e.g. ``data/translation/semcor_0.7_train.de.align_prob.txt``
+- ``$prob_output_file`` is the path to the output file with probabilities, e.g. ``data/translation/semcor_0.7_train.de.align_prob.txt`` (the suffix must be align_prob.txt)
 
 5. Retrieve alignments and prepare the sentences for LASER embeddings (from ``src/multilingual``):
 
 ``
-PYTHONPATH=$(pwd) python retrieve_alignments.py --language $tgt_language --dataset $ds_name
+PYTHONPATH=$(pwd) python src/multilingual/retrieve_alignments.py --language $tgt_language --dataset $ds_name
 ``
 
 where:

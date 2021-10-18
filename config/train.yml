@@ -1,6 +1,6 @@
 paths:
   output_folder:
-    checkpoints # path to the output folder where the checkpoints will be saved during training. If the path does not exists, the folder will be created.
+    /media/ssd1/caterina/genesis_checkpoints/ # path to the output folder where the checkpoints will be saved during training. If the path does not exists, the folder will be created.
 
   data_dir:
     data/ # path to the data directory.
@@ -12,16 +12,16 @@ exp_name:
   bart # name of the experiment, will be used as prefix for the checkpoint folder. If it contains 'debug', logs won't be saved.
 
 datasets:
-  pretrain: semcor_0.7 # name of the dataset used for pre-training. It has to be the same name of a file in the data/ folder, with format {pretrain_name}_train.tsv
+  pretrain: alasca # name of the dataset used for pre-training. It has to be the same name of a file in the data/ folder, with format {pretrain_name}_train.tsv
   dev: coinco_twsi # dev set name. It has to correspond to a dataset in data/ with the name {dev_name}_dev.tsv
   test: lst # test set name. It has to correspond to a dataset in data/{test_name}/{test_name}_test.tsv
 
 model:
   name: facebook/bart-large # name for HuggingFace method .from_pretrained()
   max_tokens_per_batch: 1600
-  dropout: 0.1
-  decoder_layerdropout: 0.2
-  encoder_layerdropout: 0.6
+  dropout: 0.5
+  encoder_layerdropout: 0.2
+  decoder_layerdropout: 0.6
   seed: 313
 
 optimiser:
@@ -32,7 +32,7 @@ optimiser:
     - "LayerNorm.weight"
 
 generation_parameters:
-  num_beams: 15 # beam size --> at training time, they will be only used to define a folder where the checkpoints will be saved (see README.md)
+  num_beams: 15 # beam size --> at training time, they will be only used to define a folder where the checkpoints will be saved (see README)
   num_return_sequences: 3 # returned sequences from beam search
   early_stopping: True # early stopping in generation
 

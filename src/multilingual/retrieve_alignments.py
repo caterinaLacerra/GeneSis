@@ -71,6 +71,7 @@ def process_target_sentence(en_sentence: str, original_target_word: str, en_targ
                                           "target_score": target_score})
 
 
+
 def process_substitute_sentence(substitute: str, en_sentence: str, it_sentence: str, en_target_idx: List[int],
                                 alignment_mapping: Dict[int, Dict],
                                 translation_dict: Dict[str, Any], key: str):
@@ -206,7 +207,6 @@ if __name__ == '__main__':
         sentence = translation_dict[idx]['sentence']
         # extract lemma and pos for the target word
         words = [w for w in nlp(sentence).sentences[0].words]
-
         try:
             index = translation_dict[idx]['idx']
 
@@ -271,6 +271,8 @@ if __name__ == '__main__':
 
         output_file = os.path.join(embeddings_folder,
                                    f'{args.dataset}.formatted.{chunks_count}.txt')
+
+        print(f'Saving output to {output_file}')
 
         with open(sentences_en, 'w') as out_en, open(sentences_lang, 'w') as out_lang, open(output_file, 'w') as out:
             out_en.write("\n".join(to_write_en))

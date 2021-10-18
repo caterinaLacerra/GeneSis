@@ -30,7 +30,7 @@ optimiser:
     - "LayerNorm.weight"
 
 generation_parameters:
-  num_beams: 15 # beam size --> at training time, they will be only used to define a folder where the checkpoints will be saved (see README.md)
+  num_beams: 15 # beam size --> at training time, they will be only used to define a folder where the checkpoints will be saved (see README)
   num_return_sequences: 3 # returned sequences from beam search
   early_stopping: True # early stopping in generation
 
