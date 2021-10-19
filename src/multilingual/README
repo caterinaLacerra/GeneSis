@@ -71,7 +71,6 @@ PYTHONPATH=$(pwd) python src/multilingual/retrieve_alignments.py --language $tgt
 ``
 
 where:
-- ``$laser_folder`` is the folder where several output files will be saved, e.g. ``data/translation/laser_embeddings/``
 - ``$tgt_language`` is the target language (``de`` in the example)
 - ``$ds_name`` is the name of the dataset (the output path of step 4, before the ```.{tgt_language}.*``` suffix, e.g. ``semcor_0.7_train``)
 

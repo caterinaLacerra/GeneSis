@@ -1,0 +1,1000 @@
+Fluglinie.n Fluglinie_1 :: Fluggesellschaft 4.0; Airline 4.0; Flugzeugline 1.0; Flugzeuggesellschaft 1.0; Luftverkehrsgesellschaft 1.0
+Fluglinie.n Fluglinie_10 :: Fluggesellschaft 4.0; Airline 3.0; Flugzeuggesellschaft 1.0; Luftfahrtunternehmen 1.0; Flugunternehmen 1.0; Flugzeuglinie 1.0
+Fluglinie.n Fluglinie_2 :: Flugverbindung 2.0; Flugstrecke 2.0; Airline 1.0; Fluggesellschaft 1.0; Flugzeuggesellschaft 1.0; Destination 1.0; Flugroute 1.0; Flugzeuglinie 1.0; der_Flugverkehr 1.0; Verbindung 1.0
+Fluglinie.n Fluglinie_3 :: Airline 4.0; Fluggesellschaft 4.0; Flugzeuggesellschaft 1.0; Luftfahrtunternehmen 1.0; Luftfahrtanbieter 1.0; Flugzeuglinie 1.0
+Fluglinie.n Fluglinie_4 :: Airline 4.0; Fluggesellschaft 3.0; Luftverkehrsgesellschaft 1.0; Flugzeugunternhehmen 1.0
+Fluglinie.n Fluglinie_5 :: Fluggesellschaft 4.0; Airline 3.0; Flugzeuggesellschaft 1.0; Flugverkehrsgesellschaft 1.0; Flugverbindungsanbieter 1.0
+Fluglinie.n Fluglinie_6 :: Fluggesellschaft 4.0; Airline 4.0; Flugzeuggesellschaft 1.0; Luftfahrtunternehmen 1.0; Fluganbieter 1.0
+Fluglinie.n Fluglinie_7 :: Fluggesellschaft 4.0; Airline 4.0; Flugzeuggesellschaft 1.0; Flugverkehrsgesellschaft 1.0; Luftfahrtgesellschaft 1.0; Flugzeuglinie 1.0
+Fluglinie.n Fluglinie_8 :: Fluggesellschaft 4.0; Airline 4.0; Flugzeuggesellschaft 1.0; Luftfahrtanbieter 1.0; Flugzeuglinie 1.0
+Fluglinie.n Fluglinie_9 :: Fluggesellschaft 3.0; Airline 3.0; Flugzeuggesellschaft 1.0; Luftfahrtunternehmen 1.0; Fluganbietern 1.0; Airlines 1.0; Flugverkehrsunternehmen 1.0; Flugzeuglinie 1.0
+Kannibale.n Kannibale_1 :: Menschenfresser 2.0; Anthropophage 1.0
+Kannibale.n Kannibale_10 :: Menschenfresser 2.0
+Kannibale.n Kannibale_2 :: Menschenfresser 2.0
+Kannibale.n Kannibale_3 :: Menschenfresser 4.0
+Kannibale.n Kannibale_4 :: Menschenfresser 1.0; Tier_das_Artgenossen_frisst 1.0
+Kannibale.n Kannibale_5 :: Menschenfresser 3.0
+Kannibale.n Kannibale_6 :: Menschenfresser 4.0; Anthropophage 1.0
+Kannibale.n Kannibale_7 :: Menschenfresser 4.0
+Kannibale.n Kannibale_8 :: Menschenfresser 4.0
+Kannibale.n Kannibale_9 :: Menschenfresser 3.0; Allesfresser 1.0
+Millionär.n Millionär_1 :: Besitzer_von_Millionenbeträgen 1.0; Jemand_der_eine_Millionen_besitzt 1.0
+Millionär.n Millionär_10 :: ein_reicher_Mann 1.0; reicher_Mann 1.0; Gump's_Privatvermögen_eine_Million_überschreiten 1.0; Jemand_der_eine_Millionen_besitzt 1.0
+Millionär.n Millionär_2 :: reicher_Mann 1.0; reich 1.0; millionenschwer 1.0; Jemand_der_eine_Millionen_besitzt 1.0; steinreich 1.0
+Millionär.n Millionär_3 :: reicher_Mann 1.0; Person_die_eine_Millionen_besitzt 1.0; Superreicher 1.0
+Millionär.n Millionär_4 :: reicher_Mann 2.0; Superreicher 1.0
+Millionär.n Millionär_5 :: reicher_Mann 1.0; Person_die_eine_Millionen_besitzt 1.0; Superreicher 1.0
+Millionär.n Millionär_6 :: reicher_Mann 1.0; Person_die_eine_Millionen_besitzt 1.0; Superreicher 1.0; Reicher 1.0
+Millionär.n Millionär_7 :: reicher_Mann 1.0; Superreicher 1.0; Jemand_der_eine_Millionen_besitzt 1.0
+Millionär.n Millionär_8 :: reicher_Mann 1.0; Superreicher 1.0
+Millionär.n Millionär_9 :: reicher_Mann 1.0; Person_die_eine_Millionen_besitzt 1.0; Superreicher 1.0
+ablöschen.v ablöschen_1 :: übergießen 2.0; deglacieren 2.0; anreichern 1.0; abrunden 1.0; beträufeln 1.0; abschmecken 1.0
+ablöschen.v ablöschen_10 :: löschen 2.0; ausgebrannt 1.0; abgeklungen 1.0; unter_Kontrolle 1.0; beenden 1.0
+ablöschen.v ablöschen_11 :: übergießen 1.0; deglacieren 1.0; würzen 1.0; vollenden 1.0; abschrecken 1.0; abrunden 1.0; beträufeln 1.0; abschmecken 1.0
+ablöschen.v ablöschen_12 :: auslöschen 1.0; abkühlen 1.0
+ablöschen.v ablöschen_13 :: übergießen 1.0; deglacieren 1.0; würzen 1.0; vollenden 1.0; zum_Garen_bringen 1.0; abrunden 1.0; begießen 1.0; abschmecken 1.0
+ablöschen.v ablöschen_14 :: löschen 2.0; ausmachen 1.0; benetzt 1.0; abkühlen 1.0
+ablöschen.v ablöschen_15 :: deglacieren 2.0; anreichern 1.0; abmischen 1.0; abrunden 1.0; begießen 1.0; aufgießen 1.0; abschmecken 1.0
+ablöschen.v ablöschen_16 :: übergießen 1.0; deglacieren 1.0; vollenden 1.0; verdünnen 1.0; abgeschrecken 1.0; abrunden 1.0; beträufeln 1.0; abschmecken 1.0; begießen 1.0; auffüllen 1.0
+ablöschen.v ablöschen_17 :: löschen 3.0; ausmachen 1.0; gelöscht 1.0
+ablöschen.v ablöschen_18 :: löschen 3.0; ausmachen 1.0; in_den_Griff_bringen 1.0
+ablöschen.v ablöschen_19 :: löschen 4.0; sofern_dieser_den_Brand_des_Objekts_stoppen_können. 1.0; vollständig_löschen 1.0
+ablöschen.v ablöschen_2 :: übergießen 1.0; deglacieren 1.0; komplettieren 1.0; anreichern 1.0; vollenden 1.0; abschrecken 1.0; abrunden 1.0; abschmecken 1.0
+ablöschen.v ablöschen_20 :: übergießen 1.0; deglacieren 1.0; anreichern 1.0; vermischen 1.0; geglacieren 1.0; abschrecken 1.0; abrunden 1.0; angießen 1.0; abschmecken 1.0
+ablöschen.v ablöschen_3 :: deglacieren 2.0; übergießen 1.0; anreichern 1.0; abschrecken 1.0; abrunden 1.0; aufgießen 1.0; abschmecken 1.0; löschen 1.0
+ablöschen.v ablöschen_4 :: übergießen 2.0; deglacieren 1.0; anreichern 1.0; überträufeln 1.0; abschrecken 1.0; verfeinern 1.0; abschmecken 1.0
+ablöschen.v ablöschen_5 :: deglacieren 2.0; übergießen 1.0; vermischen 1.0; abschrecken 1.0; abrunden 1.0; beträufeln 1.0; abschmecken 1.0
+ablöschen.v ablöschen_6 :: löschen 2.0; übergießen 1.0; befeuchten 1.0; durchnässen 1.0; abkühlen 1.0
+ablöschen.v ablöschen_7 :: übergießen 2.0; abgießen 1.0; deglacieren 1.0; vermischen 1.0; verdünnen 1.0; strecken 1.0; angießen 1.0
+ablöschen.v ablöschen_8 :: löschen 3.0; ausmachen 1.0; unter_Kontrolle_bringen 1.0; bekämpfen 1.0
+ablöschen.v ablöschen_9 :: übergießen 1.0; deglacieren 1.0; abschrecken 1.0; sautieren 1.0; abschmecken 1.0
+abstürzen.v abstürzen_1 :: hineinstürzen 1.0; ihren_Orbit_verlassen 1.0; versinken 1.0; runterfallen 1.0; angezogen_werden 1.0; aus_ihrer_Umlaufbahn_werfen 1.0; aus_ihrer_Umlaufbahn_ziehen 1.0
+abstürzen.v abstürzen_10 :: herunterstürzen 1.0; herabstürzen 1.0; runterfallen 1.0; hinabstürzen 1.0
+abstürzen.v abstürzen_11 :: herunterstürzen 1.0; crashen 1.0; verunglückt 1.0; runterfallen 1.0
+abstürzen.v abstürzen_12 :: herabstürzen 1.0; herunterkommen 1.0; runterfallen 1.0; hinabstürzen 1.0; aus_der_Umlaufbahn_geworfen_werden 1.0
+abstürzen.v abstürzen_13 :: herabstürzen 1.0; abschmieren 1.0; verunglücken 1.0; zu_Boden_stürzen 1.0; runterfallen 1.0
+abstürzen.v abstürzen_14 :: verunglücken 2.0; herunterstürzen 1.0; aufschlagen 1.0; crashen 1.0; runterfallen 1.0
+abstürzen.v abstürzen_15 :: vom_Himmel_fallen 1.0; zu_Boden_gehen 1.0; von_einem_Absturz_betroffen_sein 1.0; nicht_gelandet_werden_können 1.0; verunglücken 1.0; zu_Boden_stürzen 1.0; runterfallen 1.0
+abstürzen.v abstürzen_16 :: herabstürzen 1.0; fallen 1.0; abschmieren 1.0; verunglücken 1.0; verunglückt 1.0; runterfallen 1.0; niedergehen 1.0
+abstürzen.v abstürzen_17 :: herabstürzen 1.0; zu_Boden_gehen 1.0; abschmieren 1.0; absinken 1.0; runterfallen 1.0; hinabstürzen 1.0; hinunterstürzen 1.0
+abstürzen.v abstürzen_18 :: herunterstürzen 1.0; verunglücken 1.0; runterfallen 1.0; hinunterstürzen 1.0
+abstürzen.v abstürzen_19 :: herunterstürzen 1.0; herabstürzen 1.0; verunglücken 1.0; zu_Boden_stürzen 1.0; runterfallen 1.0
+abstürzen.v abstürzen_2 :: hinunterstürzen 2.0; hinunterkommen 1.0; herabstürzen 1.0; fallen 1.0; abschmieren 1.0; runterfallen 1.0; zu_Boden_fallen 1.0
+abstürzen.v abstürzen_20 :: verunglücken 2.0; herunterstürzen 1.0; abschmieren 1.0; runterfallen 1.0; bruchlanden 1.0
+abstürzen.v abstürzen_3 :: ausgehen 1.0; zum_Stillstand_kommen 1.0; sich_aufhängen 1.0; abbrechen 1.0; crashen 1.0; einfrieren 1.0
+abstürzen.v abstürzen_4 :: stürzen 1.0; gen_Boden_stürzen 1.0; herunterstürzen 1.0; herabstürzen 1.0; fallen 1.0; abschmieren 1.0; herunterkommen 1.0; herabfallen 1.0; zu_Boden_stürzen 1.0; runterfallen 1.0; hinabstürzen 1.0; zu_Boden_sinken 1.0
+abstürzen.v abstürzen_5 :: reduzieren 2.0; stürzen 1.0; herunterstürzen 1.0; herabstürzen 1.0; fallen 1.0; zurückgehen 1.0; schrumpfen 1.0; sinken 1.0; runterstürzen 1.0; schwinden 1.0; hinabstürzen 1.0; schmelzen 1.0
+abstürzen.v abstürzen_6 :: hinunterkommen 1.0; auf_die_Erde_stürzen 1.0; herabstürzen 1.0; fallen 1.0; runterfallen 1.0; hinunterstürzen 1.0
+abstürzen.v abstürzen_7 :: herabstürzen 1.0; zu_Boden_gehen 1.0; abschmieren 1.0; verunglücken 1.0; crashen 1.0; runterfallen 1.0
+abstürzen.v abstürzen_8 :: zerstören 1.0; stürzen 1.0; opfern 1.0; zu_Boden_gehen 1.0; verunglücken 1.0; runterfallen 1.0
+abstürzen.v abstürzen_9 :: herabstürzen 1.0; fallen 1.0; aufschlagen 1.0; hinabstürzen 1.0; herunterfallen 1.0; zu_Boden_fallen 1.0
+assoziieren.v assoziieren_1 :: verbinden 2.0; in_Verbindung_bringen 2.0; gleichsetzen 1.0; vereint_darstellen 1.0; in_Zusammenhang_bringen 1.0; koppeln 1.0; verknüpfen 1.0
+assoziieren.v assoziieren_10 :: verbinden 4.0; in_Verbindung_bringen 2.0; in_Zusammenhang_bringen 1.0; einer_Situation_zuordnen 1.0; verknüpfen 1.0
+assoziieren.v assoziieren_11 :: verbinden 2.0; anbinden 2.0; hervorbringen 2.0; verlinken 1.0; einbinden 1.0; ins_Gedächtnis_rufen 1.0; verknüpfen 1.0
+assoziieren.v assoziieren_12 :: verbinden 4.0; in_Verbindung_bringen 2.0; gleichsetzen 1.0; zuordnen 1.0
+assoziieren.v assoziieren_13 :: verbinden 2.0; kombinieren 1.0; aufschlüsseln 1.0; in_Verbindung_bringen 1.0; zuordnen 1.0; erschließen 1.0; verstehen 1.0; zusammenfügen 1.0; verknüpfen 1.0
+assoziieren.v assoziieren_14 :: verbinden 4.0; in_Verbindung_bringen 2.0; verknüpfen 2.0; zuordnen 1.0
+assoziieren.v assoziieren_15 :: verknüpfen 2.0; verbinden 1.0; in_Verbindung_bringen 1.0; verarbeiten 1.0; wahrnehmen 1.0; erfassen 1.0; gedanklich_verbinden 1.0; interpretieren 1.0
+assoziieren.v assoziieren_16 :: verbinden 4.0; gleichsetzen 1.0; in_Zusammenhang_bringen 1.0; verknüpfen 1.0
+assoziieren.v assoziieren_17 :: verbinden 4.0; denken 1.0; gleichsetzen 1.0; gleichbedeutend 1.0; als_Konsequenz_sehen 1.0
+assoziieren.v assoziieren_18 :: verbinden 2.0; in_Verbindung_bringen 2.0; in_Zusammenhang_bringen 1.0; verbunden 1.0; einhergehen 1.0
+assoziieren.v assoziieren_19 :: verbinden 3.0; in_Zusammenhang_bringen 2.0; in_Verbinung_bringen 1.0; in_Verbindung_bringen 1.0; gleichsetzen 1.0; vergleichen 1.0; anlehnen_an 1.0; verknüpfen 1.0
+assoziieren.v assoziieren_2 :: verbinden 3.0; verknüpfen 2.0; verstehen_als_Zeichen_der_Ungenießbarkeit 1.0; in_Verbindung_bringen 1.0; zuordnen 1.0; in_Zusammenhang_bringen 1.0
+assoziieren.v assoziieren_20 :: in_Verbindung_bringen 3.0; verbinden 2.0; gleichsetzen 1.0; zuordnen 1.0; attribuieren 1.0; verknüpfen 1.0
+assoziieren.v assoziieren_3 :: verbinden 4.0; in_Verbindung_bringen 1.0; in_Zusammenhang_bringen 1.0; verknüpfen 1.0
+assoziieren.v assoziieren_4 :: verbinden 4.0; verknüpfen 2.0; denken 1.0; in_Verbindung_bringen 1.0; vergleichen 1.0; meinen 1.0
+assoziieren.v assoziieren_5 :: verbinden 4.0; in_Verbindung_bringen 2.0; gleichsetzen 1.0; vergleichen 1.0; beschreiben 1.0; verstehen 1.0
+assoziieren.v assoziieren_6 :: verbinden 3.0; zusammentun 1.0; in_Verbindung_bringen 1.0; vereinigen 1.0; anschließen 1.0; sozialisieren 1.0; organisieren 1.0; identifizieren 1.0; zusammenschließen 1.0; verknüpfen 1.0
+assoziieren.v assoziieren_7 :: verbinden 3.0; in_Verbindung_bringen 2.0; vergleichen 2.0; zurückführen 1.0; gleichsetzen 1.0; zuordnen 1.0; verknüpfen 1.0
+assoziieren.v assoziieren_8 :: verbinden 3.0; in_Verbindung_bringen 1.0; andeuten 1.0; interpretieren 1.0; verknüpfen 1.0; suggerieren 1.0
+assoziieren.v assoziieren_9 :: verbinden 4.0; in_Verbindung_bringen 3.0; zuordnen 1.0; in_Zusammenhang_bringen 1.0; verknüpfen 1.0
+aussagekräftig.a aussagekräftig_1 :: wissenschaftlich 1.0; solid 1.0; reliabel 1.0; bedeutend 1.0; ausdrucksstark 1.0; überzeugend 1.0; bedeutsam 1.0; signifikant 1.0; verlässlich 1.0
+aussagekräftig.a aussagekräftig_10 :: bedeutend 1.0; sinnstiftend 1.0; bedeutsam 1.0; wichtig 1.0; signifikant 1.0; eindeutig 1.0; verlässlich 1.0
+aussagekräftig.a aussagekräftig_2 :: bedeutungsvoll 2.0; informativ 1.0; überzeugend 1.0; sicher 1.0; bedeutsam 1.0; wesentlich 1.0; zuverlässig 1.0; signifikant 1.0; eindeutig 1.0; verlässlich 1.0; signifikanter 1.0
+aussagekräftig.a aussagekräftig_3 :: sinnvoll 2.0; verlässlich 2.0; reliabel 1.0; bedeutend 1.0; überzeugend 1.0; bedeutungsvoll 1.0; gehaltvoll 1.0; solide 1.0; signifikant 1.0; glaubwürdig 1.0
+aussagekräftig.a aussagekräftig_4 :: verlässlich 2.0; stichhaltig 1.0; überzeugend 1.0; schlüssig 1.0; gehaltvoll 1.0; zuverlässig 1.0; signifikant 1.0; prägnant 1.0; glaubwürdig 1.0; gut 1.0
+aussagekräftig.a aussagekräftig_5 :: reliabel 1.0; ausdrucksstark 1.0; überzeugend 1.0; sinnvoll 1.0; bedeutsam 1.0; gehaltvoll 1.0; bemerkenswert 1.0; signifikant 1.0; verlässlich 1.0
+aussagekräftig.a aussagekräftig_6 :: verlässlich 2.0; bedeutend 1.0; sinnstiftend 1.0; bedeutungsvoll 1.0; fundiert 1.0; vielsagend 1.0; gehaltvoll 1.0; solide 1.0; zuverlässig 1.0; signifikant 1.0
+aussagekräftig.a aussagekräftig_7 :: ausdrucksstark 2.0; informationsreich 1.0; ausdrucksvoll 1.0; bedeutend 1.0; bedeutungsvoll 1.0; klar 1.0; expressiv 1.0; effektreich 1.0; inhaltsträchtig 1.0; informationsgeladen 1.0
+aussagekräftig.a aussagekräftig_8 :: verlässlich 2.0; inhaltsreich 1.0; informativ 1.0; reliabel 1.0; überzeugend 1.0; schlüssig 1.0; bedeutsam 1.0; signifikant 1.0; eindeutig 1.0
+aussagekräftig.a aussagekräftig_9 :: ausdrucksstark 2.0; überzeugend 1.0; effizient 1.0; klar 1.0; bedeutsam 1.0; gehaltvoll 1.0; übersichtlich 1.0
+eindringen.v eindringen_1 :: penetrieren 1.0; scheinen 1.0; dringen 1.0; gelangen 1.0; fallen 1.0; strahlen 1.0; treten 1.0; einfallen 1.0; hereinbrechen 1.0; durchkommen 1.0; hereinkommen 1.0; hineingelangen 1.0
+eindringen.v eindringen_10 :: einbrechen 4.0; einsteigen 1.0; sich_Zugang_verschaffen 1.0; hinein_gelangen 1.0; hineingelangen 1.0
+eindringen.v eindringen_11 :: hineingelangen 2.0; penetrieren 1.0; gelangen 1.0; passieren 1.0; hineinkommen 1.0; reinkommen 1.0; eintreten 1.0; vorstoßen 1.0
+eindringen.v eindringen_12 :: hineingelangen 2.0; penetrieren 1.0; gelangen 1.0; durchdringen 1.0; hineinkommen 1.0; reinkommen 1.0; überwinden 1.0
+eindringen.v eindringen_13 :: invadieren 2.0; hineingelangen 2.0; durchdringen 1.0; schlüpfen 1.0; passieren 1.0; hineinkommen 1.0; reinkommen 1.0; betreten 1.0; hereinkommen 1.0; durchschlüpfen 1.0; hineinkriechen 1.0
+eindringen.v eindringen_14 :: durchdringen 2.0; vorstoßen 2.0; penetrieren 1.0; rein_kommen 1.0; gelangen 1.0; einfallen 1.0; bis_zu_einem_gewissen_Grad_durch_das_Meerwasser_gelangen_können 1.0
+eindringen.v eindringen_15 :: einmarschieren 2.0; gelangen 2.0; vorstoßen 2.0; stürmen 1.0; migrieren 1.0; einfallen 1.0; sich_verbreiten 1.0; übersiedeln 1.0
+eindringen.v eindringen_16 :: vorstoßen 2.0; einmarschieren 1.0; invadieren 1.0; auf_Hessen_und_das_Maingebiet_übergreifen_konnten 1.0; kommen 1.0; einrücken 1.0; einströmen 1.0; einwandern 1.0; einfallen 1.0
+eindringen.v eindringen_17 :: vorstoßen 2.0; gelangen 1.0; passieren 1.0; hinein_passen 1.0; reinkommen 1.0; nicht_zugänglich_sein 1.0; hineingelangen 1.0
+eindringen.v eindringen_18 :: einmarschieren 2.0; vorstoßen 2.0; einfalllen 1.0; invadieren 1.0; einfallen 1.0; eingewandern 1.0
+eindringen.v eindringen_19 :: einwandern 3.0; kommen 2.0; vorstoßen 2.0; invadieren 1.0; hineinkommen 1.0; migrieren 1.0; hineingelangen 1.0; übersiedeln 1.0
+eindringen.v eindringen_2 :: hineingelangen 2.0; durchdringen 1.0; gelangen 1.0; hineinkommen 1.0; vorstoßen 1.0; eintreten 1.0; durchkommen 1.0; kontaminieren 1.0
+eindringen.v eindringen_20 :: hineingelangen 2.0; eindringen 1.0; hineinkommen 1.0; reinkommen 1.0; eintreten 1.0; vorstoßen 1.0; in_den_Organismus_gelangen 1.0; vorgestoßen 1.0
+eindringen.v eindringen_3 :: vordringen 1.0; gelangen 1.0; hineindringen 1.0; kommen 1.0; reinkommen 1.0; hineingehen 1.0; vorstoßen 1.0; diffundieren 1.0; durchkommen 1.0; hereinkommen 1.0; hineingelangen 1.0
+eindringen.v eindringen_4 :: vorstoßen 2.0; invadieren 1.0; hineinkommen 1.0; kommen 1.0; infiltrieren 1.0; einströmen 1.0; einfallen 1.0; hineingelangen 1.0; einbrechen 1.0
+eindringen.v eindringen_5 :: penetrieren 1.0; hinein_kommen 1.0; invadieren 1.0; gelangen 1.0; kommen 1.0; hineinkommen 1.0; reinkommen 1.0; vorstoßen 1.0; hineingelangen 1.0
+eindringen.v eindringen_6 :: gelangen 2.0; invadieren 2.0; vorstoßen 2.0; penetrieren 1.0; hinein_kommen 1.0; kommen 1.0; infiltrieren 1.0; reinkommen 1.0; migrieren 1.0; einströmen 1.0; hineingelangen 1.0
+eindringen.v eindringen_7 :: vorstoßen 2.0; eintreten 2.0; vordringen 1.0; gelangen 1.0; passieren 1.0; reinkommen 1.0; hineingelangen 1.0
+eindringen.v eindringen_8 :: hineinkommen 2.0; einströmen 2.0; durchdringen 1.0; reinkommen 1.0; hineingelangen 1.0
+eindringen.v eindringen_9 :: vordringen 1.0; Einzug_halten 1.0; kommen 1.0; herankommen 1.0; einströmen 1.0; verstoßen 1.0; hereinbrechen 1.0; durchkommen 1.0; mitgetragen_werden 1.0
+wackelig.a wackelig_1 :: instabil 3.0; schwankend 2.0; unsicher 2.0; schaukelig 1.0
+wackelig.a wackelig_10 :: instabil 2.0; unstetig 1.0; unfest 1.0; zerbrechlich 1.0; ungesichert 1.0; unverlässlich 1.0; unsicher 1.0; unsolide 1.0
+wackelig.a wackelig_2 :: unstetig 1.0; wankend 1.0; schwankend 1.0; ruckelnd 1.0; instabil 1.0; ruckelig 1.0; schlecht 1.0; zitterig 1.0
+wackelig.a wackelig_3 :: unstetig 1.0; wankend 1.0; schwankend 1.0; unsicher 1.0; instabil 1.0; unsanft 1.0; ruckelig 1.0; schlecht 1.0
+wackelig.a wackelig_4 :: unsicher 2.0; instabil 2.0; unfest 1.0; ungefestigt 1.0; ungesichert 1.0; unverlässlich 1.0; instablil 1.0; unstete 1.0; bröckelig 1.0
+wackelig.a wackelig_5 :: unsicher 2.0; unstetig 1.0; unstabil 1.0; schwankend 1.0; fragil 1.0; instabil 1.0; unzureichend_etabliert 1.0; nicht_auf_festen_Beinen_stehen 1.0; unsolide 1.0
+wackelig.a wackelig_6 :: unsicher 2.0; instabil 2.0; unfest 1.0; fragil 1.0; unbeständig 1.0; schwächlich 1.0; lose 1.0
+wackelig.a wackelig_7 :: instabil 2.0; unfest 1.0; unsolid 1.0; unstabil 1.0; improvisiert 1.0; klapprig 1.0; unsicher 1.0; provisorisch 1.0; schwanked 1.0
+wackelig.a wackelig_8 :: schwankend 2.0; unstetig 1.0; nervös 1.0; unsauber 1.0; unsicher 1.0; rüttelnd 1.0; hakelig 1.0; ruckelig 1.0; schlecht 1.0; unruhig 1.0
+wackelig.a wackelig_9 :: schwankend 3.0; instabil 2.0; schaukelnd 2.0; wackelnd 1.0; wankend 1.0; schwingend 1.0; unsicher 1.0; ruckelig 1.0; schaukelig 1.0
+Aristokratie.n Aristokratie_1 :: Obrigkeit 2.0; Oligarchie 1.0; Patrizier 1.0; Herrscherklasse 1.0; Adelsherrschaft 1.0; Adel 1.0
+Aristokratie.n Aristokratie_10 :: Adel 3.0; Oberschicht 2.0; Adligen 1.0; Obrigkeit 1.0; Herrschenden 1.0
+Aristokratie.n Aristokratie_2 :: Adel 2.0; Geldadel 1.0; Adeligkeit 1.0; Oberschicht 1.0; des_Adels 1.0; Bürgertum 1.0
+Aristokratie.n Aristokratie_3 :: Obrigkeit 2.0; Oligarchie 1.0; Adeligkeit 1.0; hohe_Gesellschaft 1.0; Oberschicht 1.0; Herrscherklasse 1.0; Adelsherrschaft 1.0
+Aristokratie.n Aristokratie_4 :: Adelssystem 1.0; Geldadel 1.0; Bürgertum 1.0; Adelsherrschaft 1.0; Adel 1.0
+Aristokratie.n Aristokratie_5 :: Adel 3.0; Oberschicht 1.0; Obrigkeit 1.0; Adelsgeschlechter 1.0; Adelsgesellschaft 1.0
+Aristokratie.n Aristokratie_6 :: Adelsschaft 1.0; Adlige 1.0; Geldadel 1.0; Bürgertum 1.0; Adelsherrschaft 1.0; Adel 1.0
+Aristokratie.n Aristokratie_7 :: Adel 3.0; Geldadel 1.0; Oberschicht 1.0; Bürgertum 1.0; Adelsgesellschaft 1.0
+Aristokratie.n Aristokratie_8 :: Adel 3.0; Adeligkeit 1.0; Obrigkeit 1.0; Herrscherklasse 1.0
+Aristokratie.n Aristokratie_9 :: Adel 2.0; Adelsschaft 1.0; Geldadel 1.0; Oberschicht 1.0; Bürgertum 1.0
+Ballade.n Ballade_1 :: Gedicht 4.0; Stück 1.0; Lied 1.0
+Ballade.n Ballade_10 :: Erzählung 3.0; Novelle 2.0; Lied 2.0; Gedicht 2.0; Anekdote 1.0; Liedchen 1.0; Stück 1.0; Kurzerzählung 1.0; Song 1.0; Text 1.0; Musik 1.0; Geschichte 1.0
+Ballade.n Ballade_2 :: Lied 3.0; Gedicht 2.0; Erzählung 1.0; Musikstück 1.0; Melodie 1.0; Volkslied 1.0; Romanze 1.0; Geschichte 1.0
+Ballade.n Ballade_3 :: Gedicht 2.0; Erzählung 1.0; Lied 1.0; Volkslied 1.0
+Ballade.n Ballade_4 :: Stück 1.0; Erzählung 1.0; Lied 1.0; Gedicht 1.0
+Ballade.n Ballade_5 :: Gedicht 2.0; Ode 1.0; Erzählung 1.0; Lied 1.0; Musikstück 1.0; Sonett 1.0
+Ballade.n Ballade_6 :: Posse 1.0; Anekdote 1.0; Erzählung 1.0; Song 1.0; Tanzlied 1.0; Gedicht 1.0; Klavierlied 1.0; Schwank 1.0; Geschichte 1.0
+Ballade.n Ballade_7 :: Lied 2.0; Novelle 1.0; Auftritt 1.0; Anekdote 1.0; Stück 1.0; Erzählung 1.0; Song 1.0; Gedicht 1.0; Aufführung 1.0
+Ballade.n Ballade_8 :: Lied 2.0; Song 1.0; Musikstück 1.0; Gedicht 1.0; Schnulze 1.0; Liebeslied 1.0
+Ballade.n Ballade_9 :: Lied 2.0; Gedicht 2.0; Song 1.0; Klaviermusik 1.0; Heldenlied 1.0
+Belagerung.n Belagerung_1 :: Belagern 1.0; Einkesselung 1.0; Bedrängung 1.0; Besetzung 1.0; Verzögerung 1.0; Heimsuchung 1.0; Umstellung 1.0; Verriegelung 1.0
+Belagerung.n Belagerung_10 :: Blockade 2.0; Einkesselung 1.0; Angriffe 1.0; Umklammerung 1.0; Belagerungszustand 1.0; Attacken 1.0
+Belagerung.n Belagerung_2 :: Einkesselung 1.0; Besetzung 1.0; Blockade 1.0; Umzingelung 1.0; Umstellung 1.0; Verriegelung 1.0
+Belagerung.n Belagerung_3 :: Trutzburg 1.0; Umkreisung 1.0; Bedrängung 1.0; Einkesselung 1.0; Umstellung 1.0; Verriegelung 1.0
+Belagerung.n Belagerung_4 :: Einkesselung 2.0; Blockade 1.0; Belagerungszustand 1.0; Verzögerung 1.0; Umstellung 1.0; Verriegelung 1.0
+Belagerung.n Belagerung_5 :: Einkesselung 3.0; Besetzung 1.0; Eroberung 1.0; Umzingelung 1.0
+Belagerung.n Belagerung_6 :: Abriegelung 2.0; Bollwerk 1.0; Einkesselung 1.0; Angriffe 1.0; Blockierung 1.0; Umstellung 1.0; Attacken 1.0
+Belagerung.n Belagerung_7 :: Einkesselung 2.0; Besetzung 1.0; Blockade 1.0; Verzögerung 1.0
+Belagerung.n Belagerung_8 :: Einkesselung 2.0; Aussitzen 1.0
+Belagerung.n Belagerung_9 :: Einkesselung 2.0; Abriegelung 1.0; Blockade 1.0; Umstellung 1.0; Verriegelung 1.0
+Besiedlung.n Besiedlung_1 :: Kolonisierung 2.0; Bewohnung 1.0; Erkundung 1.0; Niederlassung 1.0; Besetzung 1.0; Eroberung 1.0; Erschließung 1.0; Bevölkerung 1.0; Aneignung 1.0
+Besiedlung.n Besiedlung_10 :: Bevölkerung 2.0; Kolonisierung 2.0; Ansiedlung 1.0; Belagerung 1.0
+Besiedlung.n Besiedlung_2 :: Bevölkerung 3.0; Erschließung 1.0; Aneignung 1.0
+Besiedlung.n Besiedlung_3 :: Erschließung 2.0; Kolonisierung 2.0; Ansiedlung 1.0; Bevölkerung 1.0
+Besiedlung.n Besiedlung_4 :: Kolonisierung 2.0; Urbanisierung 1.0; Ansiedlung 1.0; Ansiedeln 1.0; Erschließung 1.0; Bevölkerung 1.0; Besiedelung 1.0
+Besiedlung.n Besiedlung_5 :: Bevölkerung 2.0; Kolonisierung 2.0; Ansiedlung 1.0; Aneignen 1.0
+Besiedlung.n Besiedlung_6 :: Siedlung 1.0; Urbanisierung 1.0; Ansiedlung 1.0; Kultivierung 1.0; Bevölkerung 1.0; Aneignung 1.0; Kolonisierung 1.0
+Besiedlung.n Besiedlung_7 :: Bevölkerung 2.0; Bevölkerungszahl 1.0; Bebauung 1.0; Bewohner 1.0
+Besiedlung.n Besiedlung_8 :: Bevölkerung 2.0; Bevölkern 1.0; Besatzung 1.0; Kolonisierung 1.0
+Besiedlung.n Besiedlung_9 :: Bevölkerung 2.0; Bevölkern 1.0; Kultivierung 1.0; Erschließung 1.0; Aneignung 1.0; Kolonisierung 1.0
+Bewässerung.n Bewässerung_1 :: Wasserzufuhr 1.0; Wasserversorgung 1.0; Berieselung 1.0; Wässerung 1.0; Brunnen 1.0
+Bewässerung.n Bewässerung_10 :: Wasserversorgung 2.0; Wasserzuführung 1.0; Brunnen 1.0; Bewässerung 1.0; Befeuchtung 1.0
+Bewässerung.n Bewässerung_2 :: Flutung 2.0; Drainage 1.0; Wasserversorgung 1.0; Brunnen 1.0; Bewässrung 1.0
+Bewässerung.n Bewässerung_3 :: Gießen 1.0; Drainage 1.0; Irrigation 1.0; Fluten 1.0; Flutung 1.0
+Bewässerung.n Bewässerung_4 :: Versorgung_mit_Wasser 1.0; Wasserzufuhr 1.0; Wasserversorgung 1.0; Wasserzuleitung 1.0; Besprengung 1.0; Berieselung 1.0; Brunnen 1.0
+Bewässerung.n Bewässerung_5 :: Wasserversorgung 2.0; Flutung 2.0; Wässerung 1.0
+Bewässerung.n Bewässerung_6 :: Flutung 2.0; Drainage 1.0; Wasserversorgung 1.0; Besprühung 1.0
+Bewässerung.n Bewässerung_7 :: Drainage 1.0; Sprengen 1.0; Wasserversorgung 1.0; Wässerung 1.0; Befeuchtung 1.0
+Bewässerung.n Bewässerung_8 :: Wasserversorgung 3.0; Wässerung 1.0; Brunnen 1.0
+Bewässerung.n Bewässerung_9 :: Wasserversorgung 3.0; Brunnen 1.0; Bewässrung 1.0; Befeuchtung 1.0
+Bunker.n Bunker_1 :: Schutzraum 2.0; Schutzräume 1.0; Luftschutzräume 1.0; Befestigung 1.0; Schutzanlagen 1.0
+Bunker.n Bunker_10 :: Schutzraum 3.0; Befestigung 2.0; Schutzkeller 1.0
+Bunker.n Bunker_2 :: Luftschutzraum 1.0; Unterstand 1.0; Versteck 1.0; Schutzkellern 1.0; Schutzräumen 1.0; Festung 1.0; Schutzraum 1.0
+Bunker.n Bunker_3 :: Schutzraum 2.0; Haus 1.0; Schutzhaus 1.0; Schutzkeller 1.0; Versteck 1.0
+Bunker.n Bunker_4 :: Versteck 2.0; Schutzraum 2.0; Luftschutz 1.0; Bau 1.0; Schutzkeller 1.0; Sicherheitsraum 1.0; Festung 1.0
+Bunker.n Bunker_5 :: Schutzraum 3.0; Luftschutz 1.0; Lager 1.0; Bau 1.0; Versteck 1.0
+Bunker.n Bunker_6 :: Schutzraum 4.0; Unterschlupf 1.0; Gebäude 1.0; Bau 1.0; Keller 1.0; Versteck 1.0; Luftschutzkeller 1.0; Befestigung 1.0
+Bunker.n Bunker_7 :: Versteck 2.0; Schutzraum 2.0; Schutzkeller 1.0; Festung 1.0
+Bunker.n Bunker_8 :: Versteck 1.0; Kohlensilo 1.0; Festung 1.0; Schutzraum 1.0
+Bunker.n Bunker_9 :: Luftschutzraum 1.0; Schutzkeller 1.0; Versteck 1.0; Festung 1.0; Schutzraum 1.0
+Chronologie.n Chronologie_1 :: Datierung 1.0; zeitliche_Aufstellung 1.0; Zeitrechnung 1.0; Abfolge 1.0; Folge 1.0; Geschichte 1.0
+Chronologie.n Chronologie_10 :: Zeitfolge 3.0; Abfolge 2.0; Datierung 1.0; historischer_Ablauf 1.0
+Chronologie.n Chronologie_2 :: Zeitfolge 2.0; Abfolge 1.0; Bezug 1.0; Folge 1.0
+Chronologie.n Chronologie_3 :: Zeitfolge 3.0; Reihenfolge 2.0; Ablauf 1.0
+Chronologie.n Chronologie_4 :: Zeitmessung 1.0; zeitliche_Aufgliederung 1.0; zeitliche_Aufstellung 1.0; Zeitrechnung 1.0; zeitliche_Abfolge 1.0; Wissenschaft_von_der_Zeitrechnung 1.0; Geschichte 1.0; Zeitlehre 1.0
+Chronologie.n Chronologie_5 :: Reihenfolge 2.0; zeitliche_Abfolge 1.0; Abfolge 1.0; Zeitlinie 1.0; Geschichte 1.0; Zeitfolge 1.0
+Chronologie.n Chronologie_6 :: Abfolge 2.0; Zeitfolge 2.0; Zeitrechnung 1.0; Rechnung 1.0
+Chronologie.n Chronologie_7 :: Abfolge 3.0; Zeitfolge 2.0
+Chronologie.n Chronologie_8 :: Zeitfolge 2.0; Zeit 1.0; Reihenfolge 1.0; Zeitpunkt 1.0; Moment 1.0; Werkfolge 1.0; Gegebenheit 1.0; Abfolge 1.0; zeitliche_Abfolge 1.0; Verlauf 1.0
+Chronologie.n Chronologie_9 :: Zeitfolge 3.0; Zeitspanne 1.0; zeitliche_Abfolge 1.0; Abfolge 1.0; Geschichte 1.0
+Diktatur.n Diktatur_1 :: Alleinherrschaft 2.0; Zwangsherrschaft 2.0; Despotie 1.0; Schreckensherrschaft 1.0; Terrorherrschaft 1.0; Herrschaft 1.0; Monogamie 1.0
+Diktatur.n Diktatur_10 :: Gewaltherrschaft 2.0; Alleinherrschaft 2.0; Totalherrschaft 1.0; Tyrannei 1.0; totalitäre_Herrschaft 1.0; Herrschaft 1.0
+Diktatur.n Diktatur_2 :: Herrschaft 3.0; Alleinherrschaft 2.0; Despotie 1.0; Gewaltherrschaft 1.0; Führung 1.0; Zwangsherrschaft 1.0; Absolutismus 1.0; Monogamie 1.0
+Diktatur.n Diktatur_3 :: Gewaltherrschaft 2.0; Schreckensherrschaft 2.0; Alleinherrschaft 2.0; Herrschaft 2.0; Despotie 1.0; Tyrannei 1.0; Despotismus 1.0; Zwangsherrschaft 1.0
+Diktatur.n Diktatur_4 :: Alleinherrschaft 2.0; Despotie 1.0; Nationalsozialismus 1.0; Unterwerfung 1.0; Gewaltherrschaft 1.0; Schreckensherrschaft 1.0; Tyrannei 1.0; Terrorherrschaft 1.0; Faschismus 1.0; Knechtschaft 1.0; Herrschaft 1.0; Zwangsherrschaft 1.0
+Diktatur.n Diktatur_5 :: Despotie 2.0; Alleinherrschaft 2.0; Gewaltherrschaft 1.0; Vorherrschaft 1.0; Tyrannei 1.0; Schreckensherrschaft 1.0; Zwangsherrschaft 1.0; Herrschaft 1.0; Absolutismus 1.0
+Diktatur.n Diktatur_6 :: Gewaltherrschaft 3.0; Zwangsherrschaft 2.0; Despotie 1.0; Tyrannei 1.0; Alleinherrschaft 1.0; totalitäre_Herrschaft 1.0; Totalitarismus 1.0; Herrschaft 1.0; Absolutismus 1.0
+Diktatur.n Diktatur_7 :: Alleinherrschaft 2.0; Despotie 1.0; Gewaltherrschaft 1.0; Unterjochung 1.0; Herrschbegierde 1.0; totalitäre_Herrschaft 1.0; Erbarmungslosigkeit 1.0; totalitärer_Staat 1.0; Führung 1.0; Zwangsherrschaft 1.0
+Diktatur.n Diktatur_8 :: Despotie 2.0; Zwangsherrschaft 2.0; Gewaltherrschaft 1.0; Tyrannei 1.0; Alleinherrschaft 1.0; Totalitarismus 1.0
+Diktatur.n Diktatur_9 :: Gewaltherrschaft 3.0; Tyrannei 2.0; Zwangsherrschaft 2.0; Herrschaft 2.0; Despotie 1.0; Totalherrschaft 1.0; Schreckensherrschaft 1.0; Alleinherrschaft 1.0; totalitärer_Staat 1.0; Totalitarismus 1.0
+Distrikt.n Distrikt_1 :: Bezirk 4.0; Region 2.0; Gebiet 1.0; Bereich 1.0
+Distrikt.n Distrikt_10 :: Bereich 3.0; Bezirk 2.0; Abschnitt 1.0; Teil 1.0
+Distrikt.n Distrikt_2 :: Bezirk 5.0; Gebiet 1.0; Landstrich 1.0; Bereich 1.0; Abschottung 1.0
+Distrikt.n Distrikt_3 :: Bezirk 2.0; Bereich 2.0; Abschnitt 1.0; Abschottung 1.0
+Distrikt.n Distrikt_4 :: Bereich 2.0; Gebiet 1.0; Teile 1.0; Bereiche 1.0; Abschnitt 1.0; Bezirke 1.0; Region 1.0
+Distrikt.n Distrikt_5 :: Bezirk 4.0; Verwaltungsbezirk 1.0; Abschnitt 1.0; Region 1.0; Bereich 1.0; Abschottung 1.0
+Distrikt.n Distrikt_6 :: Bezirk 3.0; Abschnitt 2.0; Region 1.0; Abschottung 1.0
+Distrikt.n Distrikt_7 :: Bezirk 3.0; Bereich 2.0; Gemeinde 1.0; Abschnitt 1.0; Abschottung 1.0
+Distrikt.n Distrikt_8 :: Abschnitt 2.0; Bezirk 2.0; Bereich 2.0; Gebiet 1.0; Region 1.0
+Distrikt.n Distrikt_9 :: Bezirk 4.0; Revier 1.0; Kreis 1.0; Landstrich 1.0; Abschnitt 1.0; Bereich 1.0; Abteil 1.0
+Erkennung.n Erkennung_1 :: Findung 3.0; Registrierung 1.0; Entdeckung 1.0; Erkennen 1.0; Aufspürung 1.0; Betrachtung 1.0
+Erkennung.n Erkennung_10 :: Erkennen 1.0; Findung 1.0; Befinden 1.0; Auffinden 1.0; Identifizierung 1.0; Sichtung 1.0
+Erkennung.n Erkennung_2 :: Feststellung 2.0; Identifizierung 2.0; Identifikation 1.0; Betrachtung 1.0
+Erkennung.n Erkennung_3 :: Bestimmung 1.0; Erfassung 1.0; Erkennen 1.0; Identifikation 1.0; Feststellung 1.0; Identifizierung 1.0; Sichtung 1.0
+Erkennung.n Erkennung_4 :: Diagnose 2.0; Findung 1.0; Auffinden 1.0; Feststellung 1.0; Identifizierung 1.0; Sichtung 1.0
+Erkennung.n Erkennung_5 :: Findung 3.0; Bestimmung 2.0; Registrierung 1.0; Erkennen 1.0; Wahrnehmung 1.0
+Erkennung.n Erkennung_6 :: Bestimmung 1.0; Entdeckung 1.0; Erkennen 1.0; Diagnose 1.0; Findung 1.0; Identifikation 1.0; Identifizierung 1.0
+Erkennung.n Erkennung_7 :: Erkennen 1.0; Wahrnehmen 1.0; Anschauung 1.0; Entdecken 1.0; Auffinden 1.0; Identifizierung 1.0; Sichtung 1.0
+Erkennung.n Erkennung_8 :: Entdeckung 2.0; Erkennen 1.0; Aufdeckung 1.0; Diagnose 1.0; Findung 1.0; Identifizierung 1.0; Sichtung 1.0
+Erkennung.n Erkennung_9 :: Beförderung 1.0; Registrierung 1.0; Entdeckung 1.0; Erkennen 1.0; Erahnen 1.0; Findung 1.0; Auffinden 1.0; Identifikation 1.0
+Erschießung.n Erschießung_1 :: Hinrichtung 5.0; Tötung 2.0; Ermordung 1.0
+Erschießung.n Erschießung_10 :: Hinrichtung 3.0; Tötung 2.0
+Erschießung.n Erschießung_2 :: Hinrichtung 3.0; Ermordung 2.0; Tötung 1.0
+Erschießung.n Erschießung_3 :: Tötung 2.0; Beschließung 1.0; Beschluss 1.0; Erlass 1.0; Ermordung 1.0; Exekution 1.0; Hinrichtung 1.0; Kolonisierung 1.0; Zusammenführung 1.0
+Erschießung.n Erschießung_4 :: Hinrichtung 3.0; Tötung 2.0; Ermordung 1.0
+Erschießung.n Erschießung_5 :: Hinrichtung 4.0; Mord 2.0; Exekution 2.0; Liquidierung 1.0; Tötung 1.0; Abknallen 1.0; Vernichtung 1.0; Schuss 1.0
+Erschießung.n Erschießung_6 :: Abknallen 2.0; Abschießung 1.0; Hinrichtung 1.0; Schusstötung 1.0
+Erschießung.n Erschießung_7 :: Hinrichtung 3.0; Tötung 1.0; Ermordung 1.0; Exekution 1.0
+Erschießung.n Erschießung_8 :: Hinrichtung 3.0; Ermordung 2.0; Exekution 2.0; Terminierung 1.0
+Erschießung.n Erschießung_9 :: Tötung 2.0; bei_den_Fischen_schwimmen_lassen 1.0; Exekutieren 1.0; Abmurksen 1.0; Exterminieren 1.0; Ermordung 1.0; Umlegen 1.0
+Korrektur.n Korrektur_1 :: Verbesserung 5.0; Berichtigung 4.0; Umsetzung 1.0; Nachbesserung 1.0; Darstellung 1.0; Richtigstellung 1.0
+Korrektur.n Korrektur_10 :: Verbesserung 4.0; Berichtigung 4.0; Revision 1.0; Wandel 1.0; Modifizierung 1.0; Abweichung 1.0; Richtigstellung 1.0; Aufschluss 1.0
+Korrektur.n Korrektur_2 :: Berichtigung 3.0; Verbesserung 2.0; Richtigstellung 1.0; Anpassung 1.0
+Korrektur.n Korrektur_3 :: Berichtigung 3.0; Wiederherstellung 1.0; Änderung 1.0; Ausgleichung 1.0; Veränderung 1.0; Verbesserung 1.0; Richtigstellung 1.0; Justierung 1.0; Ausbesserung 1.0; Begradigung 1.0
+Korrektur.n Korrektur_4 :: Verbesserung 2.0; Berichtigung 2.0; Richtigstellung 1.0; Anpassung 1.0
+Korrektur.n Korrektur_5 :: Berichtigung 4.0; Änderung 2.0; Verbesserung 2.0; Zensur 1.0; Wandel 1.0; Veränderung 1.0; Abänderung 1.0; Korrektion 1.0; Richtigstellung 1.0; Ersetzung 1.0; Aufschluss 1.0
+Korrektur.n Korrektur_6 :: Verbesserung 4.0; Berichtigung 3.0; Änderung 2.0; Wandel 1.0; Aufschluss 1.0
+Korrektur.n Korrektur_7 :: Verbesserung 4.0; Änderung 2.0; verbesserte_Fassung 1.0; Abänderung 1.0; Aufdeckung 1.0; Berichtigung 1.0; Richtigstellung 1.0
+Korrektur.n Korrektur_8 :: Verbesserung 3.0; Änderung 2.0; Berichtigung 2.0; Nachbesserung 1.0; Instandsetzung 1.0; Mangelbeseitigung 1.0
+Korrektur.n Korrektur_9 :: Verbesserung 4.0; Berichtigung 3.0; Änderung 2.0; Wandel 1.0; Dementi 1.0
+Kürzel.n Kürzel_1 :: Abkürzung 3.0; Kurzwort 2.0; Siegel 1.0; Kode 1.0
+Kürzel.n Kürzel_10 :: Abkürzung 3.0; Kurzwort 2.0; Kode 1.0; Kurzform 1.0
+Kürzel.n Kürzel_2 :: Abkürzung 3.0; Kurzwort 1.0; Synonym 1.0; Kode 1.0
+Kürzel.n Kürzel_3 :: Abkürzung 3.0; Kurzwort 1.0; Zeichen 1.0; Bedeutung 1.0
+Kürzel.n Kürzel_4 :: Abkürzung 5.0; Synonym 2.0; Beschreibung 1.0; Kurzform 1.0
+Kürzel.n Kürzel_5 :: Abkürzung 4.0; Kurzwort 1.0; Vermerk 1.0; Siegel 1.0
+Kürzel.n Kürzel_6 :: Abkürzung 3.0; Kurzwort 1.0; Siegel 1.0; Kode 1.0
+Kürzel.n Kürzel_7 :: Abkürzung 3.0; Kode 2.0; Synonym 1.0; Siegel 1.0
+Kürzel.n Kürzel_8 :: Abkürzung 4.0; Kurzwort 1.0; Kurzzeichen 1.0; Kurzname 1.0; Kurzform 1.0
+Kürzel.n Kürzel_9 :: Abkürzung 4.0; Kode 2.0
+Lieferung.n Lieferung_1 :: Sendung 4.0; Annahme 1.0; Fracht 1.0; Zustellung 1.0; Zufuhr 1.0; Anlieferung 1.0; Warenmenge 1.0; Belieferung 1.0
+Lieferung.n Lieferung_10 :: Sendung 4.0; Empfang 1.0; Packet 1.0; Post 1.0; Eingang 1.0
+Lieferung.n Lieferung_2 :: Zustellung 3.0; Auslieferung 2.0; Bestellung 1.0; Zusendung 1.0; Anfuhr 1.0; Versand 1.0; Übergabe 1.0; Belieferung 1.0
+Lieferung.n Lieferung_3 :: Sendung 3.0; Versand 2.0; Auslieferung 2.0; Belieferung 2.0; Zustellung 1.0; Zufuhr 1.0; Anlieferung 1.0; Warenzufuhr 1.0; Warensendung 1.0
+Lieferung.n Lieferung_4 :: Sendung 4.0; Zustellung 1.0; Anlieferung 1.0; Auslieferung 1.0; Belieferung 1.0
+Lieferung.n Lieferung_5 :: Zustellung 2.0; Beschaffung 1.0; Beförderung 1.0; Verkauf 1.0; Erbringung 1.0; Bereitstellung 1.0; Versand 1.0; Sendung 1.0; Besorgung 1.0; Transport 1.0
+Lieferung.n Lieferung_6 :: Sendung 4.0; Bestellung 1.0; Versand 1.0
+Lieferung.n Lieferung_7 :: Sendung 4.0; Zusendung 1.0; Bestellung 1.0; Zulieferung 1.0; Versand 1.0; Übergabe 1.0; Zufuhr 1.0; Anlieferung 1.0; Ablieferung 1.0; Warenmenge 1.0; Warenzufuhr 1.0
+Lieferung.n Lieferung_8 :: Sendung 5.0; Auslieferung 3.0; Anlieferung 2.0; Belieferung 2.0; Zustellung 1.0; Fracht 1.0; Ablieferung 1.0; Posten 1.0
+Lieferung.n Lieferung_9 :: Sendung 2.0; Fracht 1.0; Zustellung 1.0; Zufuhr 1.0; Auflage 1.0; Ausgabe 1.0; Warenmenge 1.0; Auslieferung 1.0; Belieferung 1.0
+Likör.n Likör_1 :: Alkohol 3.0; Spirituose 2.0; Schnaps 2.0; Hochprozentiges 1.0; Berauschendes 1.0; Trinkbares 1.0
+Likör.n Likör_10 :: Alkohol 2.0; Schnaps 1.0; alkoholisches_Getränk 1.0
+Likör.n Likör_2 :: Alkohol 2.0; Spirituose 1.0; Schnaps 1.0
+Likör.n Likör_3 :: Spirituose 3.0; Aperitif 1.0; Alkohol 1.0; Hochprozentiges 1.0; Destillat 1.0; viskoses_Getränk 1.0; Gebrannter 1.0; alkoholisches_Süßgetränk 1.0; zäher_Schnaps 1.0; alkoholisches_Getränk 1.0; dickflüssiger_Alkohol 1.0
+Likör.n Likör_4 :: Alkohol 2.0; Schnaps 2.0
+Likör.n Likör_5 :: Schnaps 4.0; Alkohol 2.0; Branderzeugnis 1.0; Getränk 1.0; Erzeugnis 1.0
+Likör.n Likör_6 :: Schnaps 4.0; Alkohol 2.0; Branderzeugnis 1.0; Getränk 1.0; Erzeugnis 1.0
+Likör.n Likör_7 :: Schnaps 3.0; Spirituose 1.0; Alkohol 1.0
+Likör.n Likör_8 :: Alkohol 1.0; Korn 1.0; Schnaps 1.0
+Likör.n Likör_9 :: Schnaps 3.0; Spirituose 2.0; Alkohol 2.0; Getränk 2.0; Verbindung 1.0
+Meisterin.n Meisterin_1 :: Chefin 1.0; Größte 1.0; Könnerin 1.0; Spezialistin 1.0; Expertin 1.0
+Meisterin.n Meisterin_10 :: Gewinnerin 3.0; Erste 2.0; Expertin 2.0; Fachfrau 1.0; Ausgezeichnete 1.0; Lehrherrin 1.0; Profi 1.0
+Meisterin.n Meisterin_2 :: Champion 3.0; Gewinnerin 1.0
+Meisterin.n Meisterin_3 :: Siegerin 3.0; Gewinnerin 3.0; Beste 1.0; Profi 1.0
+Meisterin.n Meisterin_4 :: Expertin 4.0; Koryphäe 1.0; Könnerin 1.0; Champion 1.0; Spezialistin 1.0; Profi 1.0
+Meisterin.n Meisterin_5 :: Lehrerin 5.0; Ausbildnerin 1.0; Trainerin 1.0; Magistra 1.0
+Meisterin.n Meisterin_6 :: Expertin 3.0; Fachfrau 1.0; Lehrherrin 1.0; Spezialistin 1.0
+Meisterin.n Meisterin_7 :: Siegerin 2.0; Gewinnerin 2.0; Beste 1.0; Spitzensportlerin 1.0; Expertin 1.0
+Meisterin.n Meisterin_8 :: Titelträgerin 1.0; Koryphäe 1.0; Triumphatorin 1.0; Experte 1.0; Siegerin 1.0; Fachkundige 1.0; Fachperson 1.0; Magister 1.0; Gewinnerin 1.0; Profi 1.0; Expertin 1.0
+Meisterin.n Meisterin_9 :: Siegerin 2.0; Beste 1.0; Champion 1.0; Titelgewinnerin 1.0
+Mächtigkeit.n Mächtigkeit_1 :: Dicke 4.0; Stärke 2.0; Ausdehnung 1.0
+Mächtigkeit.n Mächtigkeit_10 :: Dicke 3.0; Stärke 2.0; Wertigkeit 1.0; Ausdehnung 1.0
+Mächtigkeit.n Mächtigkeit_2 :: Dicke 3.0; Wertigkeit 1.0; Schicht 1.0; Stärke 1.0
+Mächtigkeit.n Mächtigkeit_3 :: Dicke 4.0; Stärke 2.0; Ausdehnung 1.0; Wert 1.0
+Mächtigkeit.n Mächtigkeit_4 :: Dicke 2.0; Ausdehnung 2.0; Wert 1.0; Stärke 1.0
+Mächtigkeit.n Mächtigkeit_5 :: Kraft 1.0; Wertigkeit 1.0; Größe 1.0
+Mächtigkeit.n Mächtigkeit_6 :: Dicke 5.0; Stärke 2.0; Durchmesser 1.0; Höhe 1.0; Ausdehnung 1.0; Schicht 1.0; Stärker 1.0
+Mächtigkeit.n Mächtigkeit_7 :: Stärke 3.0; Dicke 1.0; Ausdehnung 1.0; Ergiebigkeit 1.0
+Mächtigkeit.n Mächtigkeit_8 :: Dicke 2.0; Stärke 2.0; Wert 1.0; Fassungskraft 1.0
+Mächtigkeit.n Mächtigkeit_9 :: Dicke 4.0; Stärke 3.0; Breite 1.0; Durchmesser 1.0; Höhe 1.0; Gewaltigkeit 1.0; Schicht 1.0
+Rivalität.n Rivalität_1 :: Konkurrenz 3.0; Wettstreiterei 1.0; Machtkampf 1.0; Feindschaft 1.0; Wetteiferei 1.0; Kräftemessung 1.0
+Rivalität.n Rivalität_10 :: Feindschaft 5.0; Konkurrenz 1.0
+Rivalität.n Rivalität_2 :: Konkurrenz 3.0; Konkurrenzkampf 1.0; Wettbewerb 1.0; Feindschaft 1.0
+Rivalität.n Rivalität_3 :: Wettbewerb 1.0; Feindschaft 1.0; Konkurrenz 1.0
+Rivalität.n Rivalität_4 :: Konkurrenz 3.0; Feindschaft 2.0; Konkurrenzkampf 1.0; Feindseligkeit 1.0
+Rivalität.n Rivalität_5 :: Feindschaft 2.0; Konkurrenz 2.0; Feindseligkeit 1.0; Fehde 1.0
+Rivalität.n Rivalität_6 :: Konkurrenz 3.0; Feindseligkeit 1.0; Fehde 1.0; Feindschaft 1.0
+Rivalität.n Rivalität_7 :: Konkurrenz 3.0; Nebenbuhlerei 1.0
+Rivalität.n Rivalität_8 :: Feindschaft 3.0; Nebenbuhlerei 1.0; Konkurrenz 1.0; Kampf 1.0
+Rivalität.n Rivalität_9 :: Konkurrenz 4.0; Nebenbuhlerschaft 1.0; Feindschaft 1.0
+Streuung.n Streuung_1 :: Verteilung 3.0; Variation 1.0; Bandbreite 1.0; Dispersion 1.0
+Streuung.n Streuung_10 :: Verteilung 3.0; Zerstreuung 1.0; Variation 1.0; Auftrennung 1.0; Aufsplittung 1.0
+Streuung.n Streuung_2 :: Verteilung 2.0; Spiegelung 1.0; Dispersion 1.0
+Streuung.n Streuung_3 :: Verteilung 4.0; Teilung 1.0; Bandbreite 1.0; Aufteilung 1.0
+Streuung.n Streuung_4 :: Verteilung 5.0; Dispersion 1.0; Aufteilung 1.0
+Streuung.n Streuung_5 :: Verteilung 3.0; Variation 1.0; Ausdehnung 1.0; Abweichung 1.0
+Streuung.n Streuung_6 :: Verteilung 4.0; Verbreitung 1.0; Ablenkung 1.0
+Streuung.n Streuung_7 :: Verteilung 2.0; Dispersion 2.0; Bandbreite 1.0
+Streuung.n Streuung_8 :: Verteilung 5.0; Verbreitung 1.0; Aufteilung 1.0
+Streuung.n Streuung_9 :: Verteilung 2.0; Dispersion 2.0; Bandbreite 1.0
+Terroristin.n Terroristin_1 :: Untergrundkämpferin 2.0; Attentäterin 2.0; Saboteurin 1.0; Verbrecherin 1.0; Selbstmörderin 1.0; Räuberin 1.0; Partisanin 1.0
+Terroristin.n Terroristin_10 :: Gangsterin 1.0; Verbrecherin 1.0; Attentäterin 1.0; Ganovin 1.0; Radikale 1.0
+Terroristin.n Terroristin_2 :: Untergrundkämpferin 2.0; Extremistin 2.0; Verbrecherin 1.0; Ganovin 1.0; Attentäter 1.0; Radikale 1.0
+Terroristin.n Terroristin_3 :: Untergrundkämpferin 2.0; Attentäterin 2.0; Revolutionärin 1.0; Saboteurin 1.0; Anhängerin_des_Anarchismus 1.0; Partisanin 1.0; Rebellin 1.0; Radikale 1.0
+Terroristin.n Terroristin_4 :: Extremistin 2.0; Untergrundkämpferin 1.0; Attentäterin 1.0; Anarchistin 1.0; Rebellin 1.0; Partisanin 1.0; Radikale 1.0
+Terroristin.n Terroristin_5 :: Attentäterin 2.0; Extremistin 2.0; Unruhestifterin 1.0; Extrimistin 1.0; Radikale 1.0; Kriminelle 1.0; Gesetzeswidrige 1.0
+Terroristin.n Terroristin_6 :: Verbrecherin 2.0; Attentäterin 2.0; Extremistin 2.0; Untergrundkämpferin 1.0
+Terroristin.n Terroristin_7 :: Extremistin 2.0; Separatistin 1.0; Attentäterin 1.0; Bombenlegerin 1.0; Aufrührerin 1.0; Radikale 1.0
+Terroristin.n Terroristin_8 :: Attentäterin 3.0; Extremistin 3.0; Mörderin 1.0; Verbrecherin 1.0; Räuberin 1.0; Gaunerin 1.0
+Terroristin.n Terroristin_9 :: Untergrundkämpferin 2.0; Verbrecherin 2.0; Aufrührerin 2.0; Extremistin 2.0; Mörderin 1.0; Gangsterin 1.0; Bombenlegerin 1.0; Attentäterin 1.0; Räuberin 1.0; Aktivistin 1.0
+Verbannung.n Verbannung_1 :: Exil 2.0; Ausstoßung 1.0; Ausbürgerung 1.0; Verstoßung 1.0; Ausweisung 1.0; Vertreibung 1.0; Entfernung 1.0
+Verbannung.n Verbannung_10 :: Exil 2.0; Fremde 1.0; Ausweisung 1.0; Exilierung 1.0; Entfernung 1.0
+Verbannung.n Verbannung_2 :: Exil 2.0; Ausweisung 2.0; Vertreibung 1.0; Entfernung 1.0
+Verbannung.n Verbannung_3 :: Exil 4.0; Ausstoßung 1.0; Ausweisung 1.0; Exilierung 1.0
+Verbannung.n Verbannung_4 :: Exil 2.0; Verstoßung 1.0; Flucht 1.0; Ausweisung 1.0
+Verbannung.n Verbannung_5 :: Exil 2.0; Ausweisung 2.0; Landesverweisung 1.0; Verstoßung 1.0; Exilierung 1.0
+Verbannung.n Verbannung_6 :: Exil 3.0; Ausweisung 2.0
+Verbannung.n Verbannung_7 :: Exil 3.0; Fremde 1.0; Flucht 1.0
+Verbannung.n Verbannung_8 :: Exil 4.0; Ausstoßung 1.0; Ferne 1.0
+Verbannung.n Verbannung_9 :: Exil 3.0; Einsperrung 1.0; Exilierung 1.0; Entfernung 1.0
+Verfilmung.n Verfilmung_1 :: Filmumsetzung 2.0; Filmstück 1.0; filmische_Umsetzung 1.0; Aufnahme 1.0
+Verfilmung.n Verfilmung_10 :: Film 2.0; Veranschaulichung 1.0; Filmumsetzung 1.0; Umsetzung 1.0; filmische_Darstellung 1.0; Kino 1.0; Bild_und_Ton 1.0
+Verfilmung.n Verfilmung_2 :: Filmumsetzung 1.0; Umsetzung 1.0; filmische_Umsetzung 1.0; Aufnahme 1.0
+Verfilmung.n Verfilmung_3 :: Film 1.0; Filmumsetzung 1.0; Filmadaption 1.0; Produktion 1.0
+Verfilmung.n Verfilmung_4 :: Drehung 1.0; Filmumsetzung 1.0; Umsetzung 1.0; Ausstrahlung 1.0; Filmaufzeichnung 1.0; Filmwerk 1.0
+Verfilmung.n Verfilmung_5 :: Veranschaulichung 1.0; Filmung 1.0; Drehung 1.0; Film 1.0; Filmumsetzung 1.0; Stück 1.0; Filmprojekt 1.0; Aufnehmung 1.0; auf_die_Leinwand_bringen 1.0; Filmwerk 1.0; Filmstory 1.0
+Verfilmung.n Verfilmung_6 :: Filmumsetzung 2.0; Film 1.0; filmische_Umsetzung 1.0; Cinema 1.0; Kino 1.0; Filmwerk 1.0; Pelicula 1.0; Movie 1.0
+Verfilmung.n Verfilmung_7 :: Film 1.0; Filmumsetzung 1.0; Projekt 1.0; Filmaufführung 1.0
+Verfilmung.n Verfilmung_8 :: Filmumsetzung 1.0; Ablichtung 1.0; Ausstrahlung 1.0; Abhandlung 1.0; filmische_Umsetzung 1.0; Verbildlichung 1.0; auf_die_Leinwand_bringen 1.0; Aufnahme 1.0; Geschichte 1.0
+Verfilmung.n Verfilmung_9 :: Darstellung 2.0; Drehung 1.0; Filmfassung 1.0; Verfassung 1.0; Filmumsetzung 1.0; Nachbildung 1.0; Aufführung 1.0; Darbietung 1.0; Nachempfindung 1.0
+abwechselnd.a abwechselnd_1 :: alternierend 3.0; wechselnd 3.0; wahlweise 1.0; tauschend 1.0; umschichtig 1.0; gegenseitig 1.0
+abwechselnd.a abwechselnd_10 :: alternierend 2.0; wechselnd 2.0; tauschend 1.0; aufeinanderfolgend 1.0; variierend 1.0
+abwechselnd.a abwechselnd_2 :: alternierend 2.0; wechselnd 2.0; gegenseitig 1.0
+abwechselnd.a abwechselnd_3 :: wechselnd 2.0; überwechselnd 1.0; schwankend 1.0; alternierend 1.0; tauschend 1.0; wiederkehrend 1.0
+abwechselnd.a abwechselnd_4 :: alternierend 2.0; wechselnd 2.0; nach_der_Reihe 1.0; mal_der_mal_die 1.0; wechselweise 1.0; übereinander_gelagert 1.0; schichtenweise 1.0
+abwechselnd.a abwechselnd_5 :: alternierend 2.0; wechselnd 2.0; wahlweise 1.0; wechselseitig 1.0; tauschend 1.0; reihum 1.0
+abwechselnd.a abwechselnd_6 :: alternierend 3.0; periodisch 2.0; tauschend 2.0; gegenseitig 2.0; wechselseitig 1.0; wahlweise 1.0; alternativ 1.0; wechselweise 1.0; rotierend 1.0; wechselnd 1.0
+abwechselnd.a abwechselnd_7 :: alternierend 3.0; modulierend 1.0; tauschen 1.0; schwankend 1.0; wechselnd 1.0; wechseln 1.0
+abwechselnd.a abwechselnd_8 :: wechselnd 3.0; nach_der_Reihe 1.0; verändernd 1.0; wahlweise 1.0; wechselseitig 1.0; periodisch 1.0; alternativ 1.0; alternierend 1.0; umschichtig 1.0; reihum 1.0; gegenseitig 1.0
+abwechselnd.a abwechselnd_9 :: wechselnd 2.0; tauschen 1.0; reihenweise 1.0; wechselseitig 1.0; periodisch 1.0; zyklisch 1.0; aufeinander_folgend 1.0; aufeinanderfolgend 1.0; nacheinander_folgend 1.0; gegenseitig 1.0; unregelmäßig 1.0
+alkoholsüchtig.a alkoholsüchtig_1 :: alkoholabhängig 4.0; alkoholkrank 1.0; krank 1.0; trunksüchtig 1.0; unter_Trunksucht_leidend 1.0; drogensüchtig 1.0
+alkoholsüchtig.a alkoholsüchtig_10 :: alkoholabhängig 3.0; abhängig 2.0; alkoholkrank 1.0; krank 1.0; trunksüchtig 1.0; drogensüchtig 1.0
+alkoholsüchtig.a alkoholsüchtig_2 :: alkoholabhängig 2.0; alkoholkrank 1.0; ohne_alkohol_nicht_leben_könnend 1.0; auf_Alkohol_angewiesen 1.0; trunksüchtig 1.0; versoffen 1.0; abhängig 1.0
+alkoholsüchtig.a alkoholsüchtig_3 :: alkoholabhängig 3.0; süchtig 2.0; alkoholkrank 2.0; krank 2.0; trunksüchtig 2.0; abhängig 2.0; hoffnungslos 1.0; betrunken 1.0
+alkoholsüchtig.a alkoholsüchtig_4 :: alkoholabhängig 3.0; trunksüchtig 2.0; alkoholkrank 1.0; trinksüchtig 1.0
+alkoholsüchtig.a alkoholsüchtig_5 :: alkoholabhängig 5.0; auf_Alkohol_angewiesen 1.0; trunksüchtig 1.0; drogensüchtig 1.0
+alkoholsüchtig.a alkoholsüchtig_6 :: alkoholkrank 3.0; alkoholabhängig 3.0; trunksüchtig 1.0; abhängig 1.0
+alkoholsüchtig.a alkoholsüchtig_7 :: alkoholabhängig 2.0; trinksüchtig 1.0; trunksüchtig 1.0; versoffen 1.0; abhängig 1.0
+alkoholsüchtig.a alkoholsüchtig_8 :: alkoholabhängig 2.0; süchtig 1.0; alkoholkrank 1.0; krank 1.0; trunksüchtig 1.0; der_Trunksucht_erlegen 1.0; abhängig 1.0
+alkoholsüchtig.a alkoholsüchtig_9 :: alkoholabhängig 4.0; trunksüchtig 2.0; alkoholkrank 1.0; betrunken 1.0; abhängig 1.0
+anprobieren.v anprobieren_1 :: anziehen 3.0; testen 3.0; ausprobieren 2.0; erproben 1.0; überziehen 1.0; hineinschlüpfen 1.0; tragen 1.0; anpassen 1.0; durchführen 1.0; reingleiten 1.0; probieren 1.0
+anprobieren.v anprobieren_10 :: testen 2.0; ausprobieren 2.0; anziehen 1.0; prüfen 1.0
+anprobieren.v anprobieren_11 :: testen 5.0; anziehen 3.0; probieren 2.0; ankleiden 1.0; ausprobieren 1.0
+anprobieren.v anprobieren_12 :: testen 3.0; versuchen 1.0; ausprobieren 1.0
+anprobieren.v anprobieren_13 :: anziehen 3.0; versuchen 1.0; testen 1.0; tragen 1.0; probieren 1.0; ausprobieren 1.0
+anprobieren.v anprobieren_14 :: anziehen 5.0; ausprobieren 2.0; tragen 1.0; testen 1.0; anpassen 1.0; starten 1.0; probieren 1.0; ankleiden 1.0
+anprobieren.v anprobieren_15 :: anziehen 3.0; versuchen 2.0; testen 2.0; ausprobieren 1.0
+anprobieren.v anprobieren_16 :: anziehen 2.0; ausprobieren 2.0; versuchen 1.0; testen 1.0; probieren 1.0; ankleiden 1.0
+anprobieren.v anprobieren_17 :: anziehen 3.0; versuchen 2.0; probieren 2.0; tragen 1.0; testen 1.0; ausprobieren 1.0
+anprobieren.v anprobieren_18 :: anlegen 3.0; anziehen 2.0; ausprobieren 2.0; versuchen 1.0; testen 1.0; ankleiden 1.0
+anprobieren.v anprobieren_19 :: versuchen 2.0; testen 2.0; probieren 2.0; austesten 1.0; anziehen 1.0; anpassen 1.0; Kleiderprobe_machen 1.0
+anprobieren.v anprobieren_2 :: anziehen 2.0; testen 2.0; versuchen 1.0; Kleiderprobe_machen 1.0; probieren 1.0; ankleiden 1.0
+anprobieren.v anprobieren_20 :: testen 4.0; probieren 3.0; anziehen 1.0; tragen 1.0; anpassen 1.0; untersuchen 1.0; begutachten 1.0; ausprobieren 1.0
+anprobieren.v anprobieren_3 :: probetragen 2.0; anziehen 1.0; tragen 1.0; zur_Probe_anziehen 1.0; probieren 1.0
+anprobieren.v anprobieren_4 :: anziehen 2.0; versuchen 2.0; testen 2.0
+anprobieren.v anprobieren_5 :: anziehen 3.0; testen 2.0; bekleiden 1.0; versuchen 1.0; zur_Probe_anziehen 1.0; probieren 1.0; anlegen 1.0; antesten 1.0; prüfen 1.0; ausprobieren 1.0
+anprobieren.v anprobieren_6 :: testen 2.0; ausprobieren 2.0; anziehen 1.0; erproben 1.0; überziehen 1.0; probieren 1.0
+anprobieren.v anprobieren_7 :: anziehen 4.0; testen 4.0; probieren 3.0; aufsetzen 2.0; erproben 1.0; überziehen 1.0; anpassen 1.0; nachprüfen 1.0; untersuchen 1.0; anlegen 1.0; ausprobieren 1.0
+anprobieren.v anprobieren_8 :: testen 5.0; anpassen 2.0; probieren 2.0; austesten 1.0; anziehen 1.0; versuchen 1.0; tragen 1.0; Probe_tragen 1.0; untersuchen 1.0; begutachten 1.0
+anprobieren.v anprobieren_9 :: anziehen 3.0; versuchen 3.0; testen 2.0; ausprobieren 2.0; erproben 1.0; eine_Probe_machen 1.0; anpassen 1.0; antesten 1.0
+asexuell.a asexuell_1 :: geschlechtslos 2.0; antisexuell 2.0; objektsexuell 1.0; platonisch 1.0; sexuell_gefühllos 1.0; fetisch 1.0
+asexuell.a asexuell_10 :: geschlechtstrieblos 1.0; gleichgeschlechtlich 1.0; ungeschlechtlich 1.0; unsinnlich 1.0; sexlos 1.0; keine_Sexualität_besitzend 1.0
+asexuell.a asexuell_2 :: ungeschlechtlich 3.0; schüchtern 1.0; geschlechtslos 1.0; keusch 1.0; geschlechtlos 1.0; verhalten 1.0; prüde 1.0; verschlossen 1.0; sexuell_gefühllos 1.0
+asexuell.a asexuell_3 :: geschlechtslos 2.0; antisexuell 2.0; nichtsexuell 1.0; ungeschlechtlich 1.0
+asexuell.a asexuell_4 :: geschlechtstrieblos 1.0; makellos 1.0; geschlechtslos 1.0; sexuell_gefühllos 1.0
+asexuell.a asexuell_5 :: geschlechtstrieblos 1.0; makellos 1.0; geschlechtslos 1.0; sexuell_gefühllos 1.0
+asexuell.a asexuell_6 :: frigide 1.0; ungeschlechtlich 1.0; gefühlslos 1.0; ohne_Verlangen 1.0; sexuell_gefühllos 1.0
+asexuell.a asexuell_7 :: platonisch 2.0; geschlechtslos 1.0; sexuell_gefühllos 1.0
+asexuell.a asexuell_8 :: geschlechtstrieblos 1.0; ungeschlechtlich 1.0; geschlechtlos 1.0; antisexuell 1.0; sexuell_gefühllos 1.0
+asexuell.a asexuell_9 :: ungeschlechtlich 2.0; nicht_sexuell 2.0; gleichsexuell 1.0; prüde 1.0; sexlos 1.0; platonisch 1.0
+belehren.v belehren_1 :: unterrichten 3.0; aufklären 2.0; erklären 1.0; zurecht_weisen 1.0; lehren 1.0; zurechtweisen 1.0; verbessern 1.0; informieren 1.0; schulen 1.0
+belehren.v belehren_10 :: unterrichten 4.0; informieren 4.0; aufklären 2.0; unterweisen 2.0; rügen 1.0; persuadieren 1.0; instruieren 1.0; tadeln 1.0; mängeln 1.0; lehren 1.0; anleiten 1.0
+belehren.v belehren_11 :: unterrichten 3.0; aufklären 2.0; unterweisen 2.0; verbessern 2.0; informieren 2.0; schulmeistern 1.0; instruieren 1.0; in_Kenntnis_setzen 1.0; berichtigen 1.0
+belehren.v belehren_12 :: unterrichten 4.0; aufklären 1.0; überzeugen 1.0; rügen 1.0; schulmeistern 1.0; unterweisen 1.0; berichtigen 1.0; zurechtweisen 1.0; informieren 1.0
+belehren.v belehren_13 :: unterrichten 4.0; aufklären 3.0; informieren 2.0; erläutern 1.0; rügen 1.0; hinweisen 1.0; erklären 1.0; in_Kenntnis_setzen 1.0; berichtigen 1.0
+belehren.v belehren_14 :: unterrichten 3.0; aufklären 2.0; überzeugen 1.0; erklären 1.0; korrigieren 1.0; lehren 1.0; zeigen 1.0; zurechtweisen 1.0; verbessern 1.0; informieren 1.0
+belehren.v belehren_15 :: unterrichten 4.0; informieren 4.0; berichtigen 2.0; aufklären 1.0; rügen 1.0; tadeln 1.0; beibringen 1.0; verbessern 1.0; schulen 1.0
+belehren.v belehren_16 :: informieren 3.0; überzeugen 1.0; aufklären 1.0; unterrichten 1.0; erklären 1.0; schulmeistern 1.0; unterweisen 1.0; zeigen 1.0; berichtigen 1.0; anleiten 1.0
+belehren.v belehren_17 :: aufklären 3.0; informieren 3.0; lehren 2.0; erklären 1.0; berichtigen 1.0
+belehren.v belehren_18 :: korrigieren 2.0; unterrichten 2.0; erklären 1.0; ermahnen 1.0; verbessern 1.0
+belehren.v belehren_19 :: unterrichten 4.0; aufklären 2.0; unterweisen 2.0; einweihen 1.0; lehren 1.0; informieren 1.0
+belehren.v belehren_2 :: aufklären 4.0; unterrichten 3.0; rügen 1.0; zurecht_stutzen 1.0; schimpfen 1.0; mängeln 1.0; lehren 1.0; erziehen 1.0; mitteilen 1.0; anschreien 1.0; nerven 1.0
+belehren.v belehren_20 :: unterrichten 4.0; informieren 3.0; benachrichtigen 2.0; erklären 2.0; aufklären 1.0; aufzeigen 1.0; unterweisen 1.0
+belehren.v belehren_3 :: aufklären 3.0; unterrichten 2.0; unterweisen 2.0; informieren 2.0; benachrichtigen 1.0; überzeugen 1.0; aufzeigen 1.0; berichtigen 1.0; mitteilen 1.0; erziehen 1.0; verbessern 1.0; anleiten 1.0
+belehren.v belehren_4 :: aufklären 2.0; unterweisen 2.0; informieren 2.0; trainieren 1.0; rügen 1.0; instruieren 1.0; tadeln 1.0; ausbilden 1.0; lehren 1.0; schulen 1.0
+belehren.v belehren_5 :: aufklären 3.0; unterrichten 3.0; informieren 3.0; trainieren 1.0; drillen 1.0; lehren 1.0; ausbilden 1.0; mitteilen 1.0
+belehren.v belehren_6 :: berichtigen 3.0; aufklären 2.0; unterrichten 1.0; instruieren 1.0; weisen 1.0; verbessern 1.0; informieren 1.0
+belehren.v belehren_7 :: informieren 3.0; aufklären 2.0; unterrichten 2.0; unterweisen 2.0; überzeugen 1.0; zurecht_stutzen 1.0; instruieren 1.0; zurecht_weisen 1.0; lehren 1.0; erziehen 1.0; mitteilen 1.0
+belehren.v belehren_8 :: informieren 2.0; aufklären 1.0; rügen 1.0; unterrichten 1.0; tadeln 1.0; mängeln 1.0; unterweisen 1.0; mitteilen 1.0
+belehren.v belehren_9 :: informieren 6.0; unterrichten 4.0; aufklären 1.0; unterweisen 1.0
+brutal.a brutal_1 :: gewalttätig 5.0; grausam 2.0; kaltblütig 1.0; roh 1.0; mitleidlos 1.0; rabiat 1.0; gefühllos 1.0
+brutal.a brutal_10 :: gewaltsam 2.0; grausam 2.0; grob 1.0; rüde 1.0; bestialisch 1.0; gewalttätig 1.0; erbarmungslos 1.0; hart 1.0; streng 1.0; gefühllos 1.0; barbarisch 1.0
+brutal.a brutal_2 :: grausam 3.0; barbarisch 2.0; gewalttätig 2.0; erbarmungslos 1.0; gewaltsam 1.0; hart 1.0; gnadenlos 1.0; roh 1.0
+brutal.a brutal_3 :: gewalttätig 2.0; grausam 2.0; unbarmherzig 1.0; brachial 1.0; extrem 1.0; gewaltsam 1.0; hart 1.0; harsch 1.0
+brutal.a brutal_4 :: gewaltsam 2.0; hart 2.0; gewalttätig 2.0; extrem 1.0; rücksichtslos 1.0; radikal 1.0; roh 1.0; böse 1.0; gemein 1.0; fies 1.0
+brutal.a brutal_5 :: gewalttätig 3.0; gewaltsam 2.0; skrupellos 1.0; unbarmherzig 1.0; schlimm 1.0; hart 1.0; rücksichtslos 1.0; böse 1.0; gefährlich 1.0
+brutal.a brutal_6 :: gewalttätig 2.0; barbarisch 2.0; bösartig 1.0; stark 1.0; bestialisch 1.0; entmenscht 1.0; erbarmungslos 1.0; verstärkt 1.0; hart 1.0; aggressiv 1.0; gnadenlos 1.0; rücksichtslos 1.0; exzessiv 1.0; übertrieben 1.0; grausam 1.0
+brutal.a brutal_7 :: grausam 3.0; gewaltsam 2.0; gewalttätig 2.0; grob 1.0; schwer 1.0; schroff 1.0; hart 1.0; unsensibel 1.0; barbarisch 1.0
+brutal.a brutal_8 :: grausam 3.0; unmenschlich 2.0; entsetzlich 1.0; grob 1.0; schwerwiegend 1.0; enorm 1.0; sadistisch 1.0; schwer 1.0; derb 1.0; gewalttätig 1.0; rücksichtslos 1.0; heftig 1.0; barbarisch 1.0
+brutal.a brutal_9 :: gewalttätig 3.0; gewaltsam 2.0; gnadenlos 1.0; rücksichtslos 1.0; roh 1.0; grausam 1.0
+diversifizieren.v diversifizieren_1 :: ausweiten 3.0; fächern 1.0; verändern 1.0; variieren 1.0; modifizieren 1.0; abwandeln 1.0; differieren 1.0
+diversifizieren.v diversifizieren_10 :: verändern 2.0; variieren 2.0; verbreitern 1.0; erklären 1.0; ausweiten 1.0; gründen 1.0; unterscheiden 1.0; modifizieren 1.0; differieren 1.0
+diversifizieren.v diversifizieren_11 :: ausweiten 3.0; aufteilen 2.0; vervielfältigen 1.0; verändern 1.0; erweitern 1.0; variieren 1.0
+diversifizieren.v diversifizieren_12 :: verteilen 3.0; aufteilen 1.0; vervielfältigen 1.0; verlegen 1.0; individualisieren 1.0; differenzieren 1.0; verändern 1.0; verschieben 1.0; zerstreuen 1.0; umverteilen 1.0; unterscheiden 1.0; umstellen 1.0
+diversifizieren.v diversifizieren_13 :: versprechen 1.0; verändern 1.0; ausweiten 1.0; auffächern 1.0; erweitern 1.0; abwechseln 1.0; vertiefen 1.0
+diversifizieren.v diversifizieren_14 :: ausweiten 2.0; verteilen 2.0; streuen 1.0; zerstreuen 1.0
+diversifizieren.v diversifizieren_15 :: vervielfältigen 2.0; ausweiten 2.0; verändern 1.0; abwechseln 1.0; unterscheiden 1.0; abwandeln 1.0; Produktbreite_erweitern 1.0
+diversifizieren.v diversifizieren_16 :: ausweiten 2.0; vervielfältigen 1.0; umstellen 1.0; verteilen 1.0
+diversifizieren.v diversifizieren_17 :: untergliedern 1.0; auffächern 1.0; umstellen 1.0; Angebot_verbreitern 1.0; unterteilen 1.0
+diversifizieren.v diversifizieren_18 :: ausweiten 2.0; zerstreuen 2.0; verbreiten 2.0; aufteilen 1.0; vervielfältigen 1.0; individualisieren 1.0; differenzieren 1.0; verändern 1.0; aufgliedern 1.0; verteilen 1.0; entwickeln 1.0; wechseln 1.0
+diversifizieren.v diversifizieren_19 :: verändern 4.0; abwandeln 2.0; aufteilen 1.0; vervielfältigen 1.0; auffächern 1.0; abwechseln 1.0; zerstreuen 1.0; aufspalten 1.0; trennen 1.0; Vielfalt_entwickeln 1.0; verteilen 1.0
+diversifizieren.v diversifizieren_2 :: ausweiten 2.0; auffächern 2.0; aufteilen 1.0; gleichstellen 1.0; ausbreiten 1.0; verändern 1.0; differenzieren 1.0; erweitern 1.0; variieren 1.0; aufgliedern 1.0; unterscheiden 1.0; modifizieren 1.0; verteilen 1.0; differieren 1.0
+diversifizieren.v diversifizieren_20 :: vielfältiger_machen 2.0; ausweiten 1.0; erweitern 1.0; vorsehen 1.0
+diversifizieren.v diversifizieren_3 :: verändern 2.0; bestimmen 1.0; kategorisieren 1.0; gestalten 1.0; auffächern 1.0; erweitern 1.0; ändern 1.0; verbessern 1.0
+diversifizieren.v diversifizieren_4 :: ausweiten 2.0; abwandeln 2.0; tauschen 1.0; differenzieren 1.0; ersetzen 1.0; verändern 1.0; auffächern 1.0; erweitern 1.0; zerlegen 1.0; unterscheiden 1.0; fragmentieren 1.0; wechseln 1.0
+diversifizieren.v diversifizieren_5 :: aufteilen 2.0; nuancieren 1.0; vermehren 1.0; streuen 1.0; vervielfältigen 1.0; differenzieren 1.0; verändern 1.0; separieren 1.0; abweichen 1.0; auffächern 1.0; aufspalten 1.0; unterscheiden 1.0; verteilen 1.0
+diversifizieren.v diversifizieren_6 :: ausweiten 3.0; differenzieren 2.0; verändern 2.0; variieren 2.0; verbreiten 2.0; streuen 1.0; ausbreiten 1.0; ersetzen 1.0; auffächern 1.0; unterscheiden 1.0; modifizieren 1.0; abwandeln 1.0
+diversifizieren.v diversifizieren_7 :: ausweiten 3.0; verändern 2.0; variieren 2.0; verbreitern 1.0; auffächern 1.0
+diversifizieren.v diversifizieren_8 :: verändern 3.0; ausweiten 2.0; auffächern 2.0; variieren 1.0; abwechseln 1.0; modifizieren 1.0; abwandeln 1.0; differieren 1.0
+diversifizieren.v diversifizieren_9 :: verbreitern 2.0; auszubreiten 1.0; aufteilen 1.0; verändern 1.0; ausweiten 1.0; auszuweiten 1.0; variieren 1.0
+drillen.v drillen_1 :: trainieren 5.0; ausbilden 2.0; üben 1.0; lernen 1.0; lehren 1.0; stärken 1.0; unterweisen 1.0; schulen 1.0
+drillen.v drillen_10 :: trainieren 5.0; ausbilden 3.0; schleifen 2.0; erziehen 2.0; schulen 2.0; auszubilden 1.0; unterrichten 1.0; trimmen 1.0; heranbilden 1.0; unterweisen 1.0; abrichten 1.0
+drillen.v drillen_11 :: trainieren 2.0; schulen 2.0; unterrichten 1.0; schinden 1.0; stählen 1.0; ausbilden 1.0; lehren 1.0; beibringen 1.0; schleifen 1.0
+drillen.v drillen_12 :: trainieren 3.0; ausbilden 2.0; unterrichten 1.0; eichen 1.0
+drillen.v drillen_13 :: trainieren 4.0; ausbilden 3.0; schulen 3.0; üben 1.0; unterrichten 1.0; trimmen 1.0; schinden 1.0; vorbereiten 1.0; lehren 1.0; beibringen 1.0
+drillen.v drillen_14 :: trainieren 4.0; ausbilden 2.0; schulen 2.0; üben 1.0; trimmen 1.0; abrichten 1.0
+drillen.v drillen_15 :: trainieren 2.0; üben 1.0; trimmen 1.0; schinden 1.0; trainiert 1.0; ausbilden 1.0; lehren 1.0; erziehen 1.0; eichen 1.0; schulen 1.0
+drillen.v drillen_16 :: trainieren 5.0; trimmen 3.0; ausbilden 2.0; ausrichten 1.0; einstellen 1.0; lernen 1.0; vorbereiten 1.0; schleifen 1.0; schulen 1.0
+drillen.v drillen_17 :: trainieren 4.0; ausbilden 3.0; schulen 3.0; üben 2.0; unterrichten 1.0; trimmen 1.0; eingestellt 1.0; schinden 1.0; lernen 1.0; lehren 1.0; beibringen 1.0
+drillen.v drillen_18 :: trainieren 5.0; unterrichten 1.0; schinden 1.0; stählen 1.0; lehren 1.0; beibringen 1.0; schleifen 1.0; schulen 1.0
+drillen.v drillen_19 :: trainieren 2.0; trimmen 1.0; schinden 1.0; ausbilden 1.0; erziehen 1.0; schulen 1.0
+drillen.v drillen_2 :: ermüden 3.0; üben 1.0; trainieren 1.0; schinden 1.0; schulen 1.0
+drillen.v drillen_20 :: trainieren 4.0; ausbilden 3.0; schulen 2.0; trimmen 1.0; züchtigen 1.0; schinden 1.0
+drillen.v drillen_3 :: ausbilden 6.0; trainieren 5.0; disziplinieren 1.0; einpauken 1.0; einexerzieren 1.0; hart_rannehmen 1.0; lehren 1.0; gründlich_ausbilden 1.0; abrichten 1.0; schulen 1.0
+drillen.v drillen_4 :: trainieren 3.0; unterrichten 2.0; ausbilden 2.0; schulen 2.0; unterweisen 1.0; erziehen 1.0; trietzen 1.0
+drillen.v drillen_5 :: ausbilden 4.0; schinden 2.0; schleifen 2.0; trainieren 1.0; einexerzieren 1.0; gründlich_ausbilden 1.0; stärken 1.0; erziehen 1.0; abrichten 1.0
+drillen.v drillen_6 :: trainieren 3.0; ausbilden 2.0; erziehen 2.0; lernen 1.0; einexerzieren 1.0; schleifen 1.0; gründlich_ausbilden 1.0; stärken 1.0; abrichten 1.0
+drillen.v drillen_7 :: trainieren 4.0; ausbilden 3.0; abrichten 2.0; auszubilden 1.0; disziplinieren 1.0; lernen 1.0; fordern 1.0; einexerzieren 1.0; lehren 1.0; schleifen 1.0; gründlich_ausbilden 1.0; stärken 1.0; einpauken 1.0
+drillen.v drillen_8 :: trainieren 3.0; lehren 2.0; einexerzieren 1.0; ausbilden 1.0; gründlich_ausbilden 1.0; abrichten 1.0; antreiben 1.0; automatisieren 1.0
+drillen.v drillen_9 :: ausbilden 2.0; erziehen 2.0; schulen 2.0; auszubilden 1.0; trainieren 1.0; heranbilden 1.0; machen 1.0
+dynamisieren.v dynamisieren_1 :: bewegen 1.0; vorantreiben 1.0
+dynamisieren.v dynamisieren_10 :: beschleunigen 6.0; innovativer_machen 1.0; vorantreiben 1.0; die_Bearbeitung_beschleunigen 1.0; auf_Vordermann_bringen 1.0; modernisieren 1.0; flexibler_machen 1.0
+dynamisieren.v dynamisieren_11 :: vervielfältigen 1.0; gestalten 1.0; bewegen 1.0; erproben 1.0; erweitern 1.0; vitalisieren 1.0; verdeutlichen 1.0; ankurbeln 1.0; beschleunigen 1.0; ergänzen 1.0; Schwung_verleihen 1.0; beleben 1.0; verbessern 1.0; antreiben 1.0
+dynamisieren.v dynamisieren_12 :: schneller_machen 1.0; beweglich_gestalten 1.0; voranbringen 1.0; flexibler_gestalten 1.0; vereinfachen 1.0; antreiben 1.0; beweglich_machen 1.0
+dynamisieren.v dynamisieren_13 :: vermehren 1.0; offenhalten 1.0; verbinden 1.0; erweitern 1.0; verdoppeln 1.0; anpassen 1.0; zusammenfügen 1.0; selbstwirken 1.0; kalkulieren 1.0
+dynamisieren.v dynamisieren_14 :: beschleunigen 2.0; emporkommen 1.0; vorantreiben 1.0; voranschreiten 1.0
+dynamisieren.v dynamisieren_15 :: verändern 1.0; vereinheitlichen 1.0; vorantreiben 1.0; ansammeln 1.0; offenlegen 1.0; zusammenfügen 1.0; zeigen 1.0
+dynamisieren.v dynamisieren_16 :: vergrößern 1.0; beweglicher_machen 1.0; verbessern 1.0; entwickeln 1.0
+dynamisieren.v dynamisieren_17 :: beschleunigen 2.0; bekümmern 1.0; erstellen 1.0; vereinheitlichen 1.0; ersetzen 1.0; verändern 1.0; anpassen 1.0; bekriegen 1.0
+dynamisieren.v dynamisieren_18 :: anpassen 2.0; bewegen 1.0; verändern 1.0; beweglicher_machen 1.0; entfalten 1.0; präparieren 1.0; verbessern 1.0
+dynamisieren.v dynamisieren_19 :: anpassen 2.0; flink_machen 1.0; schnell_machen 1.0; verbreiten 1.0
+dynamisieren.v dynamisieren_2 :: aktivieren 1.0; vorantreiben 1.0; anpassen 1.0; beschleunigen 1.0
+dynamisieren.v dynamisieren_20 :: vorantreiben 2.0; hervorheben 1.0
+dynamisieren.v dynamisieren_3 :: vorantreiben 1.0; angleichen 1.0; ankurbeln 1.0; verbreiten 1.0
+dynamisieren.v dynamisieren_4 :: vorantreiben 2.0; anpassen 2.0; annähern 1.0; abstimmen 1.0; adaptieren 1.0; anschließen 1.0; verbessern 1.0
+dynamisieren.v dynamisieren_5 :: bewegen 2.0; betreiben 1.0; verbessern 1.0
+dynamisieren.v dynamisieren_6 :: verdeutlichen 2.0; beschleunigen 2.0; verbessern 2.0; vielschichtig_machen 1.0; stimmig_machen 1.0; spannungshaft_machen 1.0; erweitern 1.0; unterlegen 1.0; beschreiben 1.0; unterstützen 1.0; ankurbeln 1.0; untermalen 1.0
+dynamisieren.v dynamisieren_7 :: vorantreiben 1.0; anpassen 1.0; angleichen 1.0; beschleunigen 1.0; abstimmen 1.0; automatisieren 1.0
+dynamisieren.v dynamisieren_8 :: bewegen 1.0; vorantreiben 1.0; voranbringen 1.0; pushen 1.0; beschleunigen 1.0; anregen 1.0
+dynamisieren.v dynamisieren_9 :: lockern 1.0; lösen 1.0; vorantreiben 1.0; beschleunigen 1.0; mobilisieren 1.0
+dünnhäutig.a dünnhäutig_1 :: nervös 2.0; überempfindlich 1.0; schlankhäutig 1.0; übersensibel 1.0; dünn 1.0; sensibel 1.0
+dünnhäutig.a dünnhäutig_10 :: dünnwandig 1.0; schmal 1.0; dünn 1.0
+dünnhäutig.a dünnhäutig_2 :: sensibel 5.0; empfindlich 3.0; empfindsam 2.0; gefühlvoll 1.0; labil 1.0; feinfühlig 1.0; beleidigt 1.0; angespannt 1.0; gekränkt 1.0
+dünnhäutig.a dünnhäutig_3 :: empfindlich 2.0; kratzbürstig 1.0; nervös 1.0; widerstandslos 1.0; weichlich 1.0; unangenehm 1.0
+dünnhäutig.a dünnhäutig_4 :: empfindlich 2.0; dünnwandig 1.0; dünnschalig 1.0; hautlos 1.0; dünn 1.0
+dünnhäutig.a dünnhäutig_5 :: zart 1.0; dünnwandig 1.0; empfindlich 1.0; dünnschalig 1.0; dünn 1.0; eine_dünne_Haut_aufweisend 1.0
+dünnhäutig.a dünnhäutig_6 :: empfindlich 1.0; pergamenthaft 1.0; schwach 1.0
+dünnhäutig.a dünnhäutig_7 :: dünnwandig 2.0; zart 1.0; seidenhäutig 1.0; zerbrechlich 1.0; haarfein 1.0; filigran 1.0; dünn 1.0
+dünnhäutig.a dünnhäutig_8 :: zart 2.0; empfindsam 2.0; verletzlich 2.0; sensibel 2.0; gefühlvoll 1.0; beseelt 1.0; labil 1.0; empfindlich 1.0; feinhäutig 1.0; mitfühlend 1.0; schwächlich 1.0; verletzbar 1.0; einfühlsam 1.0; feinfülhig 1.0
+dünnhäutig.a dünnhäutig_9 :: empfindlich 2.0; dünnwandig 1.0; dünnschalig 1.0; dünn 1.0
+entlohnen.v entlohnen_1 :: bezahlen 6.0; vergüten 2.0; auszahlen 1.0; anstellen 1.0; besolden 1.0
+entlohnen.v entlohnen_10 :: bezahlen 6.0; vergüten 2.0; abfinden 1.0; löhnen 1.0; entgelten 1.0
+entlohnen.v entlohnen_11 :: bezahlen 5.0; auszahlen 1.0; vergüten 1.0; entgelten 1.0; belohnen 1.0
+entlohnen.v entlohnen_12 :: belohnen 4.0; bezahlen 3.0; vergüten 2.0
+entlohnen.v entlohnen_13 :: bezahlen 5.0; vergüten 1.0
+entlohnen.v entlohnen_14 :: bezahlen 5.0; vergüten 5.0; auszahlen 1.0; abfinden 1.0; ersetzen 1.0; entschädigen 1.0; lohnen 1.0; entgelten 1.0
+entlohnen.v entlohnen_15 :: bezahlen 6.0; vergüten 2.0; auszahlen 1.0; besolden 1.0
+entlohnen.v entlohnen_16 :: bezahlen 5.0; zahlen 1.0; lohnen 1.0; vergelten 1.0; entgelten 1.0; besolden 1.0
+entlohnen.v entlohnen_17 :: bezahlen 5.0; vergüten 2.0
+entlohnen.v entlohnen_18 :: bezahlen 5.0; vergüten 2.0; auszahlen 1.0; zahlen 1.0; vergelten 1.0; entgelten 1.0; belohnen 1.0
+entlohnen.v entlohnen_19 :: bezahlen 5.0; vergüten 1.0; belohnen 1.0
+entlohnen.v entlohnen_2 :: bezahlen 5.0; vergüten 2.0; anerkennen 1.0; ausbezahlen 1.0; vergelten 1.0; aufkommen 1.0
+entlohnen.v entlohnen_20 :: bezahlen 6.0; gelten 1.0; würdigen 1.0; dealen 1.0; vergüten 1.0; entgelten 1.0; belohnen 1.0
+entlohnen.v entlohnen_3 :: bezahlen 6.0; vergüten 2.0; auszahlen 1.0; geben 1.0; abfinden 1.0; entgelten 1.0; besolden 1.0
+entlohnen.v entlohnen_4 :: bezahlen 3.0; vergüten 1.0
+entlohnen.v entlohnen_5 :: bezahlen 5.0; vergüten 2.0
+entlohnen.v entlohnen_6 :: bezahlen 6.0; begünstigen 1.0; abgeben 1.0; lohnen 1.0; vergüten 1.0; entgelten 1.0
+entlohnen.v entlohnen_7 :: bezahlen 4.0; vergüten 2.0; auszahlen 1.0; geben 1.0; abfinden 1.0; entgelten 1.0; aufkommen 1.0
+entlohnen.v entlohnen_8 :: bezahlen 4.0; auszahlen 3.0; finanzieren 1.0; ausschütten 1.0; geben 1.0; abfinden 1.0; wettmachen 1.0; erstatten 1.0; vergelten 1.0; vergüten 1.0; bezuschussen 1.0; entgelten 1.0; aufkommen 1.0
+entlohnen.v entlohnen_9 :: bezahlen 5.0; vergüten 2.0; belohnen 1.0
+extern.a extern_1 :: offen 1.0; fern 1.0; auswärtig 1.0; ausländisch 1.0; äußere 1.0; außenstehend 1.0; parteilos 1.0; fremd 1.0; außerbetrieblich 1.0; frei 1.0
+extern.a extern_10 :: außen 2.0; anders 2.0; auswärtig 1.0; ausländisch 1.0; äußere 1.0; außenstehend 1.0; fremd 1.0
+extern.a extern_2 :: offen 1.0; fern 1.0; außen_liegend 1.0; ausgelagert 1.0; ausländisch 1.0; firmenfremd 1.0; äußere 1.0; außenstehend 1.0; fremd 1.0; unparteiisch 1.0; frei 1.0
+extern.a extern_3 :: auswärtig 2.0; außen 2.0; fremd 2.0; uneigen 1.0; äußere 1.0; außenstehend 1.0
+extern.a extern_4 :: außenstehend 2.0; fremd 2.0; fremdländisch 1.0; außerhalb 1.0; auswärtig 1.0; ausländisch 1.0; äußere 1.0; anders 1.0; außerbetrieblich 1.0
+extern.a extern_5 :: auswärtig 2.0; offen 1.0; fremdartig 1.0; äußere 1.0; ausländisch 1.0; parteilos 1.0; außenstehend 1.0; fremd 1.0
+extern.a extern_6 :: fremd 3.0; von_Außen 2.0; außerhalb 2.0; auswärtig 1.0; distanziert 1.0; äußere 1.0; ausserbetrieblich 1.0; nicht_offen 1.0; anders 1.0; außenstehend 1.0; außen 1.0; draußen 1.0
+extern.a extern_7 :: auswärtig 2.0; außenstehend 2.0; äußere 1.0; außen 1.0
+extern.a extern_8 :: außen 2.0; außerbetrieblich 2.0; auswärtig 1.0; nicht_intern 1.0; exogen 1.0; äußere 1.0; außenstehend 1.0; fremd 1.0
+extern.a extern_9 :: peripher 2.0; außen 2.0; dezentral 1.0; außen_liegend 1.0; außerhalb 1.0; auswertig 1.0; äußere 1.0; zusätzlich 1.0
+gedeihen.v gedeihen_1 :: wachsen 4.0; sprießen 1.0; grünen_und_blühen 1.0
+gedeihen.v gedeihen_10 :: wachsen 3.0; gut_wachsen 1.0; entfalten 1.0; erblühen 1.0; gelingen 1.0
+gedeihen.v gedeihen_11 :: wachsen 5.0; aufblühen 1.0; aufleben 1.0; entstehen 1.0; werden 1.0; geraten 1.0
+gedeihen.v gedeihen_12 :: wachsen 5.0; erheben 1.0; sprießen 1.0; aufblühen 1.0; erblühen 1.0; aufgehen 1.0; entwickeln 1.0; fruchten 1.0; wuchern 1.0
+gedeihen.v gedeihen_13 :: wachsen 6.0; gut_wachsen 1.0; erblühen 1.0; florieren 1.0; entwickeln 1.0
+gedeihen.v gedeihen_14 :: wachsen 7.0; blühen 1.0
+gedeihen.v gedeihen_15 :: wachsen 5.0; blühen 1.0; aufblühen 1.0; aufleben 1.0; gelingen 1.0; erwachen 1.0
+gedeihen.v gedeihen_16 :: wachsen 6.0; blühen 1.0
+gedeihen.v gedeihen_17 :: wachsen 2.0; sich_entwickeln 1.0; entstehen 1.0; aufkommen 1.0; entwickeln 1.0; verbleiben 1.0
+gedeihen.v gedeihen_18 :: wachsen 5.0; blühen 2.0; aufblühen 2.0; aufleben 1.0; erblühen 1.0; aufgehen 1.0; florieren 1.0; erwachsen 1.0
+gedeihen.v gedeihen_19 :: wachsen 4.0; entstehen 3.0; aufblühen 1.0; aufleben 1.0; geraten 1.0; platzen 1.0
+gedeihen.v gedeihen_2 :: wachsen 6.0; aufblühen 1.0; florieren 1.0
+gedeihen.v gedeihen_20 :: wachsen 4.0
+gedeihen.v gedeihen_3 :: wachsen 6.0; erblühen 2.0; emporkommen 1.0; blühen 1.0; sich_entfalten 1.0
+gedeihen.v gedeihen_4 :: wachsen 5.0; vermehren 2.0; sich_entwickeln 1.0; verbleiben 1.0
+gedeihen.v gedeihen_5 :: wachsen 6.0; blühen 1.0; erblühen 1.0; wachen 1.0; erwachen 1.0
+gedeihen.v gedeihen_6 :: wachsen 6.0; aufblühen 1.0; erblühen 1.0; florieren 1.0
+gedeihen.v gedeihen_7 :: wachsen 7.0; erblühen 2.0; heranwachsen 2.0; blühen 1.0; entfalten 1.0; wachen 1.0; entwickeln 1.0; erwachen 1.0
+gedeihen.v gedeihen_8 :: wachsen 6.0; blühen 2.0; sich_entwickeln 1.0; aufblühen 1.0; aufleben 1.0; entstehen 1.0; aufgehen 1.0; öffnen 1.0; werden 1.0; bewachsen 1.0
+gedeihen.v gedeihen_9 :: wachsen 5.0; verbleiben 1.0
+grüblerisch.a grüblerisch_1 :: nachdenklich 6.0; gedankenvoll 1.0; erwägend 1.0; intelektuell 1.0; gedankenverloren 1.0
+grüblerisch.a grüblerisch_10 :: nachdenklich 4.0; gedankenvoll 1.0; vertieft 1.0; abwesend 1.0; verträumt 1.0; gedankenverloren 1.0
+grüblerisch.a grüblerisch_2 :: nachdenklich 5.0; gedankenvoll 1.0; gedankenverloren 1.0
+grüblerisch.a grüblerisch_3 :: nachdenklich 6.0; gedankenvoll 2.0; versunken 1.0; gedankenversunken 1.0; schwersinnig 1.0; tiefsinnig 1.0; gedankenverloren 1.0
+grüblerisch.a grüblerisch_4 :: nachdenklich 6.0; gedankenvoll 1.0; erwägend 1.0; gedankenversunken 1.0; trübsinnig 1.0; schwersinnig 1.0; nachsinnig 1.0
+grüblerisch.a grüblerisch_5 :: nachdenklich 5.0; gedankenvoll 1.0; versunken 1.0; schwersinnig 1.0
+grüblerisch.a grüblerisch_6 :: nachdenklich 6.0; schwersinnig 1.0; tiefsinnig 1.0; schwermütig 1.0; besonnen 1.0
+grüblerisch.a grüblerisch_7 :: nachdenklich 6.0; gedankenvoll 1.0; versunken 1.0
+grüblerisch.a grüblerisch_8 :: nachdenklich 5.0; gedankenvoll 1.0; geistesabwesend 1.0; erwägend 1.0; versonnen 1.0; zerfahren 1.0
+grüblerisch.a grüblerisch_9 :: nachdenklich 4.0; tiefsinnig 2.0; exzentrisch 1.0; versunken 1.0; schwermütig 1.0
+hegemonial.a hegemonial_1 :: vorherrschend 2.0; vorherrschaftlich 2.0; wichtig 1.0; dominant 1.0
+hegemonial.a hegemonial_10 :: beherrschend 1.0; vorherrschaftlich 1.0; dominant 1.0; überlegen 1.0; machtgierig 1.0
+hegemonial.a hegemonial_2 :: vorherrschend 2.0; führend 1.0; dominant 1.0; machtgierig 1.0
+hegemonial.a hegemonial_3 :: vorherrschend 3.0; vorherrschaftlich 1.0; hoch 1.0; wichtig 1.0; dominant 1.0; prävalent 1.0; machtgierig 1.0
+hegemonial.a hegemonial_4 :: überlegen 2.0; beherrschend 1.0; totalitär 1.0; alleinstehend 1.0; unangefochten 1.0; alleinig 1.0; dominant 1.0; einflussreich 1.0; absolut 1.0; stark 1.0; vorgeschoben 1.0; bewusst 1.0; vorherrschend 1.0
+hegemonial.a hegemonial_5 :: vorherrschend 3.0; dominant 2.0; herrschaftlich 1.0; übermächtig 1.0
+hegemonial.a hegemonial_6 :: vorherrschend 2.0; einseitig 1.0; vereinheitlicht 1.0; dominant 1.0; einheitlich 1.0; deutlich 1.0
+hegemonial.a hegemonial_7 :: vorherrschend 3.0; vorherrschaftlich 2.0; beherrschend 1.0; dominant 1.0; prävalent 1.0
+hegemonial.a hegemonial_8 :: vorherrschend 2.0; dominant 2.0; vorherrschaftlich 1.0; führend 1.0
+hegemonial.a hegemonial_9 :: vorherrschend 2.0; führend 1.0; dominant 1.0; einflussreich 1.0; prävalent 1.0
+inakzeptabel.a inakzeptabel_1 :: unannehmbar 4.0; untragbar 3.0; ungünstig 1.0; indisputabel 1.0; nicht_annehmbar 1.0; unakzeptabel 1.0; ungeeignet 1.0; unzumutbar 1.0
+inakzeptabel.a inakzeptabel_10 :: untragbar 3.0; unannehmbar 1.0; ungünstig 1.0; unvertretbar 1.0; indisputabel 1.0; nicht_akzeptabel 1.0; unmöglich 1.0; unakzeptabel 1.0; unzumutbar 1.0
+inakzeptabel.a inakzeptabel_2 :: unannehmbar 3.0; unvertretbar 2.0; nicht_annehmbar 1.0; unakzeptabel 1.0; untragbar 1.0; nicht_akzeptierbar 1.0
+inakzeptabel.a inakzeptabel_3 :: unannehmbar 3.0; unmöglich 2.0; nicht_annehmbar 2.0; ungünstig 1.0; schrecklich 1.0; unbrauchbar 1.0; negativ 1.0; unangemessen 1.0; indisputabel 1.0; schlecht 1.0; falsch 1.0; schädlich 1.0
+inakzeptabel.a inakzeptabel_4 :: unannehmbar 4.0; untragbar 2.0; ungünstig 1.0; unvertretbar 1.0; unerträglich 1.0; ungeeignet 1.0; nicht_hinzunehmen 1.0
+inakzeptabel.a inakzeptabel_5 :: ungeeignet 2.0; unhaltbar 1.0; untauglich 1.0; nicht_hinnehmbar 1.0; unmöglich 1.0; nicht_annehmbar 1.0; indisputabel 1.0; falsch 1.0; unannehmbar 1.0; untragbar 1.0; nicht_akzeptierbar 1.0
+inakzeptabel.a inakzeptabel_6 :: unmoralisch 1.0; unanständig 1.0; inkorrekt 1.0; unmöglich 1.0; nicht_annehmbar 1.0; nicht_tolerierbar 1.0; falsch 1.0; unannehmbar 1.0
+inakzeptabel.a inakzeptabel_7 :: unangebracht 2.0; unannehmbar 1.0; unvertretbar 1.0; tabu 1.0; untauglich 1.0; nicht_begründbar 1.0; falsch 1.0
+inakzeptabel.a inakzeptabel_8 :: unannehmbar 3.0; unmöglich 2.0; uneinig 1.0; nicht_akzeptabel 1.0; schlecht 1.0; unangebracht 1.0; nicht_erlaubt 1.0; nicht_annehmbar 1.0; falsch 1.0; nicht_möglich 1.0
+inakzeptabel.a inakzeptabel_9 :: nicht_annehmbar 3.0; unannehmbar 2.0; ungünstig 1.0; unbrauchbar 1.0; untauglich 1.0; unwürdig 1.0; ungeeignet 1.0; unbegreiflich 1.0; untragbar 1.0; unnötig 1.0
+inventarisieren.v inventarisieren_1 :: katalogisieren 1.0; sammeln 1.0; hinzufügen 1.0; benutzbar_machen 1.0; aufschreiben 1.0; den_Bestand_aufnehmen 1.0; Bestand_aufnehmen 1.0; auflisten 1.0; in_Inventar_aufnehmen 1.0
+inventarisieren.v inventarisieren_10 :: auflisten 2.0; katalogisieren 1.0; aufschreiben 1.0; den_Bestand_aufnehmen 1.0; Bestand_aufnehmen 1.0; in_einem_Verzeichnis_zusammenstellen 1.0
+inventarisieren.v inventarisieren_11 :: den_Bestand_aufnehmen 2.0; auflisten 2.0; katalogisieren 1.0; aufschreiben 1.0; Bestand_aufnehmen 1.0; aufzählen 1.0
+inventarisieren.v inventarisieren_12 :: Bestand_aufnehmen 3.0; katalogisieren 1.0; investieren 1.0; hineinstecken 1.0; hineinbringen 1.0; finanzieren 1.0; verzeichnen 1.0; auflisten 1.0
+inventarisieren.v inventarisieren_13 :: aufzählen 2.0; listen 1.0; tabellieren 1.0; gliedern 1.0; aufnehmen 1.0; einpacken 1.0; sortieren 1.0; dokumentieren 1.0
+inventarisieren.v inventarisieren_14 :: katalogisieren 1.0; erfassen 1.0; zählen 1.0; notieren 1.0; auflisten 1.0; abgleichen 1.0; überprüfen 1.0
+inventarisieren.v inventarisieren_15 :: den_Bestand_aufnehmen 2.0; katalogisieren 1.0; reihen 1.0; erfassen 1.0; ordnen 1.0; aufnehmen 1.0; auflisten 1.0; dokumentieren 1.0
+inventarisieren.v inventarisieren_16 :: katalogisieren 1.0; verordnen 1.0; einheitlichen 1.0; notieren 1.0; ordnen 1.0; einordnen 1.0; zusammenlegen 1.0; verbinden 1.0; auflisten 1.0; eintragen 1.0
+inventarisieren.v inventarisieren_17 :: katalogisieren 1.0; schlüssig 1.0; Bestandsaufnahme_machen 1.0; erfassen 1.0; zusammenfassen 1.0; einordnen 1.0; den_Bestand_aufnehmen 1.0; niederschreiben 1.0; auflisten 1.0
+inventarisieren.v inventarisieren_18 :: katalogisieren 2.0; aufstellen 1.0; zählen 1.0; notieren 1.0; niederschreiben 1.0; auflisten 1.0
+inventarisieren.v inventarisieren_19 :: zählen 2.0; den_Bestand_aufnehmen 2.0; katalogisieren 1.0; Bestandsaufnahme_machen 1.0; notieren 1.0; niederschreiben 1.0
+inventarisieren.v inventarisieren_2 :: katalogisieren 2.0; Bestandsaufnahme_machen 1.0; verzeichnen 1.0; auflisten 1.0; dokumentieren 1.0
+inventarisieren.v inventarisieren_20 :: katalogisieren 2.0; festhalten 1.0; erfassen 1.0; notieren 1.0; ordnen 1.0; den_Bestand_aufnehmen 1.0; verzeichnen 1.0; niederschreiben 1.0; auflisten 1.0; ablagern 1.0
+inventarisieren.v inventarisieren_3 :: den_Bestand_aufnehmen 2.0; ordnen 2.0; auflisten 2.0; einlagern 1.0; erfassen 1.0; zählen 1.0; aufräumen 1.0; Bestand_aufnehmen 1.0; sortieren 1.0
+inventarisieren.v inventarisieren_4 :: den_Bestand_aufnehmen 2.0; katalogisieren 1.0; Bestandsaufnahme_machen 1.0; zählen 1.0; Bestand_aufnehmen 1.0; dokumentieren 1.0
+inventarisieren.v inventarisieren_5 :: auflisten 3.0; katalogisieren 2.0; erfassen 2.0
+inventarisieren.v inventarisieren_6 :: katalogisieren 3.0; den_Bestand_aufnehmen 2.0; Bestandsaufnahme_machen 1.0; zählen 1.0; dokumentieren 1.0
+inventarisieren.v inventarisieren_7 :: zählen 1.0; Bestand_aufnehmen 1.0; verzeichnen 1.0; aufnehmen 1.0; auflisten 1.0
+inventarisieren.v inventarisieren_8 :: katalogisieren 3.0; den_Bestand_aufnehmen 1.0
+inventarisieren.v inventarisieren_9 :: einlagern 1.0; sammeln 1.0; erfassen 1.0; bestandaufnehmen 1.0; aufnehmen 1.0; dokumentieren 1.0
+jäten.v jäten_1 :: rupfen 3.0; zupfen 3.0; entfernen 2.0; ausziehen 1.0; krauten 1.0; ernten 1.0; herausziehen 1.0; ausreißen 1.0; ausrupfen 1.0; ausnehmen 1.0
+jäten.v jäten_10 :: rupfen 2.0; entfernen 2.0; ausziehen 1.0; herausrupfen 1.0; pflügen 1.0; herausziehen 1.0; herausnehmen 1.0; ausreißen 1.0; ausrupfen 1.0; herausreißen 1.0; gezupft 1.0; roden 1.0; säubern 1.0; harken 1.0; putzen 1.0
+jäten.v jäten_11 :: ausreißen 2.0; entfernen 2.0; rupfen 1.0; ausgrasen 1.0; zupfen 1.0; auszupfen 1.0
+jäten.v jäten_12 :: entfernen 3.0; zupfen 2.0; ausgrasen 1.0; ausreißen 1.0; herausreißen 1.0
+jäten.v jäten_13 :: zupfen 2.0; ernten 1.0; rupfen 1.0; entfernen 1.0; pflücken 1.0
+jäten.v jäten_14 :: von_Unkraut_befreien 1.0; ernten 1.0; rupfen 1.0; ausrupfen 1.0; entfernen 1.0; zupfen 1.0; auszupfen 1.0
+jäten.v jäten_15 :: zupfen 2.0; rausziehen 1.0; ernten 1.0; rupfen 1.0; ausrupfen 1.0; entfernen 1.0
+jäten.v jäten_16 :: entfernen 3.0; aussortieren 2.0; durchsehen 1.0; herausnehmen 1.0; auszupfen 1.0; eliminieren 1.0; überschauen 1.0; gärtnern 1.0
+jäten.v jäten_17 :: entfernen 3.0; Unkraut_zupfen 1.0; pflücken 1.0; entwurzeln 1.0; herausreißen 1.0; rausreißen 1.0
+jäten.v jäten_18 :: ausreißen 2.0; entfernen 2.0; zupfen 2.0; rupfen 1.0; ausgrasen 1.0; auszupfen 1.0
+jäten.v jäten_19 :: entfernen 4.0; ausrupfen 2.0; herausreißen 2.0; zupfen 2.0; ausziehen 1.0; herausrupfen 1.0; kratzen 1.0; herausziehen 1.0; ausreißen 1.0; aussortieren 1.0; nach_draußen_ziehen 1.0; ziehen 1.0
+jäten.v jäten_2 :: entfernen 3.0; ernten 2.0; rupfen 2.0; zupfen 2.0; vernichten 1.0; ausreißen 1.0; herausreißen 1.0; aussondern 1.0
+jäten.v jäten_20 :: rupfen 2.0; zupfen 2.0; ernten 2.0; ausrupfen 1.0; einholen 1.0; entfernen 1.0; auszupfen 1.0; schneiden 1.0; ziehen 1.0; einbringen 1.0
+jäten.v jäten_3 :: entfernen 4.0; herausreißen 2.0; zupfen 2.0; herausrupfen 1.0; rupfen 1.0; ausreißen 1.0; pflücken 1.0
+jäten.v jäten_4 :: ausreißen 2.0; ernten 1.0; kürzen 1.0; rupfen 1.0; ausrupfen 1.0; entfernen 1.0; Unkraut_entfernen 1.0; roden 1.0
+jäten.v jäten_5 :: entfernen 3.0; rupfen 2.0; zupfen 2.0; kratzen 1.0; ausgrasen 1.0; herausreißen 1.0; ziehen 1.0
+jäten.v jäten_6 :: rupfen 2.0; ausreißen 2.0; entfernen 2.0; herausreißen 2.0; ernten 1.0; kürzen 1.0; kurzschneiden 1.0
+jäten.v jäten_7 :: pflegen 2.0; ernten 2.0; säubern 2.0; von_Unkraut_befreien 1.0; verfeinern 1.0; harken 1.0; putzen 1.0; züchten 1.0
+jäten.v jäten_8 :: zupfen 3.0; rupfen 2.0; ausreißen 2.0; vernichten 1.0; pflücken 1.0; ernten 1.0; entfernen 1.0; herausreißen 1.0; reißen 1.0; auszupfen 1.0; säubern 1.0
+jäten.v jäten_9 :: pflücken 1.0; entfernen 1.0; Unkraut_entfernen 1.0; zupfen 1.0
+konstruktiv.a konstruktiv_1 :: gut 2.0; die_Konstruktion_betreffend 1.0; hilfreich 1.0; schnell 1.0; einfallsreich 1.0; einheitlich 1.0; helfend 1.0
+konstruktiv.a konstruktiv_10 :: die_Konstruktion_betreffend 1.0; förderlich 1.0; hilfreich 1.0; im_Sinne_der_Kostruktion 1.0; wirksam 1.0; vereinheitlicht 1.0; schnell 1.0; wichtig 1.0; richtig 1.0; methodisch 1.0; sinngemäß 1.0; helfend 1.0; gut 1.0
+konstruktiv.a konstruktiv_2 :: kreativ 2.0; aufbauend 2.0; wirklich 1.0; nützlich 1.0
+konstruktiv.a konstruktiv_3 :: sinnvoll 2.0; dienlich 1.0; nutzbringend 1.0; produktiv 1.0; lehrreich 1.0
+konstruktiv.a konstruktiv_4 :: nützlich 2.0; die_Konstruktion_betreffend 1.0; voranbringend 1.0; nutzbringend 1.0; produktiv 1.0; brauchbar 1.0; clever 1.0; umsetzbar 1.0; fruchtbar 1.0; vielversprechend 1.0; effektiv 1.0; aufbauend 1.0
+konstruktiv.a konstruktiv_5 :: erfolgreich 1.0; förderlich 1.0; arbeitsfähig 1.0; verbunden 1.0; herleitend 1.0
+konstruktiv.a konstruktiv_6 :: dienlich 2.0; die_Konstruktion_betreffend 1.0; förderlich 1.0; hilfreich 1.0; positiv 1.0; kreativ 1.0; helfen 1.0; entlastend 1.0; nützlich 1.0; behilflich 1.0; aufbauend 1.0
+konstruktiv.a konstruktiv_7 :: nützlich 2.0; aufbauend 2.0; erfolgreich 1.0; sachdienlich 1.0; zweckdienlich 1.0; nutzvoll 1.0; förderlich 1.0; wichtig 1.0; einfallsreich 1.0; effektiv 1.0
+konstruktiv.a konstruktiv_8 :: die_Konstruktion_betreffend 1.0; nutzbringend 1.0; dienlich 1.0; hilfreich 1.0; leistungsfähig 1.0; schöpferisch 1.0; nützlich 1.0; gestalterisch 1.0; gut 1.0
+konstruktiv.a konstruktiv_9 :: dienlich 1.0; nutzbringend 1.0; unterstützend 1.0; geordnet 1.0; ideenreich 1.0; kreativ 1.0; gut 1.0; aufbauend 1.0
+korrespondieren.v korrespondieren_1 :: übereinstimmen 2.0; konform_gehen 1.0; entsprechen 1.0; harmonieren 1.0; in_Beziehung_stehen 1.0
+korrespondieren.v korrespondieren_10 :: entsprechen 2.0; zusammensetzen 1.0; referieren 1.0; zusammenhängen 1.0; kommunizieren 1.0; einig_sein 1.0; gleichkommen 1.0; sich_decken 1.0; einhergehen 1.0
+korrespondieren.v korrespondieren_11 :: kongruieren 1.0; vereinigen 1.0; gleichkommen 1.0; übereinstimmen 1.0; in_Beziehung_stehen 1.0; zusammenspielen 1.0; passen 1.0
+korrespondieren.v korrespondieren_12 :: übereinstimmen 3.0; gleichen 2.0; sich_gleichen 1.0; ähnlich_sein 1.0; in_Beziehung_stehen 1.0; sich_ähneln 1.0
+korrespondieren.v korrespondieren_13 :: zusammenpassen 2.0; in_Beziehung_stehen 2.0; interagieren 1.0; gleichkommen 1.0
+korrespondieren.v korrespondieren_14 :: übereinstimmen 2.0; zusammenfallen 1.0; ähnlich_sein 1.0; decken 1.0; sich_decken 1.0; zusammenspielen 1.0
+korrespondieren.v korrespondieren_15 :: entsprechen 2.0; gleichkommen 1.0; übereinstimmen 1.0; in_Beziehung_stehen 1.0; aussehen 1.0; passen 1.0
+korrespondieren.v korrespondieren_16 :: interagieren 1.0; entsprechen 1.0; übereinstimmen 1.0; in_Beziehung_stehen 1.0; austauschen 1.0; in_Verbindung_stehen 1.0
+korrespondieren.v korrespondieren_17 :: harmonieren 2.0; übereinstimmen 2.0; sich_gleichen 1.0; passen_zu 1.0; gleichen 1.0; beschreiben 1.0; ausdrücken 1.0; einig_sein 1.0; entsprechen 1.0; umschreiben 1.0; zusammenspielen 1.0; passen 1.0
+korrespondieren.v korrespondieren_18 :: entsprechen 2.0; übereinstimmen 1.0
+korrespondieren.v korrespondieren_19 :: entsprechen 2.0; gehören_zu 1.0; verbinden 1.0; einhergehen 1.0
+korrespondieren.v korrespondieren_2 :: sich_decken 2.0; sich_gleichen 1.0; im_Einklang_stehen 1.0; aufeinander_abstimmen 1.0; ähnlich_sein 1.0; konform_gehen 1.0; kongruieren 1.0; kommunizieren 1.0; mithalten 1.0; einig_sein 1.0; entsprechen 1.0; arbeiten 1.0; übereinstimmen 1.0; in_Beziehung_stehen 1.0
+korrespondieren.v korrespondieren_20 :: gleichen 2.0; einig_sein 2.0; sich_gleichen 1.0; ähnlich_sein 1.0; verhalten 1.0; zusammenhängen 1.0; identisch_sein 1.0; übereinstimmen 1.0; decken 1.0; austauschen 1.0; sich_decken 1.0; einhergehen 1.0
+korrespondieren.v korrespondieren_3 :: ähneln 2.0; zusammenpassen 1.0; sich_gleichen 1.0; gleichen 1.0; sich_ähneln 1.0
+korrespondieren.v korrespondieren_4 :: übereinstimmen 3.0; zusammenpassen 1.0; ähnlich_sein 1.0; übermitteln 1.0; einig_sein 1.0; konform_gehen 1.0; gleich_sein 1.0
+korrespondieren.v korrespondieren_5 :: gleichen 1.0; entsprechen 1.0; harmonieren 1.0; übereinstimmen 1.0
+korrespondieren.v korrespondieren_6 :: zusammenfallen 1.0; ähnlich_sein 1.0; kongruieren 1.0; entsprechen 1.0; gleichkommen 1.0
+korrespondieren.v korrespondieren_7 :: übereinstimmen 2.0; in_Beziehung_stehen 2.0; sich_decken 2.0; entsprechen 1.0
+korrespondieren.v korrespondieren_8 :: entsprechen 2.0; übereinstimmen 2.0; in_Beziehung_stehen 1.0; decken 1.0; einhergehen 1.0
+korrespondieren.v korrespondieren_9 :: zusammen_passen 1.0; gleichkommen 1.0; übereinstimmen 1.0; in_Beziehung_stehen 1.0; einhergehen 1.0; einher_gehen 1.0
+lecken.v lecken_1 :: schlecken 4.0; lutschen 1.0; ablecken 1.0; abschlecken 1.0; saugen 1.0
+lecken.v lecken_10 :: schlecken 5.0; ablecken 2.0; saubern 1.0; aufschlecken 1.0; schlürfen 1.0; abschlecken 1.0; absaugen 1.0; aufnehmen 1.0; trinken 1.0; saugen 1.0
+lecken.v lecken_11 :: schlecken 3.0; lutschen 2.0; schlürfen 2.0; ablecken 1.0; aufnehmen 1.0; saugen 1.0
+lecken.v lecken_12 :: schlecken 4.0; ablecken 2.0; saugen 1.0
+lecken.v lecken_13 :: ablecken 2.0; schlecken 2.0; liebkosen 1.0; berühren 1.0; dippen 1.0; probieren 1.0; schmecken 1.0; kosten 1.0; saugen 1.0; kosen 1.0; schlabbern 1.0
+lecken.v lecken_14 :: schlecken 3.0; lutschen 2.0; ablecken 1.0
+lecken.v lecken_15 :: schlecken 4.0; lutschen 2.0; schlürfen 1.0
+lecken.v lecken_16 :: ablecken 2.0; lutschen 1.0; liebkosen 1.0; berühren 1.0; herzen 1.0; küssen 1.0; kosen 1.0
+lecken.v lecken_17 :: ablecken 1.0; abschlecken 1.0; schlecken 1.0; säubern 1.0
+lecken.v lecken_18 :: schlecken 3.0; züngeln 1.0; ablecken 1.0; abstreifen 1.0
+lecken.v lecken_19 :: schlecken 4.0; lutschen 1.0
+lecken.v lecken_2 :: schlecken 5.0; lutschen 3.0; ablecken 1.0; abschlecken 1.0; suckeln 1.0; ablutschen 1.0
+lecken.v lecken_20 :: ablecken 3.0; schlecken 2.0; lutschen 1.0; abschlecken 1.0; absaugen 1.0; schlabbern 1.0
+lecken.v lecken_3 :: sickern 2.0; auslaufen 2.0; undicht_sein 1.0; herauslaufen 1.0; tropfen 1.0; ein_Leck_bekommen 1.0; ausrinnen 1.0; ein_Loch_haben 1.0; undicht_werden 1.0
+lecken.v lecken_4 :: schlecken 4.0; lutschen 1.0; ablecken 1.0; schlurfen 1.0; kosten 1.0
+lecken.v lecken_5 :: ablecken 2.0; schlecken 2.0; abschlecken 1.0; schmecken 1.0; absaugen 1.0; saugen 1.0; ablutschen 1.0
+lecken.v lecken_6 :: ablecken 2.0; schlecken 2.0; liebkosen 1.0; schmecken 1.0; saugen 1.0
+lecken.v lecken_7 :: schlürfen 3.0; schlecken 2.0; essen 1.0; kosten 1.0; trinken 1.0
+lecken.v lecken_8 :: schlecken 2.0; ablecken 1.0; aufsaugen 1.0; auflecken 1.0; saugen 1.0
+lecken.v lecken_9 :: ablecken 2.0; schlecken 2.0; lutschen 1.0; abschlecken 1.0; auflecken 1.0
+löten.v löten_1 :: schweißen 3.0; befestigen 2.0; anbringen 2.0; doppeln 1.0; vereinen 1.0; verbinden 1.0; verdoppeln 1.0; anlöten 1.0; zusammenfügen 1.0
+löten.v löten_10 :: verbinden 2.0; anbringen 1.0; kleben 1.0
+löten.v löten_11 :: schweißen 3.0; verlöten 1.0; anschweißen 1.0; verschweißen 1.0; schmelzen 1.0; verbinden 1.0; anbringen 1.0; anlöten 1.0
+löten.v löten_12 :: schweißen 4.0; verbinden 1.0; kleben 1.0
+löten.v löten_13 :: schweißen 3.0; verschweißen 2.0; verbinden 2.0; verschmelzen 1.0; herstellen 1.0; zusammenschweißen 1.0
+löten.v löten_14 :: zusammenbinden 1.0; vereinen 1.0; verbinden 1.0; befestigen 1.0; anbringen 1.0; anlöten 1.0; aufsetzen 1.0; schweißen 1.0
+löten.v löten_15 :: verbinden 4.0; schweißen 3.0; verschweißen 2.0; verlöten 1.0; anschweißen 1.0; zusammenlöten 1.0
+löten.v löten_16 :: schweißen 3.0; schmelzen 1.0
+löten.v löten_17 :: schweißen 3.0; vereinigen 1.0; verschweißen 1.0; anbringen 1.0; anlöten 1.0
+löten.v löten_18 :: schweißen 4.0; einen 1.0; vereinen 1.0; verbinden 1.0; befestigen 1.0; verschmelzen 1.0; anbringen 1.0; binden 1.0
+löten.v löten_19 :: schweißen 2.0; verlöten 1.0; vereinheitlichen 1.0; anschweißen 1.0; schweßen 1.0; verbinden 1.0; anlöten 1.0; zusammenfügen 1.0
+löten.v löten_2 :: schweißen 3.0; zusammenbringen 1.0; verschweißen 1.0; anbringen 1.0
+löten.v löten_20 :: verschweißen 2.0; verbinden 2.0; anlöten 2.0; schweißen 2.0; schmelzen 1.0; formen 1.0
+löten.v löten_3 :: zusammensetzen 1.0; verbinden 1.0; befestigen 1.0; anlöten 1.0; schweißen 1.0
+löten.v löten_4 :: schweißen 2.0; verlöten 1.0; zusammenführen 1.0; verschweißen 1.0; verbinden 1.0; befestigen 1.0; verkleben 1.0; erzeugen 1.0
+löten.v löten_5 :: verbinden 2.0; anbringen 2.0; zusammensetzen 1.0; befestigen 1.0; angebracht 1.0; anlöten 1.0; schweißen 1.0; kleben 1.0
+löten.v löten_6 :: schweißen 5.0; zusammenfügen 2.0; vereinheitlichen 1.0; zusammenbinden 1.0; zusammengefügt 1.0; verbinden 1.0; befestigen 1.0; anbringen 1.0; verkuppeln 1.0; verschwei0en 1.0
+löten.v löten_7 :: schweißen 5.0; verbinden 1.0; befestigen 1.0; verschmelzen 1.0
+löten.v löten_8 :: vereinen 1.0; verbinden 1.0; zusammenfügen 1.0; schweißen 1.0
+löten.v löten_9 :: schweißen 4.0; anlöten 2.0; verbinden 1.0; befestigen 1.0
+mehrfarbig.a mehrfarbig_1 :: bunt 3.0; vielfarbig 2.0; polychrom 2.0; verschiedenfarbig 1.0; scheckig 1.0; farbenfroh 1.0; poppig 1.0
+mehrfarbig.a mehrfarbig_10 :: bunt 4.0; vielfarbig 1.0; dreifarbig 1.0; polychrom 1.0
+mehrfarbig.a mehrfarbig_2 :: vielfarbig 3.0; bunt 3.0; polychrom 1.0; multicolor 1.0
+mehrfarbig.a mehrfarbig_3 :: bunt 4.0; vielfarbig 3.0; farbig 1.0; polychrom 1.0; multicolor 1.0
+mehrfarbig.a mehrfarbig_4 :: bunt 6.0; vielfarbig 2.0; polychrom 1.0
+mehrfarbig.a mehrfarbig_5 :: bunt 2.0; vielfarbig 1.0; multi-farbig 1.0; multicolor 1.0
+mehrfarbig.a mehrfarbig_6 :: bunt 5.0; polychrom 2.0; farbenfroh 2.0; vielfarbig 1.0; multicoloriert 1.0
+mehrfarbig.a mehrfarbig_7 :: bunt 3.0; vielfarbig 2.0; farbenreich 1.0; erweiternd 1.0; vielseitig 1.0; polychrom 1.0; mehrseitig 1.0
+mehrfarbig.a mehrfarbig_8 :: vielfarbig 2.0; bunt 2.0; polychrom 2.0; erweiternd 1.0; mehrschichtig 1.0; multicolor 1.0; voller_Farbe 1.0; regenbogenartig 1.0; farbenfroh 1.0
+mehrfarbig.a mehrfarbig_9 :: bunt 5.0; polychrom 2.0; vielfarbig 1.0; multicolor 1.0
+mitgehen.v mitgehen_1 :: mitmachen 3.0; absolvieren 1.0; verfolgen 1.0; begleiten 1.0; machen 1.0; folgen 1.0; mitziehen 1.0; gehen 1.0
+mitgehen.v mitgehen_10 :: mitkommen 3.0; begleiten 2.0; beiwohnen 1.0; folgen 1.0
+mitgehen.v mitgehen_11 :: begleiten 2.0; beschreiten 1.0; folgen 1.0; bestreiten 1.0; gehen 1.0; anschließen 1.0
+mitgehen.v mitgehen_12 :: stehlen 3.0; klauen 2.0; stibitzen 1.0; mopsen 1.0; einstecken 1.0; verschwinden 1.0
+mitgehen.v mitgehen_13 :: mithalten 2.0; mitziehen 2.0; beteiligen 1.0; folgen 1.0; nachgehen 1.0; entgegentreten 1.0
+mitgehen.v mitgehen_14 :: mithalten 3.0; mitfahren 3.0; mitziehen 3.0; anziehen 1.0; dranbleiben 1.0; verkraften 1.0; hinterherkommen 1.0
+mitgehen.v mitgehen_15 :: mitziehen 2.0; begleiten 1.0; teilhaben 1.0; zugehen 1.0; beteiligen 1.0; folgen 1.0; mitmachen 1.0
+mitgehen.v mitgehen_16 :: mitkommen 3.0; folgen 2.0; erfassen 1.0; hingerissen_sein 1.0; mitlaufen 1.0; heimbegleiten 1.0; mitziehen 1.0; dazukommen 1.0
+mitgehen.v mitgehen_17 :: folgen 3.0; mitkommen 2.0; mitlaufen 1.0; mitreisen 1.0
+mitgehen.v mitgehen_18 :: mitziehen 3.0; folgen 2.0; schaffen 1.0; mithalten 1.0; mitmachen 1.0
+mitgehen.v mitgehen_19 :: mitziehen 1.0; mitbieten 1.0; setzen 1.0; zustimmen 1.0
+mitgehen.v mitgehen_2 :: mitkommen 3.0; folgen 2.0; begleiten 1.0; Anteil_nehmen 1.0; teilnehmen 1.0
+mitgehen.v mitgehen_20 :: folgen 3.0; begleiten 2.0; mitkommen 2.0; eskortieren 1.0; fortführen 1.0; teilhaben 1.0; fortgehen 1.0; hinbewegen 1.0; zusammengehen 1.0; zusammenfinden 1.0
+mitgehen.v mitgehen_3 :: klauen 2.0; konfiszieren 1.0; rauben 1.0; einpacken 1.0; stehlen 1.0; verschwinden_lassen 1.0
+mitgehen.v mitgehen_4 :: mitnehmen 2.0; aneignen 1.0; klauen 1.0; stehlen 1.0
+mitgehen.v mitgehen_5 :: folgen 3.0; mitziehen 3.0; sich_anschließen 1.0; beugen 1.0
+mitgehen.v mitgehen_6 :: begleiten 2.0; mitlaufen 2.0; teilnehmen 2.0; folgen 1.0
+mitgehen.v mitgehen_7 :: stehlen 3.0; klauen 2.0; rauben 2.0; entwenden 1.0; mitnehmen 1.0; ergaunern 1.0; verschwinden 1.0
+mitgehen.v mitgehen_8 :: halten 4.0; mitziehen 2.0; schaffen 1.0; begleiten 1.0; geleiten 1.0; hinzutreten 1.0; mithalten 1.0; begeistern 1.0; begreifen 1.0
+mitgehen.v mitgehen_9 :: mithalten 3.0; begleiten 2.0; geleiten 2.0; bestehen 1.0; standhalten 1.0; heimbringen 1.0; mitziehen 1.0; begeistern 1.0; durchstehen 1.0; begreifen 1.0; mitkommen 1.0
+parteilos.a parteilos_1 :: objektiv 1.0; neutral 1.0; unparteilich 1.0; sachlich 1.0; offen 1.0; ungebunden 1.0; ohne_Partei 1.0; unparteiisch 1.0; unabhängig 1.0
+parteilos.a parteilos_10 :: frei 2.0; objektiv 1.0; geöffnet 1.0; offen 1.0; ohne_Parteibuch 1.0; nicht_gebunden 1.0; ohne_Partei 1.0; unabhängig 1.0
+parteilos.a parteilos_2 :: frei 2.0; nüchtern 1.0; unparteilich 1.0; sachlich 1.0; unbefangen 1.0; offen 1.0; ungebunden 1.0; unabhängig 1.0
+parteilos.a parteilos_3 :: neutral 3.0; frei 2.0; eigenständig 1.0; ohne_Parteibuch 1.0
+parteilos.a parteilos_4 :: ungebunden 2.0; ohne_Partei 2.0; unparteiisch 2.0; neutral 1.0; parteifrei 1.0; ohne_Parteizugehörigkeit 1.0
+parteilos.a parteilos_5 :: unabhängig 2.0; neutral 1.0; ohne_Parteibuch 1.0; ohne_Partei 1.0
+parteilos.a parteilos_6 :: neutral 2.0; unpolitisch 1.0; ohne_Parteibuch 1.0; ohne_Partei 1.0
+parteilos.a parteilos_7 :: neutral 2.0; objektiv 1.0; sachlich 1.0; ohne_Parteibuch 1.0; ungebunden 1.0; parteifrei 1.0; ohne_Partei 1.0; unparteiisch 1.0
+parteilos.a parteilos_8 :: ohne_Partei 2.0; unparteiisch 2.0
+parteilos.a parteilos_9 :: neutral 1.0; ohne_Partei 1.0; unparteiisch 1.0; unabhängig 1.0
+preisgegeben.a preisgegeben_1 :: ausgesetzt 4.0; überlassen 2.0
+preisgegeben.a preisgegeben_10 :: veröffentlicht 4.0; erhalten 1.0; angegeben 1.0; gegeben 1.0; offenbart 1.0; herausgegeben 1.0
+preisgegeben.a preisgegeben_2 :: ausgeliefert 2.0; überlassen 2.0; gegeben 1.0; übergeben 1.0
+preisgegeben.a preisgegeben_3 :: überlassen 2.0; ausgeliefert 1.0; abgetreten 1.0; verraten 1.0
+preisgegeben.a preisgegeben_4 :: ausgeliefert 1.0; ausgesetzt 1.0; überlassen 1.0
+preisgegeben.a preisgegeben_5 :: ausgesetzt 2.0; überlassen 2.0; ausgeliefert 1.0; erklärt 1.0
+preisgegeben.a preisgegeben_6 :: ausgesetzt 2.0; überlassen 2.0; ausgeliefert 1.0
+preisgegeben.a preisgegeben_7 :: überlassen 2.0; ausgesetzt 1.0
+preisgegeben.a preisgegeben_8 :: ausgeliefert 3.0; ausgesetzt 2.0; überlassen 2.0
+preisgegeben.a preisgegeben_9 :: ausgeliefert 4.0; überlassen 1.0
+rasant.a rasant_1 :: schnell 4.0; rapide 1.0; rasch 1.0; enorm 1.0
+rasant.a rasant_10 :: schnell 5.0; groß 2.0; turbulent 1.0; fix 1.0; blitzartig 1.0; überdurchschnittlich 1.0; mächtig 1.0
+rasant.a rasant_2 :: schnell 3.0; rapide 2.0; dynamisch 1.0; sehr_schnell 1.0; gut 1.0
+rasant.a rasant_3 :: schnell 6.0; rasch 1.0; flott 1.0; rassig 1.0; flink 1.0; dynamisch 1.0; plötzlich 1.0; blitzartig 1.0; eilig 1.0; in_hohem_Tempo 1.0; kurzfristig 1.0
+rasant.a rasant_4 :: schnell 4.0; blitzgeschwind 1.0; rapide 1.0; in_Eile 1.0; turbulent 1.0; flitzend 1.0; sehr_schnell 1.0; gut 1.0
+rasant.a rasant_5 :: schnell 3.0; rapid 1.0; rasch 1.0; unglaublich_schnell 1.0; turbulent 1.0; extrem 1.0
+rasant.a rasant_6 :: schnell 5.0; zügig 1.0; rapide 1.0; sehr_schnell 1.0
+rasant.a rasant_7 :: schnell 4.0; rapide 2.0; flott 1.0; rasch 1.0; flink 1.0; sehr_schnell 1.0; eilig 1.0
+rasant.a rasant_8 :: schnell 3.0; flott 1.0; eilig 1.0
+rasant.a rasant_9 :: schnell 4.0; rasend 1.0; rasch 1.0; flink 1.0; fix 1.0; eilig 1.0
+religiös.a religiös_1 :: fromm 2.0; gläubig 2.0; orthodox 1.0; gottesfromm 1.0; spirituell 1.0; geistlich 1.0; frei 1.0
+religiös.a religiös_10 :: gläubig 4.0; gottesfürchtig 2.0; fromm 2.0; rechtgläubig 1.0; ehrfürchtig_vor_Gott 1.0; spirituell 1.0; geistlich 1.0
+religiös.a religiös_2 :: kirchlich 2.0; fromm 2.0; gläubig 2.0; gottesfürchtig 1.0; orthodox 1.0; spirituell 1.0
+religiös.a religiös_3 :: spirituell 1.0; geistlich 1.0; kirchlich 1.0; fromm 1.0
+religiös.a religiös_4 :: spirituell 2.0; gottesfürchtig 1.0; gottgläubig 1.0; gläubig 1.0; glaubend 1.0
+religiös.a religiös_5 :: gläubig 3.0; gottgläubig 1.0; spirituell 1.0; gottesgläubig 1.0
+religiös.a religiös_6 :: gläubig 3.0; gottesfürchtig 1.0; orthodox 1.0; sakral 1.0; spirituell 1.0; kirchlich 1.0; fromm 1.0
+religiös.a religiös_7 :: gottesfürchtig 1.0; spirituell 1.0; esoterisch 1.0; göttlich 1.0; fromm 1.0; gläubig 1.0
+religiös.a religiös_8 :: spirituell 2.0; geistlich 2.0; gläubig 2.0; konvertiert 1.0; gottverbunden 1.0; irdisch 1.0; fromm 1.0
+religiös.a religiös_9 :: gläubig 3.0; spirituell 2.0; fromm 2.0; gottesfürchtig 1.0; geistlich 1.0; ethisch 1.0; rechtsgläubig 1.0; klerikal 1.0; glaubend 1.0
+schmettern.v schmettern_1 :: spielen 2.0; blasen 2.0; klingen 1.0; ertönen 1.0; schreien 1.0; dröhnen 1.0; hallen 1.0; feuern 1.0; schallen 1.0; posaunen 1.0; trompeten 1.0
+schmettern.v schmettern_10 :: blasen 3.0; schallen 2.0; spielen 1.0; tönen 1.0; posaunen 1.0
+schmettern.v schmettern_11 :: singen 3.0; ertönen 2.0; klingen 1.0; schreien 1.0; spielen 1.0
+schmettern.v schmettern_12 :: fallen 3.0; knallen 3.0; krachen 1.0; stürzen 1.0; hinfallen 1.0; donnern 1.0
+schmettern.v schmettern_13 :: schleudern 2.0; drücken 1.0
+schmettern.v schmettern_14 :: rufen 3.0; intonieren 1.0; laut_singen 1.0; schreien 1.0; trällern 1.0; singen 1.0; trillern 1.0
+schmettern.v schmettern_15 :: werfen 1.0; schlagen 1.0; schleudern 1.0; knallen 1.0
+schmettern.v schmettern_16 :: werfen 5.0; schleudern 3.0; ballern 1.0; stampfen 1.0; pfeffern 1.0; feuern 1.0; schlagen 1.0; donnern 1.0; knallen 1.0
+schmettern.v schmettern_17 :: schlagen 3.0; hauen 2.0; schleudern 2.0; wuchten 1.0; prellern 1.0; dreschen 1.0
+schmettern.v schmettern_18 :: ertönen 2.0; musizieren 1.0; dröhnen 1.0; spielen 1.0; tönen 1.0; singen 1.0
+schmettern.v schmettern_19 :: schlagen 2.0
+schmettern.v schmettern_2 :: schlagen 4.0; angreifen 1.0; hauen 1.0
+schmettern.v schmettern_20 :: schlagen 2.0; aufgeben 1.0; baggern 1.0
+schmettern.v schmettern_3 :: werfen 3.0; stoßen 1.0; schleudern 1.0
+schmettern.v schmettern_4 :: singen 4.0; tönen 1.0
+schmettern.v schmettern_5 :: zerschlagen 1.0; dröhnen 1.0; hauen 1.0; knallen 1.0
+schmettern.v schmettern_6 :: rufen 2.0; buffen 1.0; reinknallen 1.0; schießen 1.0; dröhnen 1.0; tönen 1.0; feuern 1.0; schlagen 1.0; blasen 1.0
+schmettern.v schmettern_7 :: werfen 4.0; schleudern 2.0; prallen 1.0; bohren 1.0; schießen 1.0; schlagen 1.0; entgegen_knallen 1.0; stoßen 1.0; fallen_lassen 1.0; hauen 1.0; hinschleudern 1.0; treffen 1.0; rammen 1.0
+schmettern.v schmettern_8 :: klingen 1.0; spielen 1.0; dröhnen 1.0; tönen 1.0; schallen 1.0; posaunen 1.0; donnern 1.0; blasen 1.0
+schmettern.v schmettern_9 :: schießen 3.0; donnern 2.0; knallen 2.0; werfen 1.0; schlagen 1.0
+selbstgemacht.a selbstgemacht_1 :: selbst_hergestellt 1.0; selber_produziert 1.0; handgemacht 1.0; in_Eigenarbeit_gemacht 1.0; selbsthergestellt 1.0; selbst_gemacht 1.0
+selbstgemacht.a selbstgemacht_10 :: hausgemacht 1.0; eigen 1.0; selber_produziert 1.0; selbstgebrannt 1.0; selber_hergestellt 1.0; selbst_hergestellt 1.0; selbst_gemacht 1.0; selbsterstellt 1.0
+selbstgemacht.a selbstgemacht_2 :: hausgemacht 2.0; selbstproduziert 1.0; selbstangebaut 1.0; eigen 1.0; selbstkreiert 1.0; in_Eigenarbeit_hergestellt 1.0; selbstfabriziert 1.0; selbsthergestellt 1.0; selbst_hergestellt 1.0; selbst_gemacht 1.0
+selbstgemacht.a selbstgemacht_3 :: hausgemacht 4.0; eigen 2.0; selbst_hergestellt 2.0; unikat 1.0; einheitlich 1.0; selbst_gemacht 1.0
+selbstgemacht.a selbstgemacht_4 :: hausgemacht 2.0; selbst_produziert 1.0; hausintern 1.0; eigenproduziert 1.0; selbstgekocht 1.0; handgefertigt 1.0; selbst_hergestellt 1.0; selbst_gemacht 1.0; selbsterstellt 1.0; zubereiteten 1.0
+selbstgemacht.a selbstgemacht_5 :: selbst_hergestellt 3.0; hausgemacht 1.0; eigen 1.0; persönlich 1.0; selber_hergestellt 1.0; selbstgefertigt 1.0; selbst_gemacht 1.0
+selbstgemacht.a selbstgemacht_6 :: selbstgebaut 2.0; in_Eigenarbeit_erstellt 1.0; handgemacht 1.0; selbstgefertigt 1.0; selbst_hergestellt 1.0; selbst_gemacht 1.0
+selbstgemacht.a selbstgemacht_7 :: selbst_hergestellt 2.0; eigens_gefertigt 1.0; hausgemacht 1.0; selbst_gebastelt 1.0; eigen 1.0; persönlich 1.0; selber_hergestellt 1.0; in_Eigenfertigung_hergestellt 1.0; selbstgefertigt 1.0; selbst_gemacht 1.0
+selbstgemacht.a selbstgemacht_8 :: eigen 2.0; persönlich 2.0; einzigartig 1.0; eigenständig 1.0; eigenhändig 1.0; in_Eigenproduktion 1.0; eigens_hergestellt 1.0; leibhaftig 1.0; aus_eigener_Kreation 1.0; selbst_hergestellt 1.0; selbst_gemacht 1.0
+selbstgemacht.a selbstgemacht_9 :: hausgemacht 1.0; eigen 1.0; in_Eigenarbeit_hergestellt 1.0; eigens_hergestellt 1.0; eigenerstellt 1.0; selbst_hergestellt 1.0; selbstgebaut 1.0; selbst_gemacht 1.0
+strukturiert.a strukturiert_1 :: aufgebaut 3.0; angeordnet 2.0; gegliedert 2.0; gestaltet 1.0; geordnet 1.0
+strukturiert.a strukturiert_10 :: aufgebaut 3.0; gegliedert 2.0; arrangiert 1.0; gebaut 1.0; organisieret 1.0; angeordnet 1.0; eingeteilt 1.0; aufgegliedert 1.0; aufgeteilt 1.0
+strukturiert.a strukturiert_2 :: aufgebaut 3.0; geordnet 2.0; gebaut 1.0; systematisch 1.0; angeordnet 1.0; gegliedert 1.0
+strukturiert.a strukturiert_3 :: geordnet 2.0; gegliedert 2.0; gestaffelt 1.0; geteilt 1.0; umfassend 1.0; aufgebaut 1.0
+strukturiert.a strukturiert_4 :: aufgebaut 4.0; geordnet 2.0; systematisch 1.0; angeordnet 1.0; ordentlich 1.0; nach_System 1.0; planvoll 1.0
+strukturiert.a strukturiert_5 :: gegliedert 3.0; gestaltet 1.0; geordnet 1.0; wiederkehrend 1.0; aufgebaut 1.0; eingeteilt 1.0
+strukturiert.a strukturiert_6 :: gegliedert 4.0; geordnet 3.0; angeordnet 2.0; gestaltet 1.0; differenziert 1.0; systematisch 1.0; organisiert 1.0; abgestuft 1.0; angebracht 1.0; unterteilt 1.0; ordentlich 1.0; gesetzmäßig 1.0
+strukturiert.a strukturiert_7 :: aufgebaut 2.0; gestaltet 1.0; angeordnet 1.0; geformt 1.0; geplant 1.0; gegliedert 1.0
+strukturiert.a strukturiert_8 :: geordnet 1.0; abgestuft 1.0; aufgebaut 1.0; gegliedert 1.0; vernetzt 1.0
+strukturiert.a strukturiert_9 :: aufgebaut 3.0; gegliedert 3.0; gestaffelt 1.0; gestaltet 1.0; geordnet 1.0; zusammengesetzt 1.0; systematisch 1.0; geformt 1.0; aufgeteilt 1.0
+turbulent.a turbulent_1 :: stürmisch 3.0; tumultarisch 1.0; ungestüm 1.0; hektisch 1.0; unruhig 1.0; windig 1.0; offen 1.0; lebhaft 1.0; aufregend 1.0
+turbulent.a turbulent_10 :: aufgeregt 1.0; chaotisch 1.0; hektisch 1.0; heftig 1.0; stürmisch 1.0; gereizt 1.0; erregt 1.0; lebhaft 1.0; wild 1.0; rasant 1.0; bewegt 1.0
+turbulent.a turbulent_2 :: chaotisch 2.0; aufregend 2.0; wild 2.0; wacklig 1.0; wirr 1.0; holprig 1.0; hastig 1.0; unübersichtlich 1.0; schnell 1.0; aufwühlend 1.0; stürmisch 1.0; schüttelnd 1.0; rasant 1.0
+turbulent.a turbulent_3 :: lebhaft 2.0; chaotisch 1.0; ungestüm 1.0; hektisch 1.0; stürmisch 1.0
+turbulent.a turbulent_4 :: chaotisch 2.0; stürmisch 2.0; wild 2.0; ungeplant 1.0; schnell 1.0; unruhig 1.0; ereignisreich 1.0; unorganisiert 1.0
+turbulent.a turbulent_5 :: chaotisch 2.0; unruhig 2.0; durcheinander 1.0; stürmisch 1.0
+turbulent.a turbulent_6 :: heftig 2.0; aufgeregt 1.0; rasend 1.0; wirbelnd 1.0; stürmisch 1.0; gereizt 1.0; erregt 1.0; wild 1.0; rau 1.0; hart 1.0; hitzig 1.0
+turbulent.a turbulent_7 :: stürmisch 4.0; heißblutig 1.0; hektisch 1.0; unruhig 1.0; böse 1.0; windig 1.0; wild 1.0; hitzig 1.0; hart 1.0
+turbulent.a turbulent_8 :: heftig 2.0; chaotisch 1.0; durcheinander 1.0; ungeordnet 1.0; hektisch 1.0; stürmisch 1.0; unruhig 1.0; erregend 1.0; aufregend 1.0; wild 1.0; hitzig 1.0
+turbulent.a turbulent_9 :: unruhig 2.0; bewegt 2.0; aufgeregt 1.0; stürmisch 1.0; geschäftig 1.0; ereignisreich 1.0; lebhaft 1.0; wild 1.0; vielseitig 1.0; rasant 1.0
+unbesetzt.a unbesetzt_1 :: frei 4.0; leer 2.0; fertig 1.0; greifbar 1.0; unbenutzt 1.0; allein 1.0; ungenutzt 1.0; vakant 1.0
+unbesetzt.a unbesetzt_10 :: frei 3.0; vakant 2.0; unbewacht 1.0; leer 1.0; offen 1.0; nicht_kontrolliert 1.0
+unbesetzt.a unbesetzt_2 :: frei 3.0; nicht_eingenommen 2.0; leer 1.0; bereit 1.0; disponibel 1.0; vakant 1.0; uneingenommen 1.0
+unbesetzt.a unbesetzt_3 :: frei 2.0; unvorhanden 1.0; offen 1.0; unbelegt 1.0
+unbesetzt.a unbesetzt_4 :: frei 4.0; nicht_belegt 1.0; nicht_besetzt 1.0; leer 1.0; nicht_eingenommen 1.0; offen 1.0; vakant 1.0
+unbesetzt.a unbesetzt_5 :: frei 3.0; nicht_belegt 1.0; leer 1.0; unbenutzt 1.0; ruhend 1.0; unangeschlossen 1.0
+unbesetzt.a unbesetzt_6 :: offen 4.0; leer 3.0; frei 3.0; vakant 1.0
+unbesetzt.a unbesetzt_7 :: frei 4.0; vakant 2.0; selbständig 1.0
+unbesetzt.a unbesetzt_8 :: frei 3.0; leer 2.0; verlassen 2.0; leer_stehend 1.0; zugänglich 1.0; bereit 1.0; vakant 1.0; begehbar 1.0; unbewohnt 1.0
+unbesetzt.a unbesetzt_9 :: frei 4.0; uneingenommen 2.0; leerstehend 1.0; leer 1.0; unangetastet 1.0; offen 1.0; eingenommen 1.0; vakant 1.0
+unklar.a unklar_1 :: unbekannt 5.0; unsicher 1.0; ungeklärt 1.0; ungewiss 1.0; obskur 1.0
+unklar.a unklar_10 :: ungenau 3.0; undefiniert 1.0; fraglich 1.0; undeutig 1.0; offen 1.0; nicht_klar 1.0; unverständlich 1.0
+unklar.a unklar_2 :: fraglich 1.0; unübersichtlich 1.0; strittig 1.0; vage 1.0; ungewiss 1.0; undurchsichtig 1.0; offen 1.0; unbekannt 1.0; trüb 1.0
+unklar.a unklar_3 :: ungenau 2.0; nicht_richtig 1.0; fraglich 1.0; missverständlich 1.0; undurchsichtig 1.0; strittig 1.0; offen 1.0; nicht_klar_definiert 1.0; trübe 1.0; unscharf 1.0; undeutlich 1.0
+unklar.a unklar_4 :: vage 2.0; unpräzise 1.0; ungenau 1.0; undeutlich 1.0; trüb 1.0; unverständlich 1.0
+unklar.a unklar_5 :: vage 1.0; schwer_nachvollziehbar 1.0; verwirrend 1.0; ungenau 1.0; unrein 1.0; undurchsichtig 1.0; nicht_klar 1.0; undeutlich 1.0; trüb 1.0; kryptisch 1.0; unverständlich 1.0
+unklar.a unklar_6 :: undeutlich 2.0; zweideutig 1.0; unidentifizierbar 1.0; undefinierbar 1.0; mehrdeutig 1.0; missverständlich 1.0; undurchsichtig 1.0; unerkennbar 1.0
+unklar.a unklar_7 :: ungewiss 3.0; fraglich 2.0; undeutlich 2.0; unsicher 1.0; nicht_eindeutig 1.0; nebulös 1.0; undurchsichtig 1.0; strittig 1.0; unbestimmt 1.0; fragil 1.0; unverständlich 1.0
+unklar.a unklar_8 :: wirr 2.0; fraglich 2.0; verschleiert 1.0; unsicher 1.0; ungenau 1.0; chaotisch 1.0; vage 1.0; vermengt 1.0; undeutlich 1.0; grau 1.0
+unklar.a unklar_9 :: ungenau 2.0; unsicher 1.0; vage 1.0; nicht_offensichtlich 1.0; ungewiss 1.0; undeutlich 1.0; unbekannt 1.0
+ursprünglich.a ursprünglich_1 :: anfänglich 2.0; von_Anfang_an 1.0; eigentlich 1.0; herkömmlich 1.0; zu_Anfang 1.0; erstmalig 1.0; anfangs 1.0; zu_Beginn 1.0
+ursprünglich.a ursprünglich_10 :: eigentlich 2.0; anfänglich 2.0; grundlegend 1.0; herkömmlich 1.0; zu_Beginn 1.0; früher 1.0; am_Anfang 1.0; natürlich 1.0
+ursprünglich.a ursprünglich_2 :: anfänglich 3.0; eigentlich 1.0; selbständig 1.0; verwendet 1.0; original 1.0
+ursprünglich.a ursprünglich_3 :: anfänglich 2.0; erste 2.0; eigentlich 1.0; vorrangig 1.0; zu_Anfang 1.0; erstmalig 1.0; wesenhaft 1.0; zu_Beginn 1.0; früher 1.0; echt 1.0
+ursprünglich.a ursprünglich_4 :: anfänglich 5.0; anfangs 2.0; erste 2.0; eingangs 2.0; archaisch 1.0; grundsätzlich 1.0; echt 1.0; originär 1.0
+ursprünglich.a ursprünglich_5 :: anfänglich 3.0; zugrundeliegend 2.0; normal 1.0; eigentlich 1.0; vererbt 1.0; echt 1.0; original 1.0
+ursprünglich.a ursprünglich_6 :: anfänglich 4.0; zugrundeliegend 1.0; angestammt 1.0
+ursprünglich.a ursprünglich_7 :: anfänglich 3.0; primär 1.0; ehemalig 1.0
+ursprünglich.a ursprünglich_8 :: anfänglich 3.0; bisher 1.0; normal 1.0; eigentlich 1.0; erste 1.0; ehemalig 1.0; früher 1.0; alt 1.0; original 1.0; vorherig 1.0
+ursprünglich.a ursprünglich_9 :: anfänglich 3.0; eigentlich 1.0; herkömmlich 1.0; nativ 1.0; erste 1.0; echt 1.0; original 1.0; angestammt 1.0; vorherig 1.0
+verblenden.v verblenden_1 :: verkleiden 4.0; verdecken 1.0; bedecken 1.0; überdecken 1.0; abdecken 1.0
+verblenden.v verblenden_10 :: verkleiden 5.0; verdecken 1.0; abdecken 1.0
+verblenden.v verblenden_11 :: täuschen 2.0; vernichten 1.0; irreführen 1.0; verhindern 1.0
+verblenden.v verblenden_12 :: blenden 2.0; verdunkeln 1.0; verwirren 1.0; verschleiern 1.0; schleiern 1.0
+verblenden.v verblenden_13 :: verdecken 2.0; verkleiden 2.0; vertäfeln 1.0; bedecken 1.0; abschirmen 1.0; abdecken 1.0; verzieren 1.0; verbergen 1.0
+verblenden.v verblenden_14 :: verdunkeln 1.0; verstecken 1.0; verdecken 1.0; in_die_Irre_leiten 1.0; verwirren 1.0; verkleiden 1.0; verführen 1.0; täuschen 1.0; blenden 1.0; verhindern 1.0
+verblenden.v verblenden_15 :: verkleiden 5.0; dunkeln 1.0; verdunkeln 1.0; verstecken 1.0; verdecken 1.0; abdecken 1.0; umhüllen 1.0; verschalen 1.0
+verblenden.v verblenden_16 :: verkleiden 2.0; verdunkeln 1.0; verstecken 1.0; verdecken 1.0; vertäfeln 1.0; decken 1.0
+verblenden.v verblenden_17 :: verkleiden 3.0; verdecken 1.0; bedecken 1.0; abschirmen 1.0; unsichtbar_machen 1.0; ausfüttern 1.0; bespannen 1.0; verschalen 1.0
+verblenden.v verblenden_18 :: täuschen 3.0; manipulieren 1.0; vernebeln 1.0; kurzsichtig_sein 1.0; verwirren 1.0; belügen 1.0; beschränken 1.0; Illusionen_hingeben 1.0; engstirnig_sein 1.0; blenden 1.0; List_anwenden 1.0
+verblenden.v verblenden_19 :: verkleiden 4.0; verschalen 2.0; auskleiden 1.0; verstecken 1.0; verdecken 1.0; verbergen 1.0
+verblenden.v verblenden_2 :: vernebeln 2.0; faszinieren 1.0; verzerren 1.0; täuschen 1.0; verschleiern 1.0
+verblenden.v verblenden_20 :: überziehen 2.0; verkleiden 1.0; beziehen 1.0; legieren 1.0
+verblenden.v verblenden_3 :: verkleiden 5.0; abdecken 1.0
+verblenden.v verblenden_4 :: täuschen 2.0; verdunkeln 1.0; blenden 1.0; ablenken 1.0
+verblenden.v verblenden_5 :: täuschen 3.0; irreführen 1.0; leimen 1.0; verwirren 1.0; verkleiden 1.0; verschanzen 1.0; überziehen 1.0
+verblenden.v verblenden_6 :: verkleiden 3.0; verdunkeln 1.0; verstecken 1.0; verdecken 1.0; schmücken 1.0; abdecken 1.0
+verblenden.v verblenden_7 :: verkleiden 4.0; verdecken 1.0; abdecken 1.0; verschalen 1.0
+verblenden.v verblenden_8 :: verkleiden 3.0; stehen 1.0; verdecken 1.0; bedecken 1.0; abgrenzen 1.0; abschotten 1.0; verzieren 1.0; überziehen 1.0; täfeln 1.0
+verblenden.v verblenden_9 :: täuschen 2.0; irreführen 1.0; beirren 1.0; blenden 1.0
+verdecken.v verdecken_1 :: verschleiern 2.0; verstecken 1.0; bedecken 1.0; unkenntlich_machen 1.0; verwischen 1.0; verbergen 1.0; verhüllen 1.0
+verdecken.v verdecken_10 :: bedecken 2.0; verstecken 1.0; abdecken 1.0; überlagern 1.0; verbergen 1.0; verhüllen 1.0
+verdecken.v verdecken_11 :: verbergen 3.0; verstecken 2.0
+verdecken.v verdecken_12 :: verstecken 4.0; verhüllen 4.0; bedecken 3.0; übermalen 1.0; unkenntlich_machen 1.0; tarnen 1.0; abdecken 1.0; zukleben 1.0; umhüllen 1.0; verschleiern 1.0; verhängen 1.0
+verdecken.v verdecken_13 :: bedecken 3.0; verstecken 2.0; abdecken 2.0; verhüllen 2.0; verschleiern 2.0; verdunkeln 1.0; zudecken 1.0; überdecken 1.0; verheimlichen 1.0; verbergen 1.0; verhindern 1.0
+verdecken.v verdecken_14 :: abdecken 3.0; verstecken 2.0; bedecken 2.0; vernichten 1.0; verdunkeln 1.0; überdecken 1.0; verheimlichen 1.0; vermischen 1.0; verhüllen 1.0
+verdecken.v verdecken_15 :: verstecken 4.0; vertuschen 1.0; verbergen 1.0; verhüllen 1.0
+verdecken.v verdecken_16 :: verstecken 2.0; bedecken 2.0; verschleiern 2.0; vernichten 1.0; abschirmen 1.0; verblenden 1.0; abdecken 1.0; überlagern 1.0; verbergen 1.0; verneinen 1.0
+verdecken.v verdecken_17 :: verstecken 3.0; vernichten 1.0; bedecken 1.0; verschanzen 1.0; verhüllen 1.0; verhindern 1.0
+verdecken.v verdecken_18 :: bedecken 3.0; verstecken 2.0; verhüllen 2.0; umdrehen 2.0; geheim_halten 1.0; zudecken 1.0; abschirmen 1.0; tarnen 1.0; anmalen 1.0; fern_halten 1.0; ungesehen_machen 1.0; täuschen 1.0; blenden 1.0; verschleiern 1.0
+verdecken.v verdecken_19 :: verstecken 3.0; bedecken 3.0; abdecken 2.0; verbergen 2.0; verschleiern 2.0; verdunkeln 1.0; verheimlichen 1.0; vertuschen 1.0; vermissen 1.0; verhüllen 1.0
+verdecken.v verdecken_2 :: bedecken 3.0; abdecken 2.0; verdunkeln 1.0; verstecken 1.0; abschirmen 1.0; überdecken 1.0; verheimlichen 1.0; schützen 1.0; verbergen 1.0; vergraben 1.0; verhüllen 1.0; verhindern 1.0
+verdecken.v verdecken_20 :: bedecken 3.0; verhüllen 2.0; anliegen 1.0; umhüllen 1.0; verschleiern 1.0
+verdecken.v verdecken_3 :: verbergen 3.0; bedecken 2.0; verstecken 1.0; abdecken 1.0; verhüllen 1.0
+verdecken.v verdecken_4 :: verstecken 3.0; abdecken 2.0; verdunkeln 1.0; zudecken 1.0; bedecken 1.0; verbergen 1.0; verhüllen 1.0; verschleiern 1.0
+verdecken.v verdecken_5 :: verstecken 3.0; bedecken 3.0; abdecken 2.0; verbergen 1.0
+verdecken.v verdecken_6 :: verstecken 3.0; überdecken 2.0; überspielen 2.0; übermalen 1.0; tarnen 1.0; vertuschen 1.0; zukleben 1.0; übertönen 1.0; umhüllen 1.0
+verdecken.v verdecken_7 :: verstecken 2.0; zudecken 2.0; bedecken 2.0; abdecken 2.0; vertäfeln 1.0; anmalen 1.0; verkleiden 1.0; decken 1.0; verhüllen 1.0
+verdecken.v verdecken_8 :: überlagern 4.0; verbergen 2.0; verhüllen 2.0; zudecken 1.0; bedecken 1.0; überdecken 1.0; anmalen 1.0; abdecken 1.0; decken 1.0
+verdecken.v verdecken_9 :: überdecken 3.0; abdecken 2.0; verdüstern 1.0; verdunkeln 1.0; verheimlichen 1.0; überlagern 1.0; verschleiern 1.0; schleiern 1.0
+vergesslich.a vergesslich_1 :: schusslig 2.0; senil 1.0; gedächtnisschwach 1.0
+vergesslich.a vergesslich_10 :: zerstreut 2.0; unkonzentriert 1.0; gedächtnisschwach 1.0; alt 1.0
+vergesslich.a vergesslich_2 :: schusselig 1.0; zerstreut 1.0; abwesend 1.0; nachlässig 1.0; gedankenlos 1.0; gedächtnisschwach 1.0; vergessend 1.0; komisch 1.0; zerfahren 1.0
+vergesslich.a vergesslich_3 :: schusselig 2.0; unachtsam 2.0; gedankenlos 2.0; gedächtnisschwach 1.0; schusslig 1.0; nervös 1.0; achtlos 1.0; fahrig 1.0
+vergesslich.a vergesslich_4 :: gedankenlos 2.0; schusselig 1.0; wirr 1.0; zerstreut 1.0; unkonzentriert 1.0; gedächtnisschwach 1.0
+vergesslich.a vergesslich_5 :: schusselig 2.0; wirr 1.0; zerstreut 1.0; geistesabwesend 1.0; unachtsam 1.0; gedankenlos 1.0; gedächtnisschwach 1.0; fahrig 1.0; unbesonnen 1.0
+vergesslich.a vergesslich_6 :: fahrig 2.0; unachtsam 1.0; durcheinander 1.0; gedankenlos 1.0; gedächtnisschwach 1.0; schusslig 1.0; dement 1.0; unbesonnen 1.0
+vergesslich.a vergesslich_7 :: zerstreut 2.0; gedächtnisschwach 2.0; wirr 1.0; abwesend 1.0; unkonzentriert 1.0; gedankenlos 1.0; verwirrt 1.0; dement 1.0
+vergesslich.a vergesslich_8 :: zerstreut 3.0; wirr 1.0; unkonzentriert 1.0; gedankenlos 1.0; gedächtnisschwach 1.0; verwirrt 1.0; achtlos 1.0
+vergesslich.a vergesslich_9 :: schusselig 1.0; zerstreut 1.0; unnachhaltig 1.0; unachtsam 1.0; nervös 1.0; vergessen 1.0; fahrig 1.0; unbesonnen 1.0
+verletzend.a verletzend_1 :: beleidigend 2.0; demütigend 1.0; verwundend 1.0; kränkend 1.0
+verletzend.a verletzend_10 :: beleidigend 3.0; ausfällig 1.0; ätzend 1.0; gehässig 1.0; unsachlich 1.0; gemein 1.0; böse 1.0; fies 1.0; herablassend 1.0; ausfallend 1.0; kränkend 1.0
+verletzend.a verletzend_2 :: beleidigend 2.0; schadvoll 1.0; anzüglich 1.0; demütigend 1.0; bissig 1.0; lieblos 1.0; gemein 1.0; fies 1.0; böswillig 1.0; bitter 1.0; ausfallend 1.0; verwundend 1.0; kränkend 1.0
+verletzend.a verletzend_3 :: kränkend 2.0; beleidigend 1.0; grässlich 1.0; spöttisch 1.0; böse 1.0; gemein 1.0; ausfallend 1.0; gewalttätig 1.0; brutal 1.0
+verletzend.a verletzend_4 :: kränkend 2.0; krankhaft 1.0; beleidigend 1.0
+verletzend.a verletzend_5 :: beleidigend 2.0; kränkend 2.0; demütigend 1.0; spöttisch 1.0; gehässig 1.0; schmerzhaft 1.0; gemein 1.0; böse 1.0; fies 1.0; arrogant 1.0
+verletzend.a verletzend_6 :: kränkend 3.0; beleidigend 1.0; unangemessen 1.0; niederträchtig 1.0; spöttisch 1.0; unsachlich 1.0; gemein 1.0; gefährlich 1.0; fies 1.0; böswillig 1.0; bösartig 1.0; ausfallend 1.0; herzlos 1.0
+verletzend.a verletzend_7 :: kränkend 3.0; demütigend 2.0; verwundend 2.0; beleidigend 1.0; zurücksetzend 1.0
+verletzend.a verletzend_8 :: beleidigend 2.0; gemein 1.0; bösartig 1.0; herablassend 1.0; verwundend 1.0; böse 1.0; kränkend 1.0
+verletzend.a verletzend_9 :: beleidigend 5.0; kränkend 3.0; herabsetzend 1.0; gemein 1.0; böse 1.0; bösartig 1.0; verwundend 1.0; herzlos 1.0
+verlängern.v verlängern_1 :: ausdehnen 2.0; erweitern 2.0; dehnen 2.0; bedenken 1.0; strecken 1.0; erhöhen 1.0
+verlängern.v verlängern_10 :: ausweiten 3.0; ausdehnen 2.0; erweitern 2.0; fortführen 1.0
+verlängern.v verlängern_11 :: ausdehnen 3.0; strecken 2.0; aufschieben 1.0; erweitern 1.0; erneuern 1.0; erhöhen 1.0; dehnen 1.0
+verlängern.v verlängern_12 :: verzögern 1.0; aufschieben 1.0; hinzufügen 1.0; länger_machen 1.0; ausweiten 1.0; hinhalten 1.0; schieben 1.0; erzeugen 1.0
+verlängern.v verlängern_13 :: ausdehnen 4.0; ausweiten 1.0; strecken 1.0; erweitern 1.0
+verlängern.v verlängern_14 :: vergrößern 3.0; ausdehnen 1.0; strecken 1.0; erhöhen 1.0; hinausschieben 1.0
+verlängern.v verlängern_15 :: hinausziehen 1.0; strecken 1.0; erhöhen 1.0; hinausschieben 1.0
+verlängern.v verlängern_16 :: erweitern 2.0; ausdehnen 1.0; ausweiten 1.0; strecken 1.0
+verlängern.v verlängern_17 :: erweitern 1.0; dehnen 1.0; herauszögern 1.0
+verlängern.v verlängern_18 :: ausdehnen 1.0; ausweiten 1.0; erweitern 1.0; erhöhen 1.0
+verlängern.v verlängern_19 :: erweitern 2.0; fortführen 1.0; ausdehnen 1.0; aufstocken 1.0; fortsetzen 1.0
+verlängern.v verlängern_2 :: ausdehnen 4.0; hinzufügen 2.0; erhöhen 2.0; aufschieben 1.0; strecken 1.0; dehnen 1.0
+verlängern.v verlängern_20 :: aufschieben 2.0; erweitern 2.0; verzögern 1.0; hinziehen 1.0; ausdehnen 1.0; prolongieren 1.0; strecken 1.0; dehnen 1.0; hinausschieben 1.0
+verlängern.v verlängern_3 :: erweitern 2.0; ausdehnen 1.0; ausbauen 1.0; hinzufügen 1.0; dranhängen 1.0; dranknüpfen 1.0; länger_machen 1.0
+verlängern.v verlängern_4 :: erweitern 2.0; ausdehnen 1.0
+verlängern.v verlängern_5 :: ausdehnen 2.0; ausweiten 2.0; erweitern 2.0; aufschieben 1.0; versetzen 1.0; erhöhen 1.0
+verlängern.v verlängern_6 :: ausdehnen 4.0; strecken 2.0; erweitern 2.0; aufschieben 1.0; ausweiten 1.0; verschieben 1.0; hinausschieben 1.0
+verlängern.v verlängern_7 :: ausdehnen 3.0; ausweiten 2.0; strecken 2.0; erweitern 2.0; dehnen 2.0; ausziehen 1.0; länger_machen 1.0; erhöhen 1.0
+verlängern.v verlängern_8 :: erweitern 3.0; ausbauen 2.0; fortführen 1.0; ausdehnen 1.0; anfügen 1.0; hinzufügen 1.0
+verlängern.v verlängern_9 :: ausdehnen 2.0; ausweiten 2.0; aufschieben 1.0; stückeln 1.0; verschieben 1.0; strecken 1.0; erweitern 1.0; erneuern 1.0
+vertauschen.v vertauschen_1 :: wechseln 3.0; ersetzen 1.0; ändern 1.0; tauschen 1.0; austauschen 1.0; ähneln 1.0
+vertauschen.v vertauschen_10 :: verwechseln 4.0; austauschen 2.0; spiegeln 1.0; tauschen 1.0; verändern 1.0; auswechseln 1.0; umstellen 1.0; mischen 1.0
+vertauschen.v vertauschen_11 :: wechseln 6.0; ändern 1.0; tauschen 1.0; auswechseln 1.0; austauschen 1.0
+vertauschen.v vertauschen_12 :: austauschen 3.0; auswechseln 2.0; verdrehen 1.0; vermengen 1.0; verbinden 1.0; verändern 1.0; mischen 1.0
+vertauschen.v vertauschen_13 :: wechseln 3.0; ersetzen 1.0; tauschen 1.0; umtauschen 1.0; austauschen 1.0
+vertauschen.v vertauschen_14 :: verwechseln 3.0; tauschen 2.0; verändern 1.0; wechseln 1.0
+vertauschen.v vertauschen_15 :: umtauschen 2.0; austauschen 2.0; ändern 1.0; ersetzen 1.0; auswechseln 1.0; wechseln 1.0
+vertauschen.v vertauschen_16 :: verwechseln 3.0; austauschen 1.0; umstellen 1.0
+vertauschen.v vertauschen_17 :: auswechseln 3.0; austauschen 2.0; wechseln 2.0; ändern 1.0; verändern 1.0; umstellen 1.0
+vertauschen.v vertauschen_18 :: wechseln 3.0; umdrehen 2.0; invertieren 1.0; auswechseln 1.0
+vertauschen.v vertauschen_19 :: tauschen 1.0; auswechseln 1.0; umtauschen 1.0; austauschen 1.0; wechseln 1.0
+vertauschen.v vertauschen_2 :: wechseln 3.0; kommutieren 1.0; ersetzen 1.0; ändern 1.0; tauschen 1.0; auswechseln 1.0; austauschen 1.0
+vertauschen.v vertauschen_20 :: austauschen 3.0; auswechseln 1.0; umtauschen 1.0; täuschen 1.0; umstellen 1.0; wechseln 1.0
+vertauschen.v vertauschen_3 :: wechseln 3.0; auswechseln 2.0; ersetzen 1.0; verdrehen 1.0; ändern 1.0; umkehren 1.0; tauschen 1.0; umtauschen 1.0; umdrehen 1.0
+vertauschen.v vertauschen_4 :: wechseln 5.0; tauschen 2.0; permutieren 1.0; austauschen 1.0
+vertauschen.v vertauschen_5 :: auswechseln 2.0; ersetzen 1.0; deplatzieren 1.0; tauschen 1.0; verändern 1.0; wechseln 1.0
+vertauschen.v vertauschen_6 :: austauschen 3.0; ersetzen 2.0; wechseln 2.0; ändern 1.0; ergänzen 1.0; tauschen 1.0; umstellen 1.0
+vertauschen.v vertauschen_7 :: wechseln 4.0; austauschen 2.0; tauschen 1.0; auswechseln 1.0
+vertauschen.v vertauschen_8 :: wechseln 2.0; ändern 1.0; tauschen 1.0; permutieren 1.0; vermischen 1.0; auswechseln 1.0; austauschen 1.0; erneuern 1.0
+vertauschen.v vertauschen_9 :: ändern 2.0; tauschen 2.0; auswechseln 2.0; wechseln 2.0; ersetzen 1.0; verändern 1.0; umtauschen 1.0; austauschen 1.0; umdrehen 1.0
+verzaubern.v verzaubern_1 :: verhexen 2.0; begeistern 2.0; verführen 1.0; glauben 1.0; bezaubern 1.0; hexen 1.0; faszinieren 1.0; betören 1.0; wünschen 1.0; verwünschen 1.0
+verzaubern.v verzaubern_10 :: bezaubern 3.0; . 3.0; beeindrucken 2.0; verhexen 2.0; bezirzen 1.0; blenden 1.0; reizen 1.0
+verzaubern.v verzaubern_11 :: entzücken 2.0; beglücken 1.0; verzücken 1.0; faszinieren 1.0; begeistern 1.0
+verzaubern.v verzaubern_12 :: verführen 1.0; bezaubern 1.0; erfreuen 1.0; beruhigen 1.0; beeindrucken 1.0; entzücken 1.0; verwundern 1.0; reizen 1.0
+verzaubern.v verzaubern_13 :: verhexen 2.0; bezaubern 1.0; träumen 1.0; hexen 1.0; bezirzen 1.0; wünschen 1.0; verwünschen 1.0
+verzaubern.v verzaubern_14 :: bezaubern 3.0; verzücken 1.0; entzücken 1.0; beschwören 1.0
+verzaubern.v verzaubern_15 :: bezaubern 4.0; verwirren 1.0; bezirzen 1.0; betören 1.0; verhexen 1.0
+verzaubern.v verzaubern_16 :: bezaubern 2.0; bezirzen 1.0; beeindrucken 1.0; entzücken 1.0; betören 1.0
+verzaubern.v verzaubern_17 :: bezaubern 3.0; verzücken 1.0; beeindrucken 1.0
+verzaubern.v verzaubern_18 :: verwandeln 5.0; verhexen 4.0; bezaubern 1.0
+verzaubern.v verzaubern_19 :: verwandeln 3.0; zaubern 1.0; beeindrucken 1.0; verändern 1.0; verwünschen 1.0; transformieren 1.0
+verzaubern.v verzaubern_2 :: verbessern 2.0; bezaubern 1.0; für_sich_gewinnen 1.0; beeindrucken 1.0; verändern 1.0; verhexen 1.0; umwerfend_sein 1.0; begeistern 1.0; sympathisch_sein 1.0; charismatisch_sein 1.0
+verzaubern.v verzaubern_20 :: bezaubern 2.0; begeistern 2.0; bezirzen 1.0; faszinieren 1.0; beeindrucken 1.0; entzücken 1.0; betören 1.0; verhexen 1.0
+verzaubern.v verzaubern_3 :: bezaubern 2.0; erobern 1.0; umschmeicheln 1.0; umwerben 1.0; bezirzen 1.0; beeindrucken 1.0; entzücken 1.0; verhexen 1.0; gewinnen 1.0
+verzaubern.v verzaubern_4 :: bezaubern 3.0; besprechen 1.0; verhexen 1.0; verwünschen 1.0
+verzaubern.v verzaubern_5 :: aufrüsten 1.0; verschönen 1.0; belegen 1.0; versehen 1.0; verändern 1.0; veredeln 1.0; verhexen 1.0; verbessern 1.0
+verzaubern.v verzaubern_6 :: bezaubern 2.0; erfreuen 1.0; beeindrucken 1.0; entzücken 1.0; Magie_anwenden 1.0; verwandeln 1.0
+verzaubern.v verzaubern_7 :: bezaubern 5.0; verhexen 2.0; auf_seine_Seite_ziehen 1.0; sympathisch_sein 1.0; für_sich_gewinnen 1.0; bezirzen 1.0; faszinieren 1.0; entzücken 1.0; betören 1.0; begeistern 1.0; beschwören 1.0; charismatisch_sein 1.0; verwünschen 1.0; verlocken 1.0
+verzaubern.v verzaubern_8 :: verhexen 2.0; beglücken 1.0; verführen 1.0; antun 1.0; bezaubern 1.0; erstaunen 1.0; für_sich_gewinnen 1.0; ändern 1.0; verzücken 1.0; tief_entwickeln 1.0; faszinieren 1.0; entzücken 1.0; beeindrucken 1.0; begeistern 1.0; beschwören 1.0; verwünschen 1.0; in_den_Bann_ziehen 1.0
+verzaubern.v verzaubern_9 :: bezaubern 4.0; beeindrucken 3.0; verzücken 1.0; bezirzen 1.0; entzücken 1.0; verhexen 1.0
+wegschaffen.v wegschaffen_1 :: wegbringen 2.0; evakuieren 2.0; abziehen 1.0; zurückrufen 1.0; beseitigen 1.0; entfernen 1.0; rausholen 1.0; fortschaffen 1.0; extrahieren 1.0; abtransportieren 1.0
+wegschaffen.v wegschaffen_10 :: wegbringen 2.0; entfernen 2.0; wegräumen 1.0; unterschlagen 1.0; fortbringen 1.0; an_einen_anderen_Ort_bringen 1.0; beseitigen 1.0; fortschaffen 1.0; schmuggeln 1.0
+wegschaffen.v wegschaffen_11 :: abtransportieren 3.0; wegbringen 2.0; fortbringen 2.0; beseitigen 2.0; fortschaffen 2.0; entfernen 1.0; davontragen 1.0; forttun 1.0; beiseiteschaffen 1.0; wegtransportieren 1.0; wegtun 1.0
+wegschaffen.v wegschaffen_12 :: wegbringen 2.0; fortbringen 2.0; schaffen 1.0; rauben 1.0; fernbringen 1.0; fernschaffen 1.0; wegschleifen 1.0; fortschaffen 1.0; verschwinden 1.0; abtransportieren 1.0
+wegschaffen.v wegschaffen_13 :: wegbringen 3.0; fortschaffen 3.0; fortbringen 2.0; eskortieren 1.0; bringen 1.0; beseitigen 1.0; verschleppen 1.0; forttun 1.0; wegtun 1.0
+wegschaffen.v wegschaffen_14 :: wegbringen 3.0; fortbringen 1.0; fortschaffen 1.0; entführen 1.0; verschwinden 1.0
+wegschaffen.v wegschaffen_15 :: wegbringen 5.0; entsorgen 2.0; fortschaffen 2.0; verschwinden_lassen 2.0; fortbringen 1.0; beseitigen 1.0; verbergen 1.0; wegtransportieren 1.0; abtransportieren 1.0
+wegschaffen.v wegschaffen_16 :: wegbringen 5.0; fortbringen 3.0; abtransportieren 3.0; fortschaffen 2.0; beseitigen 1.0; entsorgen 1.0
+wegschaffen.v wegschaffen_17 :: abtransportieren 3.0; fortschaffen 2.0; wegbringen 1.0; wegschleppen 1.0; wegfahren 1.0
+wegschaffen.v wegschaffen_18 :: fortbringen 2.0; entfernen 1.0; verschleppen 1.0; mitnehmen 1.0; abtransportieren 1.0
+wegschaffen.v wegschaffen_19 :: fortbringen 3.0; wegbringen 2.0; abtransportieren 2.0; verschleppen 1.0; fortschaffen 1.0; entführen 1.0
+wegschaffen.v wegschaffen_2 :: wegbringen 3.0; abtransportieren 3.0; fortbringen 2.0; . 2.0; entsorgen 1.0; fortschaffen 1.0
+wegschaffen.v wegschaffen_20 :: fortschaffen 3.0; abtransportieren 3.0; wegbringen 2.0; fortbringen 1.0; weglegen 1.0; entfernen 1.0; verstrecken 1.0; beseitigen 1.0; verschieben 1.0
+wegschaffen.v wegschaffen_3 :: fortschaffen 3.0; wegbringen 2.0; fortbringen 2.0; verschleppen 1.0
+wegschaffen.v wegschaffen_4 :: fortbringen 3.0; wegbringen 2.0; entfernen 2.0; fortschaffen 2.0; wegräumen 1.0; bringen 1.0; entledigen 1.0; beiseite_räumen 1.0; beiseite_schaffen 1.0; loswerden 1.0; abtransportieren 1.0; in_Sicherheit_bringen 1.0
+wegschaffen.v wegschaffen_5 :: wegbringen 2.0; fortschaffen 2.0; abtransportieren 2.0; wegräumen 1.0; entwurzeln 1.0; freigeben 1.0; bieten 1.0; entfernen 1.0; erlauben 1.0; verschließen 1.0; wegtragen 1.0; wegtransportieren 1.0; einsperren 1.0; verschwinden_lassen 1.0; ermöglichen 1.0; zugänglich_machen 1.0
+wegschaffen.v wegschaffen_6 :: abtransportieren 3.0; wegräumen 1.0; wegbringen 1.0; holen 1.0; fortbringen 1.0; entfernen 1.0; beseitigen 1.0; weggeben 1.0; wegnehmen 1.0; auslagern 1.0; abholen 1.0; fortschaffen 1.0; verschwinden 1.0; wegtransportieren 1.0; forträumen 1.0
+wegschaffen.v wegschaffen_7 :: wegbringen 4.0; fortbringen 3.0; fortschaffen 2.0; entfernen 1.0; beseitigen 1.0; entsorgen 1.0; abtransportieren 1.0
+wegschaffen.v wegschaffen_8 :: wegbringen 4.0; fortbringen 3.0; verstecken 2.0; entsorgen 2.0; fortschaffen 2.0; behüten 1.0; beseitigen 1.0; auslagern 1.0; aus_dem_Weg_räumen 1.0; verbergen 1.0; verschwinden_lassen 1.0
+wegschaffen.v wegschaffen_9 :: wegbringen 2.0; fortbringen 2.0; beseitigen 2.0; abtransportieren 2.0; ausräumen 1.0; entfernen 1.0; forträumen 1.0
+zusammenkommen.v zusammenkommen_1 :: treffen 2.0; sich_treffen 1.0; versammeln 1.0; verbinden 1.0; koalieren 1.0; zusammenfügen 1.0; zusammentreffen 1.0; binden 1.0; sich_versammeln 1.0; koppeln 1.0
+zusammenkommen.v zusammenkommen_10 :: treffen 2.0; sich_versammeln 2.0; zusammenbinden 1.0; zusammenführen 1.0; sich_treffen 1.0; einfinden 1.0; versammeln 1.0; vereinen 1.0; zusammenfinden 1.0; verbinden 1.0; koalieren 1.0; zusammentreffen 1.0
+zusammenkommen.v zusammenkommen_11 :: treffen 2.0; tagen 1.0; sich_treffen 1.0; begegnen 1.0; korrelieren 1.0; versammeln 1.0; verbinden 1.0; sich_ansammeln 1.0; zusammentreffen 1.0; Rendezvous_haben 1.0; sich_versammeln 1.0; verabreden 1.0; anhäufen 1.0
+zusammenkommen.v zusammenkommen_12 :: sich_treffen 2.0; beisammen_sein 2.0; treffen 2.0; aufeinanderstoßen 1.0; zusammentreffen 1.0
+zusammenkommen.v zusammenkommen_13 :: sich_treffen 2.0; verbinden 2.0; treffen 2.0; sich_sammeln 1.0; versammeln 1.0; häufen 1.0; vereinen 1.0; zusammenfinden 1.0; beisammen_sein 1.0; verkehren 1.0; zusammenfügen 1.0; zusammentreffen 1.0; sich_wieder_sehen 1.0; sich_versammeln 1.0; sich_finden 1.0
+zusammenkommen.v zusammenkommen_14 :: wiedervereinen 1.0; zusammentragen 1.0; hinzukommen 1.0; beieinanderkommen 1.0; bereitstellen 1.0
+zusammenkommen.v zusammenkommen_15 :: sich_ansammeln 2.0; sich_anhäufen 2.0; zusammenbinden 1.0; zusammenfügen 1.0; verbinden 1.0; gespart_werden 1.0; verkoppeln 1.0; auflaufen 1.0; akkumulieren 1.0; koppeln 1.0; erreichen 1.0
+zusammenkommen.v zusammenkommen_16 :: treffen 3.0; zusammentreffen 2.0; zusammenstoßen 1.0
+zusammenkommen.v zusammenkommen_17 :: versammeln 3.0; verbinden 2.0; zusammentreffen 2.0; sich_treffen 1.0; sich_vereinen 1.0; zusammenfinden 1.0; vereinen 1.0; konferieren 1.0
+zusammenkommen.v zusammenkommen_18 :: versammeln 2.0; anwesend_sein 1.0; zusammenfinden 1.0; kommen 1.0; zusammentreffen 1.0
+zusammenkommen.v zusammenkommen_19 :: versammeln 2.0; zusammensetzen 1.0; vereinheitlichen 1.0; verbünden 1.0; erscheinen 1.0; vereinen 1.0; zusammengehen 1.0; zusammenfinden 1.0; zusammentreffen 1.0; treffen 1.0
+zusammenkommen.v zusammenkommen_2 :: treffen 3.0; warten 1.0; einfinden 1.0; versammeln 1.0; zusammentreffen 1.0; sich_versammeln 1.0
+zusammenkommen.v zusammenkommen_20 :: erwirtschaften 1.0; sich_ergeben 1.0; sich_akkumulieren 1.0; zusammenkommen 1.0
+zusammenkommen.v zusammenkommen_3 :: ausstellen 1.0; ansammeln 1.0; mieten 1.0; entstehen 1.0; treffen 1.0; fusionieren 1.0
+zusammenkommen.v zusammenkommen_4 :: zusammenstoßen 3.0; sich_treffen 1.0; berühren 1.0; anliegen 1.0; zusammentreffen 1.0; treffen 1.0
+zusammenkommen.v zusammenkommen_5 :: zusammentreffen 2.0; vermengen 1.0; vermischen 1.0; aufeinandertreffen 1.0; treffen 1.0
+zusammenkommen.v zusammenkommen_6 :: treffen 4.0; versammeln 3.0; verbinden 1.0; zusammenfügen 1.0; verkoppeln 1.0; binden 1.0; koppeln 1.0
+zusammenkommen.v zusammenkommen_7 :: sich_treffen 1.0; aufeinander_treffen 1.0; vorhanden_sein 1.0; sich_summieren 1.0; zusammentreffen 1.0; stimmen 1.0; treffen 1.0; zutreffen 1.0; sich_anhäufen 1.0
+zusammenkommen.v zusammenkommen_8 :: treffen 3.0; sich_versammeln 3.0; sich_treffen 2.0; zusammenstoßen 1.0; aufeinanderprallen 1.0; aufeinander_treffen 1.0; zusammentreffen 1.0; Rendezvous_haben 1.0
+zusammenkommen.v zusammenkommen_9 :: sich_sammeln 1.0; ansammeln 1.0; häufen 1.0; zusammenfinden 1.0; benötigen 1.0; anschwellen 1.0
