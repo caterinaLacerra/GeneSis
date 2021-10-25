@@ -3,25 +3,27 @@ paths:
     /media/ssd1/caterina/genesis-multilingual/checkpoints # path to the output folder where the checkpoints will be saved during training. If the path does not exists, the folder will be created.
 
   data_dir:
-    data/translation/ # path to the data directory.
+    data/translation/evalita # path to the data directory.
 
   scorer_dir:
-    scoring_scripts/evalita/ # path to the scoring scripts directory.
+    scoring_scripts/evalita # path to the scoring scripts directory.
 
 exp_name:
   mbart # name of the experiment, will be used as prefix for the checkpoint folder. If it contains 'debug', logs won't be saved.
 
 datasets:
-  pretrain: semcor_0.7.de.clean  # name of the dataset used for pre-training. It has to be the same name of a file in the data/ folder, with format {pretrain_name}_train.tsv
-  dev: germeval # dev set name. It has to correspond to a dataset in data/ with the name {dev_name}_dev.tsv
-  test: germeval # test set name. It has to correspond to a dataset in data/{test_name}/{test_name}_test.tsv
+  pretrain: semcor_0.7.it.clean_mw  # name of the dataset used for pre-training. It has to be the same name of a file in the data/ folder, with format {pretrain_name}_train.tsv
+  dev: semcor_0.7.it.clean_mw  # dev set name. It has to correspond to a dataset in data/ with the name {dev_name}_dev.tsv
+  # dev: germeval
+  test: evalita_cleaned # test set name. It has to correspond to a dataset in data/{test_name}/{test_name}_test.tsv
+  # dev: germeval
 
 model:
   name: facebook/mbart-large-50 # name for HuggingFace method .from_pretrained()
   max_tokens_per_batch: 500
   seed: 313
-  src_lang: de_DE
-  tgt_lang: de_DE
+  src_lang: it_IT
+  tgt_lang: it_IT
 
 optimiser:
   learning_rate: 0.00001
