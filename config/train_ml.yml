@@ -15,7 +15,7 @@ datasets:
   pretrain: semcor_0.7.it.clean_mw  # name of the dataset used for pre-training. It has to be the same name of a file in the data/ folder, with format {pretrain_name}_train.tsv
   dev: semcor_0.7.it.clean_mw  # dev set name. It has to correspond to a dataset in data/ with the name {dev_name}_dev.tsv
   # dev: germeval
-  test: evalita_cleaned # test set name. It has to correspond to a dataset in data/{test_name}/{test_name}_test.tsv
+  test: evalita_cleaned_no_mw # test set name. It has to correspond to a dataset in data/{test_name}/{test_name}_test.tsv
   # dev: germeval
 
 model:

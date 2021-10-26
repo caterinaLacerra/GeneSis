@@ -1,7 +1,7 @@
 import os
 import string
 import subprocess
-from typing import Dict, Optional, List, Iterable, Any, Set
+from typing import Dict, Optional, List, Iterable, Any, Set, Tuple
 
 import numpy as np
 import xml.etree.ElementTree as ET
@@ -381,3 +381,93 @@ def get_gold_dictionary(gold_path: str) -> Dict[str, str]:
 
     return dict_keys
 
+def save_reduced_numberbatch(input_path: str, output_path: str, languages: List[str]):
+
+    rows, cols = 0, 0
+    for i, line in tqdm.tqdm(enumerate(open(input_path))):
+        if i == 0:
+            cols = int(line.strip().split()[0])
+        else:
+            word_id, *vector = line.strip().split()
+            *_, lang_code, word = word_id.split('/')
+            if lang_code in languages:
+                rows += 1
+
+    with open(output_path, 'w') as output:
+        for i, line in tqdm.tqdm(enumerate(open(input_path))):
+            if i == 0:
+                output.write(f"{rows} {cols}\n")
+
+            else:
+                word_id, *vector = line.strip().split()
+                *_, lang_code, word = word_id.split('/')
+                if lang_code in languages:
+                    output.write(line)
+
+def load_numberbatch(txt_path: str, languages: Optional[List[str]]=None) -> Dict[str, np.matrix]:
+
+    vectors = {}
+
+    if languages is None:
+
+        for i, line in tqdm.tqdm(enumerate(open(txt_path))):
+            if i == 0:
+                continue
+            else:
+                word_id, *vector = line.strip().split()
+                vector = np.asarray([float(x) for x in vector])
+                vectors[word_id] = vector
+    else:
+        for i, line in tqdm.tqdm(enumerate(open(txt_path))):
+            if i == 0:
+                continue
+            else:
+                word_id, *vector = line.strip().split()
+                *_, lang_code, word = word_id.split('/')
+                if lang_code in languages:
+                    vector = np.asarray([float(x) for x in vector])
+                    vectors[word_id] = vector
+
+    return vectors
+
+
+def get_numberbatch_key(target_word: str, language: str) -> str:
+    key = f"/c/{language}/{target_word}"
+    return key
+
+def find_numberbatch_keys(target_word: str, language: str, keys: Dict[str, np.matrix]) -> Optional[List[str]]:
+    target_word = target_word.lower()
+
+    ret_keys = []
+    for word in target_word.split("_"):
+        key = get_numberbatch_key(word, language)
+        if key in keys:
+            ret_keys.append(key)
+
+        else:
+            # search for the same word in en
+            if language != "en":
+                key = get_numberbatch_key(word, "en")
+                if key in keys:
+                    ret_keys.append(key)
+
+                else:
+                    prefix = word[:-1]
+                    while len(prefix) > 1:
+                        avg_indexes = [k for k in keys if k.split("/")[-1] == prefix]
+                        if avg_indexes != []:
+                            ret_keys.extend(avg_indexes)
+                        prefix = prefix[:-1]
+
+            else:
+                prefix = word[:-1]
+                while len(prefix) > 1:
+                    avg_indexes = [k for k in keys if k.split("/")[-1] == prefix]
+                    if avg_indexes != []:
+                        ret_keys.extend(avg_indexes)
+                    prefix = prefix[:-1]
+
+    if ret_keys != []:
+        return ret_keys
+
+    return None
