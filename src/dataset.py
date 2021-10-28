@@ -266,7 +266,7 @@ class MBartDataset(IterableDataset):
             else:
                 encoded_input = self.encode(str_input)
                 if len(encoded_input) > 1024:
-                    print(f'skipping {sentence_words}')
+                    print(f'skipping')
                     continue
 
                 self.dataset_store.append((encoded_input, instance))

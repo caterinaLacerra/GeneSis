@@ -123,9 +123,8 @@ def get_clean_substitutes_from_batch(batch: List[str], target: str,
                 if output_vocabulary:
                     if target in output_vocabulary:
                         if word.lower() not in output_vocabulary[target]:
-                            # print(f"{word.lower()} not in vocabulary")
                             continue
-                    # todo: modify for multilingual
+                    # todo: modify for multilingual (construct vocab on the fly)
                     else:
                         substitutes = get_related_lemmas(target, language_code)
                         if substitutes == set() and language_code != "en":
@@ -359,6 +358,10 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
                 to_wr_subst = [(word, score) for word, score  in similarities[i]
                                if word in generated_substitutes[i]]
 
+            if key not in gold_dict_per_instance:
+                print(f"{key} not in gold dict")
+                print(list(gold_dict_per_instance.keys())[:10])
+                exit()
 
             avg_recall_10 += recall_at_k(compound_list, gold_dict_per_instance[key], k=10)
             oot.write(f'{lexelt} {instance_id} ::: {";".join(compound_list[:top_k])}\n')

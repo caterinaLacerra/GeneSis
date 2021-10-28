@@ -1,5 +1,5 @@
 import argparse
-from typing import List, Dict
+from typing import Dict
 import xml.etree.ElementTree as ET
 
 from src.utils import convert_to_universal_target
