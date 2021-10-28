@@ -2,7 +2,7 @@ import argparse
 
 import tqdm
 
-from src.utils import read_from_raganato_format
+from src.wsd.utils.utils import read_from_raganato_format
 
 
 def parse_args() -> argparse.Namespace:

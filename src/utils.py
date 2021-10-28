@@ -1,7 +1,7 @@
 import os
 import string
 import subprocess
-from typing import Dict, Optional, List, Iterable, Any, Set
+from typing import Dict, Optional, List, Iterable, Any, Set, Tuple
 
 import numpy as np
 import xml.etree.ElementTree as ET
@@ -10,6 +10,7 @@ import torch
 import tqdm
 import transformers
 
+from src.wsd.utils.utils import LexSubInstance
 
 _universal_to_lst = {
     'NOUN': 'n',
@@ -17,32 +18,6 @@ _universal_to_lst = {
     'ADV': 'r',
     'VERB': 'v'
 }
-
-
-class LexSubInstance:
-
-    def __init__(self, target: str, instance_id: str, target_idx: List[int], sentence: str,
-                 mask: Optional[List[str]] = None, gold: Optional[Dict[str, int]] = None):
-        self.target = target
-        self.instance_id = instance_id
-        self.target_idx = target_idx
-        self.sentence = sentence
-        self.mask = mask
-        self.gold = gold
-
-    def __repr__(self):
-        if self.gold:
-            sorted_gold = sorted([(a, b) for a, b in self.gold.items()], key=lambda x: x[1], reverse=True)
-            f_gold = " ".join([f'{x}::{y}' for x, y in sorted_gold])
-
-            clean_line = '\t'.join([self.target, self.instance_id, str(self.target_idx),
-                                    self.sentence, " ".join(self.mask), f_gold])
-        else:
-            clean_line = '\t'.join([self.target, self.instance_id, str(self.target_idx),
-                                    self.sentence])
-
-        return clean_line
-
 
 def convert_to_universal(pos: str):
     pos = pos.upper()
@@ -184,7 +159,7 @@ def contains(small: List[str], big: List[str]):
     return False
 
 
-def recover_bpes(bpes: List[str], words: List[str], word_idx: int, tokenizer):
+def recover_bpes(bpes: List[str], words: List[str], word_idx: int, tokenizer) -> List[int]:
     target_word = words[word_idx]
     tokenized = tokenizer.tokenize(target_word)
     if len(tokenized) == 0:
@@ -308,8 +283,7 @@ def define_generation_out_folder(config: Dict[str, Any]) -> str:
     return out_name
 
 
-def contains_punctuation(word: str) -> bool:
-    punct = set([x for x in string.punctuation])
+def contains_punctuation(word: str, punct: Set[str]) -> bool:
     return any(char in punct for char in word)
 
 
@@ -342,3 +316,161 @@ def get_target_index_list(target_idx: str) -> List[int]:
 def universal_to_wn_pos(upos: str) -> List[str]:
     pos_map = {'NOUN': ['n'], 'VERB': ['v'], 'ADJ': ['a', 's'], 'ADV': ['r']}
     return pos_map[upos]
+
+
+def multipos_to_pos(pos_s: List[str]) -> str:
+
+    _pos2score = {
+        'ADJ': 1,
+        'ADP': 0,
+        'ADV': 1,
+        'CCONJ': 0,
+        'DET': 0,
+        'INTJ': 0,
+        'NOUN': 3,
+        'NUM': 0,
+        'PART': 0,
+        'PRON': 0,
+        'PUNCT': 0,
+        'SCONJ': 0,
+        'SYM': 0,
+        'VERB': 2,
+        'X': 1
+    }
+
+    transformations = {'AUX': 'VERB', 'PROPN': 'NOUN'}
+    pos_s = [transformations.get(pos, pos) for pos in pos_s]
+    if len(pos_s) == 1 or len(set(pos_s)) == 1:
+        return pos_s[0]
+    else:
+        if 'NOUN' in pos_s:
+            return 'NOUN'
+        elif 'VERB' in pos_s:
+            return 'VERB'
+        else:
+            return max(pos_s, key=lambda x: _pos2score[x])
+
+
+def map_to_wn_pos(upos: str) -> str:
+
+    mapping_pos = {'NOUN':'n', 'ADJ':'a', 'ADV': 'r', 'VERB':'v'}
+
+    if upos in mapping_pos:
+        return mapping_pos[upos]
+
+    return None
+
+def get_gold_dictionary(gold_path: str) -> Dict[str, str]:
+
+    dict_keys = {}
+
+    for line in open(gold_path):
+        lexeme_info, substitutes = line.strip().split('::')
+        target, instance_id = lexeme_info.strip().split()
+
+        substitute_list = []
+        for substitute_pair in substitutes.split(';'):
+            if substitute_pair != '':
+                *words, score = substitute_pair.split()
+                word = '_'.join(words)
+                substitute_list.append((word, score))
+
+        substitute_list = sorted(substitute_list, key=lambda x:x[1], reverse=True)
+        dict_keys[instance_id] = " ".join([f'{w}::{s}' for w, s in substitute_list])
+
+    return dict_keys
+
+def save_reduced_numberbatch(input_path: str, output_path: str, languages: List[str]):
+
+    rows, cols = 0, 0
+    for i, line in tqdm.tqdm(enumerate(open(input_path))):
+        if i == 0:
+            cols = int(line.strip().split()[0])
+        else:
+            word_id, *vector = line.strip().split()
+            *_, lang_code, word = word_id.split('/')
+            if lang_code in languages:
+                rows += 1
+
+    with open(output_path, 'w') as output:
+        for i, line in tqdm.tqdm(enumerate(open(input_path))):
+            if i == 0:
+                output.write(f"{rows} {cols}\n")
+
+            else:
+                word_id, *vector = line.strip().split()
+                *_, lang_code, word = word_id.split('/')
+                if lang_code in languages:
+                    output.write(line)
+
+def load_numberbatch(txt_path: str, languages: Optional[List[str]]=None) -> Dict[str, np.matrix]:
+
+    vectors = {}
+
+    if languages is None:
+
+        for i, line in tqdm.tqdm(enumerate(open(txt_path))):
+            if i == 0:
+                continue
+            else:
+                word_id, *vector = line.strip().split()
+                vector = np.asarray([float(x) for x in vector])
+                vectors[word_id] = vector
+    else:
+        for i, line in tqdm.tqdm(enumerate(open(txt_path))):
+            if i == 0:
+                continue
+            else:
+                word_id, *vector = line.strip().split()
+                *_, lang_code, word = word_id.split('/')
+                if lang_code in languages:
+                    vector = np.asarray([float(x) for x in vector])
+                    vectors[word_id] = vector
+
+    return vectors
+
+
+def get_numberbatch_key(target_word: str, language: str) -> str:
+    key = f"/c/{language}/{target_word}"
+    return key
+
+def find_numberbatch_keys(target_word: str, language: str, keys: Dict[str, np.matrix]) -> Optional[List[str]]:
+    target_word = target_word.lower()
+
+    ret_keys = []
+    for word in target_word.split("_"):
+        key = get_numberbatch_key(word, language)
+        if key in keys:
+            ret_keys.append(key)
+
+        else:
+            # search for the same word in en
+            if language != "en":
+                key = get_numberbatch_key(word, "en")
+                if key in keys:
+                    ret_keys.append(key)
+
+                else:
+                    prefix = word[:-1]
+                    while len(prefix) > 1:
+                        avg_indexes = [k for k in keys if k.split("/")[-1] == prefix]
+                        if avg_indexes != []:
+                            ret_keys.extend(avg_indexes)
+                        prefix = prefix[:-1]
+
+            else:
+                prefix = word[:-1]
+                while len(prefix) > 1:
+                    avg_indexes = [k for k in keys if k.split("/")[-1] == prefix]
+                    if avg_indexes != []:
+                        ret_keys.extend(avg_indexes)
+                    prefix = prefix[:-1]
+
+    if ret_keys != []:
+        return ret_keys
+
+    return None
+
+
+def contains_number(word: str) -> bool:
+    return any(char.isdigit() for char in word)

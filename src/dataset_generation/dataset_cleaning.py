@@ -1,12 +1,11 @@
 import argparse
 import random
-from typing import List, Set
 
 import tqdm
 from transformers import AutoModel, AutoTokenizer, AutoConfig
 
 from src.task_evaluation import get_generated_substitutes, sort_substitutes_cos_sim_batched, is_clean_substitute
-from src.utils import LexSubInstance, get_output_dictionary
+from src.wsd.utils.utils import LexSubInstance, get_output_dictionary
 
 
 def parse_args() -> argparse.Namespace:
@@ -22,6 +21,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--limit_k_sentences', type=int, default=10000)
     parser.add_argument('--limit_k_substitutes', type=int, default=10000)
     parser.add_argument('--batch_size', type=int, default=100)
+    parser.add_argument('--language_code', default=True)
     return parser.parse_args()
 
 
@@ -35,7 +35,7 @@ def main(args: argparse.Namespace) -> None:
 
     instances = []
     instances_infos, input_infos, generated_substitutes, \
-    all_generated_substitutes = get_generated_substitutes(args.input_path, output_vocabulary, args.cvp)
+    all_generated_substitutes = get_generated_substitutes(args.input_path, output_vocabulary, args.cvp, args.language_code)
 
     similarities, all_similarities = sort_substitutes_cos_sim_batched(generated_substitutes, input_infos, embedder,
                                                                       tokenizer, hs, args.device, args.threshold,

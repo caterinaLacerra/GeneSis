@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader
 from src.dataset import BartDataset
 from src.model import BartModel
 from src.task_evaluation import eval_generation, eval_on_task
-from src.utils import define_generation_out_folder, get_output_dictionary
+from src.wsd.utils.utils import define_generation_out_folder, get_output_dictionary
 
 
 def parse_args():
