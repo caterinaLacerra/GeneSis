@@ -4,7 +4,7 @@ import numpy as np
 import tqdm
 from sklearn.metrics.pairwise import cosine_similarity
 
-from src.utils import save_reduced_numberbatch, load_numberbatch, read_from_input_file, find_numberbatch_keys, file_len
+from src.utils import load_numberbatch, read_from_input_file, find_numberbatch_keys, file_len
 
 
 def parse_args() -> argparse.Namespace:
@@ -14,12 +14,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--numberbatch", required=True)
     parser.add_argument("--language")
     parser.add_argument("--threshold", type=float, default=0.5)
+    parser.add_argument("--vocab_path", required=False, default=None)
     return parser.parse_args()
 
 
 if __name__ == '__main__':
 
     args = parse_args()
+
+    if args.vocab_path is not None:
+        vocab = set([line.strip() for line in open(args.vocab_path)])
+    else:
+        vocab = None
 
     numb_vectors = load_numberbatch(args.numberbatch)
 
@@ -43,8 +49,13 @@ if __name__ == '__main__':
 
                 substitute_vec = np.mean([numb_vectors[k] for k in substitute_keys], axis=0)
                 cos_sim = cosine_similarity(target_vector.reshape(1, -1), substitute_vec.reshape(1, -1))
+
                 if cos_sim > args.threshold:
-                    clean_substitutes.append(substitute)
+                    if vocab is not None:
+                        if substitute in vocab:
+                            clean_substitutes.append(substitute)
+                    else:
+                        clean_substitutes.append(substitute)
 
             if clean_substitutes != []:
                 instance.gold = {k: v for k, v in instance.gold.items() if k in clean_substitutes}
