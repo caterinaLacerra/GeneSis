@@ -20,6 +20,8 @@ def main(args: argparse.Namespace) -> None:
             for instance in tagged_sentence:
                 if instance.sense:
                     target = f'{instance.lemma}.{instance.pos}'
+                    if instance.pos not in ["ADV", "ADJ", "NOUN", "VERB"]:
+                        continue
                     str_target_idx = '##'.join([str(idx) for idx in instance.target_idx])
                     out.write(f'{target}\t{instance.instance_id}\t{str_target_idx}\t{instance.sentence}\n')
 

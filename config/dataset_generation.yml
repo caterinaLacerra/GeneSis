@@ -6,7 +6,7 @@ paths:
     data/ # path to the data directory
 
 datasets:
-  output_name: generated_semcor_25_25 # output name for the generated dataset
+  output_name: wng_generated # output name for the generated dataset
 
 model:
   name: facebook/bart-large # model name

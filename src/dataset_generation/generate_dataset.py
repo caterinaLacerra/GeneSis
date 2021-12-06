@@ -1,7 +1,4 @@
 import argparse
-import os
-from shutil import copyfile
-
 import pytorch_lightning as pl
 
 import yaml
@@ -56,7 +53,7 @@ if __name__ == '__main__':
 
     test_dictionary = trainer.test(test_dataloaders=[test_dataloader], model=model)
 
-    if args.recover_from_path != '':
+    ''' if args.recover_from_path != '':
         out_folder, f_name = os.path.split(args.recover_from_path)
         new_output = os.path.join(out_folder, f_name.replace('.txt', '_new.txt'))
         print(f'Merging output files into {new_output}')
@@ -66,4 +63,4 @@ if __name__ == '__main__':
                 out.write(line)
 
             for line in open(args.recover_from_path):
-                out.write(line)
+                out.write(line)'''
