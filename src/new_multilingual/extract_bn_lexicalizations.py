@@ -62,6 +62,7 @@ def parse_args():
     parser.add_argument('--xml_path', required=True)
     parser.add_argument('--gold_path', required=True)
     parser.add_argument('--bn_ids_path', required=True)
+    parser.add_argument('--language_code', required=True)
     return parser.parse_args()
 
 if __name__ == '__main__':
@@ -78,7 +79,7 @@ if __name__ == '__main__':
             bn_ids,
             lexicalizations,
             output_path,
-            lang_code="IT",
+            lang_code=args.language_code,
             bn_key="e4157eb7-d2c6-4689-99a8-794f3aecb8cf"
         )
         dump_lexicalizations(lexicalizations, output_path)

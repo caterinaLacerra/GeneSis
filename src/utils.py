@@ -158,9 +158,9 @@ def contains(small: List[str], big: List[str]):
             return i, i + len(small)
     return False
 
+def recover_mw_bpes(bpes: List[str], words: List[str], word_idx: List[int], tokenizer):
 
-def recover_bpes(bpes: List[str], words: List[str], word_idx: int, tokenizer):
-    target_word = words[word_idx]
+    target_word = " ".join([words[x] for x in word_idx])
     tokenized = tokenizer.tokenize(target_word)
     if len(tokenized) == 0:
         return None
@@ -170,7 +170,7 @@ def recover_bpes(bpes: List[str], words: List[str], word_idx: int, tokenizer):
     if not start_indexes:
         return None
 
-    diff = [abs(x - word_idx) for x in start_indexes]
+    diff = [abs(x - word_idx[0]) for x in start_indexes]
 
     start_index = np.asarray(start_indexes)[np.argmin(diff)]
 
@@ -179,65 +179,6 @@ def recover_bpes(bpes: List[str], words: List[str], word_idx: int, tokenizer):
         return [x for x in range(start + start_index, end + start_index)]
     except:
         return None
-
-
-def embed_sentences(embedder: transformers.AutoModel.from_pretrained,
-                    tokenizer: transformers.AutoTokenizer.from_pretrained,
-                    target_index: [List[List[int]]], sentences: List[str], device: str, hidden_size: int,
-                    layer_indexes: List[int], sum: bool = False) -> torch.Tensor:
-    idx_to_token = {v: k for k, v in tokenizer.get_vocab().items()}
-    matrix = torch.zeros((len(sentences), hidden_size))
-
-    # a list of target indexes for each sentence to embed
-    assert len(target_index) == len(sentences)
-
-    with torch.no_grad():
-        tokenized = tokenizer.batch_encode_plus(sentences, return_tensors='pt', padding=True, truncation=True)
-
-        input_ids = tokenized['input_ids'].to(device)
-        attention_mask = tokenized['attention_mask'].to(device)
-        embedder.to(device)
-
-        hidden_states = embedder(input_ids, attention_mask, output_hidden_states=True)["hidden_states"]
-
-        if not sum:
-            hidden_states = torch.mean(torch.stack(hidden_states[layer_indexes[0]:layer_indexes[-1] + 1]), dim=0)
-        else:
-            hidden_states = torch.sum(torch.stack(hidden_states[layer_indexes[0]:layer_indexes[-1] + 1]), dim=0)
-
-        # batch size x bpes x hidden size
-        words = [[x for x in sentence.split(' ') if x != ""] for sentence in sentences]
-        bpes = [[idx_to_token[idx.item()] for idx in sentence] for sentence in input_ids]
-
-        for j in range(len(input_ids)):
-
-            target_indexes = target_index[j]
-
-            stacking_vecs = []
-
-            for tix in target_indexes:
-                bpes_idx = recover_bpes(bpes[j], words[j], tix, tokenizer)
-
-                if bpes_idx is None:
-                    continue
-
-                reconstruct = ''.join(bpes[j][bpes_idx[0]:bpes_idx[-1] + 1]).replace('##', '')
-                target = words[j][tix]
-
-                if target != reconstruct:
-                    continue
-
-                # 1 x 1 x hidden size
-                vecs = torch.mean(hidden_states[j, bpes_idx], dim=0)
-                stacking_vecs.append(vecs)
-
-            if stacking_vecs == []:
-                print(target_indexes, words[j], 'no targets retrieved')
-                continue
-
-            matrix[j] = torch.mean(torch.stack(stacking_vecs), dim=0)
-
-    return matrix
 
 
 def yield_batch(input_path: str, separator: str):
@@ -471,3 +412,53 @@ def find_numberbatch_keys(target_word: str, language: str, keys: Dict[str, np.ma
         return ret_keys
 
     return None
+
+
+def extract_word_embedding(input_sentences: List[str], target_indexes: List[List[int]],
+                           tokenizer: transformers.AutoTokenizer.from_pretrained,
+                           embedder: transformers.AutoModelForMaskedLM.from_pretrained,
+                           device: torch.device,
+                           model_config: transformers.AutoConfig,
+                           special_chars: str) -> Tuple[torch.Tensor, list]:
+
+    idx_to_token = {v: k for k, v in tokenizer.get_vocab().items()}
+
+    # embed sentences as the average of the last four layers
+    tokenized = tokenizer.batch_encode_plus(input_sentences, return_tensors='pt', padding=True, truncation=True,
+                                            max_length=1024)
+
+    input_ids = tokenized['input_ids'].to(device)
+    attention_mask = tokenized['attention_mask'].to(device)
+    layer_indexes = [model_config.num_hidden_layers - 4, model_config.num_hidden_layers]
+
+    embedder.to(device)
+    with torch.no_grad():
+        embedder.eval()
+        hidden_states = embedder(input_ids, attention_mask, output_hidden_states=True)["hidden_states"]
+
+    # average of the last four layers
+    hidden_states = torch.mean(torch.stack(hidden_states[layer_indexes[0]:layer_indexes[-1] + 1]), dim=0)
+
+    words = [[x for x in sentence.split(' ') if x != ""] for sentence in input_sentences]
+    bpes = [[idx_to_token[idx.item()] for idx in sentence] for sentence in input_ids]
+
+    target_bpes = []
+
+    for j in range(len(input_ids)):
+
+        # for each sentence, consider the target and retrieve the corresponding bpes
+        bpes_idx = recover_mw_bpes(bpes[j], words[j], target_indexes[j], tokenizer)
+
+        if bpes_idx is None:
+            target_bpes.append(None)
+            continue
+
+        reconstruct = ''.join(bpes[j][bpes_idx[0]:bpes_idx[-1] + 1]).replace(special_chars, '')
+        target = "".join([words[j][x] for x in target_indexes[j]])
+
+        if target != reconstruct:
+            continue
+
+        target_bpes.append(bpes_idx)
+
+    return hidden_states, target_bpes

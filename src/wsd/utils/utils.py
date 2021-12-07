@@ -248,6 +248,7 @@ def embed_sentences(embedder: transformers.AutoModel.from_pretrained,
 
             for tix in target_indexes:
                 try:
+                    # todo: replace with recover_mw_bpes
                     bpes_idx = recover_bpes(bpes[j], words[j], tix, tokenizer)
 
                 except IndexError:
@@ -256,7 +257,7 @@ def embed_sentences(embedder: transformers.AutoModel.from_pretrained,
 
                 if bpes_idx is None:
                     continue
-
+                # todo: replace ## with special chars per model
                 reconstruct = ''.join(bpes[j][bpes_idx[0]:bpes_idx[-1] + 1]).replace('##', '')
                 target = words[j][tix]
 

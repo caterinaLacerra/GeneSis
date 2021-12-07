@@ -1,35 +1,17 @@
-import argparse
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Tuple
 
 import numpy as np
 import torch
 import tqdm
 import transformers
 
-from src.utils import recover_bpes, read_from_input_file, file_len
+from src.new_multilingual.bn_baseline_datasets import get_sorted_substitutes
+from src.utils import read_from_input_file, file_len, flatten, extract_word_embedding
 from sklearn.metrics.pairwise import cosine_similarity
 
-def get_occurrences_indexes(input_sentence: str, target_word: str) -> List[List[int]]:
+SPECIAL_CHARS = {"xlm-roberta-large": "▁",
+                 "bert-large-cased": "##"}
 
-    separator = "_" if "_" in target_word else " "
-    target_words = target_word.lower().split(separator)
-
-    if len(target_words) == 1:
-        target_indexes = [[i] for i, word in enumerate(input_sentence.lower().split()) if word == target_words[0]]
-        return target_indexes
-
-    i = 0
-    target_indexes = []
-    while i < len(input_sentence.split()):
-        if i + len(target_words) < len(input_sentence.split()):
-            window = input_sentence.lower().split()[i: i + len(target_words)]
-
-            if "_".join(window) == "_".join(target_words):
-                target_indexes.append([x for x in range(i, i + len(target_words))])
-
-        i += len(target_words)
-
-    return target_indexes
 
 def replace_target(sentences: List[str], target_indexes: List[List[int]], substitutes: List[List[str]]) -> Tuple[
     List[List[List[int]]], List[List[str]]]:
@@ -55,50 +37,6 @@ def replace_target(sentences: List[str], target_indexes: List[List[int]], substi
 
     return new_indexes, new_sentences
 
-
-def extract_word_embedding(input_sentences: List[str], target_indexes: List[List[int]],
-                           tokenizer: transformers.AutoTokenizer.from_pretrained,
-                           embedder: transformers.AutoModelForMaskedLM.from_pretrained,
-                           device: torch.device,
-                           model_config: transformers.AutoConfig):
-
-    idx_to_token = {v: k for k, v in tokenizer.get_vocab().items()}
-
-    # embed sentences as the average of the last four layers
-    tokenized = tokenizer.batch_encode_plus(input_sentences, return_tensors='pt', padding=True, truncation=True)
-    input_ids = tokenized['input_ids'].to(device)
-    attention_mask = tokenized['attention_mask'].to(device)
-
-    layer_indexes = [model_config.num_hidden_layers - 4, model_config.num_hidden_layers]
-
-    embedder.to(device)
-    embedder.eval()
-    with torch.no_grad():
-        hidden_states = embedder(input_ids, attention_mask, output_hidden_states=True)["hidden_states"]
-
-    hidden_states = torch.mean(torch.stack(hidden_states[layer_indexes[0]:layer_indexes[-1] + 1]), dim=0)
-    words = [[x for x in sentence.split(' ') if x != ""] for sentence in input_sentences]
-    bpes = [[idx_to_token[idx.item()] for idx in sentence] for sentence in input_ids]
-
-    target_bpes = []
-
-    for j in range(len(input_ids)):
-        # for each sentence, consider all the occurrences of the target and retrieve the corresponding bpes
-
-        for target_list_idx in target_indexes[j]:
-            bpes_idx = recover_bpes(bpes[j], words[j], target_list_idx, tokenizer)
-            if bpes_idx is None:
-                continue
-
-            reconstruct = ''.join(bpes[j][bpes_idx[0]:bpes_idx[-1] + 1]).replace('##', '')
-            target = words[j][target_list_idx]
-
-            if target != reconstruct:
-                continue
-
-            target_bpes.append(bpes_idx)
-
-    return hidden_states, target_bpes
 
 def compute_vectors(input_contexts: List[str],
                     instance_ids: List[str],
@@ -136,8 +74,8 @@ def compute_vectors(input_contexts: List[str],
     # embed sentences with substitutes
     for i, (indexes, substitute_s) in enumerate(zip(substitutes_indexes, substitutes_sentences)):
         hidden_states_substitute, subst_bpes_indexes = extract_word_embedding(substitute_s,
-                                                                               indexes, tokenizer, embedder,
-                                                                               device, model_config)
+                                                                              indexes, tokenizer, embedder,
+                                                                              device, model_config)
         for k in range(len(hidden_states_substitute)):
             subst_vec = torch.mean(torch.stack([hidden_states_substitute[k][x]
                                                 for x in range(len(hidden_states_substitute[k]))
@@ -145,6 +83,7 @@ def compute_vectors(input_contexts: List[str],
             output_dict[instance_ids[i]][substitutes[i][k]] = subst_vec
 
     return output_dict
+
 
 def sort_with_metric(input_path: str, model_name: str, batch_size: int):
 
@@ -185,3 +124,90 @@ def sort_with_metric(input_path: str, model_name: str, batch_size: int):
         sorted_indexes = np.argsort(similarity)[::-1]
         sorted_results[instance_id] = [(substitute_keys[i], similarity[i]) for i in sorted_indexes]
     return sorted_results
+
+
+def sort_with_cos_sim(input_path: str, model_name: str, max_tokens_batch: int, special_chars: str, device: torch.device):
+
+    output_dict = {}
+
+    model_config = transformers.AutoConfig.from_pretrained(model_name)
+    tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
+    embedder = transformers.AutoModel.from_pretrained(model_name)
+
+
+    batch_sentences = []
+    batch_instances = []
+    batch_indexes = []
+    batch_candidates = []
+
+    current_batch_len = 0
+
+    with tqdm.tqdm(total=file_len(input_path)) as pbar:
+
+        for instance in read_from_input_file(input_path):
+
+            replaced_sentences = [" ".join(instance.sentence.split()[:instance.target_idx[0]]
+                                           + [substitute]
+                                           + instance.sentence.split()[instance.target_idx[-1] + 1:])
+                                  for substitute in instance.gold]
+
+            replaced_indexes = [[x for x in range(instance.target_idx[0], instance.target_idx[0] + len(substitute.split()))]
+                                for substitute in instance.gold]
+
+            stack_sentences = [instance.sentence] + replaced_sentences
+            stack_indexes = [instance.target_idx] + replaced_indexes
+
+            # tokenize batch
+            if len(batch_sentences) > 0:
+                tokenized_batch = tokenizer.batch_encode_plus(flatten(batch_sentences),
+                                                              padding=True,
+                                                              truncation=True)['input_ids']
+
+                current_batch_len = len(tokenized_batch) * len(tokenized_batch[0])
+
+            tokenized_next_batch = tokenizer.batch_encode_plus(stack_sentences,
+                                                               padding=True,
+                                                               truncation=True)['input_ids']
+
+            next_batch_len = len(tokenized_next_batch) * len(tokenized_next_batch[0])
+
+            if current_batch_len + next_batch_len < max_tokens_batch:
+                batch_instances.append(instance)
+                batch_sentences.append(stack_sentences)
+                batch_indexes.append(stack_indexes)
+                batch_candidates.append(list(instance.gold.keys()))
+
+            else:
+                for lexsub_instance in get_sorted_substitutes(batch_sentences, batch_indexes, batch_candidates,
+                                                              batch_instances, tokenizer, embedder, device,
+                                                              model_config, special_chars):
+                    output_dict[lexsub_instance.instance_id] = lexsub_instance
+
+                pbar.update(len(batch_sentences))
+
+                batch_sentences = []
+                batch_instances = []
+                batch_indexes = []
+                batch_candidates = []
+
+                batch_instances.append(instance)
+                batch_sentences.append(stack_sentences)
+                batch_indexes.append(stack_indexes)
+                batch_candidates.append(list(instance.gold.keys()))
+
+    return output_dict
+
+if __name__ == '__main__':
+
+    input_path = "data/lst_candidates.tsv"
+    output_path = "data/lst_candidates.cossim_sorted.tsv"
+    model_name = "bert-large-cased"
+    max_tokens_batch = 10_000
+    special_chars = SPECIAL_CHARS[model_name]
+
+    device = torch.device("cpu")
+    output_dict = sort_with_cos_sim(input_path, model_name, max_tokens_batch, special_chars, device)
+
+    with open(output_path, 'w') as out:
+        for instance_id, instance in output_dict.items():
+            out.write(repr(instance) + '\n')
