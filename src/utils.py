@@ -457,6 +457,7 @@ def extract_word_embedding(input_sentences: List[str], target_indexes: List[List
         target = "".join([words[j][x] for x in target_indexes[j]])
 
         if target != reconstruct:
+            target_bpes.append(None)
             continue
 
         target_bpes.append(bpes_idx)
