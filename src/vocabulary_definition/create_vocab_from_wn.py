@@ -5,8 +5,7 @@ import nltk
 import tqdm
 from nltk.corpus import wordnet as wn
 
-from src.wsd.utils.utils import read_from_input_file
-from src.wsd.utils.wordnet_utils import universal_to_wn_pos
+from src.utils import read_from_input_file, universal_to_wn_pos
 
 
 def get_all_related_lemmas(synset: nltk.corpus.reader.wordnet) -> Set[str]:
