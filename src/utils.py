@@ -9,12 +9,44 @@ import torch
 import tqdm
 import transformers
 
+
 _universal_to_lst = {
     'NOUN': 'n',
     'ADJ': 'a',
     'ADV': 'r',
     'VERB': 'v'
 }
+
+
+class LexSubInstance:
+
+    def __init__(self, target: str, instance_id: str, target_idx: List[int], sentence: str,
+                 mask: Optional[List[str]] = None, gold: Optional[Dict[str, int]] = None):
+        self.target = target
+        self.instance_id = instance_id
+        self.target_idx = target_idx
+        self.sentence = sentence
+        self.mask = mask
+        self.gold = gold
+
+    def __repr__(self):
+        if self.gold:
+            sorted_gold = sorted([(a, b) for a, b in self.gold.items()], key=lambda x: x[1], reverse=True)
+            f_gold = " ".join([f'{x.replace(" ", "_")}::{y}' for x, y in sorted_gold])
+
+            if self.mask is None:
+                self.mask = '---'
+
+            else:
+                self.mask = " ".join(self.mask)
+
+            clean_line = '\t'.join([self.target, self.instance_id, str(self.target_idx),
+                                    self.sentence, self.mask, f_gold])
+        else:
+            clean_line = '\t'.join([self.target, self.instance_id, str(self.target_idx),
+                                    self.sentence])
+
+        return clean_line
 
 def convert_to_universal(pos: str):
     pos = pos.upper()
