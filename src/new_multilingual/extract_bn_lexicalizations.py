@@ -5,7 +5,6 @@ from typing import Set, Dict
 import requests
 import tqdm
 
-from src.utils import file_len
 from src.utils_wsd import read_from_raganato
 
 
@@ -74,6 +73,7 @@ if __name__ == '__main__':
     bn_ids = set([x.strip() for x in open(args.bn_ids_path)])
 
     print(f"Writing output in {output_path}")
+
     while len(lexicalizations) < len(bn_ids):
         lexicalizations = get_lexicalizations(
             bn_ids,
