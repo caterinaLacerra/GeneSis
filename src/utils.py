@@ -1,5 +1,4 @@
 import os
-import string
 import subprocess
 from typing import Dict, Optional, List, Iterable, Any, Set, Tuple
 
@@ -9,8 +8,6 @@ import xml.etree.ElementTree as ET
 import torch
 import tqdm
 import transformers
-
-from src.wsd.utils.utils import LexSubInstance
 
 _universal_to_lst = {
     'NOUN': 'n',

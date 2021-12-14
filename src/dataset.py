@@ -6,7 +6,7 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import IterableDataset
 from transformers import AutoTokenizer, MBart50TokenizerFast
 
-from src.wsd.utils.utils import read_from_input_file, flatten, chunks
+from src.utils import read_from_input_file, flatten, chunks
 
 
 class BartDataset(IterableDataset):
