@@ -21,9 +21,9 @@ if __name__ == '__main__':
 
     legacy_ids_to_subst = {}
     for line in open(args.input_path):
-        instance_id, substitutes = line.strip().split(' ::: ')
+        instance_id, substitutes = line.strip().split(' :::')
         leg_id = int(instance_id.split()[-1])
-        substitutes = substitutes.split(";")
+        substitutes = substitutes.strip().split(";")
         scores = [1 - (1 + x)/len(substitutes) for x,_ in enumerate(substitutes)]
         legacy_ids_to_subst[leg_id] = [(word, score) for word, score in zip(substitutes, scores)]
 

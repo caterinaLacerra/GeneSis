@@ -1,6 +1,3 @@
-import os
-import random
-import subprocess
 from typing import List, Dict, Tuple
 
 import numpy as np
@@ -9,7 +6,7 @@ import tqdm
 import transformers
 
 from src.new_multilingual.bn_baseline_datasets import get_sorted_substitutes
-from src.utils import read_from_input_file, file_len, flatten, extract_word_embedding, convert_to_lst_target
+from src.utils import read_from_input_file, file_len, flatten, extract_word_embedding
 from sklearn.metrics.pairwise import cosine_similarity
 
 SPECIAL_CHARS = {"xlm-roberta-large": "▁",
@@ -66,6 +63,9 @@ def compute_vectors(input_contexts: List[str],
                                                           if x not in target_bpes_indexes[j]]), dim=0)
 
         # consider only (original) target occurrence
+        # target_vectors[j] = torch.mean(torch.stack([hidden_states[j][x] for x in range(len(hidden_states[j]))
+        #                                                 if x in target_bpes_indexes[j]]))
+
         output_dict[instance_ids[j]] = {"original_sentence_vec": sentence_avg_vectors[j]}
 
     # extract substitutes indexes and replace targets with substitutes
@@ -200,47 +200,15 @@ def sort_with_cos_sim(input_path: str, model_name: str, max_tokens_batch: int, s
 if __name__ == '__main__':
 
     input_path = "data/lst_candidates.tsv"
-    output_path = "data/lst_candidates.cossim_sorted.tsv"
-    baseline_folder = "data/baseline_output"
+    output_path = "data/lst_candidates.cossim_sorted.oot"
     model_name = "bert-large-cased"
-    gold_path = "scoring_scripts/lst_gold.txt"
-    scorer_path = "scoring_scripts/score.pl"
+    max_tokens_batch = 10_000
+    special_chars = SPECIAL_CHARS[model_name]
 
-    if not os.path.exists(baseline_folder):
-        os.makedirs(baseline_folder)
+    device = torch.device("cpu")
+    output_dict = sort_with_cos_sim(input_path, model_name, max_tokens_batch, special_chars, device)
 
-    oot_path = os.path.join(baseline_folder, f"{model_name}_random_oot.txt")
-    best_path = os.path.join(baseline_folder, f"{model_name}_random_best.txt")
 
-    # max_tokens_batch = 10_000
-    # special_chars = SPECIAL_CHARS[model_name]
-    #
-    # device = torch.device("cuda")
-    # output_dict = sort_with_cos_sim(input_path, model_name, max_tokens_batch, special_chars, device)
-    #
-    # with open(output_path, 'w') as out:
-    #     for instance_id, instance in output_dict.items():
-    #         out.write(repr(instance) + '\n')
-
-    with open(oot_path, 'w') as oot, open(best_path, 'w') as best:
-        for instance in read_from_input_file(output_path):
-            # sorted_gold = [(k, v) for k, v in instance.gold.items()]
-            # random.shuffle(sorted_gold)
-            sorted_gold = sorted([(k, v) for k, v in instance.gold.items()], key=lambda x:x[1], reverse=True)
-            str_sorted = [x[0] for x in sorted_gold]
-
-            oot.write(f"{convert_to_lst_target(instance.target)} {instance.instance_id} ::: {';'.join(str_sorted)}\n")
-            best.write(f"{convert_to_lst_target(instance.target)} {instance.instance_id} :: {sorted_gold[0][0]}\n")
-
-    # best eval on cosine similarity
-    print('\nSorting by cos-sim')
-    command = ['perl', scorer_path, best_path, gold_path]
-    result = subprocess.run(command, check=True, capture_output=True, text=True)
-    print(f"best:")
-    print(result.stdout)
-
-    # oot eval
-    command = ['perl', scorer_path, oot_path, gold_path, '-t', 'oot']
-    result = subprocess.run(command, check=True, capture_output=True, text=True)
-    print(f"oot:")
-    print(result.stdout)
+    with open(output_path, 'w') as out:
+        for instance_id, instance in output_dict.items():
+            out.write(repr(instance) + '\n')

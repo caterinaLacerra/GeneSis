@@ -324,13 +324,11 @@ def contains_punctuation(word: str) -> bool:
     return any(char in punct for char in word)
 
 
-def get_output_dictionary(output_vocab_folder: str) -> Dict[str, Set[str]]:
+def get_output_dictionary(output_vocab_path: str) -> Dict[str, Set[str]]:
     output_vocab = {}
-    for filename in tqdm.tqdm(os.listdir(output_vocab_folder)):
-        target = filename.replace('.txt', '')
-        output_vocab[target] = set()
-        for line in open(os.path.join(output_vocab_folder, filename)):
-            output_vocab[target].add(line.strip().lower())
+    for line in open(output_vocab_path):
+        target, *candidates = line.strip().split('\t')
+        output_vocab[target] = set([x.lower() for x in candidates])
     return output_vocab
 
 
