@@ -200,13 +200,14 @@ def sort_with_cos_sim(input_path: str, model_name: str, max_tokens_batch: int, s
 if __name__ == '__main__':
 
     input_path = "data/lst_candidates.tsv"
-    output_path = "data/lst_candidates.cossim_sorted.tsv"
+    output_path = "data/lst_candidates.cossim_sorted.oot"
     model_name = "bert-large-cased"
     max_tokens_batch = 10_000
     special_chars = SPECIAL_CHARS[model_name]
 
     device = torch.device("cpu")
     output_dict = sort_with_cos_sim(input_path, model_name, max_tokens_batch, special_chars, device)
+
 
     with open(output_path, 'w') as out:
         for instance_id, instance in output_dict.items():

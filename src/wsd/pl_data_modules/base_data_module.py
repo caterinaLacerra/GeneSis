@@ -17,7 +17,7 @@ class BertDataset(IterableDataset):
         super().__init__()
 
         self.config = conf
-        self.tokenizer = AutoTokenizer.from_pretrained(self.config.model.transformer_name, is_fast=True)
+        self.tokenizer = AutoTokenizer.from_pretrained(self.config.generative_model.transformer_name, is_fast=True)
         # todo: define sense inventory
 
         self.input_path = dataset_path
@@ -40,7 +40,7 @@ class BertDataset(IterableDataset):
 
         self.dataset_store = sorted(self.dataset_store, key=lambda x: len(x[0]) + random.randint(0, 10))
 
-        self.dataset_store = list(chunks(self.dataset_store, self.config.model.chunk_size))
+        self.dataset_store = list(chunks(self.dataset_store, self.config.generative_model.chunk_size))
         random.shuffle(self.dataset_store)
         self.dataset_store = flatten(self.dataset_store)
 
@@ -75,7 +75,7 @@ class BertDataset(IterableDataset):
                 len(encoded_source)
             ) * (len(current_batch) + 1)
 
-            if future_source_tokens > self.config.model.max_tokens_per_batch:
+            if future_source_tokens > self.config.generative_model.max_tokens_per_batch:
 
                 if len(current_batch) == 0:
                     continue

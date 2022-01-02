@@ -1,6 +1,7 @@
 import os
 import string
 import subprocess
+from collections import defaultdict
 from typing import Dict, Optional, List, Iterable, Any, Set, Tuple
 
 import numpy as np
@@ -9,6 +10,7 @@ import xml.etree.ElementTree as ET
 import torch
 import tqdm
 import transformers
+from transformers import AutoTokenizer
 
 from src.wsd.utils.utils import LexSubInstance
 
@@ -158,7 +160,8 @@ def contains(small: List[str], big: List[str]):
             return i, i + len(small)
     return False
 
-def recover_mw_bpes(bpes: List[str], words: List[str], word_idx: List[int], tokenizer):
+
+def recover_mw_bpes(bpes: List[str], words: List[str], word_idx: List[int], tokenizer) -> Optional[List[int]]:
 
     target_word = " ".join([words[x] for x in word_idx])
     tokenized = tokenizer.tokenize(target_word)
@@ -462,3 +465,137 @@ def extract_word_embedding(input_sentences: List[str], target_indexes: List[List
         target_bpes.append(bpes_idx)
 
     return hidden_states, target_bpes
+
+
+def align_multimirror(src_sentence: str, tgt_sentence: str, predictor, target_indexes: List[int],
+                          mm_tokenizer: AutoTokenizer.from_pretrained) -> Optional[Tuple[str, List[int]]]:
+
+    sentence_alignments = [x for x in predictor.predict_from_single_sentence(src_sentence, tgt_sentence, mm_tokenizer)][0]
+
+    s2_tokens = tgt_sentence.split()
+
+    index_alignment_dict = defaultdict(list)
+    confidence_alignment_dict = defaultdict(int)
+
+    # build an indexes dictionary
+    for i, (s1i, s2i) in enumerate(sentence_alignments.tokens_alignments):
+        score = sentence_alignments.predictions_probabilities[s1i][s2i]
+        index_alignment_dict[s1i].append(s2i)
+        confidence_alignment_dict[(s1i, s2i)] = score
+
+    remaining_indexes = []
+    for tgt in target_indexes:
+        if tgt in index_alignment_dict:
+            alignments = index_alignment_dict[tgt]
+            for al in alignments:
+                current_conf = confidence_alignment_dict[(tgt, al)]
+                other_alignments = [x for x in index_alignment_dict if x != tgt and
+                                    al in index_alignment_dict[x]]
+                is_higher_confidence = True
+                for other in other_alignments:
+                    other_conf = confidence_alignment_dict[(other, al)]
+                    if other_conf > current_conf:
+                        is_higher_confidence = False
+                if is_higher_confidence:
+                    remaining_indexes.append(al)
+
+    if remaining_indexes == []:
+        return None
+
+    remaining_indexes = sorted(remaining_indexes)
+    return (" ".join([s2_tokens[x] for x in remaining_indexes]), remaining_indexes)
+
+
+
+
+
+def sort_substitutes_cos_sim(substitutes: List[str], input_sentence: str, target_idx: List[int],
+                             embedder: transformers.AutoModel.from_pretrained,
+                             tokenizer: transformers.AutoTokenizer.from_pretrained,
+                             hs: int, device: str, min_threshold: float, max_threshold: float) -> List[Tuple[str, float]]:
+
+    input_words = input_sentence.split(' ')
+
+    if len(substitutes) == 0:
+        return []
+
+    substitute_sentences = []
+    substitutes_target_indexes = []
+
+    for substitute in substitutes:
+        substitute_words = input_words[:target_idx[0]] + [substitute] + input_words[target_idx[-1] + 1:]
+
+        if len(substitute.split()) == 1:
+            substitutes_target_indexes.append([target_idx[0]])
+
+        else:
+            substitutes_target_indexes.append([target_idx[0], target_idx[0] + len(substitute.split()) - 1])
+
+        substitute_sentences.append(" ".join(substitute_words))
+
+    substitutes_embed = embed_sentences(embedder, tokenizer, substitutes_target_indexes, substitute_sentences,
+                                        device=device, hidden_size=hs, layer_indexes=[20, 23])
+
+    input_embed = embed_sentences(embedder, tokenizer, [target_idx], [input_sentence],
+                                  device=device, hidden_size=hs, layer_indexes=[20, 23])
+
+    cos_similarities = torch.nn.functional.cosine_similarity(substitutes_embed,
+                                                             input_embed.repeat(substitutes_embed.shape[0], 1))
+
+    paired_similarities = [(substitute, s.item()) for substitute, s in zip(substitutes, cos_similarities)
+                           if s.item() >= min_threshold and s.item() <= max_threshold]
+
+    sorted_substitutes = sorted(paired_similarities, key=lambda x: x[1], reverse=True)
+    return sorted_substitutes
+
+
+def embed_sentences(embedder: transformers.AutoModel.from_pretrained,
+                    tokenizer: transformers.AutoTokenizer.from_pretrained,
+                    target_index: [List[List[int]]], sequence: List[str], device: str, hidden_size: int,
+                    layer_indexes: List[int]) -> torch.Tensor:
+
+    idx_to_token = {v: k for k, v in tokenizer.get_vocab().items()}
+    matrix = torch.zeros((len(sequence), hidden_size))
+
+    # a list of target indexes for each sentence to embed
+    assert len(target_index) == len(sequence)
+
+    with torch.no_grad():
+        tokenized = tokenizer.batch_encode_plus(sequence, return_tensors='pt', padding=True, truncation=True)
+
+        input_ids = tokenized['input_ids'].to(device)
+        attention_mask = tokenized['attention_mask'].to(device)
+        embedder.to(device)
+
+        hidden_states = embedder(input_ids, attention_mask, output_hidden_states=True)["hidden_states"]
+        hidden_states = torch.mean(torch.stack(hidden_states[layer_indexes[0]:layer_indexes[-1]+1]), dim=0)
+
+        # batch size x bpes x hidden size
+        words = [[x for x in sentence.split(' ') if x != ""] for sentence in sequence]
+        bpes = [[idx_to_token[idx.item()] for idx in sentence] for sentence in input_ids]
+
+        for j in range(len(input_ids)):
+
+            target_indexes = target_index[j]
+
+            stacking_vecs = []
+            for tix in target_indexes:
+
+                bpes_idx = recover_mw_bpes(bpes[j], words[j], tix, tokenizer)
+
+                if bpes_idx is None:
+                    continue
+
+                reconstruct = ''.join(bpes[j][bpes_idx[0]:bpes_idx[-1] + 1]).replace('##', '')
+                target = words[j][tix]
+
+                if target != reconstruct:
+                    continue
+
+                # 1 x 1 x hidden size
+                vecs = torch.mean(hidden_states[j, bpes_idx], dim=0)
+                stacking_vecs.append(vecs)
+
+            matrix[j] = torch.mean(torch.stack(stacking_vecs), dim=0)
+
+    return  matrix

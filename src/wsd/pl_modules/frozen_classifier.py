@@ -19,8 +19,8 @@ class WSDTransformer(pl.LightningModule):
 
         self.accuracy = pl.metrics.Accuracy()
 
-        self.encoder = AutoModel.from_pretrained(conf.model.transformer_name)
-        transformer_hs = AutoConfig.from_pretrained(conf.model.transformer_name).hidden_size
+        self.encoder = AutoModel.from_pretrained(conf.generative_model.transformer_name)
+        transformer_hs = AutoConfig.from_pretrained(conf.generative_model.transformer_name).hidden_size
         self.classifier = nn.Linear(transformer_hs, get_vocabulary_size(conf.inventory.inventory_name))
 
     def forward(self, input_ids: torch.Tensor,
