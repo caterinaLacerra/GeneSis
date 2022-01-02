@@ -160,8 +160,7 @@ def contains(small: List[str], big: List[str]):
             return i, i + len(small)
     return False
 
-
-def recover_mw_bpes(bpes: List[str], words: List[str], word_idx: List[int], tokenizer) -> Optional[List[int]]:
+def recover_mw_bpes(bpes: List[str], words: List[str], word_idx: List[int], tokenizer):
 
     target_word = " ".join([words[x] for x in word_idx])
     tokenized = tokenizer.tokenize(target_word)
@@ -460,6 +459,7 @@ def extract_word_embedding(input_sentences: List[str], target_indexes: List[List
         target = "".join([words[j][x] for x in target_indexes[j]])
 
         if target != reconstruct:
+            target_bpes.append(None)
             continue
 
         target_bpes.append(bpes_idx)
@@ -599,3 +599,4 @@ def embed_sentences(embedder: transformers.AutoModel.from_pretrained,
             matrix[j] = torch.mean(torch.stack(stacking_vecs), dim=0)
 
     return  matrix
+

@@ -68,23 +68,27 @@ def get_sorted_substitutes(
 
     # target, substitutes vectors
     vectors = torch.zeros((hidden_states.shape[0], hidden_states.shape[-1]))
+    assert  len(target_bpes) == len(flatten(batch_sentences)), print(len(vectors), len(target_bpes), len(flatten(batch_sentences)))
 
-    for i in range(len(batch_sentences)):
+    for i in range(len(flatten(batch_sentences))):
         if target_bpes[i] is None:
             continue
 
         vectors[i] = torch.mean(torch.stack([hidden_states[i][bpe] for bpe in target_bpes[i]]),
                                 dim=0).cpu()
 
-    initial = 0
+    flattened_idx = 0
     for i in range(len(batch_sentences)):
 
         # skip instances without a match between target and bpes
-        if target_bpes[i] is None:
+        if target_bpes[flattened_idx] is None:
+            continue
+
+        if len(batch_candidates[i]) == 0:
             continue
 
         # recover target-substitutes from flattened lists
-        control_indexes = [x for x in range(initial, initial + len(batch_sentences[i]))]
+        control_indexes = [x for x in range(flattened_idx, flattened_idx + len(batch_sentences[i]))]
 
         # if i only have one substitute:
         if len(batch_candidates[i]) == 1:
@@ -93,17 +97,18 @@ def get_sorted_substitutes(
                                         vectors[control_indexes[-1]].reshape(1, -1))[0]
 
         else:
+            assert len(batch_candidates[i]) == len([x for x in range(control_indexes[0] + 1, control_indexes[-1] + 1)])
             cos_sim = cosine_similarity(vectors[control_indexes[0]].reshape(1, -1),
-                                        vectors[control_indexes[0] + 1: control_indexes[-1]])[0]
-
-        initial = initial + len(batch_sentences[i])
+                                        vectors[control_indexes[0] + 1: control_indexes[-1] + 1])[0]
 
         sorted_indexes = np.argsort(cos_sim)[::-1]
         sorted_substitutes = [(batch_candidates[i][x], str(int(cos_sim[x]*100))) for x in sorted_indexes]
+        flattened_idx += len(batch_sentences[i])
 
         yield LexSubInstance(batch_instances[i].target, batch_instances[i].instance_id, batch_instances[i].target_idx,
                              batch_instances[i].sentence, mask=None, gold = {subst: score
                                                                              for subst, score in sorted_substitutes})
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -136,11 +141,11 @@ if __name__ == '__main__':
     tot_instances = 0
     instances_with_candidates = 0
 
-    with open(args.output_path, 'w') as out:
+    with open(args.output_path, 'w') as out, tqdm.tqdm(total=file_len(args.gold_path)) as pbar:
 
         batch_instances, batch_sentences, batch_indexes, batch_candidates = [], [], [], []
 
-        for _, _, sentence in tqdm.tqdm(read_from_raganato(args.input_xml, args.gold_path), total=file_len(args.gold_path)):
+        for _, _, sentence in read_from_raganato(args.input_xml, args.gold_path):
 
             text_sentence = " ".join([token.annotated_token.text for token in sentence])
             
@@ -161,9 +166,9 @@ if __name__ == '__main__':
                 if len(associated_candidates) ==  0:
                     tot_instances += 1
                     current_idx += len(token.annotated_token.text.split())
+                    pbar.update()
                     continue
 
-                instances_with_candidates += 1
 
                 # tokenize batch
                 if len(batch_sentences) > 0:
@@ -190,6 +195,7 @@ if __name__ == '__main__':
                     for lexsub_instance in get_sorted_substitutes(batch_sentences, batch_indexes, batch_candidates,
                                                                   batch_instances, tokenizer, embedder, device,
                                                                   model_config, SPECIAL_CHARS[args.model_name]):
+                        instances_with_candidates += 1
                         out.write(f"{repr(lexsub_instance)}\n")
 
                     batch_sentences = []
@@ -197,11 +203,12 @@ if __name__ == '__main__':
                     batch_indexes = []
                     batch_candidates = []
 
-                    batch_instances.append(f"{lexeme}\t{instance_id}\t{target_idx}\t{text_sentence}\t---\t")
+                    batch_instances.append(LexSubInstance(lexeme, instance_id, target_idx, text_sentence))
                     batch_sentences.append(stack_sentences)
                     batch_indexes.append(stack_indexes)
                     batch_candidates.append(associated_candidates)
 
+                pbar.update()
                 tot_instances += 1
                 current_idx += len(token.annotated_token.text.split())
 

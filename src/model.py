@@ -370,7 +370,10 @@ class MBartModel(pl.LightningModule):
             top_predictions.append(merged_predictions)
             table.add_data(source, targets, merged_predictions)
 
-        wandb.log({"examples": table})
+        try:
+            wandb.log({"examples": table})
+        except:
+            print(table)
 
         prec_at_one = self.val_prec(top_predictions, [x.split(', ') for x in str_targets])
         self.log('val_prec', prec_at_one, prog_bar=False, on_step=False, on_epoch=True)

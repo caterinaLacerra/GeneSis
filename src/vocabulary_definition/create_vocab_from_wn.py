@@ -1,3 +1,4 @@
+import argparse
 import os
 from typing import List, Set, Optional
 
@@ -102,8 +103,17 @@ def write_to_folders(lexemes_list: List[str], root_output_folder: str) -> None:
             for substitute in substitutes:
                 out.write(substitute + '\n')
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--test_path", required=True)
+    parser.add_argument("--output_folder", required=True)
+    return parser.parse_args()
 
 if __name__ == '__main__':
-    test_list = [x.target for x in read_from_input_file('data/lst/lst_test.tsv')]
-    lexemes_list = list(set(test_list))
-    write_to_folders(lexemes_list, 'vocab/wordnet_vocab')
+    args = parse_args()
+
+    if not os.path.exists(args.output_folder):
+        os.makedirs(args.output_folder)
+
+    lexemes_list = list(set([x.target for x in read_from_input_file(args.test_path)]))
+    write_to_folders(lexemes_list, args.output_folder)
