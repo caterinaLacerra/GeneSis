@@ -3,6 +3,8 @@ import xml.etree.cElementTree as ET
 from nltk.corpus import wordnet as wn
 from typing import NamedTuple, Optional, List, Callable, Tuple, Iterable, Dict
 
+from src.wsd.utils.commons import execute_bash_command
+
 pos_map = {
     # U-POS
     "NOUN": "n",
