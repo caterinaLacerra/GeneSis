@@ -1,5 +1,6 @@
 import argparse
 import string
+from typing import List
 
 import tqdm
 import wordfreq
@@ -13,6 +14,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output_path", required=True)
     parser.add_argument("--lang", required=True)
     return parser.parse_args()
+
+
+def clean_substitutes(input_substitutes: List[str]) -> List[str]:
+    clean = []
+    for substitute in input_substitutes:
+        if substitute.strip() != "" and substitute not in string.punctuation:
+            clean.append(substitute)
+    return clean
 
 
 def clean_targets(input_path: str, output_path: str,  language_code: str):
@@ -34,7 +43,10 @@ def clean_targets(input_path: str, output_path: str,  language_code: str):
 
                 # exclude sentences with non-existing words
                 if all(wordfreq.zipf_frequency(word, language_code, wordlist="best") > 0 for word in words):
-                    out.write(f"{repr(instance)}\n")
+
+                    clean = clean_substitutes(list(instance.gold.keys()))
+                    if clean != []:
+                        out.write(f"{repr(instance)}\n")
 
     print(f"Initial instances: {file_len(input_path)}\n"
           f"Cleaned targets instances: {file_len(output_path)}")
