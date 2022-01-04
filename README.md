@@ -1,5 +1,18 @@
 # GeneSis: A Generative Approach to Substitutes in Context
 
+This repository contains the instructions to reproduce the experiments in the [GeneSis paper](https://www.researchgate.net/publication/355646366_GeneSis_A_Generative_Approach_to_Substitutes_in_Context), accepted at EMNLP 2021.
+When using this work, please cite it as follows:
+
+```
+@inproceedings{lacerraetal:2021,
+  title={ Gene{S}is: {A} {G}enerative {A}pproach to {S}ubstitutes in {C}ontext},
+  author={Lacerra, Caterina and Tripodi, Rocco and Navigli, Roberto},
+  booktitle={Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
+  publisher={Association for Computational Linguistics},
+  year={2021},
+  address={Punta Cana, Domenican Republic}
+ }
+```
 This repository contains the instructions to reproduce the experiments in the GeneSis paper, accepted at EMNLP 2021.
 When using our work, please cite it with this BibTex:
 
@@ -29,9 +42,9 @@ c) Install the requirements with
 
 ## 2. :shopping_cart: Download additional data and checkpoints
 
-If you want to experiment with the datasets generated from SemCor, download the [generated_datasets.tar.gz](https://tinyurl.com/ym7mebv9) and put the files under the ```data/``` directory. 
+If you want to experiment with the datasets generated from SemCor, download the [generated datasets](https://drive.google.com/uc?export=download&id=1keUU1zjriXCi3nZmIsePNx02i-Bt87dX) and put the files under the ```data/``` directory.
 Note that the name of each file has the following format: ```semcor_{similarity_threshold}_{split_size}_train.tsv```. The dataset without ```{split_size}``` is the whole dataset.
-If you want to test one of the models described in the paper, download the [checkpoints](https://tinyurl.com/jnc6rk44) and move the external folder under the ```output/``` directory.
+If you want to test one of the models described in the paper, download the [checkpoint](https://drive.google.com/uc?export=download&id=12G--HAMSPadoxj_K8nD_GZ8oXaUs85o-) and move the external folder under the ```output/``` directory.
 The structure of each output subfolder is the following:
 ``` 
 |--- bart_{seed}_pt_{training_dataset}_drop_{dropout}_enc_lyd_{encoder_layerdropout}_dec_lyd_{decoder_layerdropout} \
@@ -119,3 +132,14 @@ b) The generated file is the input required by ```generate_dataset.py```, to be 
 c) ```dataset_cleaning.py``` cleans out the generated dataset. The ```--threshold``` parameter is the threshold on cosine similarity between target and substitutes.
 
 d) Finally, ```semcor_splits.py``` produces a split of the clean dataset. The parameters are commented in the code.
+
+
+# Acknowledgments
+
+The authors gratefully acknowledge the support of the ERC Consolidator Grant MOUSSE No. 726487 under the European Union’s Horizon 2020 research and innovation programme.
+
+This work was supported in part by the MIUR under grant “Dipartimenti di eccellenza 2018-2022” of the Department of Computer Science of the Sapienza University of Rome.
+
+# License
+
+This work is under the [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/)

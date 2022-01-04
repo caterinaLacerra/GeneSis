@@ -22,7 +22,7 @@ def sort_substitutes_cos_sim_batched(substitutes: List[List[str]],
                                      embedder: transformers.AutoModel.from_pretrained,
                                      tokenizer: transformers.AutoTokenizer.from_pretrained,
                                      hs: int, device: str, threshold: float,
-                                     batch_size: int) -> \
+                                     batch_size: int, num_hidden_layers: int = 24) -> \
         Tuple[List[Union[list, List[Tuple[str, Any]]]], List[List[Tuple[str, Any]]]]:
 
     stacked_input_sentences, stacked_subst_sentences, stacked_target_indexes, \
@@ -32,24 +32,27 @@ def sort_substitutes_cos_sim_batched(substitutes: List[List[str]],
         input_words = input_sentence.split()
 
         for substitute in substitutes[i]:
-            substitute_words = input_words[:target_indexes[0]] + [substitute] + input_words[target_indexes[-1] + 1:]
+            substitute_words = input_words[:target_indexes[0]] + substitute.split('_') + input_words[target_indexes[-1] + 1:]
             stacked_subst_sentences.append(" ".join(substitute_words))
-            if len(substitute.split()) == 1:
+
+            if len(substitute.split('_')) == 1:
                 stacked_substitutes_indexes.append([target_indexes[0]])
             else:
                 stacked_substitutes_indexes.append([target_indexes[0],
-                                                   target_indexes[0] + len(substitute.split()) - 1])
+                                                   target_indexes[0] + len(substitute.split('_')) - 1])
 
         stacked_input_sentences.append(input_sentence)
         stacked_target_indexes.append(target_indexes)
 
     input_matrix_embed = torch.zeros((len(stacked_input_sentences), hs), device=device)
+    layer_indexes = [num_hidden_layers - 4, num_hidden_layers - 1]
 
     for i in tqdm.tqdm(range(0, len(stacked_input_sentences), batch_size), desc='Embedding input sentences'):
         batch = stacked_input_sentences[i: i + batch_size]
         batch_indexes = stacked_target_indexes[i: i + batch_size]
         vecs = embed_sentences(embedder, tokenizer, batch_indexes, batch, device, hidden_size=hs,
-                               layer_indexes=[20, 23])
+                                   layer_indexes=layer_indexes)
+
         input_matrix_embed[i: i + batch_size] = vecs
 
     subst_matrix_embed = torch.zeros((len(stacked_subst_sentences), hs), device=device)
@@ -59,7 +62,7 @@ def sort_substitutes_cos_sim_batched(substitutes: List[List[str]],
         batch_indexes_subst = stacked_substitutes_indexes[i: i + batch_size]
 
         vecs = embed_sentences(embedder, tokenizer, batch_indexes_subst, batch_subst, device, hidden_size=hs,
-                               layer_indexes=[20, 23])
+                               layer_indexes=layer_indexes)
 
         subst_matrix_embed[i: i + batch_size] = vecs
 
@@ -98,7 +101,8 @@ def sort_substitutes_cos_sim_batched(substitutes: List[List[str]],
 
 def get_clean_substitutes_from_batch(batch: List[str], target: str,
                                      output_vocabulary: Optional[Dict[str, Set[str]]] = None,
-                                     root_vocab_path: Optional[str] = None) -> Tuple[
+                                     root_vocab_path: Optional[str] = None,
+                                     language_code: Optional[str] = "en") -> Tuple[
     List[str], List[str]]:
 
     substitutes = [[y.strip(',').lower() for y in x.strip().split(', ')] for x in batch]
@@ -120,11 +124,11 @@ def get_clean_substitutes_from_batch(batch: List[str], target: str,
                     if target in output_vocabulary:
                         if word.lower() not in output_vocabulary[target]:
                             continue
+                    # todo: modify for multilingual (construct vocab on the fly)
                     else:
-                        substitutes = get_related_lemmas(target)
-                        substitutes = set([x for x in substitutes
-                                           if x.lower().replace('_', ' ') != lemma_target.lower().replace('_', ' ')])
-
+                        substitutes = get_related_lemmas(target, language_code)
+                        if substitutes == set() and language_code != "en":
+                            print(f"Missing target word {target} from vocabulary, update it manually with java scripts")
                         output_vocabulary[target] = substitutes
                         with open(os.path.join(root_vocab_path, target), 'w') as out:
                             for substitute in substitutes:
@@ -183,13 +187,15 @@ def compute_baseline(dataset_name: str, input_path: str, output_folder: str,
                     gold_dict_per_instance: Dict,
                     model_name: str, device: str, threshold: float,
                     top_k: int = 10, batch_size: int = 100,
-                    output_vocabulary: Optional[Union[Set[str], Dict[str, Set[str]]]]=None):
+                    output_vocabulary: Optional[Union[Set[str], Dict[str, Set[str]]]]=None,
+                     language_code: Optional[str] = "en"):
 
     oot_output_path = os.path.join(output_folder, f'{dataset_name}_baseline_oot.txt')
     best_output_path = os.path.join(output_folder, f'{dataset_name}_baseline_best.txt')
     output_path = os.path.join(output_folder, f'{dataset_name}_baseline_hr_output.txt')
 
-    instances_infos, input_infos, generated_substitutes, all_gen_subst = get_generated_substitutes(input_path)
+    instances_infos, input_infos, generated_substitutes, all_gen_subst = get_generated_substitutes(input_path,
+                                                                                                   language_code=language_code)
 
     embedder = transformers.AutoModel.from_pretrained(model_name)
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
@@ -260,11 +266,12 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
                     root_vocab_path: str,
                     top_k: int = 10, batch_size: int = 100, baseline: bool = False,
                     cut_vocab: bool = False,
-                    output_vocabulary: Optional[Union[Set[str], Dict[str, Set[str]]]]=None) -> Tuple[str, str]:
+                    output_vocabulary: Optional[Union[Set[str], Dict[str, Set[str]]]]=None,
+                    language_code: Optional[str] = "en") -> Tuple[str, str]:
 
     embedder = transformers.AutoModel.from_pretrained(model_name)
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
-    hidden_size = transformers.AutoConfig.from_pretrained(model_name).hidden_size
+    auto_config = transformers.AutoConfig.from_pretrained(model_name)
 
     if baseline:
         return compute_baseline(dataset_name, input_path, output_folder, gold_dict_per_instance, model_name, device,
@@ -300,33 +307,30 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
 
         if cut_vocab:
             instances_infos, input_infos, \
-            generated_substitutes, all_gen_subst = get_generated_substitutes(input_path, output_vocabulary, root_vocab_path)
+            generated_substitutes, all_gen_subst = get_generated_substitutes(input_path,
+                                                                             output_vocabulary,
+                                                                             root_vocab_path,
+                                                                             language_code)
 
         else:
             instances_infos, input_infos, generated_substitutes, all_gen_subst = get_generated_substitutes(input_path)
 
 
         backoff_list = []
-
         for s_idx in range(len(all_gen_subst)):
             target = convert_to_universal_target(instances_infos[s_idx][0])
-            *target_lemma, target_pos = target.split('.')
-            target_lemma = '.'.join(target_lemma)
-
-            clean_substitutes = [x for x in output_vocabulary[target]
-                                 if x.lower().replace('_', ' ') != target_lemma.lower().replace('_', ' ')]
             if backoff:
-                backoff_list.append(clean_substitutes)
+                backoff_list.append(list(output_vocabulary[target]))
 
         similarities, _ = sort_substitutes_cos_sim_batched(all_gen_subst, input_infos,
-                                                                          embedder, tokenizer, hidden_size,
-                                                                          device, threshold, batch_size)
+                                                           embedder, tokenizer, auto_config.hidden_size,
+                                                           device, threshold, batch_size, auto_config.num_hidden_layers)
 
         if backoff:
             # sort by cos sim with the target all the possible substitutes in the output vocab
             backoff_sorted, _ = sort_substitutes_cos_sim_batched(backoff_list, input_infos,
-                                                                 embedder, tokenizer, hidden_size,
-                                                                 device, threshold, batch_size)
+                                                                 embedder, tokenizer, auto_config.hidden_size,
+                                                                 device, threshold, batch_size, auto_config.num_hidden_layers)
 
         for i, subst_list in tqdm.tqdm(enumerate(generated_substitutes), total=len(generated_substitutes)):
 
@@ -354,6 +358,10 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
                 to_wr_subst = [(word, score) for word, score  in similarities[i]
                                if word in generated_substitutes[i]]
 
+            if key not in gold_dict_per_instance:
+                print(f"{key} not in gold dict")
+                print(list(gold_dict_per_instance.keys())[:10])
+                exit()
 
             avg_recall_10 += recall_at_k(compound_list, gold_dict_per_instance[key], k=10)
             oot.write(f'{lexelt} {instance_id} ::: {";".join(compound_list[:top_k])}\n')
@@ -390,7 +398,8 @@ def eval_generation(dataset_name: str, input_path: str, output_folder: str,
 
 def get_generated_substitutes(input_path: str,
                               output_vocabulary: Optional[Union[Set[str], Dict[str, Set[str]]]]=None,
-                              root_vocab_path: Optional[str] = None):
+                              root_vocab_path: Optional[str] = None,
+                              language_code: Optional[str] = "en"):
 
 
     instances_infos, input_infos, generated_substitutes, all_generated_substitutes = [], [], [], []
@@ -409,7 +418,8 @@ def get_generated_substitutes(input_path: str,
 
             clean_substitutes, all_substitutes = get_clean_substitutes_from_batch(sentences[4:], instance,
                                                                                   output_vocabulary=output_vocabulary,
-                                                                                  root_vocab_path=root_vocab_path)
+                                                                                  root_vocab_path=root_vocab_path,
+                                                                                  language_code=language_code)
 
         else:
             clean_substitutes, all_substitutes = get_clean_substitutes_from_batch(sentences[4:], instance)
@@ -453,6 +463,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--backoff', default=False, action="store_true", help='flag. If set, will use the fallback strategy')
     parser.add_argument('--cut_vocab', default=False, action="store_true", help='flag. If set, will cut over the output vocabulary specified with --cvp')
     parser.add_argument('--test', default=False, action="store_true", help='flag. If set, will evaluate on the test dataset instead of the dev one.')
+    parser.add_argument('--language_code', default="en", help='Language of the dataset. Defaults to English.')
 
     parser.add_argument('--seed', default=0, type=int, help='seed for reproducibility')
     parser.add_argument('--beams', type=int, default=15, help='beam size for beam search during evaluation.')
@@ -522,7 +533,8 @@ def main(args: argparse.Namespace):
                                           baseline=args.baseline,
                                           backoff=args.backoff,
                                           cut_vocab=args.cut_vocab,
-                                          threshold=args.threshold)
+                                          threshold=args.threshold,
+                                          language_code=args.language_code)
 
     eval_on_task(config, best_path, oot_path, dataset_name)
 
