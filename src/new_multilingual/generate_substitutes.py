@@ -1,5 +1,6 @@
 import argparse
 import os
+import string
 from collections import defaultdict
 from typing import Tuple, Dict, Any, Iterator, List, Set
 
@@ -207,7 +208,7 @@ if __name__ == '__main__':
     language_mapping = {'it': 'italian', 'de': 'german'}
     multimirror_device = 0
 
-    exclude_words_src = set([x for x in stopwords.words(language_mapping[args.lang])])
+    exclude_words_src = set([x for x in stopwords.words(language_mapping[args.lang])]).union(set(string.punctuation))
 
     if not args.cpu:
         device = torch.device('cuda')
@@ -247,8 +248,6 @@ if __name__ == '__main__':
             for i, (target, sentence, mapping_dict) in tqdm.tqdm(enumerate(get_mapping_to_en(associated_mm_path, args.input_path,
                                                                     predictor, mm_tokenizer)),
                                                             total=file_len(associated_mm_path)):
-                if i < 3315:
-                    continue
 
                 en_indexes = mapping_dict["alignment-indexes"]
                 en_target = " ".join([mapping_dict["translated-sentence"].split()[x] for x in en_indexes])
@@ -270,6 +269,7 @@ if __name__ == '__main__':
 
                 final_translations = clean_translations(words, target, it_pipeline, translations, indexes, lang, exclude_words_src)
                 if len(final_translations) > 0:
+
                     str_translations = " ".join([f"{w}::1" for w in final_translations])
                     out.write(f"{target}\t{mapping_dict['instance-id']}\t{mapping_dict['src-indexes']}"
                               f"\t{sentence}\t---\t{str_translations}\n")
